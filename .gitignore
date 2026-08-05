@@ -1,0 +1,20 @@
+# Quelldokumente der IFA und von Faustball Deutschland.
+# Kopien – auch auszugsweise – erfordern die Genehmigung der IFA, deshalb liegen
+# sie bewusst nicht im Repository. Sie werden nur zum Neuerzeugen der Datendateien
+# gebraucht (siehe app/tools/generate/README.md).
+*.pdf
+*.pptx
+*.ppt
+quiz-*.xml
+
+# Abhängigkeiten und Systemdateien
+node_modules/
+package-lock.json
+.DS_Store
+Thumbs.db
+
+# Zwischenstände der Generatoren
+chapters_*.json
+merged_*.json
+*.pyc
+__pycache__/

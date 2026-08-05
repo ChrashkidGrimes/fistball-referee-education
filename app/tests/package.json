@@ -1,0 +1,10 @@
+{
+  "name": "ifa-referee-education-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Automatisierte Tests fuer die IFA Schiedsrichter-Lernapp",
+  "scripts": {
+    "test": "node app.test.js && node exam-thresholds.test.js && node exam-composition.test.js && node i18n.test.js && node questions.test.js && node bilingual.test.js"
+  },
+  "devDependencies": { "jsdom": "^26.0.0" }
+}

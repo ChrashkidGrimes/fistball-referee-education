@@ -1,0 +1,209 @@
+{
+ "court": {
+  "index": 0,
+  "lang": "de",
+  "page": 3,
+  "signal": null,
+  "source": "schulungsmappe"
+ },
+ "court-en": {
+  "index": 0,
+  "lang": "en",
+  "page": 3,
+  "signal": null,
+  "source": "schulungsmappe"
+ },
+ "lr-1": {
+  "index": 0,
+  "lang": "de",
+  "page": 29,
+  "signal": null,
+  "source": "schulungsmappe"
+ },
+ "lr-1-en": {
+  "index": 0,
+  "lang": "en",
+  "page": 31,
+  "signal": null,
+  "source": "schulungsmappe"
+ },
+ "lr-2": {
+  "index": 0,
+  "lang": "de",
+  "page": 30,
+  "signal": null,
+  "source": "schulungsmappe"
+ },
+ "lr-2-en": {
+  "index": 1,
+  "lang": "en",
+  "page": 31,
+  "signal": null,
+  "source": "schulungsmappe"
+ },
+ "lr-3": {
+  "index": 1,
+  "lang": "de",
+  "page": 30,
+  "signal": null,
+  "source": "schulungsmappe"
+ },
+ "lr-3-en": {
+  "index": 2,
+  "lang": "en",
+  "page": 31,
+  "signal": null,
+  "source": "schulungsmappe"
+ },
+ "lr-kleidung": {
+  "deck": "09-1 SPIELRICHTER-Gestik.pptx",
+  "page": 21,
+  "signal": null,
+  "source": "ppt"
+ },
+ "sig-01a": {
+  "index": 0,
+  "lang": "de",
+  "page": 23,
+  "signal": 1,
+  "source": "schulungsmappe"
+ },
+ "sig-01b": {
+  "index": 1,
+  "lang": "de",
+  "page": 23,
+  "signal": 1,
+  "source": "schulungsmappe"
+ },
+ "sig-02": {
+  "index": 0,
+  "lang": "de",
+  "page": 24,
+  "signal": 2,
+  "source": "schulungsmappe"
+ },
+ "sig-03": {
+  "index": 1,
+  "lang": "de",
+  "page": 24,
+  "signal": 3,
+  "source": "schulungsmappe"
+ },
+ "sig-04": {
+  "index": 2,
+  "lang": "de",
+  "page": 24,
+  "signal": 4,
+  "source": "schulungsmappe"
+ },
+ "sig-05": {
+  "index": 0,
+  "lang": "de",
+  "page": 25,
+  "signal": 5,
+  "source": "schulungsmappe"
+ },
+ "sig-06": {
+  "index": 1,
+  "lang": "de",
+  "page": 25,
+  "signal": 6,
+  "source": "schulungsmappe"
+ },
+ "sig-07": {
+  "index": 2,
+  "lang": "de",
+  "page": 25,
+  "signal": 7,
+  "source": "schulungsmappe"
+ },
+ "sig-08": {
+  "index": 0,
+  "lang": "de",
+  "page": 26,
+  "signal": 8,
+  "source": "schulungsmappe"
+ },
+ "sig-09": {
+  "index": 1,
+  "lang": "de",
+  "page": 26,
+  "signal": 9,
+  "source": "schulungsmappe"
+ },
+ "sig-10": {
+  "index": 2,
+  "lang": "de",
+  "page": 26,
+  "signal": 10,
+  "source": "schulungsmappe"
+ },
+ "sig-11": {
+  "index": 3,
+  "lang": "de",
+  "page": 26,
+  "signal": 11,
+  "source": "schulungsmappe"
+ },
+ "sig-12": {
+  "index": 1,
+  "lang": "de",
+  "page": 27,
+  "signal": 12,
+  "source": "schulungsmappe"
+ },
+ "sig-13": {
+  "index": 2,
+  "lang": "de",
+  "page": 27,
+  "signal": 13,
+  "source": "schulungsmappe"
+ },
+ "sig-14": {
+  "index": 0,
+  "lang": "de",
+  "page": 27,
+  "signal": 14,
+  "source": "schulungsmappe"
+ },
+ "sig-15": {
+  "index": 0,
+  "lang": "de",
+  "page": 28,
+  "signal": 15,
+  "source": "schulungsmappe"
+ },
+ "sig-16a": {
+  "index": 1,
+  "lang": "de",
+  "page": 28,
+  "signal": 16,
+  "source": "schulungsmappe"
+ },
+ "sig-16b": {
+  "index": 2,
+  "lang": "de",
+  "page": 28,
+  "signal": 16,
+  "source": "schulungsmappe"
+ },
+ "sig-16c": {
+  "index": 3,
+  "lang": "de",
+  "page": 28,
+  "signal": 16,
+  "source": "schulungsmappe"
+ },
+ "sig-17": {
+  "deck": "09-1 SPIELRICHTER-Gestik.pptx",
+  "page": 6,
+  "signal": 17,
+  "source": "ppt"
+ },
+ "sig-18": {
+  "deck": "09-1 SPIELRICHTER-Gestik.pptx",
+  "page": 11,
+  "signal": 18,
+  "source": "ppt"
+ }
+}
