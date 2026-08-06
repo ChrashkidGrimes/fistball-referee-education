@@ -122,6 +122,39 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
       Schiedsrichterpraxis. Kennt die IFA eigene Fristen, gehören alle sechs
       auf `national`.
 
+- [ ] **Widersprüche bei den Strafen mit der IFA klären.** Geprüft am 6. August 2026
+      anhand von `Strafen_Anwendung_Oesterreich.pdf` (Bundesschiedsrichter-Referat
+      Österreich, 1. März 2019). Inhaltlich ist das Papier eine ältere Teilmenge der
+      IFA-Schulungsmappe – die Gelb-Karten-Liste stimmt Punkt für Punkt überein.
+      **Übernommen wurde nichts**, maßgeblich bleibt die Schulungsmappe. Drei Stellen
+      weichen jedoch ab und sollten der IFA-Schiedsrichterkommission vorgelegt werden:
+
+      1. **Beleidigendes Kritisieren des Schiedsgerichts** – Österreich stuft es als
+         *rote Karte* ein („Insultierung des Schiedsgerichtes, z.B. beleidigendes
+         Kritisieren, ‚Stinkefinger', ‚Vogel zeigen'"), die Schulungsmappe unter
+         *gelb-rot* („Grob unsportliches Verhalten … Beleidigungen – verbal oder mit
+         Gestik > Stinkefinger"); rot ist dort für „tätlicher Angriff, grobe
+         Beschimpfung" reserviert. Dieselbe Formulierung liegt eine Karte auseinander.
+         Die App folgt der Schulungsmappe.
+
+      2. **Tätlicher Angriff – Unklarheit in der Schulungsmappe selbst.** Dort steht
+         „tätlicher Angriff … Spielgericht" sowohl bei gelb-rot als auch bei rot.
+         Österreich löst das über die Schwere auf: „leichtes Wegstoßen" gelb-rot,
+         „echter tätlicher Angriff" rot. Eine Klarstellung durch die IFA wäre die
+         sauberste Lösung – bis dahin bleibt die Stelle unverändert.
+
+      3. **Abbruch bei laufender Zeitstrafe – das österreichische Papier ist
+         überholt.** Es nennt nur den Feldverweis; Ziffer 10.1.1 der Regeln 2025
+         nennt „zeitweilig ausgeschlossen **oder** des Feldes verwiesen". Hier war
+         bewusst nichts zu übernehmen. Die App bildet die Regel 2025 korrekt ab.
+
+- [ ] **Frage zum zweiten zeitweiligen Ausschluss ergänzen?** Bei der Prüfung oben
+      aufgefallen, unabhängig vom österreichischen Papier: `IFA-A-043` fragt nur den
+      Fall „weiterer Spieler wird des Feldes verwiesen" ab. Der zweite Zweig von
+      Ziffer 10.1.1 – ein weiterer Spieler wird *zeitweilig ausgeschlossen*, was
+      ebenfalls zum Abbruch führt – ist nicht abgefragt. Genau dort liegt die
+      Verwechslungsgefahr, weil ältere Fassungen der Regel nur den Feldverweis kannten.
+
 - [ ] **Handzeichen 3, 4 und 9 neu fotografieren.** Die drei Fotos tragen die Antwort
       nicht aus eigener Kraft:
 
