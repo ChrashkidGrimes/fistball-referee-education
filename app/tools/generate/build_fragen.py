@@ -79,8 +79,8 @@ def de(s):
         s = s.replace(a, b)
     return s
 
-def frage(qid, lvl, ch, scope, qde, qen, ade, aen, c, rde, ren, shot=None):
-    o = {"id": qid, "lvl": lvl, "ch": ch, "scope": scope}
+def frage(qid, _lvl, ch, scope, qde, qen, ade, aen, c, rde, ren, shot=None):
+    o = {"id": qid, "ch": ch, "scope": scope}  # Pool ergibt sich aus ch
     if shot:
         o["shot"] = shot
     o["q"] = {"de": de(qde), "en": qen}

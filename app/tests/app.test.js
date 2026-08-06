@@ -26,8 +26,8 @@ const txt=()=>d.getElementById('app').textContent;
 
 console.log('\n== Navigation ==');
 ok(/Schiedsrichter-Ausbildung Faustball/.test(txt()),'Startseite rendert');
-ok(d.querySelectorAll('.lvl').length===3,'drei Lizenzstufen (C/B/A)');
-click('[data-go="level:C"]');
+ok(d.querySelectorAll('.lvl').length===2,'zwei Lizenzstufen (Regional/National)');
+click('[data-go="level:R"]');
 ok(/Lernpfad/.test(txt()),'Lernpfad C');
 const mods=d.querySelectorAll('.mod').length;
 ok(mods===16,'16 Module sichtbar (mit nationalem Kapitel), ist: '+mods);
@@ -40,20 +40,20 @@ ok(/not yet available/.test(txt())===false,'Hinweis nur in Kapiteln');
 click('[data-lang="de"]');
 
 console.log('\n== Kapitel ==');
-click('[data-go="chapter:C:11"]');
+click('[data-go="chapter:R:11"]');
 ok(d.querySelectorAll('.sig').length===18,'18 Handzeichen (16 aus der Schulungsmappe, 2 aus den Folien), ist: '+d.querySelectorAll('.sig').length);
 ok(d.querySelectorAll('.sig img').length===21,'21 Handzeichen-Fotos, ist: '+d.querySelectorAll('.sig img').length);
-click('[data-go="level:C"]'); click('[data-go="chapter:C:1"]');
+click('[data-go="level:R"]'); click('[data-go="chapter:R:1"]');
 ok(d.querySelectorAll('iframe').length===1,'Video in Kapitel 1 eingebettet');
 ok(d.querySelector('iframe').src.includes('youtube-nocookie'),'Video ueber youtube-nocookie');
 ok(d.querySelectorAll('.rule').length>10,'Regeltextbloecke vorhanden');
 ok(d.querySelectorAll('.note').length>5,'Auslegungen vorhanden');
 ok(d.querySelectorAll('.hall').length>0,'Hallen-Sonderregeln vorhanden');
-click('[data-go="level:C"]'); click('[data-go="chapter:C:14"]');
+click('[data-go="level:R"]'); click('[data-go="chapter:R:14"]');
 ok(d.querySelectorAll('table.data tbody tr').length===8,'Altersklassen-Tabelle mit 8 Zeilen');
 
 console.log('\n== Kapitelquiz mit Feedback ==');
-click('[data-go="level:C"]'); click('[data-go="chapter:C:1"]'); click('[data-go="quiz:C:1"]');
+click('[data-go="level:R"]'); click('[data-go="chapter:R:1"]'); click('[data-go="quiz:R:1"]');
 ok(/Frage 1 von/.test(txt()),'Quiz startet');
 ok(d.querySelectorAll('.opt').length===4,'vier Antwortoptionen');
 click('[data-act="check"]');            // ohne Auswahl -> disabled, kein Effekt
@@ -125,12 +125,12 @@ w2.confirm=()=>true; w2.print=()=>{}; w2.scrollTo=()=>{};
 ['i18n','data-content','data-questions','app'].forEach(f=>w2.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
 const d2=w2.document, txt2=()=>d2.getElementById('app').textContent;
 const click2=s=>d2.querySelector(s).dispatchEvent(new w2.MouseEvent('click',{bubbles:true}));
-click2('[data-go="level:C"]');
+click2('[data-go="level:R"]');
 ok(/Alle Module abgeschlossen/.test(txt2()),'Pruefung freigeschaltet nach allen Modulen');
-ok(/54 Fragen/.test(txt2()),'Pruefung mit 54 Fragen');
+ok(/40 Fragen/.test(txt2()),'Regionalpruefung mit 40 Fragen');
 
 console.log('\n== Pruefungsdurchlauf (alles richtig) ==');
-click2('[data-go="exam:C"]');
+click2('[data-go="exam:R"]');
 ok(d2.querySelector('.fb')===null,'kein Zwischenfeedback in der Pruefung');
 let steps=0, order=[];
 for(;;){
@@ -147,22 +147,61 @@ for(;;){
   nx.dispatchEvent(new w2.MouseEvent('click',{bubbles:true}));
   steps++; if(fin) break;
 }
-ok(steps===54,'54 Pruefungsfragen durchlaufen, ist: '+steps);
+ok(steps===40,'40 Pruefungsfragen durchlaufen, ist: '+steps);
 ok(/Bestanden/.test(txt2()),'100 % -> Bestanden');
 ok(/100%/.test(txt2()),'Prozentwert 100 %');
-ok(new Set(order).size===54,'keine Frage doppelt');
+ok(new Set(order).size===40,'keine Frage doppelt');
 
 console.log('\n== Zertifikat ==');
-click2('[data-go="cert:C"]');
+click2('[data-go="cert:R"]');
 ok(/Teilnahmebestätigung/.test(txt2()),'Zertifikat rendert');
-ok(/C/.test(txt2())&&/100\s%|100%/.test(txt2()),'Zertifikat zeigt Stufe und Ergebnis');
+ok(/Regionale Lizenz/.test(txt2())&&/100\s%|100%/.test(txt2()),'Zertifikat zeigt Stufe und Ergebnis');
 
 console.log('\n== Nationale Fragen abschaltbar ==');
 click2('[data-go="settings"]');
 const sw=d2.getElementById('swNat'); sw.checked=false; sw.dispatchEvent(new w2.Event('change',{bubbles:true}));
-click2('[data-go="home"]'); click2('[data-go="level:C"]');
+click2('[data-go="home"]'); click2('[data-go="level:R"]');
 ok(d2.querySelectorAll('.mod').length===15,'nationales Kapitel ausgeblendet, ist: '+d2.querySelectorAll('.mod').length);
-ok(/54 Fragen/.test(txt2()),'C bleibt auch ohne nationale Fragen bei 54');
+ok(/40 Fragen/.test(txt2()),'Regional bleibt auch ohne Verbandsordnungen bei 40');
+
+/* ------------------------------------------------------------------ */
+console.log('\n== Fortschritt aus der dreistufigen Fassung ==');
+{
+  /* Wer vorher C, B und A begonnen hatte, darf beim Umstieg nichts verlieren:
+     C wird Regional, B und A werden zu National zusammengefuehrt. Wo beide
+     denselben Wert tragen, gewinnt der bessere. */
+  const alt={lang:'de',nat:true,draft:true,progress:{
+    C:{read:{1:true,2:true},quiz:{1:90,2:80},exam:{best:72,pct:72,c:39,n:54,date:'2026-01-01'}},
+    B:{read:{1:true},      quiz:{1:70},      exam:{best:81,pct:81,c:29,n:36,date:'2026-02-01'}},
+    A:{read:{3:true},      quiz:{1:95,3:88}, exam:{best:60,pct:60,c:20,n:34,date:'2026-03-01'}}}};
+  const mem={};
+  const dom=new JSDOM(fs.readFileSync(DIR+'/index.html','utf8'),{runScripts:'outside-only',url:'https://x/'});
+  const w=dom.window;
+  Object.defineProperty(w,'localStorage',{value:{getItem:k=>mem[k]??null,setItem:(k,v)=>mem[k]=v,removeItem:k=>delete mem[k]}});
+  w.confirm=()=>true; w.scrollTo=()=>{}; w.print=()=>{};
+  mem['ifa-referee-education-v1']=JSON.stringify(alt);
+  ['i18n','data-content','data-questions','data-clips','app'].forEach(f=>w.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
+
+  const g=JSON.parse(mem['ifa-referee-education-v1']).progress;
+  ok(Object.keys(g).sort().join()==='N,R','nur noch die Stufen R und N im Speicher, ist: '+Object.keys(g).join());
+  ok(!g.C&&!g.B&&!g.A,'alte Stufen sind entfernt');
+  ok(g.R.quiz[1]===90&&g.R.quiz[2]===80,'C-Quizstaende landen auf Regional');
+  ok(g.R.exam.best===72,'C-Pruefungsergebnis landet auf Regional');
+  ok(g.N.quiz[1]===95,'bei Kapitel 1 gewinnt der bessere Wert aus B (70) und A (95)');
+  ok(g.N.quiz[3]===88,'Kapitel nur aus A wird uebernommen');
+  ok(g.N.exam.best===81,'bestes Pruefungsergebnis aus B (81) und A (60) gewinnt');
+  ok(g.N.read[1]&&g.N.read[3],'gelesene Kapitel aus B und A werden vereinigt');
+
+  /* Zweiter Start darf den bereits umgestellten Stand nicht erneut anfassen */
+  const mem2={}; Object.assign(mem2,mem);
+  const dom2=new JSDOM(fs.readFileSync(DIR+'/index.html','utf8'),{runScripts:'outside-only',url:'https://x/'});
+  const w2=dom2.window;
+  Object.defineProperty(w2,'localStorage',{value:{getItem:k=>mem2[k]??null,setItem:(k,v)=>mem2[k]=v,removeItem:k=>delete mem2[k]}});
+  w2.confirm=()=>true; w2.scrollTo=()=>{}; w2.print=()=>{};
+  ['i18n','data-content','data-questions','data-clips','app'].forEach(f=>w2.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
+  ok(JSON.stringify(JSON.parse(mem2['ifa-referee-education-v1']).progress)===JSON.stringify(g),
+     'zweiter Start laesst den umgestellten Stand unveraendert');
+}
 
 console.log('\n'+pass+' bestanden, '+fail+' fehlgeschlagen');
 process.exit(fail?1:0);

@@ -10,7 +10,6 @@ neue Ausgabe der Spielregeln veröffentlicht.
 | `de_only_en.py` | Arbeitsübersetzungen für die sechs Erläuterungen, die in der englischen Ausgabe fehlen. |
 | `ppt_content.py` | Alle aus den Schulungsfoliensätzen übernommenen Inhalte, zweisprachig. |
 | `gen_content.py` | Baut daraus `data-content.js` – Kapitel, Bilder, Videoplätze, Handzeichen. |
-| `retier.py` | Stuft Entwurfsfragen nach Niveau ein (C oder A). |
 | `tr_all.json` | Deutsch-englisches Wörterbuch der 806 eindeutigen Frage- und Antworttexte. |
 | `tr_refs.json` | Übersetzte Fundstellen. |
 | `../map_signals.py` | Extrahiert die Handzeichen-Fotos aus den PDFs und ordnet sie über die Position auf der Seite zu. |
@@ -37,3 +36,10 @@ sie hier und pflegt sie erneut ein.
 ```
 python3 build_fragen.py
 ```
+
+## Entfallen
+
+`retier.py` stufte Entwurfsfragen nach Niveau ein und schrieb das Feld `lvl`.
+Mit der Umstellung auf zwei Lizenzstufen am 6. August 2026 ist `lvl` ersatzlos
+weggefallen: Der Themenpool einer Frage ergibt sich aus ihrem Kapitel (`ch`),
+siehe `POOLS` in `assets/js/app.js`. Das Skript ist deshalb gelöscht.

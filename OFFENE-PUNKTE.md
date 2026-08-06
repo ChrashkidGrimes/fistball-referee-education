@@ -1,6 +1,6 @@
 # Offene Punkte – Schiedsrichter-Lernapp
 
-Stand 6. August 2026, zuletzt aktualisiert nach der Freigabe der ergänzten Fragen.
+Stand 6. August 2026, zuletzt aktualisiert nach der Umstellung auf zwei Lizenzstufen.
 Sortiert nach Dringlichkeit: A ist zu prüfen, bevor jemand damit lernt. B ist die
 Grundsatzentscheidung, an der die halbe Konzeption hängt.
 
@@ -46,14 +46,12 @@ Grundsatzentscheidung, an der die halbe Konzeption hängt.
       unabhängig dieselbe Anzahl Bilder je Zeichen. `app.test.js` prüft die Daten gegen
       das Manifest. Alle 16 Zeichen im Browser sichtgeprüft.
 
-- [x] ~~**Zuschnitt der C-Stufe bestätigen.**~~ Von Toby bestätigt am 1. August 2026:
-      Grundmodul Q und C-Lizenz bilden eine gemeinsame Stufe. Die App setzt das bereits
-      so um, es war keine Änderung nötig. Prüfungsumfang festgelegt auf 54 / 36 / 34.
+- [x] ~~**Zuschnitt der C-Stufe bestätigen.**~~ Von Toby bestätigt am 1. August 2026.
+      Überholt durch die Umstellung auf zwei Stufen am 6. August, siehe Abschnitt E.
 
-- [x] ~~**Kumulative Kapitelquizzes bestätigen.**~~ Von Toby bestätigt am 5. August 2026:
-      Auf den Stufen B und A enthalten die Kapitelquizzes zusätzlich die Fragen der
-      niedrigeren Stufen, die Abschlussprüfungen folgen dagegen der festgelegten Quote.
-      Bleibt so.
+- [x] ~~**Kumulative Kapitelquizzes bestätigen.**~~ Von Toby bestätigt am 5. August 2026.
+      Überholt durch die Umstellung auf zwei Stufen: die Kapitelquizzes enthalten jetzt
+      alle Fragen ihres Kapitels und sind auf beiden Stufen gleich.
 
 ---
 
@@ -63,22 +61,21 @@ Daran hängt der Rest.
 
 | Stufe | Prüfung | Bestehensgrenze | erlaubte Fehler | gezogen aus |
 |-------|---------|-----------------|-----------------|-------------|
-| C | 54 | 70 % | 16 | 104 Fragen |
-| B | 36 | 80 % | 7 | 138 Fragen |
-| A | 34 | 85 % | 5 | 196 Fragen |
+| Regional | 40 | 70 % | 12 | 235 Fragen |
+| National | 60 | 85 % | 9 | 235 Fragen |
 
-**Teilweise entschärft:** Seit der Festlegung von 54 / 36 / 34 wird nicht mehr der
-gesamte Pool abgefragt, und die Prüfungen variieren zwischen zwei Versuchen.
+**Teilweise entschärft:** Es wird nicht mehr der gesamte Katalog abgefragt, und die
+Prüfungen variieren zwischen zwei Versuchen.
 
-**Weiter entschärft:** Der A-Pool ist von 15 auf 58 Fragen gewachsen, die A-Prüfung
-zieht 22 davon – das stufenspezifische Material ist nach einem Versuch nicht mehr
-erschöpft. Die ergänzten Fragen sind seit dem 6. August freigegeben.
+**Weiter entschärft:** Der Katalog ist von 196 auf 235 Fragen gewachsen. Die
+Nationalprüfung zieht 60 davon, also gut ein Viertel – nach einem Versuch ist der
+Bestand nicht annähernd erschöpft.
 
 **Nicht entschärft:** Die Auswertung zeigt nach der Prüfung jede richtige Antwort mit
 Fundstelle. Und das Ergebnis liegt im `localStorage`, lässt sich also in der
 Browserkonsole setzen.
 
-Die Prozentgrenzen 70/65, 80/75, 85/75 stammen aus einer beaufsichtigten Einzelprüfung.
+Die Prozentgrenzen 70/65 und 85/75 stammen aus einer beaufsichtigten Einzelprüfung.
 In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wirkung.
 
 **Weg 1 – Ausbildung, Prüfung bleibt beim Verband**
@@ -86,9 +83,9 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
 - [ ] Zertifikat klar als Durcharbeitungsnachweis, nicht als Prüfungsergebnis
 
 **Weg 2 – Prüfung soll zählen**
-- [x] ~~Fragenkatalog erweitern, vor allem Pool A~~ – 75 Fragen ergänzt und freigegeben,
-      Pool A von 15 auf 58, Pool C von 31 auf 63.
-- [x] ~~Prüfungsumfang auf eine Teilmenge des Pools begrenzen~~ – erledigt (54 / 36 / 34)
+- [x] ~~Fragenkatalog erweitern~~ – 114 Fragen ergänzt und freigegeben, Katalog von
+      121 auf 235. Kein Kapitel ist mehr ohne Fragen.
+- [x] ~~Prüfungsumfang auf eine Teilmenge des Katalogs begrenzen~~ – erledigt (40 / 60)
 - [ ] Auswertung ohne Lösungen – nur Punktzahl und schwache Kapitel
 - [ ] Wartezeit zwischen Prüfungsversuchen
 - [ ] Serverseitige Ablage der Ergebnisse, sonst bleibt es manipulierbar
@@ -205,3 +202,36 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
 - [ ] **Trägerschaft klären.** Soll das ein IFA-Produkt werden oder ein Export von Faustball Deutschland?
       Die Antwort bestimmt, wo es gehostet wird, wer es pflegt und wie Kapitel 15
       aufgebaut ist.
+
+---
+
+## E – Umstellung auf zwei Stufen (6. August 2026)
+
+- [x] ~~**Zwei Lizenzstufen statt drei.**~~ C, B und A sind durch **Regional** und
+      **National** ersetzt. Der Lernpfad ist für beide gleich – alle 16 Kapitel,
+      dieselben Kapitelquizzes; die Stufen unterscheiden sich in Umfang und Grenze
+      der Abschlussprüfung. Plan und Begründung: `PLAN-Zwei-Stufen.md`.
+
+- [x] ~~**Pools von Schwierigkeitsstufen auf Themenbereiche.**~~ Sechs Pools, der
+      Pool ergibt sich aus dem Kapitel. Das Feld `lvl` ist an allen 235 Fragen
+      entfallen; neue Fragen sortieren sich über ihr Kapitel von selbst ein.
+
+- [x] ~~**Begriffskollision aufgelöst.**~~ `scope: "national"` hieß dasselbe wie
+      die neue Stufe. Der Wert heißt jetzt `fed`, die Einstellung
+      „Verbandsordnungen einbeziehen“.
+
+- [x] ~~**Fortschritt migrieren.**~~ Gespeicherte Stände werden beim ersten Start
+      überführt: C → Regional, B und A → National, je Kapitel gewinnt der bessere
+      Wert. Der umgestellte Stand wird sofort zurückgeschrieben.
+
+- [ ] **Stufenbezeichnungen mit der IFA abstimmen.** „Regional“ und „National“
+      sind aus der Sache heraus gewählt. Ob die IFA andere Bezeichnungen führt –
+      etwa mit Bezug auf internationale Einsätze –, ist offen. Die Namen stehen
+      an einer Stelle: `lvlRName` und `lvlNName` in `assets/js/i18n.js`.
+
+- [ ] **Kapitelquizzes sind auf beiden Stufen identisch.** Das ist die gewollte
+      Folge aus „ein Lernpfad, zwei Prüfungsstandards“. Wer National anstrebt,
+      braucht im Kapitelquiz aber 85 % statt 70 % – das ist der einzige
+      Unterschied im Lernpfad. Falls sich das im Einsatz als zu wenig Trennung
+      erweist, wäre der nächste Schritt, National zusätzliche Kapitel oder
+      vertiefende Fragen zuzuordnen.

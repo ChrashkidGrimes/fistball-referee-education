@@ -44,7 +44,7 @@ ok(C.flatMap(c=>c.videos).every(v=>v.t.de&&v.t.en),'Videotitel zweisprachig');
 ok(C.flatMap(c=>c.slots).every(s=>s.de&&s.en),'Videoplatzhalter zweisprachig');
 
 console.log('\n== Darstellung Deutsch vs. Englisch ==');
-clk('[data-go="level:C"]'); clk('[data-go="chapter:C:1"]');
+clk('[data-go="level:R"]'); clk('[data-go="chapter:R:1"]');
 const de1=T();
 ok(/Das Spielfeld ist ein durch Grenzlinien markiertes Rechteck/.test(de1),'deutscher Regeltext 1.1');
 ok(/Spielfeld und Geräte/.test(de1),'deutscher Kapiteltitel');
@@ -55,9 +55,9 @@ ok(/Court and Equipment/.test(en1),'englischer Kapiteltitel');
 ok(!/Das Spielfeld ist ein durch Grenzlinien/.test(en1),'kein deutscher Regeltext mehr sichtbar');
 ok(!/de<\/span>/.test(d.getElementById('app').innerHTML)||true,'Fallback-Marker nur wo noetig');
 
-clk('[data-go="level:C"]'); clk('[data-go="chapter:C:11"]');
+clk('[data-go="level:R"]'); clk('[data-go="chapter:R:11"]');
 ok(/Ball is out/.test(T())&&/Double bounce/.test(T()),'Handzeichen auf Englisch');
-clk('[data-go="level:C"]'); clk('[data-go="chapter:C:14"]');
+clk('[data-go="level:R"]'); clk('[data-go="chapter:R:14"]');
 ok(/Age Group/.test(T())&&/Net height/.test(T()),'Tabellenkopf auf Englisch');
 
 console.log('\n== Beschriftete Diagramme je Sprache ==');
@@ -78,29 +78,29 @@ ok(diagr.every(b=>b.src.de!==b.src.en),'deutsche und englische Fassung sind vers
   ok(feste.every(b=>fsx.existsSync(DIR+'/assets/img/'+b.src+'.jpg')),'alle sprachneutralen Bilder vorhanden: '+feste.length);
 
 // Anzeige umschalten
-clk('[data-go="home"]'); clk('[data-lang="de"]'); clk('[data-go="level:C"]'); clk('[data-go="chapter:C:1"]');
+clk('[data-go="home"]'); clk('[data-lang="de"]'); clk('[data-go="level:R"]'); clk('[data-go="chapter:R:1"]');
 ok(/assets\/img\/court\.jpg/.test(d.getElementById('app').innerHTML),'Deutsch zeigt court.jpg');
 clk('[data-lang="en"]');
 ok(/assets\/img\/court-en\.jpg/.test(d.getElementById('app').innerHTML),'Englisch zeigt court-en.jpg');
-clk('[data-go="level:C"]'); clk('[data-go="chapter:C:13"]');
+clk('[data-go="level:R"]'); clk('[data-go="chapter:R:13"]');
 const h13=d.getElementById('app').innerHTML;
 ok(/lr-1-en\.jpg/.test(h13)&&/lr-2-en\.jpg/.test(h13)&&/lr-3-en\.jpg/.test(h13),'Linienrichter-Diagramme auf Englisch');
 ok(!/lr-1\.jpg/.test(h13),'keine deutsche Fassung im englischen Modus');
-clk('[data-lang="de"]'); clk('[data-go="level:C"]'); clk('[data-go="chapter:C:13"]');
+clk('[data-lang="de"]'); clk('[data-go="level:R"]'); clk('[data-go="chapter:R:13"]');
 ok(/lr-1\.jpg/.test(d.getElementById('app').innerHTML),'Deutsch zeigt wieder lr-1.jpg');
 clk('[data-lang="en"]');   // fuer die folgenden Abschnitte wieder auf Englisch
 
 
 console.log('\n== Keine deutschen Reste mehr ==');
 [1,2,4,5,11,13,16].forEach(ch=>{
-  clk('[data-go="level:C"]'); clk('[data-go="chapter:C:'+ch+'"]');
+  clk('[data-go="level:R"]'); clk('[data-go="chapter:R:'+ch+'"]');
   const html=d.getElementById('app').innerHTML;
   ok(!/badge de/.test(html),'Kapitel '+ch+' ohne Deutsch-Marker');
 });
-clk('[data-go="level:C"]'); clk('[data-go="chapter:C:1"]');   // zurueck zu einem Kapitel mit Quiz
+clk('[data-go="level:R"]'); clk('[data-go="chapter:R:1"]');   // zurueck zu einem Kapitel mit Quiz
 
 console.log('\n== Fragen-Hinweis ==');
-clk('[data-go="quiz:C:1"]');
+clk('[data-go="quiz:R:1"]');
 ok(/working translation/.test(T()),'Hinweis auf die Arbeitsuebersetzung der Fragen');
 clk('[data-lang="de"]');
 ok(!/working translation|Arbeits/.test(T()),'im deutschen Modus kein Uebersetzungshinweis');

@@ -1,6 +1,6 @@
 # Fistball Referee Education
 
-Lernprogramm für die Ausbildung von Faustball-Schiedsrichtern in den Lizenzstufen **C, B und A**,
+Lernprogramm für die Ausbildung von Faustball-Schiedsrichtern in den Stufen **Regional und National**,
 zweisprachig deutsch und englisch. Gedacht für Mitgliedsverbände der International Fistball
 Association, die ihre Schiedsrichter selbst ausbilden.
 
@@ -16,11 +16,11 @@ liegt im `localStorage` des Browsers, es gibt keine Konten und keine Datenübert
 
 | | |
 |---|---|
-| Kapitel | 16 – Regeln 1 bis 10, Handzeichen, Verhalten des Schiedsrichters, Linienrichter, Altersklassen, nationale Ordnungen, Aufgaben rund um das Spiel |
+| Kapitel | 16 – Regeln 1 bis 10, Handzeichen, Verhalten des Schiedsrichters, Linienrichter, Altersklassen, Verbandsordnungen, Aufgaben rund um das Spiel |
 | Prüfungsfragen | 235, alle zweisprachig, mit Fundstelle im Regelwerk |
 | Bilder | 21 Handzeichen-Fotos, Spielfeld- und Auslaufdiagramme, sechs Ausball-Entscheidungen; 19 davon als Bildfrage |
-| Abschlussprüfungen | C 54 Fragen ab 70 %, B 36 ab 80 %, A 34 ab 85 %, jeweils mit Nachprüfungsgrenze |
-| Tests | 218 automatisierte Prüfungen |
+| Abschlussprüfungen | Regional 40 Fragen ab 70 %, National 60 ab 85 %, jeweils mit Nachprüfungsgrenze |
+| Tests | 224 automatisierte Prüfungen |
 
 ## Quellen
 

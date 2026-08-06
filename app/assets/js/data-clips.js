@@ -18,8 +18,8 @@
    aufgenommen — unfertige Einträge stören also nicht.
 
    Felder wie bei den übrigen Fragen:
-     lvl    Q = Grundmodul, C / B / A = Lizenzstufe
-     ch     Kapitelnummer (siehe data-content.js)
+     ch     Kapitelnummer (siehe data-content.js). Bestimmt zugleich den
+            Themenpool – siehe POOLS in app.js.
      a      vier Antwortmöglichkeiten
      c      Index der richtigen Antwort in a, beginnend bei 0
      ref    Fundstelle im Regelwerk
@@ -28,7 +28,7 @@
 window.IFA_CLIPS = [
 
   {
-    id: "CLIP-001", lvl: "A", ch: 7, scope: "ifa", origin: "draft",
+    id: "CLIP-001", ch: 7, scope: "ifa", origin: "draft",
     clip: { yt: "", start: 0, end: 0 },
     q: "Blocksituation: Berühren beide Spieler den Ball gleichzeitig, oder ist einer erkennbar früher am Ball? Wie entscheidest du?",
     a: ["Gleichzeitige Berührung – Block, Anzeige mit der senkrecht erhobenen Faust",
@@ -40,7 +40,7 @@ window.IFA_CLIPS = [
   },
 
   {
-    id: "CLIP-002", lvl: "A", ch: 7, scope: "ifa", origin: "draft",
+    id: "CLIP-002", ch: 7, scope: "ifa", origin: "draft",
     clip: { yt: "", start: 0, end: 0 },
     q: "Berührt bei dieser Blockaktion einer der Spieler die Leine? Wie entscheidest du?",
     a: ["Leinenberührung – Fehler der berührenden Mannschaft",
@@ -52,7 +52,7 @@ window.IFA_CLIPS = [
   },
 
   {
-    id: "CLIP-003", lvl: "C", ch: 6, scope: "ifa", origin: "draft",
+    id: "CLIP-003", ch: 6, scope: "ifa", origin: "draft",
     clip: { yt: "", start: 0, end: 0 },
     q: "Sprungangabe: Wo erfolgt die erste Bodenberührung des Anschlägers nach dem Schlag?",
     a: ["Vor der Angabelinie – gültige Angabe",
@@ -64,7 +64,7 @@ window.IFA_CLIPS = [
   },
 
   {
-    id: "CLIP-004", lvl: "C", ch: 6, scope: "ifa", origin: "draft",
+    id: "CLIP-004", ch: 6, scope: "ifa", origin: "draft",
     clip: { yt: "", start: 0, end: 0 },
     q: "Verlässt der Ball bei dieser kurzen Angabe sichtbar die Abwurfhand?",
     a: ["Ja – gültige Angabe, auch bei sehr kurzem Wurf",
@@ -76,7 +76,7 @@ window.IFA_CLIPS = [
   },
 
   {
-    id: "CLIP-005", lvl: "B", ch: 7, scope: "ifa", origin: "draft",
+    id: "CLIP-005", ch: 7, scope: "ifa", origin: "draft",
     clip: { yt: "", start: 0, end: 0 },
     q: "Der Ball geht unter der Leine hindurch. Wie entscheidest du?",
     a: ["Der Ball ist mit vollem Überschreiten der Mittellinie ungültig – weitere Berührungen sind unerheblich",
@@ -88,7 +88,7 @@ window.IFA_CLIPS = [
   },
 
   {
-    id: "CLIP-006", lvl: "A", ch: 7, scope: "ifa", origin: "draft",
+    id: "CLIP-006", ch: 7, scope: "ifa", origin: "draft",
     clip: { yt: "", start: 0, end: 0 },
     q: "Ein Spieler rutscht nach seiner Aktion ins Gegenfeld und trifft dort auf einen Gegner. Wie entscheidest du?",
     a: ["Unvermeidbare Behinderung – die letzte Angabe wird wiederholt",
@@ -100,7 +100,7 @@ window.IFA_CLIPS = [
   },
 
   {
-    id: "CLIP-007", lvl: "C", ch: 1, scope: "ifa", origin: "draft",
+    id: "CLIP-007", ch: 1, scope: "ifa", origin: "draft",
     clip: { yt: "", start: 0, end: 0 },
     q: "Der Ball landet an der Grenzlinie. Aus oder gut?",
     a: ["Gut – der Ball berührt die Linie",
@@ -112,7 +112,7 @@ window.IFA_CLIPS = [
   },
 
   {
-    id: "CLIP-008", lvl: "B", ch: 5, scope: "ifa", origin: "draft",
+    id: "CLIP-008", ch: 5, scope: "ifa", origin: "draft",
     clip: { yt: "", start: 0, end: 0 },
     q: "Wird der Ball hier regelgerecht geschlagen oder unerlaubt geführt?",
     a: ["Unerlaubtes Schieben – Fehler",

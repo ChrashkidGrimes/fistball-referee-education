@@ -19,7 +19,7 @@ function app(opts){
   Object.defineProperty(w,'localStorage',{value:{getItem:k=>mem[k]??null,setItem:(k,v)=>mem[k]=v,removeItem:k=>delete mem[k]}});
   w.confirm=()=>true; w.scrollTo=()=>{}; w.print=()=>{};
   const st=Object.assign({lang:'de',nat:true,draft:true,progress:{}},opts||{});
-  ['C','B','A'].forEach(L=>{ st.progress[L]={read:{},quiz:{},exam:null};
+  ['R','N'].forEach(L=>{ st.progress[L]={read:{},quiz:{},exam:null};
     for(let i=1;i<=16;i++){st.progress[L].quiz[i]=100;st.progress[L].read[i]=true;} });
   mem['ifa-referee-education-v1']=JSON.stringify(st);
   ['i18n','data-content','data-questions','data-clips','app'].forEach(f=>w.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
@@ -45,7 +45,6 @@ console.log('\n== Herkunft der Fragen ==');
   ok(leitung.length>=60,'Pool Spielleitung traegt die Nationalquote von 12, ist: '+leitung.length);
 
   const neu=Q.filter(q=>q.origin==='ifa'||q.origin==='ppt');
-  ok(neu.every(q=>q.lvl==='A'||q.lvl==='C'),'die ergaenzten Fragen liegen auf A oder C');
   /* National markiert sind nur die beiden Fragen zu den Fristen der deutschen
      Schiedsrichterordnung – 30 Minuten Anwesenheit und der Ablauf 5/3 Minuten
      vor Anpfiff. Diese Zahlen gelten international nicht zwingend. */
@@ -61,7 +60,7 @@ console.log('\n== Herkunft der Fragen ==');
   ok(neu.every(q=>new Set(ansOf(q,'de')).size===4&&new Set(ansOf(q,'en')).size===4),
      'keine doppelte Antwortmoeglichkeit innerhalb einer Frage');
   const text=neu.filter(q=>!q.shot);
-  ok(text.every(q=>q.id.startsWith('IFA-'+q.lvl+'-')),'Kennung der Textfragen passt zur Stufe');
+  ok(text.every(q=>/^IFA-[AC]-\d+$/.test(q.id)),'Kennung der Textfragen folgt dem Schema IFA-A/C-nnn');
   ok(neu.filter(q=>q.shot).every(q=>q.id.startsWith('IFA-BILD-')),'Bildfragen tragen die Kennung IFA-BILD');
 
   /* Fundstellen muessen auflösbar sein. Zwei Formen sind zulaessig: eine
@@ -88,17 +87,19 @@ console.log('\n== Herkunft der Fragen ==');
 console.log('\n== Abschaltbarkeit ==');
 {
   const an=app({draft:true}), aus=app({draft:false});
-  const nAn=an.IFA_QUESTIONS.filter(q=>q.lvl==='A').length;
-  const nCn=an.IFA_QUESTIONS.filter(q=>q.lvl==='C').length;
-  ok(nAn>50,'A-Pool mit Entwürfen deutlich vergrößert: '+nAn);
-  ok(nCn>50,'C-Pool mit Entwürfen deutlich vergrößert: '+nCn);
+  const POOLS={feld:[1],rahmen:[2,3,14],spiel:[4,5,6],ballfuehrung:[7,8],leitung:[9,10,11,12,13,16],verband:[15]};
+  const NQUOTE={feld:10,rahmen:10,spiel:12,ballfuehrung:10,leitung:12,verband:6};
+  Object.keys(POOLS).forEach(p=>{
+    const n=an.IFA_QUESTIONS.filter(q=>POOLS[p].includes(q.ch)).length;
+    ok(n>=NQUOTE[p],'Pool '+p+' erfuellt die Nationalquote aus eigener Kraft: '+n+'/'+NQUOTE[p]);
+  });
   const d=aus.document, T=()=>d.getElementById('app').textContent;
   const clk=s=>d.querySelector(s).dispatchEvent(new aus.window.MouseEvent?new aus.MouseEvent('click',{bubbles:true}):null);
   const click=s=>d.querySelector(s).dispatchEvent(new aus.MouseEvent('click',{bubbles:true}));
-  click('[data-go="level:A"]');
-  ok(/34 Fragen/.test(T()),'A-Prüfung bleibt auch ohne Entwürfe bei 34 Fragen');
+  click('[data-go="level:N"]');
+  ok(/60 Fragen/.test(T()),'Nationalpruefung bleibt auch ohne Entwuerfe bei 60 Fragen');
   /* Prüfung durchlaufen und prüfen, dass keine Entwurfsfrage auftaucht */
-  click('[data-go="exam:A"]');
+  click('[data-go="exam:N"]');
   let seen=[];
   for(;;){
     const qt=d.querySelector('.qtxt'); if(!qt) break;
@@ -109,7 +110,7 @@ console.log('\n== Abschaltbarkeit ==');
     nx.dispatchEvent(new aus.MouseEvent('click',{bubbles:true}));
     if(fin) break;
   }
-  ok(seen.length===34,'34 Fragen gestellt, ist: '+seen.length);
+  ok(seen.length===60,'60 Fragen gestellt, ist: '+seen.length);
   ok(seen.every(q=>q&&q.origin!=='draft'),'keine Entwurfsfrage bei abgeschaltetem Schalter');
 }
 
@@ -123,11 +124,11 @@ console.log('\n== Entwurfsmechanismus ==');
   const w=dom.window;
   Object.defineProperty(w,'localStorage',{value:{getItem:k=>mem[k]??null,setItem:(k,v)=>mem[k]=v,removeItem:k=>delete mem[k]}});
   w.confirm=()=>true; w.scrollTo=()=>{}; w.print=()=>{};
-  const st={lang:'de',nat:true,draft:true,progress:{A:{read:{},quiz:{},exam:null}}};
-  for(let i=1;i<=16;i++){st.progress.A.quiz[i]=100;st.progress.A.read[i]=true;}
+  const st={lang:'de',nat:true,draft:true,progress:{N:{read:{},quiz:{},exam:null}}};
+  for(let i=1;i<=16;i++){st.progress.N.quiz[i]=100;st.progress.N.read[i]=true;}
   mem['ifa-referee-education-v1']=JSON.stringify(st);
   ['i18n','data-content','data-questions','data-clips'].forEach(f=>w.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
-  w.eval("window.IFA_QUESTIONS.push({id:'TEST-DRAFT-1',lvl:'A',ch:7,scope:'ifa',origin:'draft',tr:true,"
+  w.eval("window.IFA_QUESTIONS.push({id:'TEST-DRAFT-1',ch:7,scope:'ifa',origin:'draft',tr:true,"
         +"q:{de:'Testfrage Entwurf',en:'Test draft question'},"
         +"a:{de:['A','B','C','D'],en:['A','B','C','D']},c:0,ref:{de:'Spielregeln 7.1',en:'Rules 7.1'}});");
   w.eval(fs.readFileSync(DIR+'/assets/js/app.js','utf8'));
@@ -139,8 +140,8 @@ console.log('\n== Entwurfsmechanismus ==');
   ok(/Entwurfsfragen einbeziehen/.test(d.getElementById('app').textContent),'Beschriftung des Schalters');
 
   const durchlauf=()=>{
-    click('[data-go="home"]'); click('[data-go="level:A"]');
-    click('[data-go="chapter:A:7"]'); click('[data-go="quiz:A:7"]');
+    click('[data-go="home"]'); click('[data-go="level:N"]');
+    click('[data-go="chapter:N:7"]'); click('[data-go="quiz:N:7"]');
     let gesehen=false, badge=false;
     for(;;){
       const qt=d.querySelector('.qtxt'); if(!qt) break;
@@ -228,7 +229,7 @@ console.log('\n== Bildfragen ==');
   /* Anzeige im Kapitelquiz pruefen */
   const d=w.document;
   const click=s=>d.querySelector(s).dispatchEvent(new w.MouseEvent('click',{bubbles:true}));
-  click('[data-go="level:C"]'); click('[data-go="chapter:C:1"]'); click('[data-go="quiz:C:1"]');
+  click('[data-go="level:R"]'); click('[data-go="chapter:R:1"]'); click('[data-go="quiz:R:1"]');
   let gesehen=false;
   for(;;){
     const qt=d.querySelector('.qtxt'); if(!qt) break;
@@ -262,8 +263,8 @@ console.log('\n== Videofragen ==');
   const w2=dom.window; const mem={};
   Object.defineProperty(w2,'localStorage',{value:{getItem:k=>mem[k]??null,setItem:(k,v)=>mem[k]=v,removeItem:k=>delete mem[k]}});
   w2.confirm=()=>true; w2.scrollTo=()=>{}; w2.print=()=>{};
-  const st={lang:'de',nat:true,draft:true,progress:{A:{read:{},quiz:{},exam:null}}};
-  for(let i=1;i<=16;i++){st.progress.A.quiz[i]=100;st.progress.A.read[i]=true;}
+  const st={lang:'de',nat:true,draft:true,progress:{N:{read:{},quiz:{},exam:null}}};
+  for(let i=1;i<=16;i++){st.progress.N.quiz[i]=100;st.progress.N.read[i]=true;}
   mem['ifa-referee-education-v1']=JSON.stringify(st);
   ['i18n','data-content','data-questions','data-clips'].forEach(f=>w2.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
   w2.eval('window.IFA_CLIPS[0].clip.yt="q342pxvhdTU";window.IFA_CLIPS[0].clip.start=10;window.IFA_CLIPS[0].clip.end=20;');
@@ -272,7 +273,7 @@ console.log('\n== Videofragen ==');
   const click2=s=>d2.querySelector(s).dispatchEvent(new w2.MouseEvent('click',{bubbles:true}));
   /* Kapitelquiz statt Prüfung: dort erscheinen ALLE Fragen des Kapitels,
      die Prüfung zieht dagegen eine Stichprobe – das machte den Test zufällig. */
-  click2('[data-go="level:A"]'); click2('[data-go="chapter:A:7"]'); click2('[data-go="quiz:A:7"]');
+  click2('[data-go="level:N"]'); click2('[data-go="chapter:N:7"]'); click2('[data-go="quiz:N:7"]');
   let clipGesehen=false;
   for(;;){
     const qt=d2.querySelector('.qtxt'); if(!qt) break;

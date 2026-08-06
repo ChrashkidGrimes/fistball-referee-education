@@ -1,8 +1,9 @@
 /* Prüfungsfragen – zweisprachig.
-   lvl     Q = Grundmodul, C/B/A = Lizenzstufe
+   ch      Kapitelnummer. Bestimmt zugleich den Themenpool – siehe POOLS in app.js.
    q,a,ref Sprachobjekte { de, en }; a enthält je Sprache vier Antworten
    c       Index der richtigen Antwort – gilt für beide Sprachen
-   scope   ifa = international gültig, national = nur Deutschland (SpOF/SRO/Faustball Deutschland)
+   scope   ifa = international gültig, fed = Ordnung eines Mitgliedsverbandes,
+           derzeit nur Deutschland (SpOF/SRO/Faustball Deutschland)
    shot    optional: Foto zur Spielsituation, Pfad unter assets/img/ ohne Endung
    tr      englische Fassung ist eine Arbeitsübersetzung, nicht offiziell
    origin  fbd  = Moodle-Fragenkataloge von Faustball Deutschland
@@ -11,7 +12,6 @@
 window.IFA_QUESTIONS = [
 {
 "id": "QA-2022-021",
-"lvl": "Q",
 "ch": 14,
 "scope": "ifa",
 "q": {
@@ -42,7 +42,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "QA-2022-013",
-"lvl": "Q",
 "ch": 14,
 "scope": "ifa",
 "q": {
@@ -73,7 +72,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "QA-2022-009",
-"lvl": "Q",
 "ch": 14,
 "scope": "ifa",
 "q": {
@@ -104,7 +102,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "QA-2022-012",
-"lvl": "Q",
 "ch": 14,
 "scope": "ifa",
 "q": {
@@ -135,7 +132,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "QA-2022-020",
-"lvl": "Q",
 "ch": 14,
 "scope": "ifa",
 "q": {
@@ -166,7 +162,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "QA-2022-008",
-"lvl": "Q",
 "ch": 14,
 "scope": "ifa",
 "q": {
@@ -197,7 +192,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "QA-2022-011",
-"lvl": "Q",
 "ch": 14,
 "scope": "ifa",
 "q": {
@@ -228,7 +222,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "QA-2022-019",
-"lvl": "Q",
 "ch": 14,
 "scope": "ifa",
 "q": {
@@ -259,7 +252,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "QA-2022-010",
-"lvl": "Q",
 "ch": 14,
 "scope": "ifa",
 "q": {
@@ -290,7 +282,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-026",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -321,7 +312,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-015",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -352,7 +342,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-022",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -383,7 +372,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-023",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -414,7 +402,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-024",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -445,7 +432,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-025",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -473,7 +459,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-004",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -504,7 +489,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-014",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -535,7 +519,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-002",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -566,7 +549,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-001",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -597,7 +579,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-005",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -628,7 +609,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-016",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -659,7 +639,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-003",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -690,7 +669,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-007",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -721,7 +699,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-018",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -752,7 +729,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-006",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -783,7 +759,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-017",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -814,7 +789,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q1-2022-040",
-"lvl": "Q",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -845,7 +819,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q2-2022-034",
-"lvl": "Q",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -876,7 +849,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q2-2022-033",
-"lvl": "Q",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -907,7 +879,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q2-2022-029",
-"lvl": "Q",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -938,7 +909,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q2-2022-031",
-"lvl": "Q",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -969,7 +939,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q2-2022-032",
-"lvl": "Q",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -1000,7 +969,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q2-2022-030",
-"lvl": "Q",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -1031,7 +999,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q3-2022-028",
-"lvl": "Q",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -1062,7 +1029,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q3-2022-027",
-"lvl": "Q",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -1093,7 +1059,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q4-2022-035",
-"lvl": "Q",
 "ch": 4,
 "scope": "ifa",
 "q": {
@@ -1124,7 +1089,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q4-2022-036",
-"lvl": "Q",
 "ch": 4,
 "scope": "ifa",
 "q": {
@@ -1155,7 +1119,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q7-2022-037",
-"lvl": "Q",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -1186,7 +1149,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q7-2022-038",
-"lvl": "Q",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -1217,7 +1179,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q10-2022-041",
-"lvl": "Q",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -1248,7 +1209,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "Q10-2022-039",
-"lvl": "Q",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -1279,9 +1239,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "CS-2022-025",
-"lvl": "C",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wann sind die Spielberechtigung zu prüfen?",
 "en": "When does eligibility to play have to be checked?"
@@ -1310,9 +1269,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "CS-2022-026",
-"lvl": "C",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wann spielt sich ein aktiver Spieler in einer Mannschaft fest?",
 "en": "When does an active player become tied to a team?"
@@ -1341,9 +1299,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "CS-2022-027",
-"lvl": "C",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wann wird ein Spieler mit einem „X“ im Spielbericht gekennzeichnet, so dass erkennbar ist, dass er gespielt hat?",
 "en": "When is a player marked with an X on the match report to show that he has played?"
@@ -1369,9 +1326,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "CA-2022-017",
-"lvl": "C",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wer ist für die Überwachung und Einhaltung der Zeitstrafe verantwortlich?",
 "en": "Who is responsible for monitoring and enforcing the time penalty?"
@@ -1400,9 +1356,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "CS-2022-028",
-"lvl": "C",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wie wird ein kampflos gewonnenes Spiel mit zwei Gewinnsätze (bis 11) gewertet?",
 "en": "How is a walkover recorded in a match to two sets won, played to 11?"
@@ -1431,7 +1386,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C1-2022-020",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -1462,7 +1416,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C1-2022-023",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -1493,7 +1446,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C1-2022-004",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -1524,7 +1476,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C1-2022-003",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -1555,7 +1506,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C2-2022-031",
-"lvl": "C",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -1586,7 +1536,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C2-2022-002",
-"lvl": "C",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -1617,7 +1566,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C3-2022-001",
-"lvl": "C",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -1648,7 +1596,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C3-2022-016",
-"lvl": "C",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -1679,7 +1626,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C3-2022-024",
-"lvl": "C",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -1710,7 +1656,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C3-2022-029",
-"lvl": "C",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -1741,7 +1686,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C3-2022-030",
-"lvl": "C",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -1772,7 +1716,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C5-2022-007",
-"lvl": "C",
 "ch": 5,
 "scope": "ifa",
 "q": {
@@ -1803,7 +1746,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C5-2022-006",
-"lvl": "C",
 "ch": 5,
 "scope": "ifa",
 "q": {
@@ -1834,7 +1776,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C5-2022-005",
-"lvl": "C",
 "ch": 5,
 "scope": "ifa",
 "q": {
@@ -1865,7 +1806,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C6-2022-011",
-"lvl": "C",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -1896,7 +1836,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C6-2022-022",
-"lvl": "C",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -1927,7 +1866,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C6-2022-012",
-"lvl": "C",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -1958,7 +1896,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C6-2022-008",
-"lvl": "C",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -1989,7 +1926,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C6-2022-010",
-"lvl": "C",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -2020,7 +1956,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C6-2022-009",
-"lvl": "C",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -2051,7 +1986,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C7-2022-015",
-"lvl": "C",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -2082,7 +2016,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C7-2022-018",
-"lvl": "C",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -2113,7 +2046,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C7-2022-019",
-"lvl": "C",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -2144,7 +2076,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C7-2022-014",
-"lvl": "C",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -2175,7 +2106,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C7-2022-013",
-"lvl": "C",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -2206,7 +2136,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "C9-2022-021",
-"lvl": "C",
 "ch": 9,
 "scope": "ifa",
 "q": {
@@ -2237,9 +2166,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-015",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Bei einem Spieltag ist das erste Spiel um 10:00 Uhr angesetzt. Die anreisende Mannschaft für dieses Spiel ist aber erst um 10:25 Uhr spielbereit, da sie verzögert anreist. Wie ist zu entscheiden?",
 "en": "On a match day the first match is scheduled for 10:00. The visiting team is delayed and only ready to play at 10:25. How is this decided?"
@@ -2268,9 +2196,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-019",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Bei einer Hallenmeisterschaft verlässt ein Spieler bei einer Spielunterbrechung im ersten Satz das Spielfeld ohne Abmeldung beim Schiedsrichter und setzt sich auf die Bank. Wie ist zu entscheiden?",
 "en": "At an indoor championship a player leaves the court during a stoppage in the first set without notifying the referee and sits down on the bench. How is this decided?"
@@ -2299,9 +2226,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-007",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Darf nach einem Platzverweis (rote Karte) der betroffene Spieler während der Sperrfrist in anderen Spielklassen eingesetzt werden?",
 "en": "After a sending off (red card), may the player concerned play in other divisions during the suspension?"
@@ -2330,9 +2256,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-018",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Ein Verein spielt mit seiner 1. und 2. Mannschaft in der gleichen Leistungsklasse. Ein Spieler absolviert am 1. Spieltag zwei Spiele für die 2. Mannschaft und am 2. Spieltag ein Spiel für die 1. Mannschaft seines Vereins. In welcher Mannschaft ist der Spieler festgespielt?",
 "en": "A club fields its 1st and 2nd team in the same division. A player plays two matches for the 2nd team on match day 1 and one match for the 1st team on match day 2. To which team is he now tied?"
@@ -2361,9 +2286,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-009",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Eine Verspätung (Stau, Glatteis, etc.) infolge Nutzung privater Verkehrsmittel gilt als …?",
 "en": "A delay caused by using private transport (traffic jam, black ice) counts as …?"
@@ -2392,9 +2316,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-021",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Was passiert, wenn bei einem Meisterschaftsspiel in der Spielrunde die Spielberechtigung eines Spielers fehlt?",
 "en": "What happens if a player's eligibility document is missing at a championship match during the season?"
@@ -2423,9 +2346,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-001",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Welche Bälle dürfen im Bereich Faustball Deutschland Männer (höchste Klasse im MGV) gespielt werden?",
 "en": "Which balls may be used in the top men's division of Faustball Deutschland?"
@@ -2454,9 +2376,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-016",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Welche Konsequenz ergibt sich für eine Mannschaft, die einen Spieler unberechtigt in Meisterschaftsspielen in Turnierform einsetzt hat?",
 "en": "What are the consequences for a team that has fielded an ineligible player in championship matches played as a tournament?"
@@ -2485,9 +2406,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-025",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Welchen Zeitraum versteht man unter Spieljahr für die Feldsaison?",
 "en": "What period is meant by the playing year for the outdoor season?"
@@ -2516,9 +2436,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-008",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Welcher Zeitraum gilt für das Spieljahr \"Hallensaison\"?",
 "en": "What period applies to the playing year for the indoor season?"
@@ -2547,9 +2466,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-026",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wie lang ist die Pause zwischen dem 1. und 2. Satz grundsätzlich?",
 "en": "How long is the interval between the 1st and 2nd set as a rule?"
@@ -2578,9 +2496,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-033",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wie lange dauert eine generelle Sperrfrist beim Vereinswechsel?",
 "en": "How long is the general waiting period when changing clubs?"
@@ -2609,9 +2526,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2023-034",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wie viele Spiele darf ein Jugendspieler/in an einem Tag bestreiten?",
 "en": "How many matches may a youth player play in one day?"
@@ -2637,9 +2553,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-032",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wie viele Veranstaltungen darf ein Spieler/in an einem Tag spielen?",
 "en": "At how many events may a player play in one day?"
@@ -2665,9 +2580,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "BS-2022-027",
-"lvl": "B",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wie wird ein kampflos gewonnenes Spiel auf 3 Gewinnsätze bis 11 gewertet?",
 "en": "How is a walkover recorded in a match to 3 sets won, played to 11?"
@@ -2696,7 +2610,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B1-2022-002",
-"lvl": "B",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -2727,7 +2640,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B1-2022-003",
-"lvl": "B",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -2758,7 +2670,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B1-2022-012",
-"lvl": "B",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -2789,7 +2700,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B1-2022-024",
-"lvl": "B",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -2820,7 +2730,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B1-2022-013",
-"lvl": "B",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -2851,7 +2760,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B3-2022-034",
-"lvl": "B",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -2882,7 +2790,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B4-2022-010",
-"lvl": "B",
 "ch": 4,
 "scope": "ifa",
 "q": {
@@ -2913,7 +2820,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B6-2022-004",
-"lvl": "B",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -2944,7 +2850,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B6-2022-030",
-"lvl": "B",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -2975,7 +2880,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B7-2022-023",
-"lvl": "B",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -3006,7 +2910,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B7-2022-028",
-"lvl": "B",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -3037,7 +2940,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B7-2022-011",
-"lvl": "B",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -3068,7 +2970,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B7-2022-005",
-"lvl": "B",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -3099,7 +3000,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B7-2022-006",
-"lvl": "B",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -3130,7 +3030,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B7-2022-029",
-"lvl": "B",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -3161,7 +3060,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B9-2022-017",
-"lvl": "B",
 "ch": 9,
 "scope": "ifa",
 "q": {
@@ -3192,7 +3090,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B9-2022-014",
-"lvl": "B",
 "ch": 9,
 "scope": "ifa",
 "q": {
@@ -3223,7 +3120,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B9-2022-020",
-"lvl": "B",
 "ch": 9,
 "scope": "ifa",
 "q": {
@@ -3254,7 +3150,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "B10-2022-022",
-"lvl": "B",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -3285,9 +3180,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "AS-2022-014",
-"lvl": "A",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Bei einem Spiel der 2. BL verletzt sich ein Spieler der Mannschaft „A“ am Schienbein (stark blutende Wunde). Der SR unterbricht das Spiel (SR-Auszeit), kümmert sich um den Verletzten, trägt die Verletzung in den Spielbericht ein und fordert ihn auf das Spielfeld zu verlassen. Dieser erklärt, dass er um seine fehlende Blutgerinnung weiß und will auf jeden Fall weiterspielt! Wie verhält sich der SR?",
 "en": "In a 2nd Bundesliga match a player of team A injures his shin (a heavily bleeding wound). The referee stops play, attends to the injured player, records the injury on the match report and asks him to leave the court. The player states that he knows about his clotting disorder and insists on playing on. How does the referee act?"
@@ -3316,9 +3210,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "AW-2022-013",
-"lvl": "A",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Bis wann müssen die Ergebnisse eingetragen werden ?",
 "en": "By when do the results have to be entered?"
@@ -3347,9 +3240,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "AS-2022-007",
-"lvl": "A",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Welche Kontrollen kann der Schiedsrichter bei seinem Einsatz vernachlässigen?",
 "en": "Which checks may the referee skip on an appointment?"
@@ -3378,9 +3270,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "AW-2022-008",
-"lvl": "A",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Welcher Satzmodus wird derzeit in der Feldsaison in den folgenden Bundesligen gespielt? Nenne die jeweilige Anzahl.",
 "en": "Which set format is currently played in the outdoor season in the following Bundesliga divisions? State the number in each case."
@@ -3409,9 +3300,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "AS-2022-009",
-"lvl": "A",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wer ist für die Einteilung der Schiedsrichter in den Bundesligen zuständig?",
 "en": "Who is responsible for appointing referees in the Bundesliga?"
@@ -3440,9 +3330,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "AW-2022-006",
-"lvl": "A",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wie viele Bälle dürfen vor Spielbeginn je Mannschaft aufgelegt werden?",
 "en": "How many balls may each team present before the match?"
@@ -3471,9 +3360,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "AW-2022-012",
-"lvl": "A",
 "ch": 15,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wo muss sich das faustball.de Abzeichnen auf dem Trikot befinden?",
 "en": "Where must the faustball.de badge be placed on the shirt?"
@@ -3502,7 +3390,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "A1-2022-005",
-"lvl": "A",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -3533,7 +3420,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "A2-2022-004",
-"lvl": "A",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -3564,7 +3450,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "A2-2022-011",
-"lvl": "A",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -3595,7 +3480,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "A2-2022-003",
-"lvl": "A",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -3626,7 +3510,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "A4-2022-010",
-"lvl": "A",
 "ch": 4,
 "scope": "ifa",
 "q": {
@@ -3657,7 +3540,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "A7-2022-002",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -3688,7 +3570,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "A10-2022-015",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -3719,7 +3600,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "A10-2022-001",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -3750,7 +3630,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-001",
-"lvl": "A",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -3781,7 +3660,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-001",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -3812,7 +3690,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-002",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -3843,7 +3720,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-002",
-"lvl": "A",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -3874,7 +3750,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-003",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -3905,7 +3780,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-003",
-"lvl": "A",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -3936,7 +3810,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-004",
-"lvl": "A",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -3967,7 +3840,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-005",
-"lvl": "A",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -3998,7 +3870,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-006",
-"lvl": "A",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -4029,7 +3900,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-007",
-"lvl": "A",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -4060,7 +3930,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-008",
-"lvl": "A",
 "ch": 1,
 "scope": "ifa",
 "q": {
@@ -4091,7 +3960,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-004",
-"lvl": "C",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -4122,7 +3990,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-009",
-"lvl": "A",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -4153,7 +4020,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-005",
-"lvl": "C",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -4184,7 +4050,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-006",
-"lvl": "C",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -4215,7 +4080,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-010",
-"lvl": "A",
 "ch": 2,
 "scope": "ifa",
 "q": {
@@ -4246,7 +4110,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-007",
-"lvl": "C",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -4277,7 +4140,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-008",
-"lvl": "C",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -4308,7 +4170,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-009",
-"lvl": "C",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -4339,7 +4200,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-011",
-"lvl": "A",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -4370,7 +4230,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-010",
-"lvl": "C",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -4401,7 +4260,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-012",
-"lvl": "A",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -4432,7 +4290,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-011",
-"lvl": "C",
 "ch": 3,
 "scope": "ifa",
 "q": {
@@ -4463,7 +4320,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-013",
-"lvl": "A",
 "ch": 4,
 "scope": "ifa",
 "q": {
@@ -4494,7 +4350,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-014",
-"lvl": "A",
 "ch": 4,
 "scope": "ifa",
 "q": {
@@ -4525,7 +4380,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-015",
-"lvl": "A",
 "ch": 4,
 "scope": "ifa",
 "q": {
@@ -4556,7 +4410,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-016",
-"lvl": "A",
 "ch": 4,
 "scope": "ifa",
 "q": {
@@ -4587,7 +4440,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-012",
-"lvl": "C",
 "ch": 4,
 "scope": "ifa",
 "q": {
@@ -4618,7 +4470,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-013",
-"lvl": "C",
 "ch": 5,
 "scope": "ifa",
 "q": {
@@ -4649,7 +4500,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-014",
-"lvl": "C",
 "ch": 5,
 "scope": "ifa",
 "q": {
@@ -4680,7 +4530,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-015",
-"lvl": "C",
 "ch": 5,
 "scope": "ifa",
 "q": {
@@ -4711,7 +4560,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-017",
-"lvl": "A",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -4742,7 +4590,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-018",
-"lvl": "A",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -4773,7 +4620,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-016",
-"lvl": "C",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -4804,7 +4650,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-019",
-"lvl": "A",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -4835,7 +4680,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-017",
-"lvl": "C",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -4866,7 +4710,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-020",
-"lvl": "A",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -4897,7 +4740,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-021",
-"lvl": "A",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -4928,7 +4770,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-018",
-"lvl": "C",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -4959,7 +4800,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-019",
-"lvl": "C",
 "ch": 6,
 "scope": "ifa",
 "q": {
@@ -4990,7 +4830,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-022",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -5021,7 +4860,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-023",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -5052,7 +4890,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-024",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -5083,7 +4920,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-025",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -5114,7 +4950,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-026",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -5145,7 +4980,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-027",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -5176,7 +5010,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-028",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -5207,7 +5040,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-029",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -5238,7 +5070,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-030",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -5269,7 +5100,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-031",
-"lvl": "A",
 "ch": 7,
 "scope": "ifa",
 "q": {
@@ -5300,7 +5130,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-020",
-"lvl": "C",
 "ch": 8,
 "scope": "ifa",
 "q": {
@@ -5331,7 +5160,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-021",
-"lvl": "C",
 "ch": 8,
 "scope": "ifa",
 "q": {
@@ -5362,7 +5190,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-022",
-"lvl": "C",
 "ch": 9,
 "scope": "ifa",
 "q": {
@@ -5393,7 +5220,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-032",
-"lvl": "A",
 "ch": 9,
 "scope": "ifa",
 "q": {
@@ -5424,7 +5250,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-033",
-"lvl": "A",
 "ch": 9,
 "scope": "ifa",
 "q": {
@@ -5455,7 +5280,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-023",
-"lvl": "C",
 "ch": 9,
 "scope": "ifa",
 "q": {
@@ -5486,7 +5310,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-034",
-"lvl": "A",
 "ch": 9,
 "scope": "ifa",
 "q": {
@@ -5517,7 +5340,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-024",
-"lvl": "C",
 "ch": 9,
 "scope": "ifa",
 "q": {
@@ -5548,7 +5370,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-035",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5579,7 +5400,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-036",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5610,7 +5430,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-037",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5641,7 +5460,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-038",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5672,7 +5490,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-039",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5703,7 +5520,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-040",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5734,7 +5550,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-041",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5765,7 +5580,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-042",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5796,7 +5610,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-025",
-"lvl": "C",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5827,7 +5640,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-043",
-"lvl": "A",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5858,7 +5670,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-026",
-"lvl": "C",
 "ch": 10,
 "scope": "ifa",
 "q": {
@@ -5889,7 +5700,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-001",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "shot": "ppt/ball-01",
@@ -5921,7 +5731,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-002",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "shot": "ppt/ball-02",
@@ -5953,7 +5762,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-003",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "shot": "ppt/ball-03",
@@ -5985,7 +5793,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-004",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "shot": "ppt/ball-04",
@@ -6017,7 +5824,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-005",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "shot": "ppt/ball-05",
@@ -6049,7 +5855,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-006",
-"lvl": "C",
 "ch": 1,
 "scope": "ifa",
 "shot": "ppt/ball-06",
@@ -6081,7 +5886,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-007",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-07",
@@ -6113,7 +5917,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-008",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-18",
@@ -6145,7 +5948,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-009",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-14",
@@ -6177,7 +5979,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-010",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-06",
@@ -6209,7 +6010,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-011",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-13",
@@ -6241,7 +6041,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-012",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-11",
@@ -6273,7 +6072,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-013",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-12",
@@ -6305,7 +6103,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-014",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-08",
@@ -6337,7 +6134,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-015",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-05",
@@ -6369,7 +6165,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-016",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-02",
@@ -6401,7 +6196,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-017",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-03",
@@ -6433,7 +6227,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-018",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-04",
@@ -6465,7 +6258,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-BILD-019",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "shot": "signals/sig-09",
@@ -6497,7 +6289,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-027",
-"lvl": "C",
 "ch": 11,
 "scope": "ifa",
 "q": {
@@ -6528,7 +6319,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-044",
-"lvl": "A",
 "ch": 11,
 "scope": "ifa",
 "q": {
@@ -6559,7 +6349,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-028",
-"lvl": "C",
 "ch": 12,
 "scope": "ifa",
 "q": {
@@ -6590,7 +6379,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-045",
-"lvl": "A",
 "ch": 12,
 "scope": "ifa",
 "q": {
@@ -6621,7 +6409,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-046",
-"lvl": "A",
 "ch": 12,
 "scope": "ifa",
 "q": {
@@ -6652,7 +6439,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-029",
-"lvl": "C",
 "ch": 12,
 "scope": "ifa",
 "q": {
@@ -6683,7 +6469,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-047",
-"lvl": "A",
 "ch": 12,
 "scope": "ifa",
 "q": {
@@ -6714,7 +6499,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-048",
-"lvl": "A",
 "ch": 12,
 "scope": "ifa",
 "q": {
@@ -6745,7 +6529,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-030",
-"lvl": "C",
 "ch": 12,
 "scope": "ifa",
 "q": {
@@ -6776,7 +6559,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-031",
-"lvl": "C",
 "ch": 13,
 "scope": "ifa",
 "q": {
@@ -6807,7 +6589,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-032",
-"lvl": "C",
 "ch": 13,
 "scope": "ifa",
 "q": {
@@ -6838,7 +6619,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-033",
-"lvl": "C",
 "ch": 13,
 "scope": "ifa",
 "q": {
@@ -6869,7 +6649,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-049",
-"lvl": "A",
 "ch": 13,
 "scope": "ifa",
 "q": {
@@ -6900,7 +6679,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-050",
-"lvl": "A",
 "ch": 13,
 "scope": "ifa",
 "q": {
@@ -6931,7 +6709,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-051",
-"lvl": "A",
 "ch": 13,
 "scope": "ifa",
 "q": {
@@ -6962,7 +6739,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-034",
-"lvl": "C",
 "ch": 13,
 "scope": "ifa",
 "q": {
@@ -6993,7 +6769,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-052",
-"lvl": "A",
 "ch": 13,
 "scope": "ifa",
 "q": {
@@ -7024,7 +6799,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-035",
-"lvl": "C",
 "ch": 13,
 "scope": "ifa",
 "q": {
@@ -7055,7 +6829,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-036",
-"lvl": "C",
 "ch": 8,
 "scope": "ifa",
 "q": {
@@ -7086,7 +6859,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-053",
-"lvl": "A",
 "ch": 8,
 "scope": "ifa",
 "q": {
@@ -7117,9 +6889,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-037",
-"lvl": "C",
 "ch": 16,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wann soll der Schiedsrichter am Spielort anwesend sein?",
 "en": "When should the referee be present at the venue?"
@@ -7148,9 +6919,8 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-038",
-"lvl": "C",
 "ch": 16,
-"scope": "national",
+"scope": "fed",
 "q": {
 "de": "Wie ist der zeitliche Ablauf unmittelbar vor Spielbeginn geregelt?",
 "en": "How is the sequence immediately before the start of the match regulated?"
@@ -7179,7 +6949,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-C-039",
-"lvl": "C",
 "ch": 16,
 "scope": "ifa",
 "q": {
@@ -7210,7 +6979,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-054",
-"lvl": "A",
 "ch": 16,
 "scope": "ifa",
 "q": {
@@ -7241,7 +7009,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-055",
-"lvl": "A",
 "ch": 16,
 "scope": "ifa",
 "q": {
@@ -7272,7 +7039,6 @@ window.IFA_QUESTIONS = [
 },
 {
 "id": "IFA-A-056",
-"lvl": "A",
 "ch": 16,
 "scope": "ifa",
 "q": {

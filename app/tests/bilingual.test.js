@@ -64,7 +64,7 @@ console.log('\n== Oberflaeche ==');
   const leer=de.filter(k=>!I.en[k]);
   ok(leer.length===0,'keine leeren englischen Werte');
   /* Werte, die im englischen Block noch woertlich deutsch stehen */
-  const GLEICH=['_name','appSub','certKicker','natBadge','videos','poolA','poolB','poolC'];
+  const GLEICH=['_name','appSub','certKicker','videos'];
   const kopiert=de.filter(k=>!GLEICH.includes(k)
                              &&I.en[k]===I.de[k]&&/[a-z]{4}/.test(I.de[k]));
   ok(kopiert.length===0,'kein Oberflaechentext unuebersetzt aus dem deutschen Block kopiert'+
@@ -82,8 +82,8 @@ console.log('\n== Anzeige im Browser-DOM ==');
   clk('[data-lang="en"]');
   let deutsch=[];
   for(const ch of C.map(c=>c.id)){
-    clk('[data-go="home"]'); clk('[data-go="level:C"]');
-    const sel=d.querySelector('[data-go="chapter:C:'+ch+'"]'); if(!sel) continue;
+    clk('[data-go="home"]'); clk('[data-go="level:R"]');
+    const sel=d.querySelector('[data-go="chapter:R:'+ch+'"]'); if(!sel) continue;
     sel.dispatchEvent(new w.MouseEvent('click',{bubbles:true}));
     const t=d.getElementById('app').textContent;
     if(UMLAUT.test(t.replace(ERLAUBT,''))){
@@ -95,8 +95,8 @@ console.log('\n== Anzeige im Browser-DOM ==');
      (deutsch.length?'\n      '+deutsch.slice(0,4).join('\n      '):''));
 
   /* Quiz und Auswertung ebenfalls pruefen */
-  clk('[data-go="home"]'); clk('[data-go="level:C"]'); clk('[data-go="chapter:C:1"]');
-  clk('[data-go="quiz:C:1"]');
+  clk('[data-go="home"]'); clk('[data-go="level:R"]'); clk('[data-go="chapter:R:1"]');
+  clk('[data-go="quiz:R:1"]');
   let quizDe=[];
   for(;;){
     const qt=d.querySelector('.qtxt'); if(!qt) break;

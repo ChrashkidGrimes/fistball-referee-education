@@ -47,15 +47,27 @@ function run(lvl, targetCorrectRatio){
   return {status, pctv:Math.round(pctv*10)/10, total, correct, hasCert:/Zertifikat anzeigen/.test(txt)};
 }
 
+/* Regional: bestanden ab 70 %, Nachpruefung ab 65 %.
+   National: bestanden ab 85 %, Nachpruefung ab 75 %.
+   Je Stufe ein Wert unterhalb, einer im Nachpruefungsband, einer darueber. */
 console.log('\n== Grenzwerte Abschlusspruefung ==');
-[['C',0.60,'nicht bestanden'],['C',0.67,'nachpruefung'],['C',0.72,'bestanden'],
- ['B',0.70,'nicht bestanden'],['B',0.77,'nachpruefung'],['B',0.85,'bestanden'],
- ['A',0.70,'nicht bestanden'],['A',0.80,'nachpruefung'],['A',0.90,'bestanden']
+[['R',0.60,'nicht bestanden'],['R',0.67,'nachpruefung'],['R',0.72,'bestanden'],
+ ['N',0.70,'nicht bestanden'],['N',0.80,'nachpruefung'],['N',0.90,'bestanden']
 ].forEach(([lvl,r,exp])=>{
   const res=run(lvl,r);
   ok(res.status===exp, lvl+': '+res.correct+'/'+res.total+' = '+res.pctv+'% -> '+res.status+' (erwartet '+exp+')');
   if(exp==='bestanden') ok(res.hasCert, '  '+lvl+': Zertifikat angeboten');
   if(exp!=='bestanden') ok(!res.hasCert, '  '+lvl+': kein Zertifikat bei '+exp);
+});
+
+/* Genau auf der Grenze muss bestanden herauskommen, nicht knapp darunter.
+   Regional: 28 von 40 sind exakt 70 %. National: 51 von 60 sind exakt 85 %. */
+console.log('\n== Genau auf der Grenze ==');
+[['R',28/40,'bestanden'],['N',51/60,'bestanden'],
+ ['R',26/40,'nachpruefung'],['N',45/60,'nachpruefung']
+].forEach(([lvl,r,exp])=>{
+  const res=run(lvl,r);
+  ok(res.status===exp, lvl+': '+res.correct+'/'+res.total+' = '+res.pctv+'% -> '+res.status+' (erwartet '+exp+')');
 });
 console.log('\n'+pass+' bestanden, '+fail+' fehlgeschlagen');
 process.exit(fail?1:0);

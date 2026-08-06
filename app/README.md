@@ -1,6 +1,6 @@
 # IFA Schiedsrichter-Ausbildung – Web-App
 
-Lernprogramm für die Ausbildung von Faustball-Schiedsrichtern in den Lizenzstufen **C, B und A**.
+Lernprogramm für die Ausbildung von Faustball-Schiedsrichtern in den Stufen **Regional und National**.
 Statische Web-App ohne Server, Build-Schritt oder Abhängigkeiten. Läuft per Doppelklick auf `index.html`,
 auf GitHub Pages, SharePoint oder jedem beliebigen Webspace.
 
@@ -26,35 +26,51 @@ ohne Konto und ohne Server.
 
 | | |
 |---|---|
-| Kapitel | 16 (Regeln 1–10, Handzeichen, Verhalten, Linienrichter, Altersklassen, nationale Ordnungen, Aufgaben rund um das Spiel) |
+| Kapitel | 16 (Regeln 1–10, Handzeichen, Verhalten, Linienrichter, Altersklassen, Verbandsordnungen, Aufgaben rund um das Spiel) |
 | Regeltext-Blöcke | 90 nummerierte Regeln, wortgleich aus den offiziellen Ausgaben |
 | Auslegungen | 51 Erläuterungen aus der Schulungsmappe |
 | Handzeichen | 18 Zeichen mit 21 Fotos (16 aus der Schulungsmappe, 2 aus den Schulungsfolien), 13 davon als Bildfrage |
 | Sprachen | Deutsch und Englisch, vollständig – 226 Inhaltsblöcke und 235 Fragen in beiden Sprachen |
 | Prüfungsfragen | 235 zweisprachig: 121 aus dem Katalog von Faustball Deutschland, 108 aus Spielregeln und Schulungsmappe, 6 Bildfragen |
 
-### Abschlussprüfungen
+### Lizenzstufen
 
-| Stufe | Fragen | Zusammensetzung | Bestanden | Nachprüfung ab |
-|-------|--------|-----------------|-----------|----------------|
-| C | 54 | 21 Grundmodul, 33 C | 70 % | 65 % |
-| B | 36 | 22 B, 6 Grundmodul, 8 C | 80 % | 75 % |
-| A | 34 | 22 A, 6 B, 2 Grundmodul, 4 C | 85 % | 75 % |
+| Stufe | Fragen | Bestanden | Nachprüfung ab | Kapitelquiz |
+|-------|--------|-----------|----------------|-------------|
+| Regional (`R`) | 40 | 70 % | 65 % | 70 % |
+| National (`N`) | 60 | 85 % | 75 % | 85 % |
 
-Die A-Prüfung zieht damit 65 % ihrer Fragen aus dem A-Pool.
+Der **Lernpfad ist für beide Stufen gleich**: alle 16 Kapitel, dieselben Kapitelquizzes. Die Stufen
+unterscheiden sich allein in Umfang und Grenze der Abschlussprüfung und in der Grenze, ab der ein
+Kapitelquiz als erledigt gilt.
 
-Der C-Aufgabenpool umfasst Grundmodul und C zusammen (104 Fragen) und wird nach dem Größenverhältnis
-seiner beiden Teile aufgeteilt (41 : 63). So enthält jede Prüfung Fragen aus beiden Teilen.
-Wächst der Katalog, ist diese Aufteilung nachzuziehen.
+### Themenpools
 
-Die Fragen werden bei jedem Versuch neu aus den Pools gezogen, **Reihenfolge und Antwortoptionen werden
-gemischt**. Während der Prüfung gibt es kein Zwischenfeedback; die Auswertung mit Fundstellen erfolgt am
-Ende. Kapitelquizzes geben dagegen sofortiges Feedback inklusive Regelverweis.
+Ein Pool ist ein **Themenbereich, kein Schwierigkeitsgrad**. Beide Prüfungen ziehen aus allen Pools;
+der Pool sorgt nur dafür, dass jede Prüfung das Regelwerk gleichmäßig abdeckt. Welcher Pool eine Frage
+trägt, ergibt sich aus ihrem Kapitel – neue Fragen sortieren sich damit von selbst ein.
 
-Verfügbar sind 235 Fragen: Grundmodul 41, C 89, B 34, A 71. Reicht ein Pool für seine Quote nicht aus –
-etwa weil ein Verband die nationalen Fragen abschaltet –, füllen die
-übrigen Pools auf, damit die Fragenzahl erhalten bleibt. Die Stufenseite weist darauf hin, weil sich der
-Schwerpunkt dadurch verschiebt.
+| Pool | Kapitel | verfügbar | Regional | National |
+|------|---------|-----------|----------|----------|
+| `feld` – Spielfeld und Geräte | 1 | 45 | 7 | 10 |
+| `rahmen` – Mannschaft, Zeit, Altersklassen | 2, 3, 14 | 40 | 7 | 10 |
+| `spiel` – Spielgang, Schlag, Angabe | 4, 5, 6 | 32 | 8 | 12 |
+| `ballfuehrung` – Rückschlag, Zuspiel, Wertung | 7, 8 | 28 | 7 | 10 |
+| `leitung` – Spielleitung | 9–13, 16 | 63 | 7 | 12 |
+| `verband` – Verbandsordnungen (abschaltbar) | 15 | 27 | 4 | 6 |
+| | | **235** | **40** | **60** |
+
+Die Quoten folgen bewusst **nicht** den Poolgrößen. Kapitel 1 stellt 19 % des Katalogs, aber nur 17 %
+der Prüfung – es besteht überwiegend aus Maßen und Zahlen. Der Pool `leitung` trägt umgekehrt 20 % der
+Nationalprüfung; dort steckt die Urteilsfähigkeit, die die höhere Lizenz rechtfertigt.
+
+Die Fragen werden bei jedem Versuch neu gezogen, **Reihenfolge und Antwortoptionen werden gemischt**.
+Während der Prüfung gibt es kein Zwischenfeedback; die Auswertung mit Fundstellen erfolgt am Ende.
+Kapitelquizzes geben dagegen sofortiges Feedback inklusive Regelverweis.
+
+Schaltet ein Verband die Verbandsordnungen ab, bleiben 208 Fragen. Die übrigen Pools füllen dann auf,
+damit die Fragenzahl erhalten bleibt; die Stufenseite weist darauf hin, weil sich der Schwerpunkt
+dadurch verschiebt.
 
 ---
 
@@ -65,27 +81,46 @@ Schwerpunkt dadurch verschiebt.
 `assets/js/app.js`, ganz oben:
 
 ```js
+var POOLS = {
+  feld:         [1],
+  rahmen:       [2, 3, 14],
+  spiel:        [4, 5, 6],
+  ballfuehrung: [7, 8],
+  leitung:      [9, 10, 11, 12, 13, 16],
+  verband:      [15]
+};
+
 var LEVELS = {
-  C: { pools: ["Q","C"], pass: 70, retake: 65, quizPass: 70,
-       exam: { size: 54, quota: { Q: 21, C: 33 } } },
+  R: { pass: 70, retake: 65, quizPass: 70,
+       exam: { size: 40, quota: { feld: 7, rahmen: 7, spiel: 8,
+                                  ballfuehrung: 7, leitung: 7, verband: 4 } } },
 
-  B: { pools: ["B"],      pass: 80, retake: 75, quizPass: 80,
-       exam: { size: 36, quota: { B: 22, Q: 6, C: 8 } } },
-
-  A: { pools: ["A"],      pass: 85, retake: 75, quizPass: 85,
-       exam: { size: 34, quota: { A: 22, B: 6, Q: 2, C: 4 } } }
+  N: { pass: 85, retake: 75, quizPass: 85,
+       exam: { size: 60, quota: { feld: 10, rahmen: 10, spiel: 12,
+                                  ballfuehrung: 10, leitung: 12, verband: 6 } } }
 };
 ```
 
+- `POOLS` – welche Kapitel welchen Themenpool bilden. Ein Kapitel gehört genau einem Pool an;
+  Kapitel ohne Pool tauchen in keiner Prüfung auf.
 - `exam.size` – Anzahl Fragen in der Prüfung
 - `exam.quota` – Verteilung auf die Pools; die Summe muss `size` ergeben
-- `pools` – Pools des Lernpfads, bestimmt die Kapitelquizzes (kumulativ)
 - `quizPass` – Grenze, ab der ein Kapitelquiz als abgeschlossen gilt
 
-Reicht ein Pool nicht aus – etwa weil die nationalen Fragen abgeschaltet sind – füllen die übrigen Pools
+Reicht ein Pool nicht aus – etwa weil die Verbandsordnungen abgeschaltet sind – füllen die übrigen Pools
 in der notierten Reihenfolge auf; die App weist auf der Stufenseite darauf hin. Bliebe die Prüfung dennoch
 zu kurz, würde sie entsprechend kürzer. Mit der aktuellen Aufteilung tritt das nicht ein: auch ohne die
-nationalen Fragen kommen alle drei Stufen auf ihre volle Fragenzahl.
+Verbandsordnungen kommen beide Stufen auf ihre volle Fragenzahl.
+
+Eine neue Stufe anzulegen heißt: Eintrag in `LEVELS`, Kürzel in `LEVEL_ORDER`, dazu die Schlüssel
+`lvl<X>Name` und `lvl<X>desc` in `assets/js/i18n.js`.
+
+### Fortschritt aus der dreistufigen Fassung
+
+Bis August 2026 gab es die Stufen C, B und A. `LEVEL_MIGRATION` in `app.js` überführt gespeicherte
+Stände beim ersten Start: C wird Regional, B und A werden auf National zusammengeführt – je Kapitel und
+für die Prüfung zählt das bessere Ergebnis. Der umgestellte Stand wird sofort zurückgeschrieben, ein
+zweiter Start rührt ihn nicht mehr an.
 
 ### Videos einbinden
 

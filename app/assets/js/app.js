@@ -6,54 +6,66 @@
 "use strict";
 
 /* ---------- Konfiguration ------------------------------------------------
-   Lizenzstufen.
+   Themenpools.
 
+   Ein Pool ist ein Themenbereich, kein Schwierigkeitsgrad. Beide Lizenzstufen
+   ziehen aus allen Pools; der Pool sorgt nur dafür, dass jede Prüfung das
+   Regelwerk gleichmäßig abdeckt. Welcher Pool eine Frage trägt, ergibt sich
+   aus ihrem Kapitel – neue Fragen sortieren sich damit von selbst ein.
+-------------------------------------------------------------------------- */
+var POOLS = {
+  feld:         [1],                    // Spielfeld und Geräte
+  rahmen:       [2, 3, 14],             // Mannschaft, Spieldauer, Altersklassen
+  spiel:        [4, 5, 6],              // Spielgang, Schlag, Angabe
+  ballfuehrung: [7, 8],                 // Rückschlag, Zuspiel, Wertung
+  leitung:      [9, 10, 11, 12, 13, 16],// Spielrichter, Strafen, Handzeichen,
+                                        // Verhalten, Linienrichter, Aufgaben rund ums Spiel
+  verband:      [15]                    // Ordnungen des Mitgliedsverbandes, abschaltbar
+};
+
+/* ---------- Lizenzstufen -------------------------------------------------
    pass / retake  Prozentgrenzen laut Vorgabe:
-                    C  70 % bestanden, Nachprüfung ab 65 %
-                    B  80 % bestanden, Nachprüfung ab 75 %
-                    A  85 % bestanden, Nachprüfung ab 75 %
-   pools          Fragenpools des Lernpfads (Q = Grundmodul). Bestimmt, welche
-                  Fragen in den Kapitelquizzes erscheinen – kumulativ, B enthält
-                  also auch C, A auch B und C.
+                    Regional  70 % bestanden, Nachprüfung ab 65 %
+                    National  85 % bestanden, Nachprüfung ab 75 %
    quizPass       Prozentgrenze, ab der ein Kapitelquiz als erledigt gilt.
    exam.size      Anzahl Fragen in der Abschlussprüfung.
-   exam.quota     Wie sich diese Fragen auf die Pools verteilen. Die Summe muss
-                  exam.size ergeben. Reicht ein Pool nicht aus (etwa weil die
-                  nationalen Fragen abgeschaltet sind), füllen die übrigen Pools
-                  in der hier notierten Reihenfolge auf, damit die Fragenzahl
-                  erhalten bleibt.
+   exam.quota     Wie sich diese Fragen auf die Themenpools verteilen. Die Summe
+                  muss exam.size ergeben. Reicht ein Pool nicht aus – etwa weil
+                  ein Verband die Verbandsordnungen abschaltet –, füllen die
+                  übrigen Pools in der hier notierten Reihenfolge auf, damit die
+                  Fragenzahl erhalten bleibt.
 
-   Vorgabe:
-     C   54 Fragen aus dem C-Aufgabenpool (Grundmodul + C, zusammen 104 Fragen).
-         Der Pool wird im Verhältnis seiner Teile aufgeteilt (41 : 63), daher 21 + 33.
-         Wächst der Katalog, ist diese Aufteilung nachzuziehen.
-     B   36 Fragen aus B und C, Schwerpunkt auf B: 22 aus B, 14 aus dem
-         C-Aufgabenpool (davon anteilig 6 Grundmodul, 8 C).
-     A   34 Fragen aus allen Pools, deutlicher Schwerpunkt auf A: 22 aus A,
-         6 aus B, 6 aus dem C-Aufgabenpool (davon 2 Grundmodul, 4 C).
-   Die Aufteilung des C-Aufgabenpools auf Grundmodul und C entspricht dem
-   Größenverhältnis der beiden Teile und sichert nebenbei, dass in jeder
-   Prüfung Fragen aus beiden vorkommen.
+   Die Quoten folgen bewusst nicht den Poolgrößen. Kapitel 1 stellt rund ein
+   Fünftel des Katalogs, überwiegend Maße und Zahlen, und ist deshalb
+   untergewichtet. Der Pool "leitung" trägt umgekehrt ein Fünftel der
+   Nationalprüfung – dort steckt die Urteilsfähigkeit, die die höhere Lizenz
+   rechtfertigt.
+
+   Der Lernpfad ist für beide Stufen gleich: alle Kapitel, dieselben
+   Kapitelquizzes. Die Stufen unterscheiden sich in Umfang und Grenze der
+   Abschlussprüfung sowie in der Grenze der Kapitelquizzes.
 -------------------------------------------------------------------------- */
 var LEVELS = {
-  C: { pools: ["Q", "C"], pass: 70, retake: 65, quizPass: 70,
-       exam: { size: 54, quota: { Q: 21, C: 33 } } },
+  R: { pass: 70, retake: 65, quizPass: 70,
+       exam: { size: 40, quota: { feld: 7, rahmen: 7, spiel: 8,
+                                  ballfuehrung: 7, leitung: 7, verband: 4 } } },
 
-  B: { pools: ["B"],      pass: 80, retake: 75, quizPass: 80,
-       exam: { size: 36, quota: { B: 22, Q: 6, C: 8 } } },
-
-  A: { pools: ["A"],      pass: 85, retake: 75, quizPass: 85,
-       exam: { size: 34, quota: { A: 22, B: 6, Q: 2, C: 4 } } }
+  N: { pass: 85, retake: 75, quizPass: 85,
+       exam: { size: 60, quota: { feld: 10, rahmen: 10, spiel: 12,
+                                  ballfuehrung: 10, leitung: 12, verband: 6 } } }
 };
-var LEVEL_ORDER = ["C", "B", "A"];
+var LEVEL_ORDER = ["R", "N"];
 var STORE_KEY = "ifa-referee-education-v1";
+/* Ablösung der Stufen C/B/A: C wird Regional, B und A werden National.
+   Treffen beide auf N, gewinnt der weiter fortgeschrittene Stand. */
+var LEVEL_MIGRATION = { C: "R", B: "N", A: "N" };
 
 /* ---------- State -------------------------------------------------------- */
 var state = {
   lang: "de",
-  nat: true,                 // nationale Ordnungen einbeziehen
+  nat: true,                 // Verbandsordnungen einbeziehen
   draft: true,               // Entwurfsfragen einbeziehen (noch nicht fachlich freigegeben)
-  progress: {},              // { C: { read:{ch:true}, quiz:{ch:pct}, exam:{best,pct,c,n,date} } }
+  progress: {},              // { R: { read:{ch:true}, quiz:{ch:pct}, exam:{best,pct,c,n,date} } }
   view: null,
   quiz: null
 };
@@ -67,10 +79,36 @@ function load() {
       if (d.lang) state.lang = d.lang;
       if (typeof d.nat === "boolean") state.nat = d.nat;
       if (typeof d.draft === "boolean") state.draft = d.draft;
-      if (d.progress) state.progress = d.progress;
+      if (d.progress) {
+        state.progress = migrate(d.progress);
+        /* Umgestellten Stand sofort zurückschreiben, sonst liegt bis zur
+           nächsten Änderung weiter die alte Struktur im Speicher. */
+        if (migrated) save();
+      }
     }
   } catch (e) { /* localStorage nicht verfügbar – App läuft ohne Speicherung */ }
   if (!window.IFA_I18N[state.lang]) state.lang = "de";
+}
+/* Fortschritt aus der dreistufigen Fassung übernehmen. Wer B und A begonnen
+   hatte, bekommt beides auf National zusammengeführt – je Kapitel und für die
+   Prüfung zählt das bessere Ergebnis, damit niemand Fortschritt verliert. */
+var migrated = false;
+function migrate(p) {
+  var alt = Object.keys(p).filter(function (k) { return LEVEL_MIGRATION[k]; });
+  if (!alt.length) return p;
+  migrated = true;
+  var out = {};
+  LEVEL_ORDER.forEach(function (L) { if (p[L]) out[L] = p[L]; });
+  alt.forEach(function (k) {
+    var ziel = LEVEL_MIGRATION[k], von = p[k] || {};
+    var z = out[ziel] || (out[ziel] = { read: {}, quiz: {}, exam: null });
+    Object.keys(von.read || {}).forEach(function (ch) { if (von.read[ch]) z.read[ch] = true; });
+    Object.keys(von.quiz || {}).forEach(function (ch) {
+      if (z.quiz[ch] == null || von.quiz[ch] > z.quiz[ch]) z.quiz[ch] = von.quiz[ch];
+    });
+    if (von.exam && (!z.exam || von.exam.pct > z.exam.pct)) z.exam = von.exam;
+  });
+  return out;
 }
 function save() {
   try {
@@ -116,8 +154,8 @@ function fbMark(obj, fromPpt) {
   return ' <span class="badge de" title="' +
     esc(t(fromPpt ? "transPpt" : "transMissing")) + '">de</span>';
 }
-/* "C-Lizenz" / "C Licence" – Schreibweise kommt aus der Sprachdatei */
-function lvlName(lvl) { return t("levelLabel", { L: lvl }); }
+/* Ausgeschriebener Stufenname, kommt aus der Sprachdatei */
+function lvlName(lvl) { return t("lvl" + lvl + "Name"); }
 /* Antwortliste in der aktiven Sprache */
 function answers(q) {
   var a = localized(q.a);
@@ -163,32 +201,35 @@ function chapterById(id) {
   for (var i = 0; i < CONTENT.length; i++) if (CONTENT[i].id === id) return CONTENT[i];
   return null;
 }
-/* Fragen einer Stufe (kumulativ: B enthält auch C, A auch B und C) */
-function poolsUpTo(lvl) {
-  var out = [], i;
-  for (i = 0; i < LEVEL_ORDER.length; i++) {
-    out = out.concat(LEVELS[LEVEL_ORDER[i]].pools);
-    if (LEVEL_ORDER[i] === lvl) break;
-  }
-  return out;
+/* Themenpool einer Frage – ergibt sich aus dem Kapitel */
+var POOL_OF = (function () {
+  var m = {};
+  Object.keys(POOLS).forEach(function (p) {
+    POOLS[p].forEach(function (ch) { m[ch] = p; });
+  });
+  return m;
+})();
+function poolOf(q) { return POOL_OF[q.ch] || null; }
+
+/* Ist die Frage nach den aktuellen Einstellungen überhaupt sichtbar? */
+function usable(q) {
+  if (!state.nat && q.scope === "fed") return false;
+  if (!state.draft && q.origin === "draft") return false;
+  return poolOf(q) !== null;
 }
-function questionsFor(lvl, chapter, cumulative) {
-  var pools = cumulative ? poolsUpTo(lvl) : LEVELS[lvl].pools;
+/* Fragen eines Kapitels. Der Lernpfad ist für beide Stufen gleich, deshalb
+   filtert hier nichts mehr nach Stufe – die Stufen unterscheiden sich allein
+   in der Grenze, ab der ein Quiz als bestanden gilt. */
+function questionsFor(lvl, chapter) {
   return QUESTIONS.filter(function (q) {
-    if (pools.indexOf(q.lvl) === -1) return false;
-    if (!state.nat && q.scope === "national") return false;
-    if (!state.draft && q.origin === "draft") return false;
+    if (!usable(q)) return false;
     if (chapter != null && q.ch !== chapter) return false;
     return true;
   });
 }
-/* Fragen eines einzelnen Pools, unter Beachtung der Einstellung "national" */
+/* Fragen eines einzelnen Themenpools */
 function poolQuestions(pool) {
-  return QUESTIONS.filter(function (q) {
-    return q.lvl === pool
-      && (state.nat || q.scope !== "national")
-      && (state.draft || q.origin !== "draft");
-  });
+  return QUESTIONS.filter(function (q) { return usable(q) && poolOf(q) === pool; });
 }
 /* Zusammensetzung der Prüfung: wie viele Fragen je Pool tatsächlich gezogen werden.
    Ist ein Pool zu klein, übernehmen die übrigen Pools den Rest. */
@@ -232,7 +273,7 @@ function chaptersFor(lvl) {
 }
 function chapterDone(lvl, chId) {
   var p = prog(lvl);
-  var qs = questionsFor(lvl, chId, true);
+  var qs = questionsFor(lvl, chId);
   if (!qs.length) return !!p.read[chId];
   return p.quiz[chId] != null && p.quiz[chId] >= LEVELS[lvl].quizPass;
 }
@@ -295,7 +336,7 @@ function viewLevel(lvl) {
   var chs = chaptersFor(lvl);
 
   var list = chs.map(function (c, idx) {
-    var qs = questionsFor(lvl, c.id, true);
+    var qs = questionsFor(lvl, c.id);
     var done = chapterDone(lvl, c.id);
     var sub, badge;
     if (!qs.length) {
@@ -428,7 +469,7 @@ function viewChapter(lvl, chId) {
   if (!c) return viewLevel(lvl);
   var chs = chaptersFor(lvl);
   var idx = chs.map(function (x) { return x.id; }).indexOf(chId);
-  var qs = questionsFor(lvl, chId, true);
+  var qs = questionsFor(lvl, chId);
   var done = chapterDone(lvl, chId);
 
   var vids = (c.videos || []).map(function (v) {
@@ -484,7 +525,7 @@ function viewChapter(lvl, chId) {
 
 /* ---------- Quiz-Engine -------------------------------------------------- */
 function buildQuiz(lvl, chId, isExam) {
-  var items = isExam ? examQuestions(lvl) : shuffle(questionsFor(lvl, chId, true));
+  var items = isExam ? examQuestions(lvl) : shuffle(questionsFor(lvl, chId));
   items = items.map(function (q) {
     /* Antwortreihenfolge mischen, korrekten Index mitführen */
     var order = shuffle(answers(q).map(function (_, i) { return i; }));
@@ -576,7 +617,7 @@ function viewQuiz() {
     '<div class="card qbox" style="margin-top:16px">' +
       '<div class="qmeta"><span>' + esc(t("questionOf", { i: z.i + 1, n: z.items.length })) + "</span>" +
         "<span>" + (q.origin === "draft" ? '<span class="badge draft">' + esc(t("draftBadge")) + "</span> " : "") +
-        (q.scope === "national" ? '<span class="badge nat">' + esc(t("natBadge")) + "</span> " : "") +
+        (q.scope === "fed" ? '<span class="badge nat">' + esc(t("natBadge")) + "</span> " : "") +
         esc(t("chapter")) + " " + q.ch + "</span></div>" +
       '<div class="qtxt">' + esc(localized(q.q)) + "</div>" + clipHtml(q.clip) + shotHtml(q.shot) +
       '<div class="opts">' + opts + "</div>" + fb +
@@ -597,7 +638,7 @@ function viewResult() {
 
   if (p >= passMark) {
     status = t("passed"); cls = "pass";
-    text = z.exam ? t("passedText", { lvl: z.lvl }) : t("quizPassedText");
+    text = z.exam ? t("passedText", { lvl: lvlName(z.lvl) }) : t("quizPassedText");
   } else if (z.exam && p >= cfg.retake) {
     status = t("retake"); cls = "retry";
     text = t("retakeText", { pass: cfg.pass, retake: cfg.retake });
@@ -663,9 +704,9 @@ function viewCert(lvl) {
       "<h1>" + esc(t("certTitle")) + "</h1>" +
       '<div class="name" id="certName">' + (name ? esc(name) : '<span style="color:#aab">' + esc(t("certName")) + "</span>") + "</div>" +
       '<div class="body">' + esc(t("certBody", {
-        lvl: lvl, pct: Math.round(ex.best), c: ex.c, n: ex.n
+        lvl: lvlName(lvl), pct: Math.round(ex.best), c: ex.c, n: ex.n
       })) + "</div>" +
-      '<div class="foot"><span>' + esc(t("certLevel")) + ": <b>" + esc(lvl) + "</b></span>" +
+      '<div class="foot"><span>' + esc(t("certLevel")) + ": <b>" + esc(lvlName(lvl)) + "</b></span>" +
         "<span>" + esc(t("certDate")) + ": <b>" + esc(ex.date) + "</b></span></div>" +
       '<p style="font-size:12px;color:var(--muted);margin:18px 0 0">' + esc(t("certNote")) + "</p>" +
     "</div>" +
