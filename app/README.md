@@ -31,7 +31,7 @@ ohne Konto und ohne Server.
 | Auslegungen | 51 Erläuterungen aus der Schulungsmappe |
 | Handzeichen | 18 Zeichen mit 21 Fotos (16 aus der Schulungsmappe, 2 aus den Schulungsfolien), 13 davon als Bildfrage |
 | Sprachen | Deutsch und Englisch, vollständig – 226 Inhaltsblöcke und 235 Fragen in beiden Sprachen |
-| Prüfungsfragen | 235 zweisprachig: 121 aus dem Katalog von Faustball Deutschland, 69 aus Spielregeln und Schulungsmappe, 6 Bildfragen, 39 Entwürfe zur Spielleitung |
+| Prüfungsfragen | 235 zweisprachig: 121 aus dem Katalog von Faustball Deutschland, 108 aus Spielregeln und Schulungsmappe, 6 Bildfragen |
 
 ### Abschlussprüfungen
 
@@ -151,13 +151,13 @@ Für die Fragen ist der deutsche Wortlaut maßgeblich; die App sagt das im engli
 | `origin` | Anzahl | Woher |
 |----------|--------|-------|
 | `fbd` | 121 | Moodle-Fragenkataloge von Faustball Deutschland, unverändert übernommen |
-| `ifa` | 69 | aus den Auslegungen der Schulungsmappe und bisher nicht abgefragtem Regeltext abgeleitet, fachlich freigegeben |
+| `ifa` | 108 | aus Regeltext, den Auslegungen der Schulungsmappe und der Schiedsrichterordnung abgeleitet, fachlich freigegeben |
 | `ppt` | 6 | Bildfragen zur Ausball-Entscheidung aus dem Foliensatz „01 Spielfeld und Geräte“, fachlich freigegeben |
-| `draft` | 39 | Kapitel 8, 11–13 und 16 – Handzeichen, Verhalten, Linienrichter, Aufgaben rund ums Spiel. Noch nicht abgenommen, siehe `Pruefvorlage-Spielleitung.md` |
 
-Die 75 ergänzten Fragen verteilen sich auf 32 C-Niveau (Grundwissen, darunter die 6 Bildfragen) und
-43 A-Niveau (Auslegung, Ermessen, Strafen). `Fragen-Nachweis.md` im übergeordneten Ordner hält fest,
-auf welche Quellstelle sich jede stützt – als Nachweis, warum eine Antwort richtig ist.
+Die 114 ergänzten Fragen verteilen sich auf 58 C-Niveau (Grundwissen, darunter 19 Bildfragen) und
+56 A-Niveau (Auslegung, Ermessen, Strafen). `Fragen-Nachweis.md` und
+`Fragen-Nachweis-Spielleitung.md` im übergeordneten Ordner halten fest, auf welche Quellstelle sich
+jede stützt – als Nachweis, warum eine Antwort richtig ist.
 
 **Neue Fragen zur Prüfung stellen.** Wer Fragen ergänzt, die noch nicht abgenommen sind, setzt
 `"origin": "draft"`. Solche Fragen tragen im Quiz ein Kennzeichen, und unter **Einstellungen** erscheint

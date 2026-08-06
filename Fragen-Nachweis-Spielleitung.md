@@ -1,12 +1,15 @@
-# Prüfvorlage: 39 neue Fragen zu den Kapiteln 8, 11–13 und 16
+# Ergänzte Fragen zur Spielleitung – Kapitel 8, 11–13 und 16
+
+**Von Toby freigegeben am 6. August 2026.** Eine Frage wurde dabei geändert:
+IFA-A-054 nennt jetzt ausdrücklich, dass im Auslauf kein weiterer Ball liegen darf –
+Verletzungsgefahr. Die Fragen tragen seitdem `origin: "ifa"`.
 
 Stand 6. August 2026. Diese Fragen schließen die Lücke im künftigen Pool **Spielleitung**
 (Kapitel 9–13 und 16), der in der zweistufigen Struktur 20 % der Nationalprüfung tragen soll.
 Bisher hatten die Kapitel 11, 12, 13 und 16 **keine einzige** Frage.
 
-Alle 39 tragen `origin: "draft"` und sind im Quiz als Entwurf gekennzeichnet. Über
-**Einstellungen → Entwurfsfragen einbeziehen** lassen sie sich abschalten. Nach deiner
-Abnahme wird `origin` auf `ifa` gesetzt.
+Dieses Dokument bleibt der Herkunftsnachweis: zu jeder Frage die Quellstelle, auf die
+sich die Antwort stützt.
 
 Die englische Fassung steht kursiv darunter; sie ist eine Arbeitsübersetzung, maßgeblich
 ist der deutsche Wortlaut. Das Zitat am Ende jeder Frage ist die Belegstelle aus dem
@@ -14,7 +17,7 @@ Quelldokument.
 
 ---
 
-## Zwei Punkte zur Entscheidung
+## Was daran noch offen ist
 
 **1. Kapitel 16 stammt aus der Schiedsrichterordnung.** Die Inhalte des Kapitels sind aus den
 Foliensätzen von Faustball Deutschland übernommen und beruhen auf der deutschen
@@ -22,7 +25,7 @@ Schiedsrichterordnung. Die beiden Fragen mit konkreten Zeitangaben – 30 Minute
 (IFA-C-037) und der Ablauf 5/3 Minuten vor Anpfiff (IFA-C-038) – habe ich vorsorglich als
 `scope: national` markiert, weil diese Zahlen international nicht gelten müssen. Die übrigen
 vier Fragen zu Kapitel 16 sind allgemeine Schiedsrichterpraxis und als `ifa` markiert.
-Falls die IFA eigene Fristen kennt, gehören alle sechs auf `national`.
+Falls die IFA eigene Fristen kennt, gehören alle sechs auf `national`. **Noch offen.**
 
 **2. Drei Fotos sind schwach – die Fragen fangen das im Text ab.** Bei den Zeichen 3 (Netz),
 4 (Übertritt) und 9 (Auswechslung) trägt das Bild allein die Antwort nicht:
@@ -617,14 +620,16 @@ Frage unfair.
 **Wo verwahrt der Schiedsrichter die nicht gespielten Bälle?**  
 *Where does the referee keep the balls that are not in play?*
 
-- [x] **Der nächste einsetzbare Ball liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m dahinter**  —  *The next usable ball lies directly beside the post, all others 3 to 5 m behind it*
-- [ ] Alle Bälle bleiben beim Anschreibertisch  —  *All balls stay at the scorer's table*
+- [x] **Der nächste einsetzbare Ball liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m dahinter – im Auslauf darf kein Ball liegen**  —  *The next usable ball lies directly beside the post, all others 3 to 5 m behind it – no ball may lie in the run-off area*
+- [ ] Verteilt im Auslauf hinter den Grundlinien, damit sie schnell greifbar sind  —  *Spread around the run-off area behind the base lines so they are quickly at hand*
 - [ ] Alle Bälle liegen direkt neben dem Pfosten  —  *All balls lie directly beside the post*
 - [ ] Die Bälle verbleiben bei den Mannschaften auf der Auswechselbank  —  *The balls stay with the teams on the substitutes' bench*
 
-*Fundstelle:* Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle.
+*Fundstelle:* Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle. Im Auslauf darf kein weiterer Ball liegen: Spieler verfolgen dort den Ball mit dem Blick nach oben und können auf einem liegenden Ball umknicken.
 
 > Der nächste Ball, der ins Spiel gebracht werden könnte, liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m hinter dem Pfosten.
+>
+> *Ergänzt am 6. August 2026 von Toby: Im Auslauf darf kein weiterer Ball liegen — Verletzungsgefahr. Diese Begründung steht so nicht im Quelldokument.*
 
 ### IFA-A-055  ·  Stufe A
 

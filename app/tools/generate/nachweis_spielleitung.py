@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Erzeugt die Pruefvorlage fuer die 39 neuen Fragen."""
+"""Erzeugt den Herkunftsnachweis fuer die 39 Fragen zur Spielleitung."""
 import io, json, re
 
 Q = json.load(io.open('/sessions/affectionate-serene-volta/mnt/outputs/neue_fragen.json', encoding='utf-8'))
@@ -46,34 +46,36 @@ BELEG = {
  "IFA-C-037": "Der Schiedsrichter sollte 30 Minuten vor Spielbeginn am Spielort anwesend sein.",
  "IFA-C-038": "Etwa 5 Minuten vor Spielbeginn fordert ein anhaltender Pfiff die Mannschaften auf, das Einspielen einzustellen, sodass 3 Minuten vor Spielbeginn ausgelost werden kann.",
  "IFA-C-039": "Er lost mit den Mannschaftsführern Feld oder Ball und damit die erste Angabe aus.",
- "IFA-A-054": "Der nächste Ball, der ins Spiel gebracht werden könnte, liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m hinter dem Pfosten.",
+ "IFA-A-054": "Der nächste Ball, der ins Spiel gebracht werden könnte, liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m hinter dem Pfosten.\n>\n> *Ergänzt am 6. August 2026 von Toby: Im Auslauf darf kein weiterer Ball liegen — Verletzungsgefahr. Diese Begründung steht so nicht im Quelldokument.*",
  "IFA-A-055": "Die zu Beginn tatsächlich eingesetzten Spieler werden mit einem Kreuz markiert. Ergänzungen und Auswechslungen werden nachgetragen, nicht anwesende Spieler gestrichen.",
  "IFA-A-056": "Er prüft die Vollständigkeit des Spielformulars, schließt mit seiner Unterschrift ab und übergibt es der Spielleitung.",
 }
 
 out = []
 w = out.append
-w("# Prüfvorlage: 39 neue Fragen zu den Kapiteln 8, 11–13 und 16\n")
+w("# Ergänzte Fragen zur Spielleitung – Kapitel 8, 11–13 und 16\n")
+w("**Von Toby freigegeben am 6. August 2026.** Eine Frage wurde dabei geändert:\n"
+  "IFA-A-054 nennt jetzt ausdrücklich, dass im Auslauf kein weiterer Ball liegen darf –\n"
+  "Verletzungsgefahr. Die Fragen tragen seitdem `origin: \"ifa\"`.\n")
 w("Stand 6. August 2026. Diese Fragen schließen die Lücke im künftigen Pool **Spielleitung**\n"
   "(Kapitel 9–13 und 16), der in der zweistufigen Struktur 20 % der Nationalprüfung tragen soll.\n"
   "Bisher hatten die Kapitel 11, 12, 13 und 16 **keine einzige** Frage.\n")
-w("Alle 39 tragen `origin: \"draft\"` und sind im Quiz als Entwurf gekennzeichnet. Über\n"
-  "**Einstellungen → Entwurfsfragen einbeziehen** lassen sie sich abschalten. Nach deiner\n"
-  "Abnahme wird `origin` auf `ifa` gesetzt.\n")
+w("Dieses Dokument bleibt der Herkunftsnachweis: zu jeder Frage die Quellstelle, auf die\n"
+  "sich die Antwort stützt.\n")
 w("Die englische Fassung steht kursiv darunter; sie ist eine Arbeitsübersetzung, maßgeblich\n"
   "ist der deutsche Wortlaut. Das Zitat am Ende jeder Frage ist die Belegstelle aus dem\n"
   "Quelldokument.\n")
 w("---\n")
 
-# Zwei Punkte, die Toby entscheiden muss
-w("## Zwei Punkte zur Entscheidung\n")
+# Offene Punkte
+w("## Was daran noch offen ist\n")
 w("**1. Kapitel 16 stammt aus der Schiedsrichterordnung.** Die Inhalte des Kapitels sind aus den\n"
   "Foliensätzen von Faustball Deutschland übernommen und beruhen auf der deutschen\n"
   "Schiedsrichterordnung. Die beiden Fragen mit konkreten Zeitangaben – 30 Minuten Anwesenheit\n"
   "(IFA-C-037) und der Ablauf 5/3 Minuten vor Anpfiff (IFA-C-038) – habe ich vorsorglich als\n"
   "`scope: national` markiert, weil diese Zahlen international nicht gelten müssen. Die übrigen\n"
   "vier Fragen zu Kapitel 16 sind allgemeine Schiedsrichterpraxis und als `ifa` markiert.\n"
-  "Falls die IFA eigene Fristen kennt, gehören alle sechs auf `national`.\n")
+  "Falls die IFA eigene Fristen kennt, gehören alle sechs auf `national`. **Noch offen.**\n")
 w("**2. Drei Fotos sind schwach – die Fragen fangen das im Text ab.** Bei den Zeichen 3 (Netz),\n"
   "4 (Übertritt) und 9 (Auswechslung) trägt das Bild allein die Antwort nicht:\n\n"
   "- **sig-03 / sig-04** unterscheiden sich nur in der Armrichtung – nach oben zum Netz\n"
@@ -108,6 +110,6 @@ for ch in [11, 12, 13, 8, 16]:
             w("> %s" % BELEG[q["id"]])
         w("")
 
-io.open('/sessions/affectionate-serene-volta/mnt/referee-education/Pruefvorlage-Spielleitung.md',
+io.open('/sessions/affectionate-serene-volta/mnt/referee-education/Fragen-Nachweis-Spielleitung.md',
         'w', encoding='utf-8').write("\n".join(out))
 print("geschrieben:", len(Q), "Fragen,", sum(1 for q in Q if q["id"] in BELEG), "mit Belegzitat")

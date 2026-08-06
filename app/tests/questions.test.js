@@ -33,22 +33,24 @@ console.log('\n== Herkunft der Fragen ==');
   ok(Q.every(q=>HERKUNFT.includes(q.origin)),'jede Frage hat eine bekannte Herkunft');
   const z={}; Q.forEach(q=>z[q.origin]=(z[q.origin]||0)+1);
   ok(z.fbd===121,'121 Fragen aus dem Katalog von Faustball Deutschland unveraendert, ist: '+z.fbd);
-  ok(z.ifa===69,'69 Fragen aus Spielregeln und Schulungsmappe, ist: '+z.ifa);
+  ok(z.ifa===108,'108 Fragen aus Spielregeln und Schulungsmappe, ist: '+z.ifa);
   ok(z.ppt===6,'6 Bildfragen aus den Foliensaetzen, ist: '+z.ppt);
-  ok(z.draft===39,'39 Entwuerfe zu den Kapiteln 8, 11-13 und 16, ist: '+z.draft);
+  ok(!z.draft,'keine ungeprueften Entwuerfe mehr im Katalog');
 
-  /* Die Entwuerfe schliessen die Luecke im Pool Spielleitung. */
-  const ent=Q.filter(q=>q.origin==='draft');
-  ok(ent.every(q=>[8,11,12,13,16].includes(q.ch)),'Entwuerfe liegen in den vorgesehenen Kapiteln');
-  ok(ent.every(q=>q.tr===true),'Entwuerfe sind als Arbeitsuebersetzung markiert');
-  ok(ent.every(q=>q.ref&&q.ref.de&&q.ref.de.length>8&&q.ref.en),'jeder Entwurf nennt eine Fundstelle');
-  ok(ent.every(q=>ansOf(q,'de').length===4&&ansOf(q,'en').length===4),'je vier Antworten in beiden Sprachen');
-  ok(ent.every(q=>new Set(ansOf(q,'de')).size===4),'keine doppelte Antwort innerhalb eines Entwurfs');
-  [11,12,13,16].forEach(ch=>ok(Q.some(q=>q.ch===ch),'Kapitel '+ch+' hat mindestens eine Frage'));
+  /* Die am 6.8.2026 abgenommenen Fragen schliessen die Luecke im Pool Spielleitung.
+     Kein Kapitel darf mehr ohne Fragen sein – das war der Ausloeser. */
+  for(let ch=1;ch<=16;ch++)
+    ok(Q.some(q=>q.ch===ch),'Kapitel '+ch+' hat mindestens eine Frage');
+  const leitung=Q.filter(q=>[9,10,11,12,13,16].includes(q.ch));
+  ok(leitung.length>=60,'Pool Spielleitung traegt die Nationalquote von 12, ist: '+leitung.length);
 
   const neu=Q.filter(q=>q.origin==='ifa'||q.origin==='ppt');
   ok(neu.every(q=>q.lvl==='A'||q.lvl==='C'),'die ergaenzten Fragen liegen auf A oder C');
-  ok(neu.every(q=>q.scope==='ifa'),'keine davon ist als national markiert');
+  /* National markiert sind nur die beiden Fragen zu den Fristen der deutschen
+     Schiedsrichterordnung – 30 Minuten Anwesenheit und der Ablauf 5/3 Minuten
+     vor Anpfiff. Diese Zahlen gelten international nicht zwingend. */
+  const nat=neu.filter(q=>q.scope!=='ifa');
+  ok(nat.length===2&&nat.every(q=>q.ch===16),'nur die zwei Kapitel-16-Fristen sind national markiert');
   ok(neu.every(q=>ansOf(q,'de').length===4&&ansOf(q,'en').length===4),'je vier Antworten in beiden Sprachen');
   ok(neu.every(q=>q.c>=0&&q.c<4),'gueltiger Loesungsindex');
   ok(neu.every(q=>q.ref&&q.ref.de&&q.ref.de.length>8&&q.ref.en),'jede nennt eine Fundstelle in beiden Sprachen');
@@ -62,15 +64,25 @@ console.log('\n== Herkunft der Fragen ==');
   ok(text.every(q=>q.id.startsWith('IFA-'+q.lvl+'-')),'Kennung der Textfragen passt zur Stufe');
   ok(neu.filter(q=>q.shot).every(q=>q.id.startsWith('IFA-BILD-')),'Bildfragen tragen die Kennung IFA-BILD');
 
-  /* Fundstellen muessen im Lehrinhalt auflösbar sein */
+  /* Fundstellen muessen auflösbar sein. Zwei Formen sind zulaessig: eine
+     Regelnummer, die es im Lehrinhalt wirklich gibt, oder ein benanntes
+     Quelldokument. Frueher wurde nur die Regelnummer geprueft – damit waeren
+     Fundstellen wie "IFA-Schulungsmappe, Handzeichen 7" durchgefallen, obwohl
+     sie praezise sind. */
   const rules=new Set();
   w.IFA_CONTENT.forEach(c=>c.blocks.forEach(b=>{ if(b.t==='rule'&&typeof b.n==='string') rules.add(b.n); }));
-  const offen=neu.filter(q=>{
+  const QUELLE=/Spielregeln|Schulungsmappe|Schiedsrichterordnung|Wettkampfbestimmungen|Spielordnung/;
+  const ohne=neu.filter(q=>!QUELLE.test(q.ref.de));
+  ok(ohne.length===0,'jede Fundstelle nennt ein Quelldokument'+
+     (ohne.length?' ('+ohne.map(q=>q.id).join(',')+')':''));
+  const falsch=neu.filter(q=>{
     const nums=(q.ref.de.match(/\d+(?:\.\d+)+/g)||[]);
-    return !nums.some(n=>rules.has(n));
+    return nums.length&&!nums.some(n=>rules.has(n));
   });
-  ok(offen.length===0,'alle Fundstellen verweisen auf eine vorhandene Regel'+
-     (offen.length?' ('+offen.map(q=>q.id).join(',')+')':''));
+  ok(falsch.length===0,'wo eine Regelnummer steht, gibt es die Regel auch'+
+     (falsch.length?' ('+falsch.map(q=>q.id).join(',')+')':''));
+  const mitNr=neu.filter(q=>/\d+(?:\.\d+)+/.test(q.ref.de)).length;
+  ok(mitNr>=60,'der Grossteil nennt zusaetzlich eine Regelnummer, ist: '+mitNr);
 }
 
 console.log('\n== Abschaltbarkeit ==');

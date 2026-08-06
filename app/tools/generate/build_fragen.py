@@ -87,7 +87,7 @@ def frage(qid, lvl, ch, scope, qde, qen, ade, aen, c, rde, ren, shot=None):
     o["a"] = {"de": [de(x) for x in ade], "en": aen}
     o["c"] = c
     o["ref"] = {"de": de(rde), "en": ren}
-    o["origin"] = "draft"
+    o["origin"] = "ifa"
     o["tr"] = True
     return o
 

@@ -7,8 +7,7 @@
    tr      englische Fassung ist eine Arbeitsübersetzung, nicht offiziell
    origin  fbd  = Moodle-Fragenkataloge von Faustball Deutschland
            ifa  = aus IFA-Spielregeln und Schulungsmappe abgeleitet, freigegeben
-           ppt  = aus den Schulungsfoliensätzen abgeleitet, freigegeben
-           draft = abgeleitet, aber fachlich noch nicht abgenommen */
+           ppt  = aus den Schulungsfoliensätzen abgeleitet, freigegeben */
 window.IFA_QUESTIONS = [
 {
 "id": "QA-2022-021",
@@ -6109,7 +6108,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 7 – gestreckter Arm, geschlossene Faust senkrecht nach oben, unterstützt durch den Ausruf „BLOCK“.",
 "en": "IFA Training Manual, hand signal 7 – straight arm with closed fist held vertically upwards, supported by the call ‚BLOCK‘."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6141,7 +6140,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 18 – beide gestreckten Arme mit geschlossener Faust vor der Brust. Nicht zu verwechseln mit dem Block, bei dem nur ein Arm nach oben geht.",
 "en": "IFA Training Manual, hand signal 18 – both arms extended with closed fists in front of the chest. Not to be confused with block, where only one arm goes up."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6173,7 +6172,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 14 – beide Hände außerhalb des Körperrahmens zu Fäusten geschlossen und horizontal an der Brust verbunden. Beim Gleichstand sind die Arme dagegen nach vorn gestreckt.",
 "en": "IFA Training Manual, hand signal 14 – both hands closed into fists outside the body frame and joined horizontally at the chest. For a tie the arms are extended forward instead."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6205,7 +6204,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 6 – ein abgewinkelter Arm zeigt mit geöffneter Hand nach oben, die andere geöffnete Hand wird mittig darüber gelegt.",
 "en": "IFA Training Manual, hand signal 6 – one bent arm points upwards with an open hand, the other open hand is placed across it."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6237,7 +6236,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 13 – Deckenberührung nach einem Überschlag. Der zweite Arm zeigt danach waagerecht zur Mannschaft, die den Punkt erhält.",
 "en": "IFA Training Manual, hand signal 13 – contact with the ceiling after a rebound. The second arm then points horizontally to the team awarded the point."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6269,7 +6268,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 11 – die Flugbahn des Balles wird unterhalb des Bandes nachgezeigt.",
 "en": "IFA Training Manual, hand signal 11 – the flight path of the ball is traced below the tape."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6301,7 +6300,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 12 – die Flugbahn wird oberhalb des Körpers nachgezeigt, Handfläche nach unten.",
 "en": "IFA Training Manual, hand signal 12 – the flight path is traced above the body with the palm facing down."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6333,7 +6332,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 8.",
 "en": "IFA Training Manual, hand signal 8."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6365,7 +6364,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 5.",
 "en": "IFA Training Manual, hand signal 5."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6397,7 +6396,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 2 – die Hand zeigt auf den Körperteil, den der Ball berührt hat.",
 "en": "IFA Training Manual, hand signal 2 – the hand points to the part of the body the ball touched."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6429,7 +6428,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 3 – ein ausgestreckter Arm mit geöffneter Hand zeigt in Richtung Netz (Band/Leine). Beim Übertritt (Zeichen 4) weist derselbe Arm dagegen schräg nach unten zur Angabelinie.",
 "en": "IFA Training Manual, hand signal 3 – an extended arm with an open hand points towards the net (tape/cord). For a foot fault (signal 4) the same arm points diagonally downwards to the service line instead."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6461,7 +6460,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 4 – ein ausgestreckter Arm mit geöffneter Hand zeigt in Richtung Angabelinie. Beim Netzfehler (Zeichen 3) weist derselbe Arm nach oben.",
 "en": "IFA Training Manual, hand signal 4 – an extended arm with an open hand points towards the service line. For a fault at the net (signal 3) the same arm points upwards."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6493,7 +6492,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 9 – die Auswechslung ist durch Kreisen beider Hände über dem Kopf zu signalisieren. Das Foto zeigt die Bewegung auf Brusthöhe; maßgeblich ist die Beschreibung.",
 "en": "IFA Training Manual, hand signal 9 – a substitution is signalled by circling both hands above the head. The photo shows the movement at chest height; the written description prevails."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6524,7 +6523,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 1 bis 5 und 11 bis 14 – der zweite Arm weist stets der Mannschaft mit dem Gutpunkt zu.",
 "en": "IFA Training Manual, hand signals 1 to 5 and 11 to 14 – the second arm always points to the team awarded the point."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6555,7 +6554,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 2, Hinweis zu Treffern am Fuß.",
 "en": "IFA Training Manual, hand signal 2, note on contacts with the foot."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6586,7 +6585,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – neutrale Entscheidungsfindung.",
 "en": "IFA Training Manual, conduct of the referee – neutral decision-making."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6617,7 +6616,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – Umgang mit eigenen Fehlern.",
 "en": "IFA Training Manual, conduct of the referee – dealing with one's own mistakes."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6648,7 +6647,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – Einsprüche. Auch Einsprüche gegen Tatsachenentscheidungen sind sofort zu vermerken.",
 "en": "IFA Training Manual, conduct of the referee – objections. Objections against decisions of fact must also be recorded immediately."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6679,7 +6678,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – Fragen von Mannschaftsführern.",
 "en": "IFA Training Manual, conduct of the referee – questions from team captains."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6710,7 +6709,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – Fragen von Mannschaftsführern.",
 "en": "IFA Training Manual, conduct of the referee – questions from team captains."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6741,7 +6740,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – der Schiedsrichter hat alle Maßnahmen zu ergreifen, die eine klaglose Beendigung des Wettspieles ermöglichen.",
 "en": "IFA Training Manual, conduct of the referee – the referee must take all measures that allow the match to be completed without complaint."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6772,7 +6771,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Aufgaben des Schiedsrichters während des Spiels.",
 "en": "IFA Training Manual, duties of the referee during the match."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6803,7 +6802,7 @@ window.IFA_QUESTIONS = [
 "de": "Spielregeln 9.3.",
 "en": "Rules of the Game 9.3."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6834,7 +6833,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 16 – Linienrichter und Schiedsrichter-Assistenten.",
 "en": "IFA Training Manual, hand signal 16 – linesmen and referee assistants."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6865,7 +6864,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Handzeichen 16 sowie die beste Position des Linienschiedsrichters 3.",
 "en": "IFA Training Manual, hand signal 16 and best position of the linesman 3."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6896,7 +6895,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, die beste Position des Linienschiedsrichters 3 – kann auch der Kollege die Situation nicht erkennen, übernimmt der Schiedsrichter.",
 "en": "IFA Training Manual, best position of the linesman 3 – if the colleague cannot see the situation either, the referee takes over."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6927,7 +6926,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, die beste Position des Linienschiedsrichters 2 – der Kollege darf auf keinen Fall zuerst reagieren.",
 "en": "IFA Training Manual, best position of the linesman 2 – the colleague must never react first."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6958,7 +6957,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Besonderheiten in der Halle. Dieselbe Signalisierung gilt, wenn der Ball ins Aus fliegt und die abwehrende Mannschaft ihn berührt hat.",
 "en": "IFA Training Manual, special features indoors. The same signal applies when the ball flies out after being touched by the defending team."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -6989,7 +6988,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, der Standort der Linienrichter.",
 "en": "IFA Training Manual, the position of the linesmen."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -7020,7 +7019,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Auswechslung von Linienrichtern.",
 "en": "IFA Training Manual, replacement of linesmen."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -7051,7 +7050,7 @@ window.IFA_QUESTIONS = [
 "de": "Spielregeln 9.4.",
 "en": "Rules of the Game 9.4."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -7082,7 +7081,7 @@ window.IFA_QUESTIONS = [
 "de": "Spielregeln 8.1.",
 "en": "Rules of the Game 8.1."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -7113,7 +7112,7 @@ window.IFA_QUESTIONS = [
 "de": "IFA-Schulungsmappe, Kontrolle des Anschreibers zu Regel 8.2. Die Gutbälle werden mit arabischen Ziffern in zeitlicher Reihenfolge eingetragen.",
 "en": "IFA Training Manual, supervision of the scorer relating to rule 8.2. Points are entered in Arabic numerals in chronological order."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -7144,7 +7143,7 @@ window.IFA_QUESTIONS = [
 "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel. Rechtzeitig genug, um Spielformular, Zeitvergleich und Geräteprüfung vor dem planmäßigen Anpfiff zu erledigen.",
 "en": "Referee regulations, duties before the match. Early enough to complete match form, time check and equipment inspection before the scheduled start."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -7175,7 +7174,7 @@ window.IFA_QUESTIONS = [
 "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Auslosung.",
 "en": "Referee regulations, duties before the match – the toss."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -7206,7 +7205,7 @@ window.IFA_QUESTIONS = [
 "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Auslosung.",
 "en": "Referee regulations, duties before the match – the toss."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -7220,24 +7219,24 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Der nächste einsetzbare Ball liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m dahinter",
-"Alle Bälle bleiben beim Anschreibertisch",
+"Der nächste einsetzbare Ball liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m dahinter – im Auslauf darf kein Ball liegen",
+"Verteilt im Auslauf hinter den Grundlinien, damit sie schnell greifbar sind",
 "Alle Bälle liegen direkt neben dem Pfosten",
 "Die Bälle verbleiben bei den Mannschaften auf der Auswechselbank"
 ],
 "en": [
-"The next usable ball lies directly beside the post, all others 3 to 5 m behind it",
-"All balls stay at the scorer's table",
+"The next usable ball lies directly beside the post, all others 3 to 5 m behind it – no ball may lie in the run-off area",
+"Spread around the run-off area behind the base lines so they are quickly at hand",
 "All balls lie directly beside the post",
 "The balls stay with the teams on the substitutes' bench"
 ]
 },
 "c": 0,
 "ref": {
-"de": "Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle.",
-"en": "Referee regulations, duties during the match – keeping the balls."
+"de": "Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle. Im Auslauf darf kein weiterer Ball liegen: Spieler verfolgen dort den Ball mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
+"en": "Referee regulations, duties during the match – keeping the balls. No further ball may lie in the run-off area: players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -7268,7 +7267,7 @@ window.IFA_QUESTIONS = [
 "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Formulareintragungen. Ergänzungen und Auswechslungen werden nachgetragen.",
 "en": "Referee regulations, duties before the match – entries on the form. Additions and substitutions are entered subsequently."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 },
 {
@@ -7299,7 +7298,7 @@ window.IFA_QUESTIONS = [
 "de": "Schiedsrichterordnung, Aufgaben nach dem Spiel – Formularprüfung.",
 "en": "Referee regulations, duties after the match – checking the form."
 },
-"origin": "draft",
+"origin": "ifa",
 "tr": true
 }
 ];

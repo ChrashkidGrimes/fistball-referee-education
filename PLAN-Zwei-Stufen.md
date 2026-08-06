@@ -95,8 +95,8 @@ Der Pool `leitung` wächst damit von 26 auf 63 Fragen; die Nationalquote von 12
 zieht knapp ein Fünftel davon. Dreizehn der neuen Fragen sind Bildfragen auf den
 vorhandenen Handzeichen-Fotos.
 
-Die 39 Fragen tragen `origin: "draft"` und stehen in
-[`Pruefvorlage-Spielleitung.md`](Pruefvorlage-Spielleitung.md) zur Abnahme.
+Die 39 Fragen sind von Toby am 6. August 2026 freigegeben und tragen `origin: "ifa"`.
+Herkunftsnachweis: [`Fragen-Nachweis-Spielleitung.md`](Fragen-Nachweis-Spielleitung.md).
 
 ---
 
@@ -104,8 +104,8 @@ Die 39 Fragen tragen `origin: "draft"` und stehen in
 
 ### 1. Datenmodell
 
-- **`lvl` entfällt** an allen 196 Fragen. Der Pool ergibt sich aus `ch` über eine
-  Zuordnungstabelle – kein Nachtaggen von 196 Datensätzen, und neue Fragen sind
+- **`lvl` entfällt** an allen 235 Fragen. Der Pool ergibt sich aus `ch` über eine
+  Zuordnungstabelle – kein Nachtaggen von 235 Datensätzen, und neue Fragen sind
   automatisch richtig einsortiert.
 - **`scope` umbenennen.** `scope: "national"` markiert heute die 27 Fragen zu
   deutschen Ordnungen. Mit einer Lizenzstufe gleichen Namens ist der Begriff doppelt
@@ -172,9 +172,10 @@ jeden bisherigen Fortschritt. **Empfehlung: migrieren**, der Aufwand ist gering.
 ## Reihenfolge
 
 1. ~~**Fragen für Kapitel 11–13 schreiben**, dazu Kapitel 8 und 16 auffüllen.~~
-   Erledigt am 6. August 2026: 39 Fragen, Nachweis in `Pruefvorlage-Spielleitung.md`.
-2. **Fragen von Toby abnehmen lassen.** ← hier stehen wir
-3. Datenmodell umstellen: `lvl` raus, Pool aus `ch`, `scope` umbenennen.
+   Erledigt und freigegeben am 6. August 2026: 39 Fragen, Nachweis in
+   `Fragen-Nachweis-Spielleitung.md`.
+2. ~~**Fragen von Toby abnehmen lassen.**~~ Freigegeben am 6. August 2026.
+3. **Datenmodell umstellen: `lvl` raus, Pool aus `ch`, `scope` umbenennen.** ← hier stehen wir
 4. `app.js` auf zwei Stufen umbauen, Fortschrittsmigration ergänzen.
 5. Oberfläche und Texte, DE und EN.
 6. Tests neu fassen, vollständig grün.

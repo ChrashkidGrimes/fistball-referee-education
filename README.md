@@ -20,7 +20,7 @@ liegt im `localStorage` des Browsers, es gibt keine Konten und keine Datenübert
 | Prüfungsfragen | 235, alle zweisprachig, mit Fundstelle im Regelwerk |
 | Bilder | 21 Handzeichen-Fotos, Spielfeld- und Auslaufdiagramme, sechs Ausball-Entscheidungen; 19 davon als Bildfrage |
 | Abschlussprüfungen | C 54 Fragen ab 70 %, B 36 ab 80 %, A 34 ab 85 %, jeweils mit Nachprüfungsgrenze |
-| Tests | 208 automatisierte Prüfungen |
+| Tests | 218 automatisierte Prüfungen |
 
 ## Quellen
 
@@ -52,8 +52,10 @@ den internen Gebrauch hinaus ist die Freigabe der IFA einzuholen – siehe die o
 
 ## Nachweise
 
-- [`Fragen-Nachweis.md`](Fragen-Nachweis.md) – für jede der 75 ergänzten Fragen die Quellstelle, auf die
-  sich die Antwort stützt, deutsch und englisch.
+- [`Fragen-Nachweis.md`](Fragen-Nachweis.md) – für jede der 75 zuerst ergänzten Fragen die Quellstelle,
+  auf die sich die Antwort stützt, deutsch und englisch.
+- [`Fragen-Nachweis-Spielleitung.md`](Fragen-Nachweis-Spielleitung.md) – dasselbe für die 39 Fragen zu
+  Handzeichen, Verhalten, Linienrichtern und den Aufgaben rund um das Spiel.
 - [`app/assets/img/signals/manifest.json`](app/assets/img/signals/manifest.json) – Herkunft jedes
   Handzeichen-Fotos nach Seite und Position im Ausgangsdokument.
 

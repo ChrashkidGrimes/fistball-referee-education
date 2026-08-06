@@ -109,14 +109,21 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
       sobald welche dazukommen. `Fragen-Nachweis.md` hält weiterhin fest, auf welche
       Quellstelle sich jede Frage stützt.
 
-- [ ] **39 neue Entwurfsfragen zur Spielleitung abnehmen.** Erstellt am 6. August 2026
-      für die Kapitel 8, 11, 12, 13 und 16, die bis dahin fast keine Fragen hatten.
-      Darunter dreizehn Bildfragen auf den vorhandenen Handzeichen-Fotos. Sie tragen
-      `origin: "draft"` und sind über die Einstellungen abschaltbar.
-      Vorlage: `Pruefvorlage-Spielleitung.md`. Ein Punkt darin braucht eine
-      Entscheidung: die Reichweite der Kapitel-16-Fragen (deutsche
-      Schiedsrichterordnung oder international) und damit, ob alle sechs
-      auf `national` gehören.
+- [x] ~~**39 neue Fragen zur Spielleitung abnehmen.**~~ Von Toby freigegeben am
+      6. August 2026. Erstellt für die Kapitel 8, 11, 12, 13 und 16, die bis dahin
+      fast keine Fragen hatten; darunter dreizehn Bildfragen auf den vorhandenen
+      Handzeichen-Fotos. Eine Frage wurde bei der Abnahme geändert: IFA-A-054 nennt
+      jetzt ausdrücklich, dass im Auslauf kein weiterer Ball liegen darf –
+      Verletzungsgefahr. Die Kennzeichnung `origin: "draft"` ist entfallen, die
+      Fragen tragen `ifa`. Herkunftsnachweis: `Fragen-Nachweis-Spielleitung.md`.
+
+- [ ] **Reichweite der Kapitel-16-Fragen klären.** Kapitel 16 beruht auf der
+      deutschen Schiedsrichterordnung. Die beiden Fragen mit konkreten Zeitangaben –
+      30 Minuten Anwesenheit (IFA-C-037) und der Ablauf 5/3 Minuten vor Anpfiff
+      (IFA-C-038) – sind vorsorglich als `national` markiert, weil diese Zahlen
+      international nicht gelten müssen. Die übrigen vier gelten als allgemeine
+      Schiedsrichterpraxis. Kennt die IFA eigene Fristen, gehören alle sechs
+      auf `national`.
 
 - [ ] **Handzeichen 3, 4 und 9 neu fotografieren.** Die drei Fotos tragen die Antwort
       nicht aus eigener Kraft:
