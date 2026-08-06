@@ -2,7 +2,7 @@
 """Erzeugt den Herkunftsnachweis fuer die 39 Fragen zur Spielleitung."""
 import io, json, re
 
-Q = json.load(io.open('/sessions/affectionate-serene-volta/mnt/outputs/neue_fragen.json', encoding='utf-8'))
+Q = json.load(io.open('fragen-spielleitung.json', encoding='utf-8'))
 
 KAP = {8: "Wertung", 11: "Handzeichen und Gestik",
        12: "Aufgaben und Verhalten des Schiedsrichters",
@@ -46,7 +46,7 @@ BELEG = {
  "IFA-C-037": "Der Schiedsrichter sollte 30 Minuten vor Spielbeginn am Spielort anwesend sein.",
  "IFA-C-038": "Etwa 5 Minuten vor Spielbeginn fordert ein anhaltender Pfiff die Mannschaften auf, das Einspielen einzustellen, sodass 3 Minuten vor Spielbeginn ausgelost werden kann.",
  "IFA-C-039": "Er lost mit den Mannschaftsführern Feld oder Ball und damit die erste Angabe aus.",
- "IFA-A-054": "Der nächste Ball, der ins Spiel gebracht werden könnte, liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m hinter dem Pfosten.\n>\n> *Ergänzt am 6. August 2026 von Toby: Im Auslauf darf kein weiterer Ball liegen — Verletzungsgefahr. Diese Begründung steht so nicht im Quelldokument.*",
+ "IFA-A-054": "Der nächste Ball, der ins Spiel gebracht werden könnte, liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m hinter dem Pfosten.\n>\n> *Korrigiert am 6. August 2026 nach Hinweis von Toby: Außer dem gespielten Ball darf kein Ball im Auslauf liegen — auch nicht der nächste einsetzbare. Alle Reservebälle gehören außerhalb des Auslaufs. Verletzungsgefahr. Die Formulierung des Foliensatzes („direkt neben dem Pfosten“) ist damit überholt; Frage und Kapiteltext folgen der korrigierten Fassung.*",
  "IFA-A-055": "Die zu Beginn tatsächlich eingesetzten Spieler werden mit einem Kreuz markiert. Ergänzungen und Auswechslungen werden nachgetragen, nicht anwesende Spieler gestrichen.",
  "IFA-A-056": "Er prüft die Vollständigkeit des Spielformulars, schließt mit seiner Unterschrift ab und übergibt es der Spielleitung.",
 }
@@ -94,8 +94,8 @@ for ch in [11, 12, 13, 8, 16]:
     inch = [q for q in Q if q["ch"] == ch]
     w("\n## Kapitel %d — %s (%d Fragen)\n" % (ch, KAP[ch], len(inch)))
     for q in inch:
-        w("### %s%s\n" % (q["id"], "  ·  Stufe " + q["lvl"] +
-                          ("  ·  national" if q["scope"] == "national" else "")))
+        w("### %s%s\n" % (q["id"],
+                          "  ·  Verbandsordnung" if q["scope"] == "fed" else ""))
         if q.get("shot"):
             w("![%s](app/assets/img/%s.jpg)\n" % (q["shot"], q["shot"]))
             w("*Foto: `%s.jpg`*\n" % q["shot"])
@@ -110,6 +110,6 @@ for ch in [11, 12, 13, 8, 16]:
             w("> %s" % BELEG[q["id"]])
         w("")
 
-io.open('/sessions/affectionate-serene-volta/mnt/referee-education/Fragen-Nachweis-Spielleitung.md',
+io.open('../../../Fragen-Nachweis-Spielleitung.md',
         'w', encoding='utf-8').write("\n".join(out))
 print("geschrieben:", len(Q), "Fragen,", sum(1 for q in Q if q["id"] in BELEG), "mit Belegzitat")

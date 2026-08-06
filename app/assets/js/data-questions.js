@@ -6987,22 +6987,22 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Der nächste einsetzbare Ball liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m dahinter – im Auslauf darf kein Ball liegen",
+"Außerhalb des Auslaufs – im Auslauf darf außer dem gespielten Ball kein weiterer Ball liegen",
+"Direkt neben dem Pfosten, damit der nächste Ball schnell greifbar ist",
 "Verteilt im Auslauf hinter den Grundlinien, damit sie schnell greifbar sind",
-"Alle Bälle liegen direkt neben dem Pfosten",
 "Die Bälle verbleiben bei den Mannschaften auf der Auswechselbank"
 ],
 "en": [
-"The next usable ball lies directly beside the post, all others 3 to 5 m behind it – no ball may lie in the run-off area",
+"Outside the run-off area – apart from the ball in play, no ball may lie in the run-off area",
+"Directly beside the post, so that the next ball is quickly at hand",
 "Spread around the run-off area behind the base lines so they are quickly at hand",
-"All balls lie directly beside the post",
 "The balls stay with the teams on the substitutes' bench"
 ]
 },
 "c": 0,
 "ref": {
-"de": "Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle. Im Auslauf darf kein weiterer Ball liegen: Spieler verfolgen dort den Ball mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
-"en": "Referee regulations, duties during the match – keeping the balls. No further ball may lie in the run-off area: players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."
+"de": "Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle. Außer dem gespielten Ball gehört kein Ball in den Auslauf: Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken. Die Reservebälle liegen mindestens 3 bis 5 m hinter dem Pfosten, außerhalb des Auslaufs.",
+"en": "Referee regulations, duties during the match – keeping the balls. Apart from the ball in play, no ball belongs in the run-off area: players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground. Spare balls lie at least 3 to 5 m behind the post, outside the run-off area."
 },
 "origin": "ifa",
 "tr": true

@@ -47,7 +47,7 @@ Frage unfair.
 
 ## Kapitel 11 — Handzeichen und Gestik (15 Fragen)
 
-### IFA-BILD-007  ·  Stufe C
+### IFA-BILD-007
 
 ![signals/sig-07](app/assets/img/signals/sig-07.jpg)
 
@@ -65,7 +65,7 @@ Frage unfair.
 
 > Der rechte oder linke gestreckte Arm wird mit geschlossener Faust senkrecht nach oben gehalten. Gleichzeitig wird die Geste mit dem Ausruf „BLOCK“ unterstützt. Das ist NICHT das Zeichen für Gleichstand.
 
-### IFA-BILD-008  ·  Stufe C
+### IFA-BILD-008
 
 ![signals/sig-18](app/assets/img/signals/sig-18.jpg)
 
@@ -83,7 +83,7 @@ Frage unfair.
 
 > Der rechte und der linke gestreckte Arm werden mit geschlossener Faust vor der Brust gehalten.
 
-### IFA-BILD-009  ·  Stufe C
+### IFA-BILD-009
 
 ![signals/sig-14](app/assets/img/signals/sig-14.jpg)
 
@@ -101,7 +101,7 @@ Frage unfair.
 
 > Wenn ein Spieler einen anderen Spieler behindert oder wenn ein Zuschauer einen Spieler behindert, macht der Schiedsrichter beide Hände außerhalb des Körperrahmens zu Fäusten und verbindet sie horizontal an der Brust, um einen Zusammenstoß anzuzeigen.
 
-### IFA-BILD-010  ·  Stufe C
+### IFA-BILD-010
 
 ![signals/sig-06](app/assets/img/signals/sig-06.jpg)
 
@@ -119,7 +119,7 @@ Frage unfair.
 
 > Ein abgewinkelter Arm zeigt mit geöffneter Hand nach oben, die andere geöffnete Hand wird mittig über die senkrechte Hand gelegt (Time out).
 
-### IFA-BILD-011  ·  Stufe C
+### IFA-BILD-011
 
 ![signals/sig-13](app/assets/img/signals/sig-13.jpg)
 
@@ -137,7 +137,7 @@ Frage unfair.
 
 > Berührt der Ball nach einem Überschlag die Decke, so weisen beide Hände mit geöffneter Handfläche nach oben. Der zweite Arm zeigt danach in die Waagerechte in die Richtung der Mannschaft, welcher der Punkt gutgeschrieben wird.
 
-### IFA-BILD-012  ·  Stufe C
+### IFA-BILD-012
 
 ![signals/sig-11](app/assets/img/signals/sig-11.jpg)
 
@@ -155,7 +155,7 @@ Frage unfair.
 
 > Fliegt ein Ball unter dem Band hindurch, so ist mit offener Hand, Handfläche nach oben, Arm vor dem Körper schräg nach unten gerichtet, die Flugbahn des Balles nachzuzeigen.
 
-### IFA-BILD-013  ·  Stufe C
+### IFA-BILD-013
 
 ![signals/sig-12](app/assets/img/signals/sig-12.jpg)
 
@@ -173,7 +173,7 @@ Frage unfair.
 
 > Springt ein Ball ohne Berührung über das Netz, so ist mit offener Hand, Handfläche nach unten, Arm über dem Körper, die Flugbahn des Balles nachzuzeigen.
 
-### IFA-BILD-014  ·  Stufe C
+### IFA-BILD-014
 
 ![signals/sig-08](app/assets/img/signals/sig-08.jpg)
 
@@ -191,7 +191,7 @@ Frage unfair.
 
 > Beide Arme zeigen waagerecht nach außen, die Daumen zeigen nach oben.
 
-### IFA-BILD-015  ·  Stufe C
+### IFA-BILD-015
 
 ![signals/sig-05](app/assets/img/signals/sig-05.jpg)
 
@@ -209,7 +209,7 @@ Frage unfair.
 
 > Der gestreckte Arm zeigt mit zwei gespreizten Fingern nach unten.
 
-### IFA-BILD-016  ·  Stufe C
+### IFA-BILD-016
 
 ![signals/sig-02](app/assets/img/signals/sig-02.jpg)
 
@@ -227,7 +227,7 @@ Frage unfair.
 
 > Eine Hand zeigt/klopft auf den Körperteil, den der Ball berührt hat. Der zweite Arm zeigt in die Waagerechte in die Richtung der Mannschaft, die einen Gutpunkt erzielt hat.
 
-### IFA-BILD-017  ·  Stufe C
+### IFA-BILD-017
 
 ![signals/sig-03](app/assets/img/signals/sig-03.jpg)
 
@@ -245,7 +245,7 @@ Frage unfair.
 
 > Ein ausgestreckter Arm mit geöffneter Hand zeigt in Richtung Netz (Band/Leine). Der zweite Arm zeigt in die Waagerechte in die Richtung der Mannschaft, die einen Gutpunkt erzielt hat.
 
-### IFA-BILD-018  ·  Stufe C
+### IFA-BILD-018
 
 ![signals/sig-04](app/assets/img/signals/sig-04.jpg)
 
@@ -263,7 +263,7 @@ Frage unfair.
 
 > Ein ausgestreckter Arm mit geöffneter Hand zeigt in Richtung Angabelinie. Der zweite Arm zeigt in die Waagerechte in die Richtung der Mannschaft, die einen Gutpunkt erzielt hat.
 
-### IFA-BILD-019  ·  Stufe C
+### IFA-BILD-019
 
 ![signals/sig-09](app/assets/img/signals/sig-09.jpg)
 
@@ -281,7 +281,7 @@ Frage unfair.
 
 > Die Auswechslung ist durch Kreisen beider Hände über dem Kopf zu signalisieren.
 
-### IFA-C-027  ·  Stufe C
+### IFA-C-027
 
 **Wohin zeigt bei den meisten Handzeichen der zweite Arm?**  
 *With most hand signals, where does the second arm point?*
@@ -295,7 +295,7 @@ Frage unfair.
 
 > Der zweite Arm zeigt in die Waagerechte in die Richtung der Mannschaft, die einen Gutpunkt erzielt hat.
 
-### IFA-A-044  ·  Stufe A
+### IFA-A-044
 
 **Der Ball berührt den Fuß eines Spielers. Wie zeigt der Schiedsrichter das an?**  
 *The ball touches a player's foot. How does the referee indicate this?*
@@ -312,7 +312,7 @@ Frage unfair.
 
 ## Kapitel 12 — Aufgaben und Verhalten des Schiedsrichters (7 Fragen)
 
-### IFA-C-028  ·  Stufe C
+### IFA-C-028
 
 **Worauf gründet der Schiedsrichter seine Entscheidungen?**  
 *On what does the referee base his decisions?*
@@ -326,7 +326,7 @@ Frage unfair.
 
 > Der Schiedsrichter trifft seine Entscheidungen auf Grund visueller Wahrnehmung und lässt sich durch Spieler, Betreuungspersonen oder Zuschauer nicht beeinflussen. Das Gehör darf ihm die Richtigkeit seiner optischen Wahrnehmung nur bestätigen.
 
-### IFA-A-045  ·  Stufe A
+### IFA-A-045
 
 **Der Schiedsrichter erkennt unmittelbar, dass seine Entscheidung falsch war. Wie ist zu verfahren?**  
 *The referee immediately realises that his decision was wrong. How should he proceed?*
@@ -340,7 +340,7 @@ Frage unfair.
 
 > Stelle ich fest, dass ich eine falsche Entscheidung getroffen habe, so kann ich diese ohne weiteres zurücknehmen, wenn es der Spielgang zulässt.
 
-### IFA-A-046  ·  Stufe A
+### IFA-A-046
 
 **Eine Mannschaft legt Einspruch gegen eine Tatsachenentscheidung ein. Was tut der Schiedsrichter?**  
 *A team lodges an objection against a decision of fact. What does the referee do?*
@@ -354,7 +354,7 @@ Frage unfair.
 
 > Einsprüche – auch solche gegen Tatsachenentscheidungen – sind auf dem Spielformular sofort zu vermerken.
 
-### IFA-C-029  ·  Stufe C
+### IFA-C-029
 
 **Der Mannschaftsführer stellt während des Spiels eine Frage. Wie verhält sich der Schiedsrichter?**  
 *The team captain asks a question during the match. How does the referee respond?*
@@ -368,7 +368,7 @@ Frage unfair.
 
 > Auf Fragen des Mannschaftsführers muss der Schiedsrichter antworten. Er gibt die Antwort kurz und klar und lässt keine Diskussion zu.
 
-### IFA-A-047  ·  Stufe A
+### IFA-A-047
 
 **Wer darf bei einer Jugendmannschaft an Stelle des Mannschaftsführers Fragen an den Schiedsrichter richten?**  
 *In a youth team, who may address questions to the referee instead of the team captain?*
@@ -382,7 +382,7 @@ Frage unfair.
 
 > Auf Fragen des Mannschaftsführers – bei Jugendmannschaften ggf. einer volljährigen Betreuungsperson – muss der Schiedsrichter antworten.
 
-### IFA-A-048  ·  Stufe A
+### IFA-A-048
 
 **Das Spiel artet aus und der Schiedsrichter fühlt sich durch Zuschauer bedroht. Was hat er zu tun?**  
 *The match gets out of hand and the referee feels threatened by spectators. What must he do?*
@@ -396,7 +396,7 @@ Frage unfair.
 
 > Artet das Spiel aus oder fühlt sich der Schiedsrichter durch Zuschauer bedroht, so hat er den Mannschaftsführern bzw. dem Veranstalter die notwendigen Weisungen zu erteilen.
 
-### IFA-C-030  ·  Stufe C
+### IFA-C-030
 
 **Wie hält es der Schiedsrichter mit den Eintragungen des Anschreibers?**  
 *How does the referee handle the scorer's entries?*
@@ -413,7 +413,7 @@ Frage unfair.
 
 ## Kapitel 13 — Linienrichter und Anschreiber (9 Fragen)
 
-### IFA-C-031  ·  Stufe C
+### IFA-C-031
 
 **Wo haben die Linienrichter ihren Stand?**  
 *Where are the linesmen positioned?*
@@ -427,7 +427,7 @@ Frage unfair.
 
 > Die Linienrichter haben ihren Stand an den Endpunkten der dem Schiedsrichter gegenüberliegenden Seitenlinie. (Regel 9.3)
 
-### IFA-C-032  ·  Stufe C
+### IFA-C-032
 
 **Der Linienrichter zeigt mit der Fahne senkrecht nach oben. Was bedeutet das?**  
 *The linesman holds the flag vertically upwards. What does that mean?*
@@ -441,7 +441,7 @@ Frage unfair.
 
 > Hat der Ball die Außenlinie überschritten, zeigt der Linienrichter mit der Fahne nach oben. Hat er sie nicht überschritten, zeigt die Fahne in Richtung Spielfeld.
 
-### IFA-C-033  ·  Stufe C
+### IFA-C-033
 
 **Der Linienrichter hält die Fahne mit beiden Händen waagerecht in Brusthöhe. Was heißt das?**  
 *The linesman holds the flag horizontally at chest height with both hands. What does that mean?*
@@ -455,7 +455,7 @@ Frage unfair.
 
 > Kann der Linienrichter keine Aussage machen, hält er die Fahne mit beiden Händen waagerecht in Brusthöhe.
 
-### IFA-A-049  ·  Stufe A
+### IFA-A-049
 
 **Beide Linienrichter können einen Ausball nicht beurteilen. Wer entscheidet?**  
 *Neither linesman can judge a ball out. Who decides?*
@@ -469,7 +469,7 @@ Frage unfair.
 
 > Kann ein Linienrichter die Situation „Ausball“ nicht erkennen, … so ist die Fahne waagerecht vor den Körper zu halten. In diesem Falle übernimmt der Kollege die Verantwortung. Kann auch dieser die Situation nicht erkennen, übernimmt der Schiedsrichter.
 
-### IFA-A-050  ·  Stufe A
+### IFA-A-050
 
 **Ein Ball geht ins Aus. Wie ist das Zusammenspiel der beiden Linienrichter geregelt?**  
 *A ball goes out. How is the interaction between the two linesmen regulated?*
@@ -483,7 +483,7 @@ Frage unfair.
 
 > Bei Ausbällen wird die Fahne von dem „vorrangigen Linienrichter“ senkrecht nach oben gestreckt. Der Kollege quittiert dies mit kurzer Verzögerung. Auf keinen Fall darf er zuerst reagieren.
 
-### IFA-A-051  ·  Stufe A
+### IFA-A-051
 
 **Halle: Der Ball springt im Feld auf und berührt danach die Hallenwand. Wie signalisiert der Linienrichter?**  
 *Indoor: the ball bounces inside the court and then touches the hall wall. How does the linesman signal?*
@@ -497,7 +497,7 @@ Frage unfair.
 
 > Wenn ein Ball im Feld aufspringt und dann die Hallenwand berührt, so weist der Linienrichter mit der Fahne in das Feld und hebt den anderen Arm senkrecht nach oben.
 
-### IFA-C-034  ·  Stufe C
+### IFA-C-034
 
 **Wann wechselt der Standpunkt der Linienrichter?**  
 *When do the linesmen change their position?*
@@ -511,7 +511,7 @@ Frage unfair.
 
 > Der Standpunkt an den gegenüberliegenden Seitenlinien wechselt mit jedem Ballwechsel. … Beim Angriffs- oder Angabewechsel wechseln die beiden Positionen.
 
-### IFA-A-052  ·  Stufe A
+### IFA-A-052
 
 **Dürfen Linienrichter während eines Spiels ausgewechselt werden?**  
 *May linesmen be replaced during a match?*
@@ -525,7 +525,7 @@ Frage unfair.
 
 > Linienrichter dürfen während eines Spieles nur aufgrund besonderer Umstände ausgewechselt werden, etwa bei Übelkeit.
 
-### IFA-C-035  ·  Stufe C
+### IFA-C-035
 
 **Welche Aufgabe hat der Anschreiber?**  
 *What is the task of the scorer?*
@@ -542,7 +542,7 @@ Frage unfair.
 
 ## Kapitel 8 — Wertung (2 Fragen)
 
-### IFA-C-036  ·  Stufe C
+### IFA-C-036
 
 **Wie wird ein Fehler gewertet?**  
 *How is a fault scored?*
@@ -556,7 +556,7 @@ Frage unfair.
 
 > Jeder Fehler wird als Gutball für die gegnerische Mannschaft gewertet. (Regel 8.1)
 
-### IFA-A-053  ·  Stufe A
+### IFA-A-053
 
 **Worauf achtet der Schiedsrichter bei der Eintragung der Gutbälle im Spielbericht besonders?**  
 *What does the referee pay particular attention to when points are entered in the match report?*
@@ -573,7 +573,7 @@ Frage unfair.
 
 ## Kapitel 16 — Aufgaben rund um das Spiel (6 Fragen)
 
-### IFA-C-037  ·  Stufe C  ·  national
+### IFA-C-037  ·  Verbandsordnung
 
 **Wann soll der Schiedsrichter am Spielort anwesend sein?**  
 *When should the referee be present at the venue?*
@@ -587,7 +587,7 @@ Frage unfair.
 
 > Der Schiedsrichter sollte 30 Minuten vor Spielbeginn am Spielort anwesend sein.
 
-### IFA-C-038  ·  Stufe C  ·  national
+### IFA-C-038  ·  Verbandsordnung
 
 **Wie ist der zeitliche Ablauf unmittelbar vor Spielbeginn geregelt?**  
 *How is the sequence immediately before the start of the match regulated?*
@@ -601,7 +601,7 @@ Frage unfair.
 
 > Etwa 5 Minuten vor Spielbeginn fordert ein anhaltender Pfiff die Mannschaften auf, das Einspielen einzustellen, sodass 3 Minuten vor Spielbeginn ausgelost werden kann.
 
-### IFA-C-039  ·  Stufe C
+### IFA-C-039
 
 **Worüber wird vor Spielbeginn mit den Mannschaftsführern ausgelost?**  
 *What is decided by the toss with the team captains before the match?*
@@ -615,23 +615,23 @@ Frage unfair.
 
 > Er lost mit den Mannschaftsführern Feld oder Ball und damit die erste Angabe aus.
 
-### IFA-A-054  ·  Stufe A
+### IFA-A-054
 
 **Wo verwahrt der Schiedsrichter die nicht gespielten Bälle?**  
 *Where does the referee keep the balls that are not in play?*
 
-- [x] **Der nächste einsetzbare Ball liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m dahinter – im Auslauf darf kein Ball liegen**  —  *The next usable ball lies directly beside the post, all others 3 to 5 m behind it – no ball may lie in the run-off area*
+- [x] **Außerhalb des Auslaufs – im Auslauf darf außer dem gespielten Ball kein weiterer Ball liegen**  —  *Outside the run-off area – apart from the ball in play, no ball may lie in the run-off area*
+- [ ] Direkt neben dem Pfosten, damit der nächste Ball schnell greifbar ist  —  *Directly beside the post, so that the next ball is quickly at hand*
 - [ ] Verteilt im Auslauf hinter den Grundlinien, damit sie schnell greifbar sind  —  *Spread around the run-off area behind the base lines so they are quickly at hand*
-- [ ] Alle Bälle liegen direkt neben dem Pfosten  —  *All balls lie directly beside the post*
 - [ ] Die Bälle verbleiben bei den Mannschaften auf der Auswechselbank  —  *The balls stay with the teams on the substitutes' bench*
 
-*Fundstelle:* Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle. Im Auslauf darf kein weiterer Ball liegen: Spieler verfolgen dort den Ball mit dem Blick nach oben und können auf einem liegenden Ball umknicken.
+*Fundstelle:* Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle. Außer dem gespielten Ball gehört kein Ball in den Auslauf: Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken. Die Reservebälle liegen mindestens 3 bis 5 m hinter dem Pfosten, außerhalb des Auslaufs.
 
 > Der nächste Ball, der ins Spiel gebracht werden könnte, liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m hinter dem Pfosten.
 >
-> *Ergänzt am 6. August 2026 von Toby: Im Auslauf darf kein weiterer Ball liegen — Verletzungsgefahr. Diese Begründung steht so nicht im Quelldokument.*
+> *Korrigiert am 6. August 2026 nach Hinweis von Toby: Außer dem gespielten Ball darf kein Ball im Auslauf liegen — auch nicht der nächste einsetzbare. Alle Reservebälle gehören außerhalb des Auslaufs. Verletzungsgefahr. Die Formulierung des Foliensatzes („direkt neben dem Pfosten“) ist damit überholt; Frage und Kapiteltext folgen der korrigierten Fassung.*
 
-### IFA-A-055  ·  Stufe A
+### IFA-A-055
 
 **Wie werden die zu Beginn tatsächlich eingesetzten Spieler im Spielformular kenntlich gemacht?**  
 *How are the players actually fielded at the start marked on the match form?*
@@ -645,7 +645,7 @@ Frage unfair.
 
 > Die zu Beginn tatsächlich eingesetzten Spieler werden mit einem Kreuz markiert. Ergänzungen und Auswechslungen werden nachgetragen, nicht anwesende Spieler gestrichen.
 
-### IFA-A-056  ·  Stufe A
+### IFA-A-056
 
 **Was hat der Schiedsrichter nach dem Spiel mit dem Spielformular zu tun?**  
 *What must the referee do with the match form after the match?*

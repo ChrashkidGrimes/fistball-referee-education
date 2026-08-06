@@ -2,7 +2,7 @@
 """Baut die neuen Fragen als JSON. Deutsche Texte bekommen ihre Umlaute zurueck,
 englische bleiben ASCII (Testvorgabe: keine deutschen Umlaute im englischen Text)."""
 import io, json, re, sys
-sys.path.insert(0, '/sessions/affectionate-serene-volta/mnt/outputs')
+sys.path.insert(0, __import__("os").path.dirname(__import__("os").path.abspath(__file__)))
 from neue_fragen import BILD, TEXT
 
 # Wortstaemme, laengste zuerst, damit Teiltreffer nicht dazwischenfunken
@@ -21,7 +21,7 @@ UML = [
  ("massgeblich", "maßgeblich"),
  ("roemischen", "römischen"),
  ("Uebelkeit", "Übelkeit"),
- ("ausserhalb", "außerhalb"),
+ ("Ausser", "Außer"), ("ausser", "außer"),
  ("volljaehrig", "volljährig"),
  ("saechlich", "sächlich"),
  ("Beruehr", "Berühr"), ("beruehr", "berühr"),
@@ -127,7 +127,10 @@ for q in neu:
 print("neue Fragen:", len(neu))
 from collections import Counter
 print("nach Kapitel:", dict(sorted(Counter(q["ch"] for q in neu).items())))
-print("nach Stufe:  ", dict(Counter(q["lvl"] for q in neu)))
+print("nach Pool:   ", dict(Counter(
+    next(p for p, chs in {"feld":[1],"rahmen":[2,3,14],"spiel":[4,5,6],
+                          "ballfuehrung":[7,8],"leitung":[9,10,11,12,13,16],
+                          "verband":[15]}.items() if q["ch"] in chs) for q in neu)))
 print("scope:       ", dict(Counter(q["scope"] for q in neu)))
 print()
 if fehler:
@@ -137,5 +140,5 @@ if fehler:
 else:
     print("PRUEFUNG: ohne Befund")
 
-io.open('/sessions/affectionate-serene-volta/mnt/outputs/neue_fragen.json', 'w', encoding='utf-8').write(
+io.open('fragen-spielleitung.json', 'w', encoding='utf-8').write(
     json.dumps(neu, ensure_ascii=False, indent=1))

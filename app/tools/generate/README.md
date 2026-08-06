@@ -34,8 +34,13 @@ der in `assets/js/data-questions.js` eingepflegt ist – wer die Fragen ändert,
 sie hier und pflegt sie erneut ein.
 
 ```
-python3 build_fragen.py
+cd app/tools/generate
+python3 build_fragen.py          # schreibt fragen-spielleitung.json
+python3 nachweis_spielleitung.py # schreibt Fragen-Nachweis-Spielleitung.md
 ```
+
+Die erzeugte JSON wird anschließend in `assets/js/data-questions.js` eingepflegt;
+beide Skripte laufen ohne Argumente aus ihrem eigenen Verzeichnis.
 
 ## Entfallen
 

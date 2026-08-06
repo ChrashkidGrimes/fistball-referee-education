@@ -122,6 +122,17 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
       Schiedsrichterpraxis. Kennt die IFA eigene Fristen, gehören alle sechs
       auf `national`.
 
+- [ ] **Verwahrung der Bälle: Abweichung vom Foliensatz an die IFA melden.**
+      Korrigiert am 6. August 2026 nach Hinweis von Toby. Der Foliensatz von
+      Faustball Deutschland schreibt: „Der nächste Ball, der ins Spiel gebracht
+      werden könnte, liegt direkt neben dem Pfosten." Richtig ist: **außer dem
+      gespielten Ball darf kein Ball im Auslauf liegen**, auch nicht der nächste
+      einsetzbare – alle Reservebälle gehören außerhalb des Auslaufs. Ein liegender
+      Ball im Auslauf ist eine Verletzungsgefahr, weil Spieler den Ball dort mit dem
+      Blick nach oben verfolgen. Kapitel 16 und die Frage `IFA-A-054` sind auf die
+      korrigierte Fassung umgestellt; die Abweichung ist im Nachweis vermerkt.
+      Der Foliensatz sollte bei nächster Gelegenheit nachgezogen werden.
+
 - [ ] **Widersprüche bei den Strafen mit der IFA klären.** Geprüft am 6. August 2026
       anhand von `Strafen_Anwendung_Oesterreich.pdf` (Bundesschiedsrichter-Referat
       Österreich, 1. März 2019). Inhaltlich ist das Papier eine ältere Teilmenge der

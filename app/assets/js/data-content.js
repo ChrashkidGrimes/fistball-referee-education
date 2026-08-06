@@ -2817,8 +2817,8 @@ window.IFA_CONTENT = [
     "t": "rule",
     "n": "",
     "x": {
-     "de": "Verwahrung der Bälle: Er verwahrt die nicht gespielten, von den Mannschaften vorgelegten Bälle. Der nächste Ball, der ins Spiel gebracht werden könnte, liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m hinter dem Pfosten.",
-     "en": "Keeping the balls: he keeps custody of the balls presented by the teams that are not in play. The next ball that might be brought into play lies directly beside the post, all others 3 to 5 m behind the post."
+     "de": "Verwahrung der Bälle: Er verwahrt die nicht gespielten, von den Mannschaften vorgelegten Bälle. Außer dem gespielten Ball darf kein Ball im Auslauf liegen – auch nicht der nächste einsetzbare. Alle Reservebälle gehören außerhalb des Auslaufs, mindestens 3 bis 5 m hinter dem Pfosten. Ein liegender Ball im Auslauf ist eine Verletzungsgefahr: Spieler verfolgen den Ball dort mit dem Blick nach oben und können darauf umknicken.",
+     "en": "Keeping the balls: he keeps custody of the balls presented by the teams that are not in play. Apart from the ball in play, no ball may lie in the run-off area — not even the next usable one. All spare balls belong outside the run-off area, at least 3 to 5 m behind the post. A ball lying in the run-off area is an injury risk: players there follow the ball with their eyes upwards and can turn an ankle on it."
     },
     "origin": "ppt"
    },

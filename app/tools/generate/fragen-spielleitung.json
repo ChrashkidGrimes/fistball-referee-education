@@ -1,7 +1,6 @@
 [
  {
   "id": "IFA-BILD-007",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-07",
@@ -33,7 +32,6 @@
  },
  {
   "id": "IFA-BILD-008",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-18",
@@ -65,7 +63,6 @@
  },
  {
   "id": "IFA-BILD-009",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-14",
@@ -97,7 +94,6 @@
  },
  {
   "id": "IFA-BILD-010",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-06",
@@ -129,7 +125,6 @@
  },
  {
   "id": "IFA-BILD-011",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-13",
@@ -161,7 +156,6 @@
  },
  {
   "id": "IFA-BILD-012",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-11",
@@ -193,7 +187,6 @@
  },
  {
   "id": "IFA-BILD-013",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-12",
@@ -225,7 +218,6 @@
  },
  {
   "id": "IFA-BILD-014",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-08",
@@ -257,7 +249,6 @@
  },
  {
   "id": "IFA-BILD-015",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-05",
@@ -289,7 +280,6 @@
  },
  {
   "id": "IFA-BILD-016",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-02",
@@ -321,7 +311,6 @@
  },
  {
   "id": "IFA-BILD-017",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-03",
@@ -353,7 +342,6 @@
  },
  {
   "id": "IFA-BILD-018",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-04",
@@ -385,7 +373,6 @@
  },
  {
   "id": "IFA-BILD-019",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "shot": "signals/sig-09",
@@ -417,7 +404,6 @@
  },
  {
   "id": "IFA-C-027",
-  "lvl": "C",
   "ch": 11,
   "scope": "ifa",
   "q": {
@@ -448,7 +434,6 @@
  },
  {
   "id": "IFA-A-044",
-  "lvl": "A",
   "ch": 11,
   "scope": "ifa",
   "q": {
@@ -479,7 +464,6 @@
  },
  {
   "id": "IFA-C-028",
-  "lvl": "C",
   "ch": 12,
   "scope": "ifa",
   "q": {
@@ -510,7 +494,6 @@
  },
  {
   "id": "IFA-A-045",
-  "lvl": "A",
   "ch": 12,
   "scope": "ifa",
   "q": {
@@ -541,7 +524,6 @@
  },
  {
   "id": "IFA-A-046",
-  "lvl": "A",
   "ch": 12,
   "scope": "ifa",
   "q": {
@@ -572,7 +554,6 @@
  },
  {
   "id": "IFA-C-029",
-  "lvl": "C",
   "ch": 12,
   "scope": "ifa",
   "q": {
@@ -603,7 +584,6 @@
  },
  {
   "id": "IFA-A-047",
-  "lvl": "A",
   "ch": 12,
   "scope": "ifa",
   "q": {
@@ -634,7 +614,6 @@
  },
  {
   "id": "IFA-A-048",
-  "lvl": "A",
   "ch": 12,
   "scope": "ifa",
   "q": {
@@ -665,7 +644,6 @@
  },
  {
   "id": "IFA-C-030",
-  "lvl": "C",
   "ch": 12,
   "scope": "ifa",
   "q": {
@@ -696,7 +674,6 @@
  },
  {
   "id": "IFA-C-031",
-  "lvl": "C",
   "ch": 13,
   "scope": "ifa",
   "q": {
@@ -727,7 +704,6 @@
  },
  {
   "id": "IFA-C-032",
-  "lvl": "C",
   "ch": 13,
   "scope": "ifa",
   "q": {
@@ -758,7 +734,6 @@
  },
  {
   "id": "IFA-C-033",
-  "lvl": "C",
   "ch": 13,
   "scope": "ifa",
   "q": {
@@ -789,7 +764,6 @@
  },
  {
   "id": "IFA-A-049",
-  "lvl": "A",
   "ch": 13,
   "scope": "ifa",
   "q": {
@@ -820,7 +794,6 @@
  },
  {
   "id": "IFA-A-050",
-  "lvl": "A",
   "ch": 13,
   "scope": "ifa",
   "q": {
@@ -851,7 +824,6 @@
  },
  {
   "id": "IFA-A-051",
-  "lvl": "A",
   "ch": 13,
   "scope": "ifa",
   "q": {
@@ -882,7 +854,6 @@
  },
  {
   "id": "IFA-C-034",
-  "lvl": "C",
   "ch": 13,
   "scope": "ifa",
   "q": {
@@ -913,7 +884,6 @@
  },
  {
   "id": "IFA-A-052",
-  "lvl": "A",
   "ch": 13,
   "scope": "ifa",
   "q": {
@@ -944,7 +914,6 @@
  },
  {
   "id": "IFA-C-035",
-  "lvl": "C",
   "ch": 13,
   "scope": "ifa",
   "q": {
@@ -975,7 +944,6 @@
  },
  {
   "id": "IFA-C-036",
-  "lvl": "C",
   "ch": 8,
   "scope": "ifa",
   "q": {
@@ -1006,7 +974,6 @@
  },
  {
   "id": "IFA-A-053",
-  "lvl": "A",
   "ch": 8,
   "scope": "ifa",
   "q": {
@@ -1037,9 +1004,8 @@
  },
  {
   "id": "IFA-C-037",
-  "lvl": "C",
   "ch": 16,
-  "scope": "national",
+  "scope": "fed",
   "q": {
    "de": "Wann soll der Schiedsrichter am Spielort anwesend sein?",
    "en": "When should the referee be present at the venue?"
@@ -1068,9 +1034,8 @@
  },
  {
   "id": "IFA-C-038",
-  "lvl": "C",
   "ch": 16,
-  "scope": "national",
+  "scope": "fed",
   "q": {
    "de": "Wie ist der zeitliche Ablauf unmittelbar vor Spielbeginn geregelt?",
    "en": "How is the sequence immediately before the start of the match regulated?"
@@ -1099,7 +1064,6 @@
  },
  {
   "id": "IFA-C-039",
-  "lvl": "C",
   "ch": 16,
   "scope": "ifa",
   "q": {
@@ -1130,7 +1094,6 @@
  },
  {
   "id": "IFA-A-054",
-  "lvl": "A",
   "ch": 16,
   "scope": "ifa",
   "q": {
@@ -1139,29 +1102,28 @@
   },
   "a": {
    "de": [
-    "Der nächste einsetzbare Ball liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m dahinter – im Auslauf darf kein Ball liegen",
+    "Außerhalb des Auslaufs – im Auslauf darf außer dem gespielten Ball kein weiterer Ball liegen",
+    "Direkt neben dem Pfosten, damit der nächste Ball schnell greifbar ist",
     "Verteilt im Auslauf hinter den Grundlinien, damit sie schnell greifbar sind",
-    "Alle Bälle liegen direkt neben dem Pfosten",
     "Die Bälle verbleiben bei den Mannschaften auf der Auswechselbank"
    ],
    "en": [
-    "The next usable ball lies directly beside the post, all others 3 to 5 m behind it – no ball may lie in the run-off area",
+    "Outside the run-off area – apart from the ball in play, no ball may lie in the run-off area",
+    "Directly beside the post, so that the next ball is quickly at hand",
     "Spread around the run-off area behind the base lines so they are quickly at hand",
-    "All balls lie directly beside the post",
     "The balls stay with the teams on the substitutes' bench"
    ]
   },
   "c": 0,
   "ref": {
-   "de": "Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle. Im Auslauf darf kein weiterer Ball liegen: Spieler verfolgen dort den Ball mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
-   "en": "Referee regulations, duties during the match – keeping the balls. No further ball may lie in the run-off area: players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."
+   "de": "Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle. Außer dem gespielten Ball gehört kein Ball in den Auslauf: Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken. Die Reservebälle liegen mindestens 3 bis 5 m hinter dem Pfosten, außerhalb des Auslaufs.",
+   "en": "Referee regulations, duties during the match – keeping the balls. Apart from the ball in play, no ball belongs in the run-off area: players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground. Spare balls lie at least 3 to 5 m behind the post, outside the run-off area."
   },
   "origin": "ifa",
   "tr": true
  },
  {
   "id": "IFA-A-055",
-  "lvl": "A",
   "ch": 16,
   "scope": "ifa",
   "q": {
@@ -1192,7 +1154,6 @@
  },
  {
   "id": "IFA-A-056",
-  "lvl": "A",
   "ch": 16,
   "scope": "ifa",
   "q": {
