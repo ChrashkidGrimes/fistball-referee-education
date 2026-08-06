@@ -18,6 +18,7 @@ UML = [
  ("unverzueglich", "unverzüglich"),
  ("Aussenlinie", "Außenlinie"),
  ("Massnahmen", "Maßnahmen"),
+ ("massgeblich", "maßgeblich"),
  ("roemischen", "römischen"),
  ("Uebelkeit", "Übelkeit"),
  ("ausserhalb", "außerhalb"),

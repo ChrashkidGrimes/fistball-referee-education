@@ -1,10 +1,10 @@
-# Prüfvorlage: 36 neue Fragen zu den Kapiteln 8, 11–13 und 16
+# Prüfvorlage: 39 neue Fragen zu den Kapiteln 8, 11–13 und 16
 
 Stand 6. August 2026. Diese Fragen schließen die Lücke im künftigen Pool **Spielleitung**
 (Kapitel 9–13 und 16), der in der zweistufigen Struktur 20 % der Nationalprüfung tragen soll.
 Bisher hatten die Kapitel 11, 12, 13 und 16 **keine einzige** Frage.
 
-Alle 36 tragen `origin: "draft"` und sind im Quiz als Entwurf gekennzeichnet. Über
+Alle 39 tragen `origin: "draft"` und sind im Quiz als Entwurf gekennzeichnet. Über
 **Einstellungen → Entwurfsfragen einbeziehen** lassen sie sich abschalten. Nach deiner
 Abnahme wird `origin` auf `ifa` gesetzt.
 
@@ -24,17 +24,25 @@ Schiedsrichterordnung. Die beiden Fragen mit konkreten Zeitangaben – 30 Minute
 vier Fragen zu Kapitel 16 sind allgemeine Schiedsrichterpraxis und als `ifa` markiert.
 Falls die IFA eigene Fristen kennt, gehören alle sechs auf `national`.
 
-**2. Zu sig-09 gibt es bewusst keine Frage.** Das Foto zum Handzeichen 9 (Auswechslung) zeigt
-die kreisenden Hände auf Brusthöhe, die Schulungsmappe beschreibt sie „über dem Kopf“.
-Solange Bild und Text auseinandergehen, wäre jede Frage darauf angreifbar. Ebenso ausgelassen:
-die Zeichen 3 (Netz) und 4 (Übertritt), die auf den Fotos kaum zu unterscheiden sind.
-Das ist eine Lücke in der Quelle, kein Fehler der App – aber eine, die du an die IFA
-weitergeben könntest.
+**2. Drei Fotos sind schwach – die Fragen fangen das im Text ab.** Bei den Zeichen 3 (Netz),
+4 (Übertritt) und 9 (Auswechslung) trägt das Bild allein die Antwort nicht:
+
+- **sig-03 / sig-04** unterscheiden sich nur in der Armrichtung – nach oben zum Netz
+  gegenüber schräg nach unten zur Angabelinie. Beide Fragen nennen die Armhaltung im
+  Fragetext, und die Fundstelle grenzt ausdrücklich gegen das jeweils andere Zeichen ab.
+- **sig-09** zeigt die kreisenden Hände auf Brusthöhe, die Schulungsmappe beschreibt sie
+  „über dem Kopf“. Die Fundstelle nennt die korrekte Ausführung und sagt dazu, dass das
+  Foto davon abweicht.
+
+So sind die Fragen fair, aber die Bilder bleiben der schwache Punkt. In `OFFENE-PUNKTE.md`
+steht deshalb, dass diese drei Zeichen neu fotografiert werden sollten. Ein Test hält fest,
+dass Fragetext und Fundstelle diese Abgrenzung tragen müssen – fällt sie weg, wird die
+Frage unfair.
 
 ---
 
 
-## Kapitel 11 — Handzeichen und Gestik (12 Fragen)
+## Kapitel 11 — Handzeichen und Gestik (15 Fragen)
 
 ### IFA-BILD-007  ·  Stufe C
 
@@ -215,6 +223,60 @@ weitergeben könntest.
 *Fundstelle:* IFA-Schulungsmappe, Handzeichen 2 – die Hand zeigt auf den Körperteil, den der Ball berührt hat.
 
 > Eine Hand zeigt/klopft auf den Körperteil, den der Ball berührt hat. Der zweite Arm zeigt in die Waagerechte in die Richtung der Mannschaft, die einen Gutpunkt erzielt hat.
+
+### IFA-BILD-017  ·  Stufe C
+
+![signals/sig-03](app/assets/img/signals/sig-03.jpg)
+
+*Foto: `signals/sig-03.jpg`*
+
+**Der ausgestreckte Arm zeigt mit geöffneter Hand nach oben, der zweite Arm in die Waagerechte. Welchen Fehler zeigt der Schiedsrichter an?**  
+*The extended arm points upwards with an open hand, the second arm horizontally. Which fault is the referee indicating?*
+
+- [x] **Ball an Netz, Band oder Leine**  —  *Ball at the net, tape or cord*
+- [ ] Übertritt an der Angabelinie  —  *Foot fault at the service line*
+- [ ] Ball ohne Berührung über das Netz  —  *Ball over the net without contact*
+- [ ] Zweimal auf  —  *Two bounces*
+
+*Fundstelle:* IFA-Schulungsmappe, Handzeichen 3 – ein ausgestreckter Arm mit geöffneter Hand zeigt in Richtung Netz (Band/Leine). Beim Übertritt (Zeichen 4) weist derselbe Arm dagegen schräg nach unten zur Angabelinie.
+
+> Ein ausgestreckter Arm mit geöffneter Hand zeigt in Richtung Netz (Band/Leine). Der zweite Arm zeigt in die Waagerechte in die Richtung der Mannschaft, die einen Gutpunkt erzielt hat.
+
+### IFA-BILD-018  ·  Stufe C
+
+![signals/sig-04](app/assets/img/signals/sig-04.jpg)
+
+*Foto: `signals/sig-04.jpg`*
+
+**Der ausgestreckte Arm zeigt mit geöffneter Hand schräg nach unten, der zweite Arm in die Waagerechte. Welchen Fehler zeigt der Schiedsrichter an?**  
+*The extended arm points diagonally downwards with an open hand, the second arm horizontally. Which fault is the referee indicating?*
+
+- [x] **Übertritt an der Angabelinie**  —  *Foot fault at the service line*
+- [ ] Ball an Netz, Band oder Leine  —  *Ball at the net, tape or cord*
+- [ ] Ball unter dem Band hindurch  —  *Ball underneath the tape*
+- [ ] Behinderung  —  *Obstruction*
+
+*Fundstelle:* IFA-Schulungsmappe, Handzeichen 4 – ein ausgestreckter Arm mit geöffneter Hand zeigt in Richtung Angabelinie. Beim Netzfehler (Zeichen 3) weist derselbe Arm nach oben.
+
+> Ein ausgestreckter Arm mit geöffneter Hand zeigt in Richtung Angabelinie. Der zweite Arm zeigt in die Waagerechte in die Richtung der Mannschaft, die einen Gutpunkt erzielt hat.
+
+### IFA-BILD-019  ·  Stufe C
+
+![signals/sig-09](app/assets/img/signals/sig-09.jpg)
+
+*Foto: `signals/sig-09.jpg`*
+
+**Beide Hände kreisen umeinander. Was zeigt die Schiedsrichterin an?**  
+*Both hands circle around each other. What is the referee indicating?*
+
+- [x] **Auswechslung**  —  *Substitution*
+- [ ] Time out  —  *Time out*
+- [ ] Wiederholung der letzten Angabe  —  *Repetition of the last service*
+- [ ] Zweimal auf  —  *Two bounces*
+
+*Fundstelle:* IFA-Schulungsmappe, Handzeichen 9 – die Auswechslung ist durch Kreisen beider Hände über dem Kopf zu signalisieren. Das Foto zeigt die Bewegung auf Brusthöhe; maßgeblich ist die Beschreibung.
+
+> Die Auswechslung ist durch Kreisen beider Hände über dem Kopf zu signalisieren.
 
 ### IFA-C-027  ·  Stufe C
 

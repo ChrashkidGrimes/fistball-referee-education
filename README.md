@@ -17,10 +17,10 @@ liegt im `localStorage` des Browsers, es gibt keine Konten und keine Datenübert
 | | |
 |---|---|
 | Kapitel | 16 – Regeln 1 bis 10, Handzeichen, Verhalten des Schiedsrichters, Linienrichter, Altersklassen, nationale Ordnungen, Aufgaben rund um das Spiel |
-| Prüfungsfragen | 232, alle zweisprachig, mit Fundstelle im Regelwerk |
-| Bilder | 21 Handzeichen-Fotos, Spielfeld- und Auslaufdiagramme, sechs Ausball-Entscheidungen; 16 davon als Bildfrage |
+| Prüfungsfragen | 235, alle zweisprachig, mit Fundstelle im Regelwerk |
+| Bilder | 21 Handzeichen-Fotos, Spielfeld- und Auslaufdiagramme, sechs Ausball-Entscheidungen; 19 davon als Bildfrage |
 | Abschlussprüfungen | C 54 Fragen ab 70 %, B 36 ab 80 %, A 34 ab 85 %, jeweils mit Nachprüfungsgrenze |
-| Tests | 206 automatisierte Prüfungen |
+| Tests | 208 automatisierte Prüfungen |
 
 ## Quellen
 

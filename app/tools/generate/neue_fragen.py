@@ -84,6 +84,36 @@ BILD = [
   ["The ball touched this part of the body", "The player is injured and will be substituted", "Obstruction by an opponent", "Unsporting behaviour"], 0,
   "IFA-Schulungsmappe, Handzeichen 2 – die Hand zeigt auf den Koerperteil, den der Ball beruehrt hat.",
   "IFA Training Manual, hand signal 2 – the hand points to the part of the body the ball touched."),
+
+ # Diese drei Fotos sind nicht ideal – siehe OFFENE-PUNKTE.md. Die Fragen sind so
+ # geschnitten, dass sie mit dem vorhandenen Bildmaterial eindeutig bleiben.
+ ("IFA-BILD-017", "signals/sig-03",
+  "Der ausgestreckte Arm zeigt mit geoeffneter Hand nach oben, der zweite Arm in die Waagerechte. Welchen Fehler zeigt der Schiedsrichter an?",
+  "The extended arm points upwards with an open hand, the second arm horizontally. Which fault is the referee indicating?",
+  ["Ball an Netz, Band oder Leine", "Uebertritt an der Angabelinie",
+   "Ball ohne Beruehrung ueber das Netz", "Zweimal auf"],
+  ["Ball at the net, tape or cord", "Foot fault at the service line",
+   "Ball over the net without contact", "Two bounces"], 0,
+  "IFA-Schulungsmappe, Handzeichen 3 – ein ausgestreckter Arm mit geoeffneter Hand zeigt in Richtung Netz (Band/Leine). Beim Uebertritt (Zeichen 4) weist derselbe Arm dagegen schraeg nach unten zur Angabelinie.",
+  "IFA Training Manual, hand signal 3 – an extended arm with an open hand points towards the net (tape/cord). For a foot fault (signal 4) the same arm points diagonally downwards to the service line instead."),
+
+ ("IFA-BILD-018", "signals/sig-04",
+  "Der ausgestreckte Arm zeigt mit geoeffneter Hand schraeg nach unten, der zweite Arm in die Waagerechte. Welchen Fehler zeigt der Schiedsrichter an?",
+  "The extended arm points diagonally downwards with an open hand, the second arm horizontally. Which fault is the referee indicating?",
+  ["Uebertritt an der Angabelinie", "Ball an Netz, Band oder Leine",
+   "Ball unter dem Band hindurch", "Behinderung"],
+  ["Foot fault at the service line", "Ball at the net, tape or cord",
+   "Ball underneath the tape", "Obstruction"], 0,
+  "IFA-Schulungsmappe, Handzeichen 4 – ein ausgestreckter Arm mit geoeffneter Hand zeigt in Richtung Angabelinie. Beim Netzfehler (Zeichen 3) weist derselbe Arm nach oben.",
+  "IFA Training Manual, hand signal 4 – an extended arm with an open hand points towards the service line. For a fault at the net (signal 3) the same arm points upwards."),
+
+ ("IFA-BILD-019", "signals/sig-09",
+  "Beide Haende kreisen umeinander. Was zeigt die Schiedsrichterin an?",
+  "Both hands circle around each other. What is the referee indicating?",
+  ["Auswechslung", "Time out", "Wiederholung der letzten Angabe", "Zweimal auf"],
+  ["Substitution", "Time out", "Repetition of the last service", "Two bounces"], 0,
+  "IFA-Schulungsmappe, Handzeichen 9 – die Auswechslung ist durch Kreisen beider Haende ueber dem Kopf zu signalisieren. Das Foto zeigt die Bewegung auf Brusthoehe; massgeblich ist die Beschreibung.",
+  "IFA Training Manual, hand signal 9 – a substitution is signalled by circling both hands above the head. The photo shows the movement at chest height; the written description prevails."),
 ]
 
 # ------------------------------------------------- Textfragen (ch, lvl, scope)

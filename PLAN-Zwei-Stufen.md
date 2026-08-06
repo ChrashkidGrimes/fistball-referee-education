@@ -37,9 +37,9 @@ sieht – er sichert nur noch, dass jede Prüfung das Regelwerk gleichmäßig ab
 | `rahmen` – Mannschaft, Zeit, Altersklassen | 2, 3, 14 | 40 | 7 | 10 |
 | `spiel` – Spielgang, Schlag, Angabe | 4, 5, 6 | 32 | 8 | 12 |
 | `ballfuehrung` – Rückschlag, Zuspiel, Wertung | 7, 8 | 28 | 7 | 10 |
-| `leitung` – Spielrichter, Strafen, Handzeichen, Verhalten, Linienrichter, Aufgaben rund ums Spiel | 9–13, 16 | 60 | 7 | 12 |
+| `leitung` – Spielrichter, Strafen, Handzeichen, Verhalten, Linienrichter, Aufgaben rund ums Spiel | 9–13, 16 | 63 | 7 | 12 |
 | `verband` – Verbandsordnungen (abschaltbar) | 15 | 27 | 4 | 6 |
-| | | **232** | **40** | **60** |
+| | | **235** | **40** | **60** |
 
 Die Quoten folgen bewusst **nicht** den Poolgrößen. Kapitel 1 stellt 19 % des
 Katalogs, aber nur 17 % der Prüfung – es besteht überwiegend aus Maßen und Zahlen.
@@ -47,7 +47,7 @@ Der Pool `leitung` geht auf 20 % der Nationalprüfung hoch; dort steckt die
 Urteilsfähigkeit, die die höhere Lizenz rechtfertigt.
 
 Jeder Pool erfüllt seine Quote. Schaltet ein Verband die Verbandsordnungen ab,
-bleiben 203 Fragen; die bestehende Auffüllmechanik hält die Fragenzahl konstant.
+bleiben 208 Fragen; die bestehende Auffüllmechanik hält die Fragenzahl konstant.
 
 ---
 
@@ -86,16 +86,16 @@ tragen soll. Am 6. August 2026 geschlossen:
 | Kapitel | Thema | vorher | jetzt |
 |---|---|---|---|
 | 8 | Wertung | 2 | 4 |
-| 11 | Handzeichen und Gestik | **0** | 12 |
+| 11 | Handzeichen und Gestik | **0** | 15 |
 | 12 | Aufgaben und Verhalten des Schiedsrichters | **0** | 7 |
 | 13 | Linienrichter und Anschreiber | **0** | 9 |
 | 16 | Aufgaben rund um das Spiel | **0** | 6 |
 
-Der Pool `leitung` wächst damit von 26 auf 60 Fragen; die Nationalquote von 12
-zieht ein Fünftel davon. Zehn der neuen Fragen sind Bildfragen auf den vorhandenen
-Handzeichen-Fotos.
+Der Pool `leitung` wächst damit von 26 auf 63 Fragen; die Nationalquote von 12
+zieht knapp ein Fünftel davon. Dreizehn der neuen Fragen sind Bildfragen auf den
+vorhandenen Handzeichen-Fotos.
 
-Die 36 Fragen tragen `origin: "draft"` und stehen in
+Die 39 Fragen tragen `origin: "draft"` und stehen in
 [`Pruefvorlage-Spielleitung.md`](Pruefvorlage-Spielleitung.md) zur Abnahme.
 
 ---
@@ -172,7 +172,7 @@ jeden bisherigen Fortschritt. **Empfehlung: migrieren**, der Aufwand ist gering.
 ## Reihenfolge
 
 1. ~~**Fragen für Kapitel 11–13 schreiben**, dazu Kapitel 8 und 16 auffüllen.~~
-   Erledigt am 6. August 2026: 36 Fragen, Nachweis in `Pruefvorlage-Spielleitung.md`.
+   Erledigt am 6. August 2026: 39 Fragen, Nachweis in `Pruefvorlage-Spielleitung.md`.
 2. **Fragen von Toby abnehmen lassen.** ← hier stehen wir
 3. Datenmodell umstellen: `lvl` raus, Pool aus `ch`, `scope` umbenennen.
 4. `app.js` auf zwei Stufen umbauen, Fortschrittsmigration ergänzen.

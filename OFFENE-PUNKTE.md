@@ -109,20 +109,30 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
       sobald welche dazukommen. `Fragen-Nachweis.md` hält weiterhin fest, auf welche
       Quellstelle sich jede Frage stützt.
 
-- [ ] **36 neue Entwurfsfragen zur Spielleitung abnehmen.** Erstellt am 6. August 2026
+- [ ] **39 neue Entwurfsfragen zur Spielleitung abnehmen.** Erstellt am 6. August 2026
       für die Kapitel 8, 11, 12, 13 und 16, die bis dahin fast keine Fragen hatten.
-      Darunter zehn Bildfragen auf den vorhandenen Handzeichen-Fotos. Sie tragen
+      Darunter dreizehn Bildfragen auf den vorhandenen Handzeichen-Fotos. Sie tragen
       `origin: "draft"` und sind über die Einstellungen abschaltbar.
-      Vorlage: `Pruefvorlage-Spielleitung.md`. Zwei Punkte darin brauchen eine
+      Vorlage: `Pruefvorlage-Spielleitung.md`. Ein Punkt darin braucht eine
       Entscheidung: die Reichweite der Kapitel-16-Fragen (deutsche
-      Schiedsrichterordnung oder international) und die Frage, ob alle sechs
+      Schiedsrichterordnung oder international) und damit, ob alle sechs
       auf `national` gehören.
 
-- [ ] **Foto und Beschreibung zu Handzeichen 9 klären.** Das Bild zum Zeichen
-      „Auswechslung“ zeigt die kreisenden Hände auf Brusthöhe, die Schulungsmappe
-      beschreibt sie „über dem Kopf“. Solange das auseinandergeht, gibt es dazu
-      bewusst keine Bildfrage. Ebenso unbrauchbar für Bildfragen: die Zeichen 3
-      (Netz) und 4 (Übertritt), die auf den Fotos kaum zu unterscheiden sind.
+- [ ] **Handzeichen 3, 4 und 9 neu fotografieren.** Die drei Fotos tragen die Antwort
+      nicht aus eigener Kraft:
+
+      - Zeichen 3 (Netz) und 4 (Übertritt) unterscheiden sich nur in der Armrichtung –
+        nach oben zum Netz gegenüber schräg nach unten zur Angabelinie. Auf den Fotos
+        ist das kaum zu erkennen.
+      - Zeichen 9 (Auswechslung) zeigt die kreisenden Hände auf Brusthöhe, die
+        Schulungsmappe beschreibt sie „über dem Kopf“. Bild und Text gehen auseinander.
+
+      Die Fragen dazu bleiben im Katalog. Sie nennen die Armhaltung im Fragetext, und
+      die Fundstelle grenzt gegen das jeweils verwechselbare Zeichen ab – damit sind
+      sie fair. `questions.test.js` hält fest, dass diese Abgrenzung erhalten bleiben
+      muss. Sauber wird es aber erst mit besseren Aufnahmen: Zeichen 3 und 4 aus
+      derselben Perspektive und mit sichtbarem Netz beziehungsweise sichtbarer
+      Angabelinie, Zeichen 9 mit den Händen über dem Kopf.
       Ein Punkt für die Rückmeldung an die IFA.
 
 - [ ] **Zeitmarken für die acht Videofragen eintragen.** `app/assets/js/data-clips.js`

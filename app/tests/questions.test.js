@@ -35,7 +35,7 @@ console.log('\n== Herkunft der Fragen ==');
   ok(z.fbd===121,'121 Fragen aus dem Katalog von Faustball Deutschland unveraendert, ist: '+z.fbd);
   ok(z.ifa===69,'69 Fragen aus Spielregeln und Schulungsmappe, ist: '+z.ifa);
   ok(z.ppt===6,'6 Bildfragen aus den Foliensaetzen, ist: '+z.ppt);
-  ok(z.draft===36,'36 Entwuerfe zu den Kapiteln 8, 11-13 und 16, ist: '+z.draft);
+  ok(z.draft===39,'39 Entwuerfe zu den Kapiteln 8, 11-13 und 16, ist: '+z.draft);
 
   /* Die Entwuerfe schliessen die Luecke im Pool Spielleitung. */
   const ent=Q.filter(q=>q.origin==='draft');
@@ -188,12 +188,18 @@ console.log('\n== Bildfragen ==');
 
   /* Zwei Serien: Ausball-Entscheidungen aus den Folien, Handzeichen aus der Schulungsmappe. */
   const sig=shots.filter(q=>q.shot.startsWith('signals/'));
-  ok(sig.length===10,'zehn Bildfragen zu den Handzeichen, ist: '+sig.length);
+  ok(sig.length===13,'dreizehn Bildfragen zu den Handzeichen, ist: '+sig.length);
   ok(sig.every(q=>q.ch===11),'Handzeichenfragen liegen in Kapitel 11');
   ok(new Set(sig.map(q=>ansOf(q)[q.c])).size===sig.length,'jedes Handzeichen hat eine eigene Loesung');
-  /* Foto und Text muessen zusammenpassen: sig-09 zeigt die Haende auf Brusthoehe,
-     die Schulungsmappe beschreibt sie ueber dem Kopf – dafuer gibt es keine Frage. */
-  ok(!sig.some(q=>/sig-(09|03|04|16b|17)/.test(q.shot)),'keine Frage auf mehrdeutigen Fotos');
+  /* Drei Fotos sind schwach: sig-09 zeigt die Haende auf Brusthoehe statt ueber dem
+     Kopf, sig-03 und sig-04 unterscheiden sich nur in der Armrichtung. Die Fragen
+     nennen die Armhaltung deshalb im Text und die Fundstelle grenzt gegen das
+     verwechselbare Zeichen ab. Faellt das weg, wird die Frage unfair. */
+  const heikel=sig.filter(q=>/sig-(03|04|09)/.test(q.shot));
+  ok(heikel.length===3,'die drei schwachen Fotos sind abgedeckt, ist: '+heikel.length);
+  ok(heikel.every(q=>q.q.de.length>60),'ihre Fragetexte beschreiben die Armhaltung');
+  ok(heikel.every(q=>/Zeichen \d|Beschreibung/.test(q.ref.de)),
+     'ihre Fundstellen grenzen gegen das verwechselbare Zeichen ab');
 
   shots.length=0; shots.push(...w.IFA_QUESTIONS.filter(q=>q.shot&&q.shot.startsWith('ppt/ball-')));
   ok(shots.length===6,'sechs Bildfragen zur Ausball-Entscheidung, ist: '+shots.length);

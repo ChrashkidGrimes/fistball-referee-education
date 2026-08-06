@@ -320,6 +320,102 @@
   "tr": true
  },
  {
+  "id": "IFA-BILD-017",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-03",
+  "q": {
+   "de": "Der ausgestreckte Arm zeigt mit geöffneter Hand nach oben, der zweite Arm in die Waagerechte. Welchen Fehler zeigt der Schiedsrichter an?",
+   "en": "The extended arm points upwards with an open hand, the second arm horizontally. Which fault is the referee indicating?"
+  },
+  "a": {
+   "de": [
+    "Ball an Netz, Band oder Leine",
+    "Übertritt an der Angabelinie",
+    "Ball ohne Berührung über das Netz",
+    "Zweimal auf"
+   ],
+   "en": [
+    "Ball at the net, tape or cord",
+    "Foot fault at the service line",
+    "Ball over the net without contact",
+    "Two bounces"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 3 – ein ausgestreckter Arm mit geöffneter Hand zeigt in Richtung Netz (Band/Leine). Beim Übertritt (Zeichen 4) weist derselbe Arm dagegen schräg nach unten zur Angabelinie.",
+   "en": "IFA Training Manual, hand signal 3 – an extended arm with an open hand points towards the net (tape/cord). For a foot fault (signal 4) the same arm points diagonally downwards to the service line instead."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-018",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-04",
+  "q": {
+   "de": "Der ausgestreckte Arm zeigt mit geöffneter Hand schräg nach unten, der zweite Arm in die Waagerechte. Welchen Fehler zeigt der Schiedsrichter an?",
+   "en": "The extended arm points diagonally downwards with an open hand, the second arm horizontally. Which fault is the referee indicating?"
+  },
+  "a": {
+   "de": [
+    "Übertritt an der Angabelinie",
+    "Ball an Netz, Band oder Leine",
+    "Ball unter dem Band hindurch",
+    "Behinderung"
+   ],
+   "en": [
+    "Foot fault at the service line",
+    "Ball at the net, tape or cord",
+    "Ball underneath the tape",
+    "Obstruction"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 4 – ein ausgestreckter Arm mit geöffneter Hand zeigt in Richtung Angabelinie. Beim Netzfehler (Zeichen 3) weist derselbe Arm nach oben.",
+   "en": "IFA Training Manual, hand signal 4 – an extended arm with an open hand points towards the service line. For a fault at the net (signal 3) the same arm points upwards."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-019",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-09",
+  "q": {
+   "de": "Beide Hände kreisen umeinander. Was zeigt die Schiedsrichterin an?",
+   "en": "Both hands circle around each other. What is the referee indicating?"
+  },
+  "a": {
+   "de": [
+    "Auswechslung",
+    "Time out",
+    "Wiederholung der letzten Angabe",
+    "Zweimal auf"
+   ],
+   "en": [
+    "Substitution",
+    "Time out",
+    "Repetition of the last service",
+    "Two bounces"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 9 – die Auswechslung ist durch Kreisen beider Hände über dem Kopf zu signalisieren. Das Foto zeigt die Bewegung auf Brusthöhe; maßgeblich ist die Beschreibung.",
+   "en": "IFA Training Manual, hand signal 9 – a substitution is signalled by circling both hands above the head. The photo shows the movement at chest height; the written description prevails."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
   "id": "IFA-C-027",
   "lvl": "C",
   "ch": 11,
