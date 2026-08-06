@@ -109,6 +109,22 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
       sobald welche dazukommen. `Fragen-Nachweis.md` hält weiterhin fest, auf welche
       Quellstelle sich jede Frage stützt.
 
+- [ ] **36 neue Entwurfsfragen zur Spielleitung abnehmen.** Erstellt am 6. August 2026
+      für die Kapitel 8, 11, 12, 13 und 16, die bis dahin fast keine Fragen hatten.
+      Darunter zehn Bildfragen auf den vorhandenen Handzeichen-Fotos. Sie tragen
+      `origin: "draft"` und sind über die Einstellungen abschaltbar.
+      Vorlage: `Pruefvorlage-Spielleitung.md`. Zwei Punkte darin brauchen eine
+      Entscheidung: die Reichweite der Kapitel-16-Fragen (deutsche
+      Schiedsrichterordnung oder international) und die Frage, ob alle sechs
+      auf `national` gehören.
+
+- [ ] **Foto und Beschreibung zu Handzeichen 9 klären.** Das Bild zum Zeichen
+      „Auswechslung“ zeigt die kreisenden Hände auf Brusthöhe, die Schulungsmappe
+      beschreibt sie „über dem Kopf“. Solange das auseinandergeht, gibt es dazu
+      bewusst keine Bildfrage. Ebenso unbrauchbar für Bildfragen: die Zeichen 3
+      (Netz) und 4 (Übertritt), die auf den Fotos kaum zu unterscheiden sind.
+      Ein Punkt für die Rückmeldung an die IFA.
+
 - [ ] **Zeitmarken für die acht Videofragen eintragen.** `app/assets/js/data-clips.js`
       enthält fertige Fragen zu Block, Sprungangabe, Ball unter der Leine, Behinderung
       und Schlagausführung – es fehlen nur Video-ID sowie Start- und Endsekunde.

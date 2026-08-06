@@ -1,0 +1,1128 @@
+[
+ {
+  "id": "IFA-BILD-007",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-07",
+  "q": {
+   "de": "Welches Handzeichen zeigt die Schiedsrichterin bzw. der Schiedsrichter?",
+   "en": "Which hand signal is the referee showing?"
+  },
+  "a": {
+   "de": [
+    "Block",
+    "Gleichstand",
+    "Ball war knapp gut",
+    "Wiederholung der letzten Angabe"
+   ],
+   "en": [
+    "Block",
+    "Tie",
+    "Ball was just in",
+    "Repetition of the last service"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 7 – gestreckter Arm, geschlossene Faust senkrecht nach oben, unterstützt durch den Ausruf „BLOCK“.",
+   "en": "IFA Training Manual, hand signal 7 – straight arm with closed fist held vertically upwards, supported by the call ‚BLOCK‘."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-008",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-18",
+  "q": {
+   "de": "Welches Handzeichen wird hier gezeigt?",
+   "en": "Which signal is shown here?"
+  },
+  "a": {
+   "de": [
+    "Gleichstand",
+    "Block",
+    "Behinderung",
+    "Time out"
+   ],
+   "en": [
+    "Tie",
+    "Block",
+    "Obstruction",
+    "Time out"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 18 – beide gestreckten Arme mit geschlossener Faust vor der Brust. Nicht zu verwechseln mit dem Block, bei dem nur ein Arm nach oben geht.",
+   "en": "IFA Training Manual, hand signal 18 – both arms extended with closed fists in front of the chest. Not to be confused with block, where only one arm goes up."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-009",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-14",
+  "q": {
+   "de": "Die Fäuste sind vor der Brust verbunden, die Arme bleiben angewinkelt. Was zeigt die Schiedsrichterin an?",
+   "en": "The fists are joined in front of the chest with the arms bent. What is the referee indicating?"
+  },
+  "a": {
+   "de": [
+    "Behinderung",
+    "Gleichstand",
+    "Block",
+    "Zweimal auf"
+   ],
+   "en": [
+    "Obstruction",
+    "Tie",
+    "Block",
+    "Two bounces"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 14 – beide Hände außerhalb des Körperrahmens zu Fäusten geschlossen und horizontal an der Brust verbunden. Beim Gleichstand sind die Arme dagegen nach vorn gestreckt.",
+   "en": "IFA Training Manual, hand signal 14 – both hands closed into fists outside the body frame and joined horizontally at the chest. For a tie the arms are extended forward instead."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-010",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-06",
+  "q": {
+   "de": "Welches Handzeichen zeigt die Schiedsrichterin?",
+   "en": "Which signal is the referee showing?"
+  },
+  "a": {
+   "de": [
+    "Time out oder sonstige Spielunterbrechung",
+    "Auswechslung",
+    "Ball hat die Decke berührt",
+    "Behinderung"
+   ],
+   "en": [
+    "Time out or other interruption of play",
+    "Substitution",
+    "Ball touched the ceiling",
+    "Obstruction"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 6 – ein abgewinkelter Arm zeigt mit geöffneter Hand nach oben, die andere geöffnete Hand wird mittig darüber gelegt.",
+   "en": "IFA Training Manual, hand signal 6 – one bent arm points upwards with an open hand, the other open hand is placed across it."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-011",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-13",
+  "q": {
+   "de": "Beide Hände weisen mit geöffneter Handfläche nach oben. Was zeigt der Schiedsrichter an?",
+   "en": "Both hands point upwards with open palms. What is the referee indicating?"
+  },
+  "a": {
+   "de": [
+    "Der Ball hat nach einem Überschlag die Decke berührt",
+    "Time out",
+    "Der Ball ist unter dem Band hindurchgeflogen",
+    "Gleichstand"
+   ],
+   "en": [
+    "After a rebound the ball touched the ceiling",
+    "Time out",
+    "The ball passed underneath the tape",
+    "Tie"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 13 – Deckenberührung nach einem Überschlag. Der zweite Arm zeigt danach waagerecht zur Mannschaft, die den Punkt erhält.",
+   "en": "IFA Training Manual, hand signal 13 – contact with the ceiling after a rebound. The second arm then points horizontally to the team awarded the point."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-012",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-11",
+  "q": {
+   "de": "Die offene Hand zeigt mit der Handfläche nach oben schräg nach unten vor dem Körper. Welche Situation wird angezeigt?",
+   "en": "The open hand points diagonally downwards in front of the body with the palm facing up. Which situation is being indicated?"
+  },
+  "a": {
+   "de": [
+    "Der Ball ist unter dem Band hindurchgeflogen",
+    "Der Ball ist ohne Berührung über das Netz gesprungen",
+    "Der Ball hat den Körper berührt",
+    "Zweimal auf"
+   ],
+   "en": [
+    "The ball passed underneath the tape",
+    "The ball bounced over the net without contact",
+    "The ball touched the body",
+    "Two bounces"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 11 – die Flugbahn des Balles wird unterhalb des Bandes nachgezeigt.",
+   "en": "IFA Training Manual, hand signal 11 – the flight path of the ball is traced below the tape."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-013",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-12",
+  "q": {
+   "de": "Der Arm führt mit der Handfläche nach unten über den Körper. Welche Situation wird angezeigt?",
+   "en": "The arm moves across above the body with the palm facing down. Which situation is being indicated?"
+  },
+  "a": {
+   "de": [
+    "Der Ball ist ohne Berührung über das Netz gesprungen",
+    "Der Ball ist unter dem Band hindurchgeflogen",
+    "Der Ball hat die Decke berührt",
+    "Block"
+   ],
+   "en": [
+    "The ball bounced over the net without contact",
+    "The ball passed underneath the tape",
+    "The ball touched the ceiling",
+    "Block"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 12 – die Flugbahn wird oberhalb des Körpers nachgezeigt, Handfläche nach unten.",
+   "en": "IFA Training Manual, hand signal 12 – the flight path is traced above the body with the palm facing down."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-014",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-08",
+  "q": {
+   "de": "Beide Arme zeigen waagerecht nach außen, die Daumen nach oben. Was bedeutet das Zeichen?",
+   "en": "Both arms point horizontally outwards with the thumbs up. What does this signal mean?"
+  },
+  "a": {
+   "de": [
+    "Wiederholung der letzten Angabe",
+    "Gleichstand",
+    "Ausball",
+    "Time out"
+   ],
+   "en": [
+    "Repetition of the last service",
+    "Tie",
+    "Ball out",
+    "Time out"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 8.",
+   "en": "IFA Training Manual, hand signal 8."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-015",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-05",
+  "q": {
+   "de": "Der gestreckte Arm zeigt mit zwei gespreizten Fingern nach unten. Welcher Fehler wird angezeigt?",
+   "en": "The extended arm points downwards with two fingers spread. Which fault is being indicated?"
+  },
+  "a": {
+   "de": [
+    "Zweimal auf",
+    "Übertritt",
+    "Ball war knapp gut",
+    "Der Ball hat den Körper berührt"
+   ],
+   "en": [
+    "Two bounces",
+    "Foot fault",
+    "Ball was just in",
+    "The ball touched the body"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 5.",
+   "en": "IFA Training Manual, hand signal 5."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-BILD-016",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "shot": "signals/sig-02",
+  "q": {
+   "de": "Eine Hand klopft auf einen Körperteil, der zweite Arm zeigt in die Waagerechte. Was zeigt der Schiedsrichter an?",
+   "en": "One hand taps a part of the body while the second arm points horizontally. What is the referee indicating?"
+  },
+  "a": {
+   "de": [
+    "Der Ball hat diesen Körperteil berührt",
+    "Der Spieler ist verletzt und wird ausgewechselt",
+    "Behinderung durch einen Gegenspieler",
+    "Unsportliches Verhalten"
+   ],
+   "en": [
+    "The ball touched this part of the body",
+    "The player is injured and will be substituted",
+    "Obstruction by an opponent",
+    "Unsporting behaviour"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 2 – die Hand zeigt auf den Körperteil, den der Ball berührt hat.",
+   "en": "IFA Training Manual, hand signal 2 – the hand points to the part of the body the ball touched."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-027",
+  "lvl": "C",
+  "ch": 11,
+  "scope": "ifa",
+  "q": {
+   "de": "Wohin zeigt bei den meisten Handzeichen der zweite Arm?",
+   "en": "With most hand signals, where does the second arm point?"
+  },
+  "a": {
+   "de": [
+    "In die Waagerechte, in Richtung der Mannschaft, die den Gutball erzielt hat",
+    "In die Waagerechte, in Richtung der Mannschaft, die den Fehler begangen hat",
+    "Immer in Richtung des Anschreibertisches",
+    "Senkrecht nach oben, um die Unterbrechung zu bestätigen"
+   ],
+   "en": [
+    "Horizontally, towards the team that has won the point",
+    "Horizontally, towards the team that committed the fault",
+    "Always towards the scorer's table",
+    "Vertically upwards, to confirm the interruption"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 1 bis 5 und 11 bis 14 – der zweite Arm weist stets der Mannschaft mit dem Gutpunkt zu.",
+   "en": "IFA Training Manual, hand signals 1 to 5 and 11 to 14 – the second arm always points to the team awarded the point."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-044",
+  "lvl": "A",
+  "ch": 11,
+  "scope": "ifa",
+  "q": {
+   "de": "Der Ball berührt den Fuß eines Spielers. Wie zeigt der Schiedsrichter das an?",
+   "en": "The ball touches a player's foot. How does the referee indicate this?"
+  },
+  "a": {
+   "de": [
+    "Die Hand auf Brust oder Oberschenkel genügt, bei Bedarf ergänzt durch den Zuruf „Fuß“",
+    "Der Schiedsrichter muss sich bücken und den Fuß berühren",
+    "Es gibt kein Handzeichen, der Pfiff allein genügt",
+    "Der Schiedsrichter zeigt mit gespreizten Fingern nach unten"
+   ],
+   "en": [
+    "Touching the chest or thigh is sufficient, if necessary supported by calling ‚foot‘",
+    "The referee has to bend down and touch the foot",
+    "There is no hand signal, the whistle alone is sufficient",
+    "The referee points downwards with spread fingers"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 2, Hinweis zu Treffern am Fuß.",
+   "en": "IFA Training Manual, hand signal 2, note on contacts with the foot."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-028",
+  "lvl": "C",
+  "ch": 12,
+  "scope": "ifa",
+  "q": {
+   "de": "Worauf gründet der Schiedsrichter seine Entscheidungen?",
+   "en": "On what does the referee base his decisions?"
+  },
+  "a": {
+   "de": [
+    "Auf die visuelle Wahrnehmung; das Gehör darf sie nur bestätigen",
+    "Auf das Gehör, weil ein Ballkontakt hörbar ist",
+    "Auf die übereinstimmende Einschätzung beider Mannschaftsführer",
+    "Auf die Einschätzung der Linienrichter"
+   ],
+   "en": [
+    "On visual perception; hearing may only confirm it",
+    "On hearing, because contact with the ball is audible",
+    "On the matching assessment of both team captains",
+    "On the assessment of the linesmen"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – neutrale Entscheidungsfindung.",
+   "en": "IFA Training Manual, conduct of the referee – neutral decision-making."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-045",
+  "lvl": "A",
+  "ch": 12,
+  "scope": "ifa",
+  "q": {
+   "de": "Der Schiedsrichter erkennt unmittelbar, dass seine Entscheidung falsch war. Wie ist zu verfahren?",
+   "en": "The referee immediately realises that his decision was wrong. How should he proceed?"
+  },
+  "a": {
+   "de": [
+    "Er kann sie ohne weiteres zurücknehmen, sofern der Spielgang das noch zulässt",
+    "Eine getroffene Entscheidung ist in keinem Fall zurückzunehmen",
+    "Er nimmt sie nur zurück, wenn beide Mannschaftsführer zustimmen",
+    "Er gleicht den Fehler bei der nächsten strittigen Situation aus"
+   ],
+   "en": [
+    "He may withdraw it without further ado, provided the rally still allows it",
+    "A decision once taken must never be withdrawn",
+    "He only withdraws it if both team captains agree",
+    "He compensates for the error at the next disputed situation"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – Umgang mit eigenen Fehlern.",
+   "en": "IFA Training Manual, conduct of the referee – dealing with one's own mistakes."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-046",
+  "lvl": "A",
+  "ch": 12,
+  "scope": "ifa",
+  "q": {
+   "de": "Eine Mannschaft legt Einspruch gegen eine Tatsachenentscheidung ein. Was tut der Schiedsrichter?",
+   "en": "A team lodges an objection against a decision of fact. What does the referee do?"
+  },
+  "a": {
+   "de": [
+    "Er vermerkt den Einspruch sofort auf dem Spielformular",
+    "Er weist ihn zurück, da Tatsachenentscheidungen unanfechtbar sind, und vermerkt nichts",
+    "Er unterbricht das Spiel bis zur Klärung durch die Spielleitung",
+    "Er trägt ihn nur ein, wenn er den Einspruch für berechtigt hält"
+   ],
+   "en": [
+    "He notes the objection on the match form immediately",
+    "He rejects it, since decisions of fact are final, and records nothing",
+    "He interrupts the match until the competition management has clarified it",
+    "He records it only if he considers the objection justified"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – Einsprüche. Auch Einsprüche gegen Tatsachenentscheidungen sind sofort zu vermerken.",
+   "en": "IFA Training Manual, conduct of the referee – objections. Objections against decisions of fact must also be recorded immediately."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-029",
+  "lvl": "C",
+  "ch": 12,
+  "scope": "ifa",
+  "q": {
+   "de": "Der Mannschaftsführer stellt während des Spiels eine Frage. Wie verhält sich der Schiedsrichter?",
+   "en": "The team captain asks a question during the match. How does the referee respond?"
+  },
+  "a": {
+   "de": [
+    "Er muss antworten, gibt die Antwort kurz und klar und lässt keine Diskussion zu",
+    "Er ist zu einer Antwort nicht verpflichtet",
+    "Er antwortet erst in der nächsten Spielpause",
+    "Er verweist die Frage an den Anschreiber"
+   ],
+   "en": [
+    "He must answer, gives the answer briefly and clearly and allows no discussion",
+    "He is not obliged to answer",
+    "He answers only at the next break in play",
+    "He refers the question to the scorer"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – Fragen von Mannschaftsführern.",
+   "en": "IFA Training Manual, conduct of the referee – questions from team captains."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-047",
+  "lvl": "A",
+  "ch": 12,
+  "scope": "ifa",
+  "q": {
+   "de": "Wer darf bei einer Jugendmannschaft an Stelle des Mannschaftsführers Fragen an den Schiedsrichter richten?",
+   "en": "In a youth team, who may address questions to the referee instead of the team captain?"
+  },
+  "a": {
+   "de": [
+    "Gegebenenfalls eine volljährige Betreuungsperson",
+    "Jeder Spieler der Mannschaft",
+    "Ausschließlich der Mannschaftsführer, ohne Ausnahme",
+    "Ein Elternteil aus dem Zuschauerbereich"
+   ],
+   "en": [
+    "If applicable, an adult member of the support staff",
+    "Any player of the team",
+    "Exclusively the team captain, without exception",
+    "A parent from the spectator area"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – Fragen von Mannschaftsführern.",
+   "en": "IFA Training Manual, conduct of the referee – questions from team captains."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-048",
+  "lvl": "A",
+  "ch": 12,
+  "scope": "ifa",
+  "q": {
+   "de": "Das Spiel artet aus und der Schiedsrichter fühlt sich durch Zuschauer bedroht. Was hat er zu tun?",
+   "en": "The match gets out of hand and the referee feels threatened by spectators. What must he do?"
+  },
+  "a": {
+   "de": [
+    "Er erteilt den Mannschaftsführern beziehungsweise dem Veranstalter die notwendigen Weisungen",
+    "Er bricht das Spiel unverzüglich und endgültig ab",
+    "Er setzt das Spiel unverändert fort, da Zuschauer nicht seine Zuständigkeit sind",
+    "Er übergibt die Spielleitung an einen Linienrichter"
+   ],
+   "en": [
+    "He gives the necessary instructions to the team captains or to the organiser",
+    "He abandons the match immediately and definitively",
+    "He continues the match unchanged, as spectators are not his responsibility",
+    "He hands over the conduct of the match to a linesman"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Verhalten des Schiedsrichters – der Schiedsrichter hat alle Maßnahmen zu ergreifen, die eine klaglose Beendigung des Wettspieles ermöglichen.",
+   "en": "IFA Training Manual, conduct of the referee – the referee must take all measures that allow the match to be completed without complaint."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-030",
+  "lvl": "C",
+  "ch": 12,
+  "scope": "ifa",
+  "q": {
+   "de": "Wie hält es der Schiedsrichter mit den Eintragungen des Anschreibers?",
+   "en": "How does the referee handle the scorer's entries?"
+  },
+  "a": {
+   "de": [
+    "Er überwacht sie und prüft die Aufzeichnung in regelmäßigen Abständen",
+    "Er prüft sie ausschließlich nach Spielende",
+    "Die Prüfung obliegt allein den Mannschaftsführern",
+    "Er prüft sie nur, wenn eine Mannschaft das verlangt"
+   ],
+   "en": [
+    "He supervises them and checks the record at regular intervals",
+    "He checks them only after the end of the match",
+    "Checking is solely the responsibility of the team captains",
+    "He checks them only if a team requests it"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Aufgaben des Schiedsrichters während des Spiels.",
+   "en": "IFA Training Manual, duties of the referee during the match."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-031",
+  "lvl": "C",
+  "ch": 13,
+  "scope": "ifa",
+  "q": {
+   "de": "Wo haben die Linienrichter ihren Stand?",
+   "en": "Where are the linesmen positioned?"
+  },
+  "a": {
+   "de": [
+    "An den Endpunkten der dem Schiedsrichter gegenüberliegenden Seitenlinie",
+    "An den Endpunkten der Seitenlinie auf der Seite des Schiedsrichters",
+    "Jeweils hinter den beiden Grundlinien",
+    "Neben dem Anschreibertisch"
+   ],
+   "en": [
+    "At the end points of the side line opposite the referee",
+    "At the end points of the side line on the referee's side",
+    "Behind the two base lines",
+    "Next to the scorer's table"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "Spielregeln 9.3.",
+   "en": "Rules of the Game 9.3."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-032",
+  "lvl": "C",
+  "ch": 13,
+  "scope": "ifa",
+  "q": {
+   "de": "Der Linienrichter zeigt mit der Fahne senkrecht nach oben. Was bedeutet das?",
+   "en": "The linesman holds the flag vertically upwards. What does that mean?"
+  },
+  "a": {
+   "de": [
+    "Der Ball hat die Außenlinie überschritten",
+    "Der Ball hat die Außenlinie nicht überschritten",
+    "Der Linienrichter kann die Situation nicht beurteilen",
+    "Der Linienrichter bittet um eine Spielunterbrechung"
+   ],
+   "en": [
+    "The ball has crossed the outer line",
+    "The ball has not crossed the outer line",
+    "The linesman cannot judge the situation",
+    "The linesman requests an interruption of play"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 16 – Linienrichter und Schiedsrichter-Assistenten.",
+   "en": "IFA Training Manual, hand signal 16 – linesmen and referee assistants."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-033",
+  "lvl": "C",
+  "ch": 13,
+  "scope": "ifa",
+  "q": {
+   "de": "Der Linienrichter hält die Fahne mit beiden Händen waagerecht in Brusthöhe. Was heißt das?",
+   "en": "The linesman holds the flag horizontally at chest height with both hands. What does that mean?"
+  },
+  "a": {
+   "de": [
+    "Er kann zu der Situation keine Aussage machen",
+    "Der Ball war eindeutig im Feld",
+    "Der Ball war eindeutig im Aus",
+    "Er meldet einen Wechsel der Linienrichter an"
+   ],
+   "en": [
+    "He cannot give a judgement on the situation",
+    "The ball was clearly inside the court",
+    "The ball was clearly out",
+    "He is announcing a change of linesmen"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Handzeichen 16 sowie die beste Position des Linienschiedsrichters 3.",
+   "en": "IFA Training Manual, hand signal 16 and best position of the linesman 3."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-049",
+  "lvl": "A",
+  "ch": 13,
+  "scope": "ifa",
+  "q": {
+   "de": "Beide Linienrichter können einen Ausball nicht beurteilen. Wer entscheidet?",
+   "en": "Neither linesman can judge a ball out. Who decides?"
+  },
+  "a": {
+   "de": [
+    "Der Schiedsrichter übernimmt die Verantwortung und entscheidet",
+    "Der Ballwechsel wird wiederholt",
+    "Der Punkt geht an die abwehrende Mannschaft",
+    "Die Mannschaftsführer einigen sich"
+   ],
+   "en": [
+    "The referee takes responsibility and decides",
+    "The rally is replayed",
+    "The point goes to the defending team",
+    "The team captains reach an agreement"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, die beste Position des Linienschiedsrichters 3 – kann auch der Kollege die Situation nicht erkennen, übernimmt der Schiedsrichter.",
+   "en": "IFA Training Manual, best position of the linesman 3 – if the colleague cannot see the situation either, the referee takes over."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-050",
+  "lvl": "A",
+  "ch": 13,
+  "scope": "ifa",
+  "q": {
+   "de": "Ein Ball geht ins Aus. Wie ist das Zusammenspiel der beiden Linienrichter geregelt?",
+   "en": "A ball goes out. How is the interaction between the two linesmen regulated?"
+  },
+  "a": {
+   "de": [
+    "Der vorrangige Linienrichter hebt die Fahne, der Kollege quittiert mit kurzer Verzögerung",
+    "Beide heben die Fahne gleichzeitig, damit die Entscheidung eindeutig ist",
+    "Nur der Linienrichter auf der Angabeseite zeigt an, der andere bleibt untätig",
+    "Der Kollege reagiert zuerst, damit der vorrangige Linienrichter ihn bestätigen kann"
+   ],
+   "en": [
+    "The linesman in charge raises the flag, the colleague acknowledges with a short delay",
+    "Both raise the flag simultaneously so that the decision is unambiguous",
+    "Only the linesman on the service side signals, the other remains inactive",
+    "The colleague reacts first so that the linesman in charge can confirm him"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, die beste Position des Linienschiedsrichters 2 – der Kollege darf auf keinen Fall zuerst reagieren.",
+   "en": "IFA Training Manual, best position of the linesman 2 – the colleague must never react first."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-051",
+  "lvl": "A",
+  "ch": 13,
+  "scope": "ifa",
+  "q": {
+   "de": "Halle: Der Ball springt im Feld auf und berührt danach die Hallenwand. Wie signalisiert der Linienrichter?",
+   "en": "Indoor: the ball bounces inside the court and then touches the hall wall. How does the linesman signal?"
+  },
+  "a": {
+   "de": [
+    "Fahne in das Feld, gleichzeitig den anderen Arm senkrecht nach oben",
+    "Nur die Fahne senkrecht nach oben",
+    "Nur die Fahne in Richtung Spielfeld",
+    "Fahne waagerecht vor dem Körper"
+   ],
+   "en": [
+    "Flag into the court and at the same time the other arm vertically upwards",
+    "Only the flag vertically upwards",
+    "Only the flag towards the court",
+    "Flag horizontally in front of the body"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Besonderheiten in der Halle. Dieselbe Signalisierung gilt, wenn der Ball ins Aus fliegt und die abwehrende Mannschaft ihn berührt hat.",
+   "en": "IFA Training Manual, special features indoors. The same signal applies when the ball flies out after being touched by the defending team."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-034",
+  "lvl": "C",
+  "ch": 13,
+  "scope": "ifa",
+  "q": {
+   "de": "Wann wechselt der Standpunkt der Linienrichter?",
+   "en": "When do the linesmen change their position?"
+  },
+  "a": {
+   "de": [
+    "Mit jedem Ballwechsel, also beim Angriffs- oder Angabewechsel",
+    "Nur beim Seitenwechsel zur Halbzeit",
+    "Nach jedem gewonnenen Satz",
+    "Der Standpunkt bleibt während des gesamten Spiels unverändert"
+   ],
+   "en": [
+    "With every rally, that is at each change of attack or service",
+    "Only when changing ends at half time",
+    "After each set won",
+    "The position remains unchanged throughout the match"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, der Standort der Linienrichter.",
+   "en": "IFA Training Manual, the position of the linesmen."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-052",
+  "lvl": "A",
+  "ch": 13,
+  "scope": "ifa",
+  "q": {
+   "de": "Dürfen Linienrichter während eines Spiels ausgewechselt werden?",
+   "en": "May linesmen be replaced during a match?"
+  },
+  "a": {
+   "de": [
+    "Nur aufgrund besonderer Umstände, etwa bei Übelkeit",
+    "Ja, jederzeit auf Wunsch des Veranstalters",
+    "Ja, aber nur in der Halbzeitpause",
+    "Nein, ein Wechsel ist ausnahmslos ausgeschlossen"
+   ],
+   "en": [
+    "Only for special reasons, for instance if they feel unwell",
+    "Yes, at any time at the organiser's request",
+    "Yes, but only during the half-time break",
+    "No, a change is excluded without exception"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Auswechslung von Linienrichtern.",
+   "en": "IFA Training Manual, replacement of linesmen."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-035",
+  "lvl": "C",
+  "ch": 13,
+  "scope": "ifa",
+  "q": {
+   "de": "Welche Aufgabe hat der Anschreiber?",
+   "en": "What is the task of the scorer?"
+  },
+  "a": {
+   "de": [
+    "Er hat seinen Platz in der Nähe des Schiedsrichters und bucht nach dessen Zeichen die Gutbälle beider Mannschaften",
+    "Er entscheidet bei strittigen Bällen gemeinsam mit den Linienrichtern",
+    "Er misst die Spielzeit und pfeift das Spielende an",
+    "Er prüft vor dem Spiel die Spielberechtigung der Spieler"
+   ],
+   "en": [
+    "He is positioned near the referee and records the points of both teams following the referee's signals",
+    "He decides on disputed balls together with the linesmen",
+    "He measures the playing time and whistles for the end of the match",
+    "He checks the players' eligibility before the match"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "Spielregeln 9.4.",
+   "en": "Rules of the Game 9.4."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-036",
+  "lvl": "C",
+  "ch": 8,
+  "scope": "ifa",
+  "q": {
+   "de": "Wie wird ein Fehler gewertet?",
+   "en": "How is a fault scored?"
+  },
+  "a": {
+   "de": [
+    "Als Gutball für die gegnerische Mannschaft",
+    "Als Punktabzug für die fehlerhafte Mannschaft",
+    "Der Ballwechsel wird ohne Wertung wiederholt",
+    "Die Angabe geht an die gegnerische Mannschaft, ohne dass ein Punkt fällt"
+   ],
+   "en": [
+    "As a point for the opposing team",
+    "As a point deduction for the team at fault",
+    "The rally is replayed without being scored",
+    "The service passes to the opposing team without a point being scored"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "Spielregeln 8.1.",
+   "en": "Rules of the Game 8.1."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-053",
+  "lvl": "A",
+  "ch": 8,
+  "scope": "ifa",
+  "q": {
+   "de": "Worauf achtet der Schiedsrichter bei der Eintragung der Gutbälle im Spielbericht besonders?",
+   "en": "What does the referee pay particular attention to when points are entered in the match report?"
+  },
+  "a": {
+   "de": [
+    "Dass der Anschreiber die Leerfelder nicht entwertet",
+    "Dass die Gutbälle mit römischen Ziffern eingetragen werden",
+    "Dass jede Mannschaft ihre eigenen Punkte selbst einträgt",
+    "Dass nur die Sätze, nicht die einzelnen Gutbälle festgehalten werden"
+   ],
+   "en": [
+    "That the scorer does not invalidate the empty fields",
+    "That the points are entered in Roman numerals",
+    "That each team enters its own points itself",
+    "That only the sets and not the individual points are recorded"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "IFA-Schulungsmappe, Kontrolle des Anschreibers zu Regel 8.2. Die Gutbälle werden mit arabischen Ziffern in zeitlicher Reihenfolge eingetragen.",
+   "en": "IFA Training Manual, supervision of the scorer relating to rule 8.2. Points are entered in Arabic numerals in chronological order."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-037",
+  "lvl": "C",
+  "ch": 16,
+  "scope": "national",
+  "q": {
+   "de": "Wann soll der Schiedsrichter am Spielort anwesend sein?",
+   "en": "When should the referee be present at the venue?"
+  },
+  "a": {
+   "de": [
+    "30 Minuten vor Spielbeginn",
+    "15 Minuten vor Spielbeginn",
+    "60 Minuten vor Spielbeginn",
+    "Unmittelbar vor der Auslosung"
+   ],
+   "en": [
+    "30 minutes before the start of the match",
+    "15 minutes before the start of the match",
+    "60 minutes before the start of the match",
+    "Immediately before the toss"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel. Rechtzeitig genug, um Spielformular, Zeitvergleich und Geräteprüfung vor dem planmäßigen Anpfiff zu erledigen.",
+   "en": "Referee regulations, duties before the match. Early enough to complete match form, time check and equipment inspection before the scheduled start."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-038",
+  "lvl": "C",
+  "ch": 16,
+  "scope": "national",
+  "q": {
+   "de": "Wie ist der zeitliche Ablauf unmittelbar vor Spielbeginn geregelt?",
+   "en": "How is the sequence immediately before the start of the match regulated?"
+  },
+  "a": {
+   "de": [
+    "5 Minuten vorher beendet ein anhaltender Pfiff das Einspielen, 3 Minuten vorher wird ausgelost",
+    "3 Minuten vorher endet das Einspielen, 1 Minute vorher wird ausgelost",
+    "10 Minuten vorher endet das Einspielen, 5 Minuten vorher wird ausgelost",
+    "Auslosung und Ende des Einspielens fallen zusammen"
+   ],
+   "en": [
+    "5 minutes before, a sustained whistle ends the warm-up; 3 minutes before, the toss takes place",
+    "3 minutes before, the warm-up ends; 1 minute before, the toss takes place",
+    "10 minutes before, the warm-up ends; 5 minutes before, the toss takes place",
+    "The toss and the end of the warm-up coincide"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Auslosung.",
+   "en": "Referee regulations, duties before the match – the toss."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-C-039",
+  "lvl": "C",
+  "ch": 16,
+  "scope": "ifa",
+  "q": {
+   "de": "Worüber wird vor Spielbeginn mit den Mannschaftsführern ausgelost?",
+   "en": "What is decided by the toss with the team captains before the match?"
+  },
+  "a": {
+   "de": [
+    "Feld oder Ball und damit die erste Angabe",
+    "Nur die Spielfeldseite; die Angabe hat immer die Heimmannschaft",
+    "Nur die erste Angabe; die Seiten sind vorgegeben",
+    "Die Reihenfolge der Auswechslungen"
+   ],
+   "en": [
+    "Choice of end or ball, and thereby the first service",
+    "Only the end; the home team always serves first",
+    "Only the first service; the ends are predetermined",
+    "The order of substitutions"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Auslosung.",
+   "en": "Referee regulations, duties before the match – the toss."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-054",
+  "lvl": "A",
+  "ch": 16,
+  "scope": "ifa",
+  "q": {
+   "de": "Wo verwahrt der Schiedsrichter die nicht gespielten Bälle?",
+   "en": "Where does the referee keep the balls that are not in play?"
+  },
+  "a": {
+   "de": [
+    "Der nächste einsetzbare Ball liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m dahinter",
+    "Alle Bälle bleiben beim Anschreibertisch",
+    "Alle Bälle liegen direkt neben dem Pfosten",
+    "Die Bälle verbleiben bei den Mannschaften auf der Auswechselbank"
+   ],
+   "en": [
+    "The next usable ball lies directly beside the post, all others 3 to 5 m behind it",
+    "All balls stay at the scorer's table",
+    "All balls lie directly beside the post",
+    "The balls stay with the teams on the substitutes' bench"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle.",
+   "en": "Referee regulations, duties during the match – keeping the balls."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-055",
+  "lvl": "A",
+  "ch": 16,
+  "scope": "ifa",
+  "q": {
+   "de": "Wie werden die zu Beginn tatsächlich eingesetzten Spieler im Spielformular kenntlich gemacht?",
+   "en": "How are the players actually fielded at the start marked on the match form?"
+  },
+  "a": {
+   "de": [
+    "Mit einem Kreuz; nicht anwesende Spieler werden gestrichen",
+    "Durch Unterstreichen des Namens; nicht anwesende Spieler bleiben stehen",
+    "Durch die Rückennummer in Klammern",
+    "Es wird nichts markiert, der Eintrag der Namen genügt"
+   ],
+   "en": [
+    "With a cross; players who are absent are struck out",
+    "By underlining the name; absent players are left in the list",
+    "By the shirt number in brackets",
+    "Nothing is marked, entering the names is sufficient"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Formulareintragungen. Ergänzungen und Auswechslungen werden nachgetragen.",
+   "en": "Referee regulations, duties before the match – entries on the form. Additions and substitutions are entered subsequently."
+  },
+  "origin": "draft",
+  "tr": true
+ },
+ {
+  "id": "IFA-A-056",
+  "lvl": "A",
+  "ch": 16,
+  "scope": "ifa",
+  "q": {
+   "de": "Was hat der Schiedsrichter nach dem Spiel mit dem Spielformular zu tun?",
+   "en": "What must the referee do with the match form after the match?"
+  },
+  "a": {
+   "de": [
+    "Er prüft es auf Vollständigkeit, schließt es mit seiner Unterschrift ab und übergibt es der Spielleitung",
+    "Er übergibt es unverzüglich dem Mannschaftsführer der Heimmannschaft",
+    "Er behält es und reicht es innerhalb einer Woche nach",
+    "Er übergibt es dem Anschreiber, der es unterschreibt"
+   ],
+   "en": [
+    "He checks it for completeness, closes it with his signature and hands it to the competition management",
+    "He hands it immediately to the captain of the home team",
+    "He keeps it and submits it within a week",
+    "He hands it to the scorer, who signs it"
+   ]
+  },
+  "c": 0,
+  "ref": {
+   "de": "Schiedsrichterordnung, Aufgaben nach dem Spiel – Formularprüfung.",
+   "en": "Referee regulations, duties after the match – checking the form."
+  },
+  "origin": "draft",
+  "tr": true
+ }
+]

@@ -1,5 +1,5 @@
 /* Herkunft der Fragen, Fundstellen, Bild- und Videofragen sowie der
-   Entwurfsmechanismus (auch wenn derzeit keine Entwuerfe im Katalog sind). */
+   Entwurfsmechanismus. */
 const {JSDOM}=require('jsdom'); const fs=require('fs');
 const DIR=require('path').resolve(__dirname,'..');
 let pass=0,fail=0; const ok=(c,m)=>{c?pass++:fail++;console.log((c?'  PASS ':'  FAIL ')+m);};
@@ -35,7 +35,16 @@ console.log('\n== Herkunft der Fragen ==');
   ok(z.fbd===121,'121 Fragen aus dem Katalog von Faustball Deutschland unveraendert, ist: '+z.fbd);
   ok(z.ifa===69,'69 Fragen aus Spielregeln und Schulungsmappe, ist: '+z.ifa);
   ok(z.ppt===6,'6 Bildfragen aus den Foliensaetzen, ist: '+z.ppt);
-  ok(!z.draft,'keine ungeprueften Entwuerfe mehr im Katalog');
+  ok(z.draft===36,'36 Entwuerfe zu den Kapiteln 8, 11-13 und 16, ist: '+z.draft);
+
+  /* Die Entwuerfe schliessen die Luecke im Pool Spielleitung. */
+  const ent=Q.filter(q=>q.origin==='draft');
+  ok(ent.every(q=>[8,11,12,13,16].includes(q.ch)),'Entwuerfe liegen in den vorgesehenen Kapiteln');
+  ok(ent.every(q=>q.tr===true),'Entwuerfe sind als Arbeitsuebersetzung markiert');
+  ok(ent.every(q=>q.ref&&q.ref.de&&q.ref.de.length>8&&q.ref.en),'jeder Entwurf nennt eine Fundstelle');
+  ok(ent.every(q=>ansOf(q,'de').length===4&&ansOf(q,'en').length===4),'je vier Antworten in beiden Sprachen');
+  ok(ent.every(q=>new Set(ansOf(q,'de')).size===4),'keine doppelte Antwort innerhalb eines Entwurfs');
+  [11,12,13,16].forEach(ch=>ok(Q.some(q=>q.ch===ch),'Kapitel '+ch+' hat mindestens eine Frage'));
 
   const neu=Q.filter(q=>q.origin==='ifa'||q.origin==='ppt');
   ok(neu.every(q=>q.lvl==='A'||q.lvl==='C'),'die ergaenzten Fragen liegen auf A oder C');
@@ -147,8 +156,22 @@ console.log('\n== Entwurfsmechanismus ==');
 
 console.log('\n== Einstellungen ohne Entwuerfe ==');
 {
-  const w=app(); const d=w.document;
+  /* Entwuerfe vor dem Start aus dem Katalog nehmen – der Schalter muss sich dann
+     ausblenden. Nach der Abnahme durch die Schiedsrichter-Kommission ist das der
+     Normalfall. app.js kopiert den Katalog beim Laden, deshalb muss das Entfernen
+     davor geschehen. */
+  const mem={};
+  const dom=new JSDOM(fs.readFileSync(DIR+'/index.html','utf8'),{runScripts:'outside-only',url:'https://x/'});
+  const w=dom.window;
+  Object.defineProperty(w,'localStorage',{value:{getItem:k=>mem[k]??null,setItem:(k,v)=>mem[k]=v,removeItem:k=>delete mem[k]}});
+  w.confirm=()=>true; w.scrollTo=()=>{}; w.print=()=>{};
+  mem['ifa-referee-education-v1']=JSON.stringify({lang:'de',nat:true,draft:true,progress:{}});
+  ['i18n','data-content','data-questions','data-clips'].forEach(f=>w.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
+  w.eval("window.IFA_QUESTIONS=window.IFA_QUESTIONS.filter(function(q){return q.origin!=='draft';});");
+  w.eval(fs.readFileSync(DIR+'/assets/js/app.js','utf8'));
+  const d=w.document;
   const click=s=>d.querySelector(s).dispatchEvent(new w.MouseEvent('click',{bubbles:true}));
+  ok(!w.IFA_QUESTIONS.some(q=>q.origin==='draft'),'Katalog fuer diesen Fall ohne Entwuerfe');
   click('[data-go="settings"]');
   ok(d.getElementById('swDraft')===null,'ohne Entwuerfe wird der Schalter ausgeblendet');
   ok(d.getElementById('swNat')!==null,'der Schalter fuer nationale Ordnungen bleibt');
@@ -158,11 +181,23 @@ console.log('\n== Bildfragen ==');
 {
   const w=app(); const fs3=require('fs');
   const shots=w.IFA_QUESTIONS.filter(q=>q.shot);
-  ok(shots.length===6,'sechs Bildfragen zur Ausball-Entscheidung, ist: '+shots.length);
   ok(shots.every(q=>fs3.existsSync(DIR+'/assets/img/'+q.shot+'.jpg')),'alle Bilddateien vorhanden');
-  ok(shots.every(q=>q.origin==='ppt'),'Bildfragen tragen die Herkunft der Foliensaetze');
-  ok(new Set(shots.map(q=>q.shot)).size===6,'jede Bildfrage nutzt ein eigenes Foto');
-  ok(new Set(shots.map(q=>q.q.de)).size===6,'jede Bildfrage hat einen eigenen Wortlaut');
+  ok(new Set(shots.map(q=>q.shot)).size===shots.length,'jede Bildfrage nutzt ein eigenes Foto');
+  ok(new Set(shots.map(q=>q.q.de)).size===shots.length,'jede Bildfrage hat einen eigenen Wortlaut');
+  ok(shots.every(q=>q.id.startsWith('IFA-BILD-')),'alle Bildfragen tragen die Kennung IFA-BILD');
+
+  /* Zwei Serien: Ausball-Entscheidungen aus den Folien, Handzeichen aus der Schulungsmappe. */
+  const sig=shots.filter(q=>q.shot.startsWith('signals/'));
+  ok(sig.length===10,'zehn Bildfragen zu den Handzeichen, ist: '+sig.length);
+  ok(sig.every(q=>q.ch===11),'Handzeichenfragen liegen in Kapitel 11');
+  ok(new Set(sig.map(q=>ansOf(q)[q.c])).size===sig.length,'jedes Handzeichen hat eine eigene Loesung');
+  /* Foto und Text muessen zusammenpassen: sig-09 zeigt die Haende auf Brusthoehe,
+     die Schulungsmappe beschreibt sie ueber dem Kopf – dafuer gibt es keine Frage. */
+  ok(!sig.some(q=>/sig-(09|03|04|16b|17)/.test(q.shot)),'keine Frage auf mehrdeutigen Fotos');
+
+  shots.length=0; shots.push(...w.IFA_QUESTIONS.filter(q=>q.shot&&q.shot.startsWith('ppt/ball-')));
+  ok(shots.length===6,'sechs Bildfragen zur Ausball-Entscheidung, ist: '+shots.length);
+  ok(shots.every(q=>q.origin==='ppt'),'Ausballfragen tragen die Herkunft der Foliensaetze');
   const gut=shots.filter(q=>ansOf(q)[q.c].startsWith('Gutball')).length;
   ok(gut===4,'vier Gutball- und zwei Fehlerfaelle, Gutball ist: '+gut);
   /* Die Begruendung muss zum Foto passen – Bild 1 zeigt den Ball im Feld,

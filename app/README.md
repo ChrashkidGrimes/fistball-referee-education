@@ -29,9 +29,9 @@ ohne Konto und ohne Server.
 | Kapitel | 16 (Regeln 1–10, Handzeichen, Verhalten, Linienrichter, Altersklassen, nationale Ordnungen, Aufgaben rund um das Spiel) |
 | Regeltext-Blöcke | 90 nummerierte Regeln, wortgleich aus den offiziellen Ausgaben |
 | Auslegungen | 51 Erläuterungen aus der Schulungsmappe |
-| Handzeichen | 18 Zeichen mit 21 Fotos (16 aus der Schulungsmappe, 2 aus den Schulungsfolien) |
-| Sprachen | Deutsch und Englisch, vollständig – 226 Inhaltsblöcke und 196 Fragen in beiden Sprachen |
-| Prüfungsfragen | 196 zweisprachig: 121 aus dem Katalog von Faustball Deutschland, 69 aus Spielregeln und Schulungsmappe, 6 Bildfragen |
+| Handzeichen | 18 Zeichen mit 21 Fotos (16 aus der Schulungsmappe, 2 aus den Schulungsfolien), 10 davon als Bildfrage |
+| Sprachen | Deutsch und Englisch, vollständig – 226 Inhaltsblöcke und 232 Fragen in beiden Sprachen |
+| Prüfungsfragen | 232 zweisprachig: 121 aus dem Katalog von Faustball Deutschland, 69 aus Spielregeln und Schulungsmappe, 6 Bildfragen, 36 Entwürfe zur Spielleitung |
 
 ### Abschlussprüfungen
 
@@ -51,7 +51,7 @@ Die Fragen werden bei jedem Versuch neu aus den Pools gezogen, **Reihenfolge und
 gemischt**. Während der Prüfung gibt es kein Zwischenfeedback; die Auswertung mit Fundstellen erfolgt am
 Ende. Kapitelquizzes geben dagegen sofortiges Feedback inklusive Regelverweis.
 
-Verfügbar sind 196 Fragen: Grundmodul 41, C 63, B 34, A 58. Reicht ein Pool für seine Quote nicht aus –
+Verfügbar sind 232 Fragen: Grundmodul 41, C 86, B 34, A 71. Reicht ein Pool für seine Quote nicht aus –
 etwa weil ein Verband die nationalen Fragen abschaltet –, füllen die
 übrigen Pools auf, damit die Fragenzahl erhalten bleibt. Die Stufenseite weist darauf hin, weil sich der
 Schwerpunkt dadurch verschiebt.
@@ -142,7 +142,7 @@ Arbeitsübersetzung und als solche gekennzeichnet:
 |-----|--------|---------------|
 | Erläuterungen ohne englische Entsprechung | 6 | `tr: true`, Hinweis im Kapitel |
 | Inhalte aus den Schulungsfoliensätzen | 47 | `origin: "ppt"`, eigener Hinweis im Kapitel |
-| Prüfungsfragen | alle 196 | `tr: true`, Hinweis im Quiz |
+| Prüfungsfragen | alle 232 | `tr: true`, Hinweis im Quiz |
 
 Für die Fragen ist der deutsche Wortlaut maßgeblich; die App sagt das im englischen Modus dazu.
 
@@ -153,6 +153,7 @@ Für die Fragen ist der deutsche Wortlaut maßgeblich; die App sagt das im engli
 | `fbd` | 121 | Moodle-Fragenkataloge von Faustball Deutschland, unverändert übernommen |
 | `ifa` | 69 | aus den Auslegungen der Schulungsmappe und bisher nicht abgefragtem Regeltext abgeleitet, fachlich freigegeben |
 | `ppt` | 6 | Bildfragen zur Ausball-Entscheidung aus dem Foliensatz „01 Spielfeld und Geräte“, fachlich freigegeben |
+| `draft` | 36 | Kapitel 8, 11–13 und 16 – Handzeichen, Verhalten, Linienrichter, Aufgaben rund ums Spiel. Noch nicht abgenommen, siehe `Pruefvorlage-Spielleitung.md` |
 
 Die 75 ergänzten Fragen verteilen sich auf 32 C-Niveau (Grundwissen, darunter die 6 Bildfragen) und
 43 A-Niveau (Auslegung, Ermessen, Strafen). `Fragen-Nachweis.md` im übergeordneten Ordner hält fest,

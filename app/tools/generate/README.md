@@ -24,3 +24,16 @@ Ein-Klick-Pipeline – für eine neue Regelausgabe ist die Extraktion aus den PD
 erneut zu prüfen.
 
 Benötigt: `pdfplumber`, `Pillow`, `pdfimages` (poppler-utils), `python-pptx`, `markitdown`.
+
+## Fragen zur Spielleitung (Kapitel 8, 11–13, 16)
+
+`neue_fragen.py` enthält den Wortlaut der 36 Fragen, die am 6. August 2026 für die
+bis dahin leeren Kapitel ergänzt wurden. `build_fragen.py` setzt daraus die deutschen
+Umlaute, prüft auf unaufgelöste Transliterationen, doppelte Kennungen und Umlaute im
+englischen Text und schreibt `fragen-spielleitung.json`. Diese Datei ist der Stand,
+der in `assets/js/data-questions.js` eingepflegt ist – wer die Fragen ändert, ändert
+sie hier und pflegt sie erneut ein.
+
+```
+python3 build_fragen.py
+```
