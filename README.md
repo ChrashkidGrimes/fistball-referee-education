@@ -1,67 +1,70 @@
 # Fistball Referee Education
 
-Lernprogramm für die Ausbildung von Faustball-Schiedsrichtern in den Stufen **Regional und National**,
-zweisprachig deutsch und englisch. Gedacht für Mitgliedsverbände der International Fistball
-Association, die ihre Schiedsrichter selbst ausbilden.
+*[Deutsche Fassung: `README.de.md`](README.de.md)*
 
-**→ [`app/`](app/) enthält die Anwendung, [`app/README.md`](app/README.md) die technische Dokumentation.**
+Training programme for fistball referees at **regional and national level**, bilingual in German and
+English. Intended for member federations of the International Fistball Association that train their
+own referees.
+
+**→ [`app/`](app/) holds the application, [`app/README.md`](app/README.md) the technical documentation.**
 
 ---
 
-## Was das ist
+## What this is
 
-Eine statische Web-App ohne Server, Build-Schritt oder Abhängigkeiten. `app/index.html` im Browser
-öffnen genügt – lokal per Doppelklick, auf GitHub Pages oder auf beliebigem Webspace. Der Lernfortschritt
-liegt im `localStorage` des Browsers, es gibt keine Konten und keine Datenübertragung.
+A static web app with no server, no build step and no dependencies. Opening `app/index.html` in a
+browser is enough — locally by double-click, on GitHub Pages or on any web space. Learning progress
+lives in the browser's `localStorage`; there are no accounts and no data leaves the device.
 
 | | |
 |---|---|
-| Kapitel | 16 – Regeln 1 bis 10, Handzeichen, Verhalten des Schiedsrichters, Linienrichter, Altersklassen, Verbandsordnungen, Aufgaben rund um das Spiel |
-| Prüfungsfragen | 235, alle zweisprachig, mit Fundstelle im Regelwerk |
-| Bilder | 21 Handzeichen-Fotos, Spielfeld- und Auslaufdiagramme, sechs Ausball-Entscheidungen; 19 davon als Bildfrage |
-| Abschlussprüfungen | Regional 40 Fragen ab 70 %, National 60 ab 85 %, jeweils mit Nachprüfungsgrenze |
-| Tests | 224 automatisierte Prüfungen |
+| Chapters | 16 — rules 1 to 10, hand signals, conduct of the referee, linesmen, age groups, federation regulations, duties around the match |
+| Exam questions | 235, all bilingual, each with a reference into the rule book |
+| Images | 21 hand-signal photos, court and run-off diagrams, six ball-in-or-out decisions; 19 of them used as image questions |
+| Final exams | Regional 40 questions from 70 %, National 60 from 85 %, each with a retake threshold |
+| Tests | 301 automated checks |
 
-## Quellen
+## Sources
 
-- IFA-Spielregeln 2025 / IFA Rules of the Game 2025, gültig ab 1. April 2025
-- IFA-Schulungsmappe für Schiedsrichter 2025 / IFA Training Manual for Referees 2025
-- Schulungsfoliensätze von Faustball Deutschland, Verwendung im IFA-Kontext freigegeben
-- Moodle-Fragenkataloge von Faustball Deutschland
+- IFA Rules of the Game 2025 / IFA-Spielregeln 2025, valid from 1 April 2025
+- IFA Training Manual for Referees 2025 / IFA-Schulungsmappe für Schiedsrichter 2025
+- Training slide decks by Faustball Deutschland, cleared for use in an IFA context
+- Moodle question banks of Faustball Deutschland
 
-Die Quelldokumente selbst liegen **nicht** im Repository. Die Spielregeln verlangen für Kopien – auch
-auszugsweise – die Genehmigung der IFA, und die Foliensätze und Fragenkataloge gehören der Deutschen
-Faustball-Liga. Wer die Datendateien neu erzeugen will, legt die Dokumente in diesen Ordner; welche
-Dateien erwartet werden, steht in [`app/tools/generate/README.md`](app/tools/generate/README.md).
+The source documents themselves are **not** in this repository. The Rules of the Game require IFA
+approval for copies — including extracts — and the slide decks and question banks belong to Faustball
+Deutschland. To regenerate the data files, place the documents in this folder; which files are expected
+is described in [`app/tools/generate/README.md`](app/tools/generate/README.md).
 
-Die App selbst enthält Regeltexte, Fotos und Diagramme aus diesen Dokumenten. Für eine Verbreitung über
-den internen Gebrauch hinaus ist die Freigabe der IFA einzuholen – siehe die offenen Punkte.
+The app itself contains rule texts, photos and diagrams from those documents. Distributing it beyond
+internal use requires IFA approval — see the open points.
 
-## Was noch offen ist
+## What is still open
 
-[`OFFENE-PUNKTE.md`](OFFENE-PUNKTE.md) führt den Stand. Die drei größten:
+[`OFFENE-PUNKTE.md`](OFFENE-PUNKTE.md) tracks the current state (in German). The three biggest items:
 
-1. **Soll die Prüfung zählen?** Die Bestehensgrenzen stammen aus einer beaufsichtigten Einzelprüfung.
-   In einer Selbstbedienungs-App zeigt die Auswertung alle Lösungen, und das Ergebnis liegt manipulierbar
-   im Browser. Davon hängt ab, ob die App ausbildet oder prüft.
-2. **Englische Fassung abnehmen.** Regeltexte und die meisten Erläuterungen stammen wortgleich aus den
-   offiziellen englischen Ausgaben. Die Prüfungsfragen und die Inhalte aus den Foliensätzen sind
-   Arbeitsübersetzungen, im Datensatz markiert und in der App gekennzeichnet.
-3. **Trägerschaft und Freigaben.** Logo, Regeltexte und Fragenkatalog gehören IFA und Faustball Deutschland. Ob das ein
-   IFA-Produkt wird oder ein Export von Faustball Deutschland, bestimmt auch, wer es nach der nächsten Regeländerung pflegt.
+1. **Should the exam count?** The pass marks come from a supervised individual examination. In a
+   self-service app the result screen reveals every answer, and the score sits in the browser where it
+   can be edited. This decides whether the app trains or examines.
+2. **Sign off the English version.** Rule texts and most interpretations are taken verbatim from the
+   official English editions. The exam questions and the content from the slide decks are working
+   translations, marked as such in the data and flagged in the app.
+3. **Ownership and approvals.** Logo, rule texts and question bank belong to the IFA and to Faustball
+   Deutschland. Whether this becomes an IFA product or an export from Faustball Deutschland also
+   determines who maintains it after the next rule change.
 
-## Nachweise
+## Provenance records
 
-- [`Fragen-Nachweis.md`](Fragen-Nachweis.md) – für jede der 75 zuerst ergänzten Fragen die Quellstelle,
-  auf die sich die Antwort stützt, deutsch und englisch.
-- [`Fragen-Nachweis-Spielleitung.md`](Fragen-Nachweis-Spielleitung.md) – dasselbe für die 39 Fragen zu
-  Handzeichen, Verhalten, Linienrichtern und den Aufgaben rund um das Spiel.
-- [`app/assets/img/signals/manifest.json`](app/assets/img/signals/manifest.json) – Herkunft jedes
-  Handzeichen-Fotos nach Seite und Position im Ausgangsdokument.
+- [`Fragen-Nachweis.md`](Fragen-Nachweis.md) — for each of the first 75 added questions the source
+  passage the answer rests on, in German and English.
+- [`Fragen-Nachweis-Spielleitung.md`](Fragen-Nachweis-Spielleitung.md) — the same for the 39 questions
+  on hand signals, conduct, linesmen and the duties around the match.
+- [`app/assets/img/signals/manifest.json`](app/assets/img/signals/manifest.json) — the origin of every
+  hand-signal photo by page and position in the source document.
 
-## Rechtliches
+## Legal
 
-Logo und Bildmaterial © International Fistball Association. Verwendung des Logos nur nach Absprache mit
-der IFA (marketing@fistball.sport). Regeltexte © IFA, Kopien – auch Auszüge – erfordern die Genehmigung
-der IFA. Das Zertifikat der App ist eine Lernbestätigung und ersetzt keine Lizenzerteilung durch einen
-Mitgliedsverband.
+Logo and image material © International Fistball Association. Use of the logo only in agreement with
+the IFA (marketing@fistball.sport). Rule texts © IFA; copies — including extracts — require IFA
+approval. The certificate issued by the app confirms completion of the programme and does not replace
+a licence granted by a member federation.

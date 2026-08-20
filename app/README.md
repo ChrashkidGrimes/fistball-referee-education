@@ -1,84 +1,85 @@
-# IFA Schiedsrichter-Ausbildung – Web-App
+# IFA Referee Education — Web App
 
-Lernprogramm für die Ausbildung von Faustball-Schiedsrichtern in den Stufen **Regional und National**.
-Statische Web-App ohne Server, Build-Schritt oder Abhängigkeiten. Läuft per Doppelklick auf `index.html`,
-auf GitHub Pages, SharePoint oder jedem beliebigen Webspace.
+*[Deutsche Fassung: `README.de.md`](README.de.md)*
 
-**Quellen:** IFA-Spielregeln 2025 / IFA Rules of the Game 2025 (gültig ab 1. April 2025),
-IFA-Schulungsmappe für Schiedsrichter 2025 / IFA Training Manual for Referees 2025,
-Moodle-Fragenkataloge von Faustball Deutschland.
-**Design:** nach `ifa_logo_datasheet.pdf` – Primärfarbe C100 M95 Y15 K20 = `#25276A`, Schwarz, Weiß.
+Training programme for fistball referees at **regional and national level**.
+A static web app with no server, no build step and no dependencies. Runs by double-clicking
+`index.html`, on GitHub Pages, SharePoint or any web space.
 
----
-
-## Starten
-
-```
-index.html im Browser öffnen
-```
-
-Fortschritt, Sprache und Einstellungen werden im `localStorage` des Browsers gespeichert – pro Gerät,
-ohne Konto und ohne Server.
+**Sources:** IFA Rules of the Game 2025 / IFA-Spielregeln 2025 (valid from 1 April 2025),
+IFA Training Manual for Referees 2025 / IFA-Schulungsmappe für Schiedsrichter 2025,
+Moodle question banks of Faustball Deutschland.
+**Design:** per `ifa_logo_datasheet.pdf` — primary colour C100 M95 Y15 K20 = `#25276A`, black, white.
 
 ---
 
-## Inhalt
+## Getting started
+
+```
+open index.html in a browser
+```
+
+Progress, language and settings are stored in the browser's `localStorage` — per device, without an
+account and without a server.
+
+---
+
+## Contents
 
 | | |
 |---|---|
-| Kapitel | 16 (Regeln 1–10, Handzeichen, Verhalten, Linienrichter, Altersklassen, Verbandsordnungen, Aufgaben rund um das Spiel) |
-| Regeltext-Blöcke | 90 nummerierte Regeln, wortgleich aus den offiziellen Ausgaben |
-| Auslegungen | 51 Erläuterungen aus der Schulungsmappe |
-| Handzeichen | 18 Zeichen mit 21 Fotos (16 aus der Schulungsmappe, 2 aus den Schulungsfolien), 13 davon als Bildfrage |
-| Sprachen | Deutsch und Englisch, vollständig – 226 Inhaltsblöcke und 235 Fragen in beiden Sprachen |
-| Prüfungsfragen | 235 zweisprachig: 121 aus dem Katalog von Faustball Deutschland, 108 aus Spielregeln und Schulungsmappe, 6 Bildfragen |
+| Chapters | 16 (rules 1–10, hand signals, conduct, linesmen, age groups, federation regulations, duties around the match) |
+| Rule-text blocks | 90 numbered rules, verbatim from the official editions |
+| Interpretations | 51 explanatory notes from the Training Manual |
+| Hand signals | 18 signals with 21 photos (16 from the Training Manual, 2 from the slide decks), 13 of them used as image questions |
+| Languages | German and English, complete — 226 content blocks and 235 questions in both languages |
+| Exam questions | 235 bilingual: 121 from the Faustball Deutschland bank, 108 derived from the rules and Training Manual, 6 image questions |
 
-### Lizenzstufen
+### Licence levels
 
-| Stufe | Fragen | Bestanden | Nachprüfung ab | Kapitelquiz |
-|-------|--------|-----------|----------------|-------------|
+| Level | Questions | Pass | Retake from | Chapter quiz |
+|-------|-----------|------|-------------|--------------|
 | Regional (`R`) | 40 | 70 % | 65 % | 70 % |
 | National (`N`) | 60 | 85 % | 75 % | 85 % |
 
-Der **Lernpfad ist für beide Stufen gleich**: alle 16 Kapitel, dieselben Kapitelquizzes. Die Stufen
-unterscheiden sich allein in Umfang und Grenze der Abschlussprüfung und in der Grenze, ab der ein
-Kapitelquiz als erledigt gilt.
+The **learning path is identical for both levels**: all 16 chapters, the same chapter quizzes. The
+levels differ only in the size and pass mark of the final exam, and in the mark at which a chapter
+quiz counts as completed.
 
-### Themenpools
+### Topic pools
 
-Ein Pool ist ein **Themenbereich, kein Schwierigkeitsgrad**. Beide Prüfungen ziehen aus allen Pools;
-der Pool sorgt nur dafür, dass jede Prüfung das Regelwerk gleichmäßig abdeckt. Welcher Pool eine Frage
-trägt, ergibt sich aus ihrem Kapitel – neue Fragen sortieren sich damit von selbst ein.
+A pool is a **subject area, not a difficulty tier**. Both exams draw from all pools; the pool only
+ensures that every exam covers the rule book evenly. Which pool carries a question follows from its
+chapter — new questions therefore sort themselves in automatically.
 
-| Pool | Kapitel | verfügbar | Regional | National |
-|------|---------|-----------|----------|----------|
-| `feld` – Spielfeld und Geräte | 1 | 45 | 7 | 10 |
-| `rahmen` – Mannschaft, Zeit, Altersklassen | 2, 3, 14 | 40 | 7 | 10 |
-| `spiel` – Spielgang, Schlag, Angabe | 4, 5, 6 | 32 | 8 | 12 |
-| `ballfuehrung` – Rückschlag, Zuspiel, Wertung | 7, 8 | 28 | 7 | 10 |
-| `leitung` – Spielleitung | 9–13, 16 | 63 | 7 | 12 |
-| `verband` – Verbandsordnungen (abschaltbar) | 15 | 27 | 4 | 6 |
+| Pool | Chapters | available | Regional | National |
+|------|----------|-----------|----------|----------|
+| `feld` — court and equipment | 1 | 45 | 7 | 10 |
+| `rahmen` — team, time, age groups | 2, 3, 14 | 40 | 7 | 10 |
+| `spiel` — rally, hit, service | 4, 5, 6 | 32 | 8 | 12 |
+| `ballfuehrung` — return, pass, scoring | 7, 8 | 28 | 7 | 10 |
+| `leitung` — match control | 9–13, 16 | 63 | 7 | 12 |
+| `verband` — federation regulations (can be switched off) | 15 | 27 | 4 | 6 |
 | | | **235** | **40** | **60** |
 
-Die Quoten folgen bewusst **nicht** den Poolgrößen. Kapitel 1 stellt 19 % des Katalogs, aber nur 17 %
-der Prüfung – es besteht überwiegend aus Maßen und Zahlen. Der Pool `leitung` trägt umgekehrt 20 % der
-Nationalprüfung; dort steckt die Urteilsfähigkeit, die die höhere Lizenz rechtfertigt.
+The quotas deliberately do **not** follow the pool sizes. Chapter 1 makes up 19 % of the catalogue but
+only 17 % of the exam — it consists largely of measurements and figures. The `leitung` pool conversely
+carries 20 % of the national exam; that is where the judgement lies which justifies the higher licence.
 
-Die Fragen werden bei jedem Versuch neu gezogen, **Reihenfolge und Antwortoptionen werden gemischt**.
-Während der Prüfung gibt es kein Zwischenfeedback; die Auswertung mit Fundstellen erfolgt am Ende.
-Kapitelquizzes geben dagegen sofortiges Feedback inklusive Regelverweis.
+Questions are drawn afresh for every attempt, and **order and answer options are shuffled**. There is
+no feedback during the exam; the result screen with references comes at the end. Chapter quizzes, by
+contrast, give immediate feedback including the rule reference.
 
-Schaltet ein Verband die Verbandsordnungen ab, bleiben 208 Fragen. Die übrigen Pools füllen dann auf,
-damit die Fragenzahl erhalten bleibt; die Stufenseite weist darauf hin, weil sich der Schwerpunkt
-dadurch verschiebt.
+If a federation switches the federation regulations off, 206 questions remain. The other pools then
+fill up so that the question count stays the same; the level page says so, because the emphasis shifts.
 
 ---
 
-## Anpassen
+## Customising
 
-### Prüfungsumfang und Bestehensgrenzen
+### Exam size and pass marks
 
-`assets/js/app.js`, ganz oben:
+`assets/js/app.js`, at the very top:
 
 ```js
 var POOLS = {
@@ -101,64 +102,63 @@ var LEVELS = {
 };
 ```
 
-- `POOLS` – welche Kapitel welchen Themenpool bilden. Ein Kapitel gehört genau einem Pool an;
-  Kapitel ohne Pool tauchen in keiner Prüfung auf.
-- `exam.size` – Anzahl Fragen in der Prüfung
-- `exam.quota` – Verteilung auf die Pools; die Summe muss `size` ergeben
-- `quizPass` – Grenze, ab der ein Kapitelquiz als abgeschlossen gilt
+- `POOLS` — which chapters form which topic pool. A chapter belongs to exactly one pool; chapters
+  without a pool never appear in an exam.
+- `exam.size` — number of questions in the exam
+- `exam.quota` — distribution across the pools; the sum must equal `size`
+- `quizPass` — mark at which a chapter quiz counts as completed
 
-Reicht ein Pool nicht aus – etwa weil die Verbandsordnungen abgeschaltet sind – füllen die übrigen Pools
-in der notierten Reihenfolge auf; die App weist auf der Stufenseite darauf hin. Bliebe die Prüfung dennoch
-zu kurz, würde sie entsprechend kürzer. Mit der aktuellen Aufteilung tritt das nicht ein: auch ohne die
-Verbandsordnungen kommen beide Stufen auf ihre volle Fragenzahl.
+If a pool falls short — for instance because the federation regulations are switched off — the
+remaining pools fill up in the order noted above, and the app says so on the level page. Were the exam
+still too short, it would simply be shorter. With the current split that does not happen: even without
+the federation regulations both levels reach their full question count.
 
-Eine neue Stufe anzulegen heißt: Eintrag in `LEVELS`, Kürzel in `LEVEL_ORDER`, dazu die Schlüssel
-`lvl<X>Name` und `lvl<X>desc` in `assets/js/i18n.js`.
+Adding a new level means: an entry in `LEVELS`, its key in `LEVEL_ORDER`, plus the keys `lvl<X>Name`
+and `lvl<X>desc` in `assets/js/i18n.js`.
 
-### Fortschritt aus der dreistufigen Fassung
+### Progress from the three-level version
 
-Bis August 2026 gab es die Stufen C, B und A. `LEVEL_MIGRATION` in `app.js` überführt gespeicherte
-Stände beim ersten Start: C wird Regional, B und A werden auf National zusammengeführt – je Kapitel und
-für die Prüfung zählt das bessere Ergebnis. Der umgestellte Stand wird sofort zurückgeschrieben, ein
-zweiter Start rührt ihn nicht mehr an.
+Until August 2026 the levels were C, B and A. `LEVEL_MIGRATION` in `app.js` converts stored progress on
+first start: C becomes Regional, B and A are merged into National — per chapter and for the exam the
+better result wins. The converted state is written back immediately; a second start leaves it alone.
 
-### Videos einbinden
+### Adding videos
 
-`assets/js/data-content.js`, pro Kapitel:
+`assets/js/data-content.js`, per chapter:
 
 ```json
 "videos": [ { "yt": "q342pxvhdTU", "t": { "de": "Titel", "en": "Title" } } ],
 "slots":  [ "Blocksituation aus Schiedsrichterperspektive" ]
 ```
 
-`yt` ist die YouTube-Video-ID (der Teil hinter `watch?v=`). Einträge aus `slots` erscheinen in der App als
-gestrichelter Platzhalter mit Themenbeschreibung – das sind die noch zu produzierenden Clips.
+`yt` is the YouTube video ID (the part after `watch?v=`). Entries in `slots` appear in the app as a
+dashed placeholder with a topic description — those are the clips still to be produced.
 
-Aktuell eingebunden:
+Currently embedded:
 
-| Kapitel | Video |
+| Chapter | Video |
 |---------|-------|
-| 1 Spielfeld und Geräte | This is Fistball – Rules (IFA Fistball Channel) |
-| 4 Spielgang | Offizielle Spielregeln – Faustball / Official Rules – Fistball |
-| 6 Angabe | Die Angabe (Heiner Josuttis) |
+| 1 Court and equipment | This is Fistball – Rules (IFA Fistball Channel) |
+| 4 Rally | Offizielle Spielregeln – Faustball / Official Rules – Fistball |
+| 6 Service | Die Angabe (Heiner Josuttis) |
 
-Offene Videoplätze: Kapitel 2, 3, 5, 7 (3 Clips), 9, 10, 11, 13.
+Open video slots: chapters 2, 3, 5, 7 (3 clips), 9, 10, 11, 13.
 
-### Sprachen
+### Languages
 
-**Oberfläche:** `assets/js/i18n.js` enthält alle Bedientexte. Neue Sprache: Block `de` kopieren, Kürzel
-ändern, Werte übersetzen – die Sprachumschaltung im Kopf erscheint automatisch. Fehlende Schlüssel fallen
-auf Deutsch zurück.
+**Interface:** `assets/js/i18n.js` holds all interface texts. For a new language: copy the `de` block,
+change the key, translate the values — the language switch in the header appears automatically.
+Missing keys fall back to German.
 
-**Lehrinhalte:** In `data-content.js` ist jedes Textfeld ein Sprachobjekt:
+**Teaching content:** in `data-content.js` every text field is a language object:
 
 ```json
 { "t": "rule", "n": "1.1", "x": { "de": "Das Spielfeld ist …", "en": "The court is …" } }
 ```
 
-Für eine weitere Sprache genügt ein zusätzlicher Schlüssel im selben Objekt.
+For a further language an additional key in the same object is enough.
 
-**Prüfungsfragen** tragen dieselbe Struktur, auch die Antwortlisten:
+**Exam questions** use the same structure, including the answer lists:
 
 ```json
 { "q": { "de": "…", "en": "…" },
@@ -166,93 +166,91 @@ Für eine weitere Sprache genügt ein zusätzlicher Schlüssel im selben Objekt.
   "c": 0, "ref": { "de": "…", "en": "…" }, "tr": true }
 ```
 
-`c` ist der Index der richtigen Antwort und gilt für beide Sprachen – die Antwortreihenfolge ist in
-beiden Listen identisch.
+`c` is the index of the correct answer and applies to both languages — the answer order is identical
+in both lists.
 
-**Herkunft der englischen Fassung.** 88 nummerierte Regeln und 45 Erläuterungen stammen wortgleich aus
-den offiziellen englischen IFA-Ausgaben, zugeordnet über die Regelnummer. Alles Übrige ist eine
-Arbeitsübersetzung und als solche gekennzeichnet:
+**Origin of the English version.** 88 numbered rules and 45 interpretations are taken verbatim from the
+official English IFA editions, matched by rule number. Everything else is a working translation and is
+marked as such:
 
-| Was | Umfang | Kennzeichnung |
-|-----|--------|---------------|
-| Erläuterungen ohne englische Entsprechung | 6 | `tr: true`, Hinweis im Kapitel |
-| Inhalte aus den Schulungsfoliensätzen | 47 | `origin: "ppt"`, eigener Hinweis im Kapitel |
-| Prüfungsfragen | alle 235 | `tr: true`, Hinweis im Quiz |
+| What | Extent | Marking |
+|------|--------|---------|
+| Interpretations without an English counterpart | 6 | `tr: true`, note in the chapter |
+| Content from the training slide decks | 47 | `origin: "ppt"`, separate note in the chapter |
+| Exam questions | all 235 | `tr: true`, note in the quiz |
 
-Für die Fragen ist der deutsche Wortlaut maßgeblich; die App sagt das im englischen Modus dazu.
+For the questions the German wording prevails; the app says so in English mode.
 
-### Herkunft der Fragen
+### Origin of the questions
 
-| `origin` | Anzahl | Woher |
-|----------|--------|-------|
-| `fbd` | 121 | Moodle-Fragenkataloge von Faustball Deutschland, unverändert übernommen |
-| `ifa` | 108 | aus Regeltext, den Auslegungen der Schulungsmappe und der Schiedsrichterordnung abgeleitet, fachlich freigegeben |
-| `ppt` | 6 | Bildfragen zur Ausball-Entscheidung aus dem Foliensatz „01 Spielfeld und Geräte“, fachlich freigegeben |
+| `origin` | Count | Where from |
+|----------|-------|------------|
+| `fbd` | 121 | Moodle question banks of Faustball Deutschland, adopted unchanged |
+| `ifa` | 108 | derived from rule text, the interpretations in the Training Manual and the referee regulations, approved |
+| `ppt` | 6 | image questions on ball-in-or-out decisions from the slide deck “01 Spielfeld und Geräte”, approved |
 
-Die 114 ergänzten Fragen verteilen sich auf 58 C-Niveau (Grundwissen, darunter 19 Bildfragen) und
-56 A-Niveau (Auslegung, Ermessen, Strafen). `Fragen-Nachweis.md` und
-`Fragen-Nachweis-Spielleitung.md` im übergeordneten Ordner halten fest, auf welche Quellstelle sich
-jede stützt – als Nachweis, warum eine Antwort richtig ist.
+Of the 114 added questions, 19 are answered from a photo and the rest from text. `Fragen-Nachweis.md`
+and `Fragen-Nachweis-Spielleitung.md` in the parent folder record which source passage each one rests
+on — the evidence for why an answer is correct.
 
-**Neue Fragen zur Prüfung stellen.** Wer Fragen ergänzt, die noch nicht abgenommen sind, setzt
-`"origin": "draft"`. Solche Fragen tragen im Quiz ein Kennzeichen, und unter **Einstellungen** erscheint
-automatisch ein Schalter, mit dem sie sich abschalten lassen. Enthält der Katalog keine Entwürfe, ist der
-Schalter ausgeblendet. Nach der Freigabe `origin` auf `ifa` setzen.
+**Putting new questions up for review.** Anyone adding questions that have not been signed off sets
+`"origin": "draft"`. Such questions carry a marker in the quiz, and a toggle to switch them off appears
+automatically under **Settings**. If the catalogue contains no drafts, the toggle is hidden. After
+sign-off, set `origin` to `ifa`.
 
-### Videofragen
+### Video questions
 
-`assets/js/data-clips.js` enthält Fragen, denen ein Videoausschnitt vorangestellt wird:
+`assets/js/data-clips.js` holds questions preceded by a video excerpt:
 
 ```js
 clip: { yt: "VideoID", start: 128, end: 137 }
 ```
 
-Solange `yt` leer ist, bleibt die Frage außerhalb des Fragenpools – unfertige Vorlagen stören
-also nicht. Acht Vorlagen zu Block, Sprungangabe, Ball unter der Leine, Behinderung und
-Schlagausführung sind angelegt und warten auf Video-ID und Sekunden. Im Video liefert ein
-Rechtsklick → „Video-URL mit aktueller Zeit kopieren“ die Startsekunde direkt.
+As long as `yt` is empty the question stays out of the question pool — unfinished templates therefore
+do no harm. Eight templates on blocking, jump service, ball under the tape, obstruction and hitting
+technique are prepared and await a video ID and seconds. In the video, right-click → “Copy video URL
+at current time” gives the start second directly.
 
-### Inhalte aus den Schulungsfoliensätzen
+### Content from the training slide decks
 
-Aus den elf Foliensätzen von Faustball Deutschland (Verwendung im IFA-Kontext freigegeben)
-sind 47 Blöcke übernommen. Sie tragen `"origin": "ppt"`. Eine offizielle englische Ausgabe
-gibt es dafür nicht, die englische Fassung ist eine Arbeitsübersetzung – das Kapitel weist
-im englischen Modus darauf hin.
+47 blocks were adopted from the eleven slide decks of Faustball Deutschland (cleared for use in an IFA
+context). They carry `"origin": "ppt"`. There is no official English edition for them, so the English
+version is a working translation — the chapter says so in English mode.
 
-Übernommen wurden:
+What was adopted:
 
-| Wohin | Was |
-|-------|-----|
-| Kapitel 1 | Sechs Fotos „gut oder aus“ mit Urteil, Hallenfotos zu Wand und Decke, Spielfeld- und Auslaufdiagramme, Pfosten und Leine |
-| Kapitel 5 | Tabelle der Schlagvarianten, acht Fälle erlaubt / nicht erlaubt |
-| Kapitel 6 | Methodik der Angabenbeobachtung, Standort je Angabetyp, Wechselschrittangabe |
-| Kapitel 7 | Standort beim Rückschlag, Blickfolge beim Block, „Klick und Klack“ |
-| Kapitel 8 | Kontrolle des Anschreibers |
-| Kapitel 9 | Zwei-Schiedsrichter-System in der Halle |
-| Kapitel 11 | Zeichen 17 Übertritt ins Gegenfeld, Zeichen 18 Gleichstand, Warnhinweis zum Blockzeichen |
-| Kapitel 13 | Kleidung der Linienrichter, Einweisung vor dem Spiel, Luftbild der Positionen |
-| Kapitel 16 | Aufgaben vor, während und nach dem Spiel aus der Schiedsrichterordnung |
+| Where | What |
+|-------|------|
+| Chapter 1 | Six “in or out” photos with the decision, indoor photos on wall and ceiling, court and run-off diagrams, post and cord |
+| Chapter 5 | Table of hitting variants, eight cases permitted / not permitted |
+| Chapter 6 | Method for watching the service, position per service type, step-change service |
+| Chapter 7 | Position for the return, sequence of gaze at the block, “click and clack” |
+| Chapter 8 | Supervision of the scorer |
+| Chapter 9 | Two-referee system indoors |
+| Chapter 11 | Signal 17 crossing into the opponent's half, signal 18 tie, warning note on the block signal |
+| Chapter 13 | Clothing of the linesmen, briefing before the match, aerial view of the positions |
+| Chapter 16 | Duties before, during and after the match from the referee regulations |
 
-Die Bilddateien liegen in `assets/img/ppt/`; das Faustball-Deutschland-Branding der Folien
-steckte nur im Folienrahmen und ist nicht mit übernommen.
+The image files are in `assets/img/ppt/`; the Faustball Deutschland branding of the slides sat only in
+the slide frame and was not carried over.
 
-### Bildfragen
+### Image questions
 
-Fragen mit einem Foto zur Spielsituation tragen das Feld `shot`:
+Questions with a photo of a match situation carry the `shot` field:
 
 ```js
 { id: "IFA-BILD-001", shot: "ppt/ball-01", q: "…", a: [ … ], c: 0 }
 ```
 
-`shot` ist ein Pfad unterhalb `assets/img/` ohne Endung. Die sechs Ausball-Entscheidungen
-nutzen dieselben Fotos wie die Bilderserie in Kapitel 1 – dort mit Urteil, im Quiz ohne.
+`shot` is a path below `assets/img/` without an extension. The six ball-in-or-out decisions use the
+same photos as the image series in chapter 1 — there with the decision, in the quiz without.
 
-### Nationale Regelungen
+### Federation regulations
 
-27 Fragen stammen aus der deutschen Spielordnung (SpOF), Schiedsrichterordnung (SRO) und den
-Wettkampfbestimmungen von Faustball Deutschland. Sie sind mit `"scope": "national"` markiert und über **Einstellungen →
-Nationale Ordnungen einbeziehen** abschaltbar. Andere Mitgliedsverbände schalten sie ab oder ersetzen
-Kapitel 15 durch ihre eigenen Ordnungen.
+29 questions come from the German playing regulations (SpOF), referee regulations (SRO) and the
+Faustball Deutschland competition rules. They are marked `"scope": "fed"` and can be switched off under
+**Settings → Include federation regulations**. Other member federations switch them off or replace
+chapter 15 with their own regulations.
 
 ---
 
@@ -264,78 +262,77 @@ npm install
 npm test
 ```
 
-| Datei | Umfang |
-|-------|--------|
-| `app.test.js` | Navigation, Kapitelinhalte, Quiz- und Prüfungsablauf, Zertifikat, Abschaltung nationaler Fragen, Bildzuordnung der Handzeichen (40 Prüfungen) |
-| `exam-thresholds.test.js` | Prüfungen je Lizenzstufe mit definierten Trefferquoten; verifiziert bestanden / Nachprüfung / nicht bestanden (18 Prüfungen) |
-| `exam-composition.test.js` | Umfang und Pool-Verteilung der Prüfungen, Variation zwischen Versuchen, Verhalten bei zu kleinem Pool (29 Prüfungen) |
-| `i18n.test.js` | Anzeige der deutsch-englischen Inhalte, Kennzeichnung der Foliensatz-Inhalte, sprachabhängige Diagramme (37 Prüfungen) |
-| `bilingual.test.js` | Vollständigkeit beider Sprachen in Inhalten, Fragen und Oberfläche; sucht deutsche Reste im englischen DOM von Kapiteln, Quiz und Auswertung (24 Prüfungen) |
-| `questions.test.js` | Herkunft und Fundstellen aller Fragen, Entwurfsmechanismus, Bild- und Videofragen (43 Prüfungen) |
+| File | Scope |
+|------|-------|
+| `app.test.js` | Navigation, chapter content, quiz and exam flow, certificate, switching off the federation regulations, image mapping of the hand signals, migration of progress from the three-level version (49 checks) |
+| `exam-thresholds.test.js` | Exams per licence level at defined hit rates; verifies pass / retake / fail, including the cases exactly on the threshold (16 checks) |
+| `exam-composition.test.js` | Size and pool distribution of the exams, weighting, variation between attempts, behaviour with the federation regulations switched off (25 checks) |
+| `i18n.test.js` | Display of the German and English content, marking of the slide-deck content, language-dependent diagrams (37 checks) |
+| `bilingual.test.js` | Completeness of both languages in content, questions and interface; hunts for German remnants in the English DOM of chapters, quiz and result screen (24 checks) |
+| `questions.test.js` | Origin and references of all questions, coverage of all 16 chapters, draft mechanism, image and video questions (73 checks) |
+| `docs.test.js` | Keeps the figures in all four READMEs in step with the data: question count, pool sizes, origin table, level thresholds, list of test files (77 checks) |
 
-### Bilder neu erzeugen
+### Regenerating the images
 
 ```
 python3 tools/map_signals.py ../33d_IFA-Schulungsmappe-fur-Schiedsrichter-2025.pdf \
                              ../33_IFA-Training-Manual-for-Referees-2025.pdf
 ```
 
-Die Reihenfolge der Bild-Objekte im PDF entspricht **nicht** der Lesereihenfolge – auf
-Seite 27 steht das Bild zu Zeichen 14 an erster Stelle. Das Skript ordnet deshalb über
-die vertikale Position zu: jedes Bild gehört zu der Zeichen-Überschrift, die ihm am
-nächsten liegt. Es schreibt `assets/img/signals/manifest.json` mit der Herkunft jedes
-Bildes (Seite und Index), und `app.test.js` prüft `data-content.js` dagegen.
+The order of image objects in the PDF does **not** match reading order — on page 27 the image for
+signal 14 comes first. The script therefore maps by vertical position: every image belongs to the
+signal heading nearest to it. It writes `assets/img/signals/manifest.json` with the origin of each
+image (page and index), and `app.test.js` checks `data-content.js` against it.
 
-Nur Zeichen 1 (zwei Phasen) und Zeichen 16 (drei Fahnenstellungen) sind mehrteilig,
-alle übrigen haben genau ein Bild. Benötigt `pdfplumber`, `Pillow` und `pdfimages`.
+Only signal 1 (two phases) and signal 16 (three flag positions) have multiple parts; all others have
+exactly one image. Requires `pdfplumber`, `Pillow` and `pdfimages`.
 
-### Beschriftete Diagramme
+### Labelled diagrams
 
-Vier Bilder tragen Text im Bild und liegen deshalb in beiden Sprachen vor – der
-Spielfeldplan und die drei Linienrichter-Positionen. Beim Umschalten der Sprache
-tauscht die App sie aus. In `data-content.js` ist das Feld `src` dafür ein Sprachobjekt:
+Four images carry text inside the image and therefore exist in both languages — the court plan and the
+three linesman positions. When the language is switched, the app swaps them. In `data-content.js` the
+`src` field is a language object for these:
 
 ```json
 { "t": "img", "src": { "de": "court", "en": "court-en" } }
 ```
 
-Die Handzeichen sind reine Fotografien ohne Text und werden nicht doppelt vorgehalten.
+The hand signals are pure photographs without text and are not kept in duplicate.
 
-> **Hinweis zur Quelle:** In der deutschen Schulungsmappe tragen die Diagramme 2 und 3
-> bereits eine englische Legende (Player, Ball, 1st Referee …), nur Diagramm 1 ist
-> deutsch beschriftet. Die App gibt das unverändert wieder. Für eine saubere deutsche
-> Fassung müssten diese beiden Grafiken bei der IFA nachgefordert werden.
-
----
-
-## Dateien
-
-```
-index.html                     Grundgerüst
-assets/css/app.css             Design nach IFA-Vorgaben
-assets/js/i18n.js              Oberflächentexte (DE, EN)
-assets/js/data-content.js      Kapitel, Regeltexte, Auslegungen, Videos – zweisprachig (generiert)
-assets/js/data-questions.js    196 Prüfungsfragen mit Lösungen                        (generiert)
-assets/js/data-clips.js        Videofragen – Vorlage für Video-ID und Zeitmarken
-assets/js/app.js               Anwendungslogik
-assets/img/                    IFA-Logo, Diagramme, Handzeichen, Fotos aus den Foliensätzen
-tests/                         automatisierte Tests
-```
-
-Die beiden generierten Dateien stammen aus den PDFs bzw. den Moodle-XML-Exporten im übergeordneten Ordner.
+> **Note on the source:** in the German Training Manual, diagrams 2 and 3 already carry an English
+> legend (Player, Ball, 1st Referee …); only diagram 1 is labelled in German. The app reproduces this
+> unchanged. A clean German version would have to be requested from the IFA.
 
 ---
 
-## Rechtliches
+## Files
 
-Logo und Bildmaterial: © International Fistball Association. Verwendung des Logos nur nach Absprache mit
-der IFA (marketing@fistball.sport). Regeltexte © IFA, Kopien – auch Auszüge – erfordern die Genehmigung
-der IFA. Das Zertifikat der App ist eine Lernbestätigung und ersetzt keine Lizenzerteilung durch einen
-Mitgliedsverband.
+```
+index.html                     Skeleton
+assets/css/app.css             Design per IFA specification
+assets/js/i18n.js              Interface texts (DE, EN)
+assets/js/data-content.js      Chapters, rule texts, interpretations, videos — bilingual (generated)
+assets/js/data-questions.js    235 exam questions with answers                          (generated)
+assets/js/data-clips.js        Video questions — template for video ID and time marks
+assets/js/app.js               Application logic
+assets/img/                    IFA logo, diagrams, hand signals, photos from the slide decks
+tests/                         Automated tests
+```
 
-### Generatoren
+The two generated files are derived from the PDFs and the Moodle XML exports in the parent folder.
 
-`assets/js/data-content.js` und `assets/js/data-questions.js` sind erzeugte Dateien. Die Skripte in
-`tools/generate/` halten fest, wie sie entstanden sind – siehe `tools/generate/README.md`. Das ist vor
-allem für die nächste Regelausgabe relevant: Ohne die Generatoren wären die Datendateien ein Artefakt,
-das niemand mehr nachvollziehen oder neu erzeugen kann.
+---
+
+## Legal
+
+Logo and image material: © International Fistball Association. Use of the logo only in agreement with
+the IFA (marketing@fistball.sport). Rule texts © IFA; copies — including extracts — require IFA
+approval. The certificate issued by the app confirms completion of the programme and does not replace
+a licence granted by a member federation.
+
+### Generators
+
+`assets/js/data-content.js` and `assets/js/data-questions.js` are generated files. The scripts in
+`tools/generate/` record how they came about — see `tools/generate/README.md`. That matters above all
+for the next edition of the rules: without the generators the data files would be an artefact nobody
+could trace or reproduce.

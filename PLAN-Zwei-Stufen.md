@@ -47,7 +47,7 @@ Der Pool `leitung` geht auf 20 % der Nationalprüfung hoch; dort steckt die
 Urteilsfähigkeit, die die höhere Lizenz rechtfertigt.
 
 Jeder Pool erfüllt seine Quote. Schaltet ein Verband die Verbandsordnungen ab,
-bleiben 208 Fragen; die bestehende Auffüllmechanik hält die Fragenzahl konstant.
+bleiben 206 Fragen; die bestehende Auffüllmechanik hält die Fragenzahl konstant.
 
 ---
 
@@ -175,20 +175,21 @@ jeden bisherigen Fortschritt. **Empfehlung: migrieren**, der Aufwand ist gering.
    Erledigt und freigegeben am 6. August 2026: 39 Fragen, Nachweis in
    `Fragen-Nachweis-Spielleitung.md`.
 2. ~~**Fragen von Toby abnehmen lassen.**~~ Freigegeben am 6. August 2026.
-3. **Datenmodell umstellen: `lvl` raus, Pool aus `ch`, `scope` umbenennen.** ← hier stehen wir
-4. `app.js` auf zwei Stufen umbauen, Fortschrittsmigration ergänzen.
-5. Oberfläche und Texte, DE und EN.
-6. Tests neu fassen, vollständig grün.
-7. Im Browser gegenprüfen: beide Stufen, beide Sprachen, Desktop, Mobil, Druck.
-8. Dokumentation nachziehen, committen.
+3. ~~Datenmodell umstellen: `lvl` raus, Pool aus `ch`, `scope` umbenennen.~~ Erledigt.
+4. ~~`app.js` auf zwei Stufen umbauen, Fortschrittsmigration ergänzen.~~ Erledigt.
+5. ~~Oberfläche und Texte, DE und EN.~~ Erledigt.
+6. ~~Tests neu fassen, vollständig grün.~~ Erledigt – 301 Prüfungen.
+7. ~~Im Browser gegenprüfen: beide Stufen, beide Sprachen.~~ Erledigt über jsdom;
+   eine Sichtprüfung im echten Browser auf Desktop, Mobil und im Druck steht noch aus.
+8. ~~Dokumentation nachziehen, committen.~~ Erledigt.
 
-Die Schritte 3 bis 6 sind mechanisch.
+
 
 ---
 
 ## Offene Folgefrage
 
-Mit 60 Fragen aus 196 zieht die Nationalprüfung 31 % des Katalogs pro Versuch, und
+Mit 60 Fragen aus 235 zieht die Nationalprüfung ein Viertel des Katalogs pro Versuch, und
 die Auswertung zeigt anschließend jede richtige Antwort mit Fundstelle. Nach zwei bis
 drei Versuchen kennt ein Kandidat den größten Teil des Bestands. Das verschärft die
 Grundsatzfrage aus `OFFENE-PUNKTE.md`, Abschnitt B: soll die Prüfung zählen, und wenn
