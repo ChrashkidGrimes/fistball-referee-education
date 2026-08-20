@@ -199,9 +199,10 @@ window.IFA_CONTENT = [
     "t": "rule",
     "n": "1.6",
     "x": {
-     "de": "Jede Mannschaft stellt für das Spiel mindestens einen regelgerechten Ball. Der Schiedsrichter prüft vor Spielbeginn alle vorgelegten Bälle.",
+     "de": "Jede Mannschaft stellt für das Spiel mindestens einen regelgerechten Ball. Der Schiedsrichter prüft vor Spielbeginn alle vorgelegten Bälle. Die Bälle, mit denen nicht gespielt wird, bleiben unter seiner Kontrolle aber ausserhalb des Auslaufs.",
      "en": "Each team provides at least one standard ball. All balls are checked by the referee prior to the start of play and are adjusted as needed. The balls not in use remain under the referee’s control, but outside the buffer zone."
-    }
+    },
+    "src_de": "rules"
    },
    {
     "t": "note",
@@ -494,8 +495,9 @@ window.IFA_CONTENT = [
     "n": "2.1",
     "x": {
      "de": "Eine Mannschaft besteht aus 5 Spielern und 5 Auswechselspielern, die ab ihrem ersten Einsatz im Spiel zur Mannschaft gehören. Es haben wenigstens 4 Spieler zu spielen, die sich bis Ende des Spieles auf 5 ergänzen dürfen. Wenn einer Mannschaft zwei Spieler auf dem Spielfeld fehlen, kann das Spiel nicht ausgetragen oder muss abgebrochen werden.",
-     "en": "A team consists of 5 players and 5 substitutes who become part of the team from their first entry into the match (exception youth games). The game can still be played with one less player on the field on each team. At least 4 players must play, but a fifth missing player may join at any time (this is known as completion). If a team is missing two players on the field, the game cannot be played. All players as well as coaches and officials must be entered in the match report before the start of the match. Players which are used must be marked with a cross from the point in time they enter the court. For IFA competitions there are substitute zones where the substitutes are located. The substitute zones can only be left to warm up. If a substitute or trainer/coach enters the field during a game, this is to be marked as a fault. Only 2 people (coaches, supervisors) who are noted in the game report and who are clearly different in their clothing (color) from the players are allowed to stay within their own buffer zone during play. The only exception to this is during a time-out, when all team members may enter the buffer zone."
-    }
+     "en": "A team consists of 5 players and 5 substitutes who become part of the team from their first entry into the match (exception youth games). The game can still be played with one less player on the field on each team, but a fifth missing player may join at any time (this is known as completion). If a team is missing two players on the field, the game cannot be played."
+    },
+    "src_en": "rules"
    },
    {
     "t": "note",
@@ -589,8 +591,9 @@ window.IFA_CONTENT = [
     "n": "2.2",
     "x": {
      "de": "Einer der Spieler ist Mannschaftsführer und als solcher namhaft und mit einer entsprechenden Armbinde kenntlich zu machen. Er ist der alleinige Sprecher der Mannschaft während des Spieles und sorgt vor und nach dem Spiel für den Spielgruß.",
-     "en": "One player is the team's captain and has thus to be marked by wearing an appropriate armband. They are the only speaker of the team during the match and are responsible for entry and farewell. An “armband” is only to be worn on the arm! The team captain is the referee's point of contact for general questions (e.g. verbal warnings to the team in timed games, announcement of extra time....). In these cases and also in the event of complaints from the team, he is the sole spokesman for the team. In situations that affect an individual player (e.g. query, verbal warning, warning, sending off, etc.), this will be discussed with this player. Of course, the referee can also communicate with all other players if he deems it appropriate. For official messages to the team, however, the team captain is the contact person."
-    }
+     "en": "One player is the team's captain and has thus to be marked by wearing an appropriate armband. He (she) is the only speaker of the team during the match and is responsible for entry and farewell."
+    },
+    "src_en": "rules"
    },
    {
     "t": "note",
@@ -605,8 +608,9 @@ window.IFA_CONTENT = [
     "n": "2.2.1",
     "x": {
      "de": "Der Mannschaftsführer bleibt im Amt, wenn er ausgewechselt wird. Die Mannschaft ernennt für diese Zeit einen spielenden Stellvertreter, der vom Mannschaftsführer die Armbinde übernimmt und für den Schiedsrichter Ansprechpartner auf dem Feld ist. Wenn der ursprüngliche Mannschaftsführer das Feld wegen Verletzung oder Feldverweis dauerhaft verlassen muss, übernimmt der spielende Stellvertreter alle Aufgaben des Mannschaftsführers.",
-     "en": "The captain continues to perform his duty if substituted except when he (she) has to leave the court. In this case the team has to appoint a new acting captain. The acting captain will be given the armband by the team’s captain and will be the point of contact for the referee. If the original captain has been sent off, the acting captain will perform all captain duties. The reason for this rule is that the referee has a responsible contact person on the pitch at all times and is not forced to go to the substitutes' bench for any explanations or questions. This is particularly important for events that are broadcast on TV or the internet. The captain designee in the game report will not be filled out until the end of the match. The last captain during the match will be marked on the game report and will be responsible to sign the final game report."
-    }
+     "en": "The captain continues to perform his duty if substituted except when he (she) has to leave the court. In this case the team has to appoint a new acting captain. The acting captain will be given the armband by the team’s captain and will be the point of contact for the referee. If the original captain has been sent off, the acting captain will perform all captain duties."
+    },
+    "src_en": "rules"
    },
    {
     "t": "note",
@@ -1571,9 +1575,10 @@ window.IFA_CONTENT = [
     "t": "rule",
     "n": "8.2.1",
     "x": {
-     "de": "Beispiel: A A",
+     "de": "Beispiel: A 1 2 3 4 5 6 7 8 9 10 11 A B 1 2 3 4 5 6 7 8 9 B",
      "en": "Example: A 1 2 3 4 5 6 7 8 9 10 11 A B 1 2 3 4 5 6 7 8 9 B"
-    }
+    },
+    "src_de": "rules"
    },
    {
     "t": "note",
@@ -1721,8 +1726,9 @@ window.IFA_CONTENT = [
     "n": "10.1",
     "x": {
      "de": "Bei unsportlichem Verhalten hat der Schiedsrichter das Recht, je nach Schwere des Verstoßes folgende Strafen zu verhängen: - Verwarnung (gelbe Karte), - Zeitstrafe (gelbe und rote Karte); Ausschluss im laufenden Spiel, bis beide Mannschaften zusammen 10 Gutbälle erzielt haben, - Feldverweis (rote Karte).",
-     "en": "The referee has the right to punish unsportsman-like behavior in the following way according to the severeness of the offence: - caution (yellow card) - suspension until both teams together have won 10 points (yellow and red card) - disqualification (red card) General guidance on penalties: The referee ensures that everyone involved in the game abides by the rules of the game and respects the idea of fair play in their behavior. In order to ensure this, they have various options available from which they can choose the best possible deployment option depending on the situation. The examples and situations described below provide orientation as to the appropriateness of the various punishment options. A final \"if-then instruction\" cannot be given conclusively due to the variety of situations in the overall context of the game (emotions, overall process, previous events). A situational assessment by the referee in the overall context of the game will always be the final assessment in order to recognize misconduct in the sense that further escalation is avoided and the person to be punished realizes that the behavior was unacceptable and that is the respective penalty."
-    }
+     "en": "The referee has the right to punish unsportsman-like behavior in the following way according to the severeness of the offence: - caution (yellow card) - suspension until both teams together have won 10 points (yellow and red card) - disqualification (red card)"
+    },
+    "src_en": "rules"
    },
    {
     "t": "note",
@@ -1821,8 +1827,9 @@ window.IFA_CONTENT = [
     "n": "10.2.2",
     "x": {
      "de": "Beim Spiel nach Zeit ist die Zeit aller Spielverzögerungen nachzuspielen.",
-     "en": "In a match with time limits, the sum of all delays has to be added as extra time. Further information and explanations for referees: Tasks during the game Neutral decision-making: The referee makes decisions based on visual perception and cannot be influenced by players, support staff or spectators. Hearing can only confirm the correctness of his visual perception. The more certain a referee is about a decision made, the stronger this decision can be represented. Of course, a referee is also human and therefore makes mistakes. A good referee is characterized by keeping these errors to a minimum. If a referee immediately recognizes his wrong decision, or if a player admits an unrecognized mistake, he can revise it. However, if a referee has made a decision based on his perception, he will not overturn it on protest. The most important thing when making a decision is: Every point must be clearly and safely documented by a whistle. The referee monitors the records in the game form. The scorer's record should be checked at regular intervals. Signaling of a point gesture The referee whistles to indicate game interruptions due to errors and explains his decision with official hand signals. Especially in indoor games, where the spectators very often loudly exceed the referee's voice, but also because of the better understanding of spectators and players, it is necessary to work clearly with gestures. In addition to the clear short whistle for all errors, the gestures must always support the following: 1. Ball is out Both hands open, hands facing backwards, arms bent, pointing backwards next to the head. Then one arm is raised horizontally in the direction of the team that scored a point. 2. Body A hand points/taps the part of the body touched by the ball. The second arm points horizontally, in the direction of the team that scored a point."
-    }
+     "en": "In a match with time limits, the sum of all delays has to be added as extra time."
+    },
+    "src_en": "rules"
    }
   ],
   "videos": [],

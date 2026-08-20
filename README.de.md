@@ -22,7 +22,7 @@ liegt im `localStorage` des Browsers, es gibt keine Konten und keine Datenübert
 | Prüfungsfragen | 235, alle zweisprachig, mit Fundstelle im Regelwerk |
 | Bilder | 21 Handzeichen-Fotos, Spielfeld- und Auslaufdiagramme, sechs Ausball-Entscheidungen; 19 davon als Bildfrage |
 | Abschlussprüfungen | Regional 40 Fragen ab 70 %, National 60 ab 85 %, jeweils mit Nachprüfungsgrenze |
-| Tests | 317 automatisierte Prüfungen |
+| Tests | 319 automatisierte Prüfungen |
 
 ## Quellen
 

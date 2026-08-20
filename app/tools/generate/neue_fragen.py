@@ -456,8 +456,8 @@ TEXT = [
    "Directly beside the post, so that the next ball is quickly at hand",
    "Spread around the run-off area behind the base lines so they are quickly at hand",
    "The balls stay with the teams on the substitutes' bench"], 0,
-  "Schiedsrichterordnung, Aufgaben waehrend des Spiels – Verwahrung der Baelle. Ausser dem gespielten Ball gehoert kein Ball in den Auslauf: Spieler verfolgen den Ball dort mit dem Blick nach oben und koennen auf einem liegenden Ball umknicken. Die Reservebaelle liegen mindestens 3 bis 5 m hinter dem Pfosten, ausserhalb des Auslaufs.",
-  "Referee regulations, duties during the match – keeping the balls. Apart from the ball in play, no ball belongs in the run-off area: players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground. Spare balls lie at least 3 to 5 m behind the post, outside the run-off area."),
+  "Spielregeln 1.6: die nicht gespielten Baelle bleiben unter der Kontrolle des Schiedsrichters, aber ausserhalb des Auslaufs. Schiedsrichterordnung, Aufgaben waehrend des Spiels: die Reservebaelle liegen mindestens 3 bis 5 m hinter dem Pfosten. Ausser dem gespielten Ball gehoert kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und koennen auf einem liegenden Ball umknicken.",
+  "Rules of the Game 1.6: the balls not in use remain under the referee's control, but outside the buffer zone. Referee regulations, duties during the match: spare balls lie at least 3 to 5 m behind the post. Apart from the ball in play, no ball belongs in the run-off area - players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."),
 
  ("IFA-A-055", "A", 16, "ifa",
   "Wie werden die zu Beginn tatsaechlich eingesetzten Spieler im Spielformular kenntlich gemacht?",

@@ -22,7 +22,7 @@ lives in the browser's `localStorage`; there are no accounts and no data leaves 
 | Exam questions | 235, all bilingual, each with a reference into the rule book |
 | Images | 21 hand-signal photos, court and run-off diagrams, six ball-in-or-out decisions; 19 of them used as image questions |
 | Final exams | Regional 40 questions from 70 %, National 60 from 85 %, each with a retake threshold |
-| Tests | 317 automated checks |
+| Tests | 319 automated checks |
 
 ## Sources
 

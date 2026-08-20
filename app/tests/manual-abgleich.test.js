@@ -50,6 +50,45 @@ console.log('\n== Kennzeichnung ==');
      'jede Erlaeuterung ausserhalb der Foliensaetze hat englischen Text');
 }
 
+console.log('\n== Regeltext enthaelt keine Erlaeuterung ==');
+{
+  /* Fuenf Regeln trugen zusaetzlich die blaue Erlaeuterung aus der
+     Schulungsmappe – bei Regel 2.1 standen 1139 Zeichen englisch gegen 344
+     deutsch, und derselbe Text erschien im Kapitel zweimal. */
+  const nrm=s=>String(s||'').toLowerCase()
+    .replace(/[’‘]/g,"'").replace(/[“”]/g,'"')
+    .replace(/[–—]/g,'-').replace(/ /g,' ')
+    .replace(/[^a-z0-9]/g,'');
+  const regeln=[];
+  C.forEach(c=>c.blocks.forEach((b,i)=>{ if(b.t==='rule'&&b.x) regeln.push({ch:c.id,i,b}); }));
+
+  const doppelt=[];
+  C.forEach(c=>{
+    const noten=c.blocks.filter(b=>b.t==='note'&&b.x);
+    c.blocks.filter(b=>b.t==='rule'&&b.x).forEach((r,ri)=>{
+      ['de','en'].forEach(l=>{
+        const rt=nrm(r.x[l]); if(rt.length<60) return;
+        noten.forEach(n=>{
+          const nt=nrm(n.x[l]).slice(0,60);
+          if(nt.length===60&&rt.includes(nt))
+            doppelt.push('Kap '+c.id+' Regel '+(r.n||ri)+' ('+l+')');
+        });
+      });
+    });
+  });
+  ok(doppelt.length===0,'kein Regeltext enthaelt eine Erlaeuterung des Kapitels'+
+     (doppelt.length?' – '+doppelt.join(', '):''));
+
+  /* Zweite Sicherung ueber die Laenge: eine Uebersetzung darf schwanken,
+     aber nicht um ein Vielfaches. Groesster Ausreisser vor der Bereinigung
+     war Faktor 25, danach 1.5. */
+  const schief=regeln.filter(r=>r.b.x.de&&r.b.x.en&&r.b.x.de.length>40)
+    .map(r=>({n:r.b.n,q:r.b.x.en.length/r.b.x.de.length}))
+    .filter(x=>x.q>1.6||x.q<0.55);
+  ok(schief.length===0,'kein Regeltext weicht in der Laenge stark zwischen DE und EN ab'+
+     (schief.length?' – '+schief.map(x=>x.n+' Faktor '+x.q.toFixed(2)).join(', '):''));
+}
+
 console.log('\n== Volltextabgleich gegen die offiziellen Ausgaben ==');
 {
   const PDFS=[ROOT+'/33_IFA-Training-Manual-for-Referees-2025.pdf',

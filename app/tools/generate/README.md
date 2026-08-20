@@ -69,3 +69,20 @@ offizieller Text vorlag.
 `offizielles_englisch.py` hat die sechs betroffenen Blöcke auf den offiziellen
 Wortlaut umgestellt und prüft ihn gegen das PDF, bevor er eingepflegt wird.
 `app/tests/manual-abgleich.test.js` hält den Abgleich dauerhaft.
+
+## Regeltext von Erläuterungen trennen
+
+`regeltext_bereinigen.py` behebt zwei Folgen derselben Ursache:
+
+- **Englischer Regeltext zu lang.** Fünf Regeln (2.1, 2.2, 2.2.1, 10.1, 10.2.2)
+  trugen zusätzlich die blaue Erläuterung. Bei 2.1 standen 1139 Zeichen englisch
+  gegen 344 deutsch, und derselbe Text erschien im Kapitel zweimal. Maßgeblich für
+  Regeltext ist das Regelwerk, nicht die Schulungsmappe – 71 der 93 nummerierten
+  Regeln stimmten damit bereits wortgleich überein.
+- **Deutscher Regeltext zu kurz.** Bei 1.6 fehlte der Satz „Die Bälle, mit denen
+  nicht gespielt wird, bleiben unter seiner Kontrolle aber ausserhalb des
+  Auslaufs“ – ausgerechnet die Fundstelle zur Verwahrung der Bälle. Bei 8.2.1 war
+  die Ziffernfolge des Beispiels verlorengegangen, übrig blieb „Beispiel: A A“.
+
+Das Skript prüft vor dem Schreiben, dass gekürzter Text im Regelwerk steht und
+ergänzter Text den bisherigen enthält. Ein zweiter Lauf ändert nichts mehr.

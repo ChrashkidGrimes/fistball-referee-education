@@ -7001,8 +7001,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle. Außer dem gespielten Ball gehört kein Ball in den Auslauf: Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken. Die Reservebälle liegen mindestens 3 bis 5 m hinter dem Pfosten, außerhalb des Auslaufs.",
-"en": "Referee regulations, duties during the match – keeping the balls. Apart from the ball in play, no ball belongs in the run-off area: players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground. Spare balls lie at least 3 to 5 m behind the post, outside the run-off area."
+"de": "Spielregeln 1.6: die nicht gespielten Bälle bleiben unter der Kontrolle des Schiedsrichters, aber außerhalb des Auslaufs. Schiedsrichterordnung, Aufgaben während des Spiels: die Reservebälle liegen mindestens 3 bis 5 m hinter dem Pfosten. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
+"en": "Rules of the Game 1.6: the balls not in use remain under the referee's control, but outside the buffer zone. Referee regulations, duties during the match: spare balls lie at least 3 to 5 m behind the post. Apart from the ball in play, no ball belongs in the run-off area - players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."
 },
 "origin": "ifa",
 "tr": true

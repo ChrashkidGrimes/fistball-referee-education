@@ -270,7 +270,7 @@ npm test
 | `bilingual.test.js` | Completeness of both languages in content, questions and interface; hunts for German remnants in the English DOM of chapters, quiz and result screen (24 checks) |
 | `questions.test.js` | Origin and references of all questions, coverage of all 16 chapters, draft mechanism, image and video questions (73 checks) |
 | `docs.test.js` | Keeps the figures in all four READMEs in step with the data: question count, pool sizes, origin table, level thresholds, list of test files (79 checks) |
-| `manual-abgleich.test.js` | Checks every English interpretation against the official editions: which blocks may be a working translation, and whether the rest appears verbatim in the Training Manual or the Rules of the Game. Skips the full-text part when the PDFs are absent (14 checks) |
+| `manual-abgleich.test.js` | Checks every English interpretation against the official editions, and that no rule text has swallowed an interpretation — by content and by the length ratio between German and English. Skips the full-text part when the PDFs are absent (16 checks) |
 
 ### Regenerating the images
 

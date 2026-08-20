@@ -122,6 +122,16 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
       Schiedsrichterpraxis. Kennt die IFA eigene Fristen, gehören alle sechs
       auf `national`.
 
+- [x] ~~**Regeltext und Erläuterung sauber trennen.**~~ Erledigt am 6. August 2026,
+      dieselbe Ursache wie oben. Fünf englische Regeltexte (2.1, 2.2, 2.2.1, 10.1,
+      10.2.2) enthielten zusätzlich die blaue Erläuterung – bei 2.1 standen
+      1139 Zeichen englisch gegen 344 deutsch, und derselbe Text erschien im
+      Kapitel zweimal. Umgekehrt waren zwei deutsche Regeltexte zu kurz: bei 1.6
+      fehlte der Satz zur Verwahrung der Bälle, bei 8.2.1 die Ziffernfolge des
+      Beispiels. Alle sieben stammen jetzt aus dem Regelwerk, das reiner Regeltext
+      ist. `regeltext_bereinigen.py` hält das fest, `manual-abgleich.test.js`
+      prüft es bei jedem Testlauf.
+
 - [ ] **Verwahrung der Bälle: Abweichung vom Foliensatz an die IFA melden.**
       Korrigiert am 6. August 2026 nach Hinweis von Toby. Der Foliensatz von
       Faustball Deutschland schreibt: „Der nächste Ball, der ins Spiel gebracht
@@ -132,6 +142,10 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
       Blick nach oben verfolgen. Kapitel 16 und die Frage `IFA-A-054` sind auf die
       korrigierte Fassung umgestellt; die Abweichung ist im Nachweis vermerkt.
       Der Foliensatz sollte bei nächster Gelegenheit nachgezogen werden.
+      **Nachtrag:** Regel 1.6 sagt es selbst – „Die Bälle, mit denen nicht gespielt
+      wird, bleiben unter seiner Kontrolle aber ausserhalb des Auslaufs.“ Der Satz
+      fehlte im Datensatz und ist jetzt ergänzt; `IFA-A-054` verweist zuerst
+      darauf und erst danach auf die Schiedsrichterordnung.
 
 - [ ] **Widersprüche bei den Strafen mit der IFA klären.** Geprüft am 6. August 2026
       anhand von `Strafen_Anwendung_Oesterreich.pdf` (Bundesschiedsrichter-Referat

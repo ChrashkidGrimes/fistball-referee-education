@@ -274,7 +274,7 @@ npm test
 | `bilingual.test.js` | Vollständigkeit beider Sprachen in Inhalten, Fragen und Oberfläche; sucht deutsche Reste im englischen DOM von Kapiteln, Quiz und Auswertung (24 Prüfungen) |
 | `questions.test.js` | Herkunft und Fundstellen aller Fragen, Abdeckung aller 16 Kapitel, Entwurfsmechanismus, Bild- und Videofragen (73 Prüfungen) |
 | `docs.test.js` | Hält die Kennzahlen in allen vier READMEs mit den Daten in Deckung: Fragenzahl, Poolgrößen, Herkunftstabelle, Stufengrenzen, Liste der Testdateien (79 Prüfungen) |
-| `manual-abgleich.test.js` | Prüft jede englische Erläuterung gegen die offiziellen Ausgaben: welche Blöcke Arbeitsübersetzung sein dürfen und ob der Rest wortgleich in Schulungsmappe oder Regelwerk steht. Ohne die PDFs im Ordner entfällt der Volltextteil (14 Prüfungen) |
+| `manual-abgleich.test.js` | Prüft jede englische Erläuterung gegen die offiziellen Ausgaben und dass kein Regeltext eine Erläuterung verschluckt hat – inhaltlich und über das Längenverhältnis zwischen Deutsch und Englisch. Ohne die PDFs im Ordner entfällt der Volltextteil (16 Prüfungen) |
 
 ### Bilder neu erzeugen
 
