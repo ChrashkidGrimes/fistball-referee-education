@@ -171,13 +171,13 @@ Für eine weitere Sprache genügt ein zusätzlicher Schlüssel im selben Objekt.
 `c` ist der Index der richtigen Antwort und gilt für beide Sprachen – die Antwortreihenfolge ist in
 beiden Listen identisch.
 
-**Herkunft der englischen Fassung.** 88 nummerierte Regeln und 45 Erläuterungen stammen wortgleich aus
-den offiziellen englischen IFA-Ausgaben, zugeordnet über die Regelnummer. Alles Übrige ist eine
-Arbeitsübersetzung und als solche gekennzeichnet:
+**Herkunft der englischen Fassung.** Alle nummerierten Regeln und 56 von 59 Erläuterungen stammen
+wortgleich aus den offiziellen englischen IFA-Ausgaben. Alles Übrige ist eine Arbeitsübersetzung und
+als solche gekennzeichnet:
 
 | Was | Umfang | Kennzeichnung |
 |-----|--------|---------------|
-| Erläuterungen ohne englische Entsprechung | 6 | `tr: true`, Hinweis im Kapitel |
+| Erläuterungen ohne englische Entsprechung | 2 | `tr: true`, Hinweis im Kapitel |
 | Inhalte aus den Schulungsfoliensätzen | 47 | `origin: "ppt"`, eigener Hinweis im Kapitel |
 | Prüfungsfragen | alle 235 | `tr: true`, Hinweis im Quiz |
 
@@ -273,7 +273,8 @@ npm test
 | `i18n.test.js` | Anzeige der deutsch-englischen Inhalte, Kennzeichnung der Foliensatz-Inhalte, sprachabhängige Diagramme (37 Prüfungen) |
 | `bilingual.test.js` | Vollständigkeit beider Sprachen in Inhalten, Fragen und Oberfläche; sucht deutsche Reste im englischen DOM von Kapiteln, Quiz und Auswertung (24 Prüfungen) |
 | `questions.test.js` | Herkunft und Fundstellen aller Fragen, Abdeckung aller 16 Kapitel, Entwurfsmechanismus, Bild- und Videofragen (73 Prüfungen) |
-| `docs.test.js` | Hält die Kennzahlen in allen vier READMEs mit den Daten in Deckung: Fragenzahl, Poolgrößen, Herkunftstabelle, Stufengrenzen, Liste der Testdateien (77 Prüfungen) |
+| `docs.test.js` | Hält die Kennzahlen in allen vier READMEs mit den Daten in Deckung: Fragenzahl, Poolgrößen, Herkunftstabelle, Stufengrenzen, Liste der Testdateien (79 Prüfungen) |
+| `manual-abgleich.test.js` | Prüft jede englische Erläuterung gegen die offiziellen Ausgaben: welche Blöcke Arbeitsübersetzung sein dürfen und ob der Rest wortgleich in Schulungsmappe oder Regelwerk steht. Ohne die PDFs im Ordner entfällt der Volltextteil (14 Prüfungen) |
 
 ### Bilder neu erzeugen
 

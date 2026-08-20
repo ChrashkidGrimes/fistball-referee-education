@@ -33,7 +33,7 @@ account and without a server.
 | Interpretations | 51 explanatory notes from the Training Manual |
 | Hand signals | 18 signals with 21 photos (16 from the Training Manual, 2 from the slide decks), 13 of them used as image questions |
 | Languages | German and English, complete — 226 content blocks and 235 questions in both languages |
-| Exam questions | 235 bilingual: 121 from the Faustball Deutschland bank, 108 derived from the rules and Training Manual, 6 image questions |
+| Exam questions | 235 bilingual: 121 from the Faustball Deutschland catalogue, 108 derived from the rules and Training Manual, 6 image questions |
 
 ### Licence levels
 
@@ -169,13 +169,12 @@ For a further language an additional key in the same object is enough.
 `c` is the index of the correct answer and applies to both languages — the answer order is identical
 in both lists.
 
-**Origin of the English version.** 88 numbered rules and 45 interpretations are taken verbatim from the
-official English IFA editions, matched by rule number. Everything else is a working translation and is
-marked as such:
+**Origin of the English version.** All numbered rules and 56 of 59 interpretations are taken verbatim
+from the official English IFA editions. Everything else is a working translation and is marked as such:
 
 | What | Extent | Marking |
 |------|--------|---------|
-| Interpretations without an English counterpart | 6 | `tr: true`, note in the chapter |
+| Interpretations without an English counterpart | 2 | `tr: true`, note in the chapter |
 | Content from the training slide decks | 47 | `origin: "ppt"`, separate note in the chapter |
 | Exam questions | all 235 | `tr: true`, note in the quiz |
 
@@ -270,7 +269,8 @@ npm test
 | `i18n.test.js` | Display of the German and English content, marking of the slide-deck content, language-dependent diagrams (37 checks) |
 | `bilingual.test.js` | Completeness of both languages in content, questions and interface; hunts for German remnants in the English DOM of chapters, quiz and result screen (24 checks) |
 | `questions.test.js` | Origin and references of all questions, coverage of all 16 chapters, draft mechanism, image and video questions (73 checks) |
-| `docs.test.js` | Keeps the figures in all four READMEs in step with the data: question count, pool sizes, origin table, level thresholds, list of test files (77 checks) |
+| `docs.test.js` | Keeps the figures in all four READMEs in step with the data: question count, pool sizes, origin table, level thresholds, list of test files (79 checks) |
+| `manual-abgleich.test.js` | Checks every English interpretation against the official editions: which blocks may be a working translation, and whether the rest appears verbatim in the Training Manual or the Rules of the Game. Skips the full-text part when the PDFs are absent (14 checks) |
 
 ### Regenerating the images
 

@@ -197,6 +197,22 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
       Besonders wertvoll wären Block, Zuspiel und die Handzeichen in Bewegung – das ist
       genau der Teil, den Multiple Choice nicht abdeckt.
 
+- [x] ~~**Sechs Erläuterungen ohne englische Entsprechung abnehmen.**~~ Erledigt am
+      6. August 2026 – und dabei stellte sich heraus, dass die Prämisse falsch war.
+      Nach einem Hinweis von Toby, dass die Schulungsmappe Regeltext schwarz und
+      Erläuterung blau setzt, habe ich die englische Ausgabe nach Schriftfarbe
+      getrennt neu eingelesen. Ergebnis: für sechs Erläuterungen gibt es sehr wohl
+      offiziellen englischen Text – Kapitel 2 (Regeln 2.1, 2.2, 2.2.1), Kapitel 10
+      (Orientierung bei Strafen) und Kapitel 12 (neutrale Entscheidungsfindung,
+      Umgang mit eigenen Fehlern). Zwei davon waren nicht einmal als
+      Arbeitsübersetzung gekennzeichnet.
+      Alle sechs tragen jetzt den offiziellen Wortlaut mit Seitenangabe. Übrig
+      bleiben zwei echte Lücken: die Lockerung der Kleidungsvorschriften zu
+      Regel 2.3 und der Zusatz zu den Unterziehhosen bei 2.3.3.
+      Der fehlende Extraktor liegt jetzt als `app/tools/generate/extract.py` im
+      Repository, und `manual-abgleich.test.js` prüft alle 56 übrigen
+      Erläuterungen wortgleich gegen Schulungsmappe und Regelwerk.
+
 - [ ] **Englische Fassung der Prüfungsfragen fachlich abnehmen.** Alle 196 Fragen sind
       übersetzt, aber es gibt keine offizielle englische Fassung des Katalogs – die
       Übersetzung ist eine Arbeitsfassung, im Datensatz mit `tr: true` markiert und im
@@ -212,11 +228,13 @@ In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wi
       deutschsprachige Lernende sehen dort also englische Begriffe.
       Ein Fehler im Ausgangsdokument, kein Fehler der App – zu klären mit der IFA.
 
-- [ ] **Sechs Erläuterungen ohne englische Entsprechung abnehmen.** Fünf in Kapitel 2
-      (Spielbericht, Armbinde, Kleidungsvorschriften), eine in Kapitel 10 (allgemeine
-      Orientierung bei Strafen). Die englische Ausgabe ist dort kürzer; die englische
-      Fassung stammt von mir und ist mit `tr: true` markiert. Falls die IFA das
-      Training Manual ergänzt, sollten diese Stellen ersetzt werden.
+- [ ] **Zwei Erläuterungen ohne englische Entsprechung abnehmen.** Beide in Kapitel 2:
+      die Lockerung der Kleidungsvorschriften zu Regel 2.3 und der Zusatz zu den
+      Unterziehhosen bei 2.3.3. Die englische Ausgabe ist dort tatsächlich kürzer;
+      die englische Fassung stammt von mir und ist mit `tr: true` markiert. Falls die
+      IFA das Training Manual ergänzt, sollten diese Stellen ersetzt werden.
+      (Die ursprünglich hier genannten sechs Stellen waren teils ein Irrtum – siehe
+      oben, Abschnitt C.)
 
 - [x] ~~**Inhalte aus den Schulungsfoliensätzen ins Englische bringen.**~~ Erledigt –
       alle 47 Blöcke übersetzt. Da es dafür keine offizielle englische Ausgabe gibt,

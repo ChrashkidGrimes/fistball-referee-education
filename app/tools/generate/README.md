@@ -48,3 +48,24 @@ beide Skripte laufen ohne Argumente aus ihrem eigenen Verzeichnis.
 Mit der Umstellung auf zwei Lizenzstufen am 6. August 2026 ist `lvl` ersatzlos
 weggefallen: Der Themenpool einer Frage ergibt sich aus ihrem Kapitel (`ch`),
 siehe `POOLS` in `assets/js/app.js`. Das Skript ist deshalb gelöscht.
+
+## Farbtrennung der Schulungsmappe
+
+Beide Ausgaben setzen **Regeltext schwarz und Erläuterung blau**. `extract.py`
+trennt danach und schreibt die Absätze mit Seitenzahl und Farbe als JSON:
+
+```
+python3 extract.py ../../../33_IFA-Training-Manual-for-Referees-2025.pdf en.json
+python3 extract.py ../../../33d_IFA-Schulungsmappe-fur-Schiedsrichter-2025.pdf de.json
+```
+
+Das Skript fehlte bis August 2026 im Repository, und die erste Zuordnung der
+englischen Erläuterungen hatte ohne Farbtrennung gearbeitet. Wo die englische
+Ausgabe die Erläuterung ohne eigene Überschrift direkt an den Regeltext hängt
+(Kapitel 2) oder außerhalb der Regelnummerierung steht (Kapitel 12), war sie
+nicht als eigener Block erkennbar – dort stand eine Arbeitsübersetzung, obwohl
+offizieller Text vorlag.
+
+`offizielles_englisch.py` hat die sechs betroffenen Blöcke auf den offiziellen
+Wortlaut umgestellt und prüft ihn gegen das PDF, bevor er eingepflegt wird.
+`app/tests/manual-abgleich.test.js` hält den Abgleich dauerhaft.

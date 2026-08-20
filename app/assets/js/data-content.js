@@ -501,9 +501,9 @@ window.IFA_CONTENT = [
     "t": "note",
     "x": {
      "de": "Alle Spieler sowie Trainer und Betreuer sind vor Spielbeginn im Spielbericht einzutragen. Spieler, die zum Einsatz kommen, sind von diesem Zeitpunkt ab mit einem Kreuz zu kennzeichnen. Für IFA-Bewerbe gelten Wechselspielerzonen, in denen sich die Ersatzspieler aufhalten. Diese können nur zum Aufwärmen verlassen werden. Betritt ein Auswechselspieler oder Trainer/Betreuer während eines Spielganges das Spielfeld, so ist dies als Fehler zu werten. Innerhalb des eigenen Feldauslaufes dürfen sich nur 2 Personen (Trainer, Betreuer) aufhalten, die im Spielbericht vermerkt sind, und sich in ihrer Kleidung (Farbe) von den Spielenden deutlich unterscheiden. Die einzige Ausnahme ist während einer Auszeit, in dieser dürfen alle Mannschaftsmitglieder die Auslaufzone betreten.",
-     "en": "All players as well as coaches and officials must be entered on the match report before the start. Players who come on are marked with a cross from that moment. For IFA competitions there are substitution zones in which the substitutes stay; these may only be left to warm up. If a substitute or a coach or official enters the court during a rally, this counts as a fault. Only 2 people (coach, official) may be in their own buffer zone, they must be named on the match report and must be clearly distinguishable from the players by the colour of their clothing. The only exception is during a time-out, when all team members may enter the buffer zone."
+     "en": "All players as well as coaches and officials must be entered in the match report before the start of the match. Players which are used must be marked with a cross from the point in time they enter the court.\n\nFor IFA competitions there are substitute zones where the substitutes are located. The substitute zones can only be left to warm up. If a substitute or trainer/coach enters the field during a game, this is to be marked as a fault. Only 2 people (coaches, supervisors) who are noted in the game report and who are clearly different in their clothing (color) from the players are allowed to stay within their own buffer zone during play. The only exception to this is during a time-out, when all team members may enter the buffer zone."
     },
-    "tr": true
+    "src_en": "manual-p8"
    },
    {
     "t": "rule",
@@ -596,9 +596,9 @@ window.IFA_CONTENT = [
     "t": "note",
     "x": {
      "de": "Eine „Armbinde“ ist ausschließlich am Arm zu tragen! Der Mannschaftsführer ist für den Schiedsrichter Ansprechpartner bei allgemeinen Fragen (z.B. Verwarnung an die Mannschaft bei Zeitspiel, Ansage einer Verlängerungszeit, etc.). Er ist in diesen Fällen und auch bei Reklamationen seitens der Mannschaft der alleinige Sprecher derselben. Bei Situationen, die einen einzelnen Spieler betreffen (z.B. Rückfrage, Ermahnung, Verwarnung, Feldverweis usw.), wird dies mit diesem Spieler besprochen. Natürlich kann der Schiedsrichter auch mit allen anderen Spielern kommunizieren, wenn ihm das angemessen erscheint. Bei offiziellen Mitteilungen an die Mannschaft, ist aber der Mannschaftsführer der Ansprechpartner.",
-     "en": "An armband is to be worn on the arm and nowhere else. For the referee the team captain is the contact for general matters (for example a warning to the team for time-wasting, announcing extra time). In these cases, and when the team complains, he is its only spokesman. Matters concerning an individual player (a query, a caution, a warning, a sending off) are discussed with that player. The referee may of course also speak to any other player where that seems appropriate, but for official communications to the team the captain is the contact."
+     "en": "An “armband” is only to be worn on the arm!\n\nThe team captain is the referee's point of contact for general questions (e.g. verbal warnings to the team in timed games, announcement of extra time....). In these cases and also in the event of complaints from the team, he is the sole spokesman for the team.\n\nIn situations that affect an individual player (e.g. query, verbal warning, warning, sending off, etc.), this will be discussed with this player.\n\nOf course, the referee can also communicate with all other players if he deems it appropriate. For official messages to the team, however, the team captain is the contact person."
     },
-    "tr": true
+    "src_en": "manual-p9"
    },
    {
     "t": "rule",
@@ -612,9 +612,9 @@ window.IFA_CONTENT = [
     "t": "note",
     "x": {
      "de": "Grund für diese Regel ist, dass der Schiedsrichter zu jeder Zeit einen verantwortlichen Ansprechpartner auf dem Spielfeld hat und nicht gezwungen ist, sich für allfällige Erläuterungen oder Fragen zur Ersatzbank zu begeben. Wichtig ist dies insbesondere für Anlässe, welche im TV oder Internet übertragen werden. Die Bezeichnung des Spielführers im Spielbericht wird deshalb erst am Ende des Spiels ausgefüllt. Der letzte Spielführer während des Spiels wird auf dem Spielbericht vermerkt und ist für die Unterzeichnung des endgültigen Spielberichts verantwortlich.",
-     "en": "The reason for this rule is that the referee always has a responsible contact on court and is not forced to go to the substitutes' bench for explanations or questions. This matters in particular for events broadcast on television or online. The captain's name on the match report is therefore only entered at the end of the match: the last captain during the match is recorded and is responsible for signing the final report."
+     "en": "The reason for this rule is that the referee has a responsible contact person on the pitch at all times and is not forced to go to the substitutes' bench for any explanations or questions. This is particularly important for events that are broadcast on TV or the internet.\n\nThe captain designee in the game report will not be filled out until the end of the match. The last captain during the match will be marked on the game report and will be responsible to sign the final game report."
     },
-    "tr": true
+    "src_en": "manual-p9"
    },
    {
     "t": "rule",
@@ -1728,9 +1728,9 @@ window.IFA_CONTENT = [
     "t": "note",
     "x": {
      "de": "Allgemeine Orientierung bei Strafen: Der Schiedsrichter gewährleistet, dass alle am Spiel Beteiligten die Spielregeln einhalten, und in ihrem Verhalten den Gedanken des Fair Play respektieren. Um das zu gewährleisten, stehen ihm verschiedene Sanktionsmöglichkeiten zur Verfügung, aus denen er situationsbedingt die bestmögliche Einsatzmöglichkeit wählen kann. Die im folgenden beschriebenen Beispiele und Situationen geben eine Orientierung über die Angemessenheit der verschiedenen Strafmöglichkeiten. Eine abschließende „wenn-dann-Handlungsanweisung“ kann aufgrund der Vielfältigkeit der Situationen im Gesamtkontext des Spiels (Emotionen, Gesamtablauf, vorherige Vorkommnisse) nicht abschließend gegeben werden. Eine situative Bewertung des Schiedsrichters im Gesamtkontext des Spiels wird immer die abschließende Beurteilung sein, um ein Fehlverhalten in dem Sinne zu sanktionieren, dass eine weitere Eskalation vermieden wird, und der zu bestrafenden Person klar wird, dass das Verhalten nicht akzeptabel war und die jeweilige Strafe nach sich zieht.",
-     "en": "General guidance on penalties: the referee ensures that everyone involved in the match keeps to the rules of the game and respects the idea of fair play in the way they behave. To achieve this he has various sanctions at his disposal and chooses the one that fits the situation best. The examples and situations described below give an orientation on how appropriate the different penalties are. Given how varied situations are in the overall context of a match – emotions, how the match has gone, earlier incidents – no exhaustive set of if-then instructions can be given. The referee's assessment of the situation in the context of the whole match will always be the final judgement, with the aim of sanctioning misconduct in a way that avoids further escalation and makes clear to the person concerned that the behaviour was not acceptable and carries the corresponding penalty."
+     "en": "General guidance on penalties: The referee ensures that everyone involved in the game abides by the rules of the game and respects the idea of fair play in their behavior. In order to ensure this, they have various options available from which they can choose the best possible deployment option depending on the situation. The examples and situations described below provide orientation as to the appropriateness of the various punishment options. A final \"if-then instruction\" cannot be given conclusively due to the variety of situations in the overall context of the game (emotions, overall process, previous events). A situational assessment by the referee in the overall context of the game will always be the final assessment in order to recognize misconduct in the sense that further escalation is avoided and the person to be punished realizes that the behavior was unacceptable and that is the respective penalty."
     },
-    "tr": true
+    "src_en": "manual-p19"
    },
    {
     "t": "note",
@@ -2196,8 +2196,9 @@ window.IFA_CONTENT = [
     },
     "x": {
      "de": "Der Schiedsrichter trifft seine Entscheidungen auf Grund visueller Wahrnehmung und lässt sich durch Spieler, Betreuungspersonen oder Zuschauer nicht beeinflussen. Das Gehör darf ihm die Richtigkeit seiner optischen Wahrnehmung nur bestätigen. Je sicherer ein Schiedsrichter bei einer getroffenen Entscheidung ist, desto stärker kann er diese Entscheidung auch vertreten.",
-     "en": "The referee makes decisions on the basis of visual perception and is not influenced by players, support staff or spectators. Hearing may only confirm the correctness of the visual perception. The more certain a referee is about a decision, the more firmly that decision can be defended."
-    }
+     "en": "The referee makes decisions based on visual perception and cannot be influenced by players, support staff or spectators. Hearing can only confirm the correctness of his visual perception. The more certain a referee is about a decision made, the stronger this decision can be represented."
+    },
+    "src_en": "manual-p21"
    },
    {
     "t": "note",
@@ -2207,8 +2208,9 @@ window.IFA_CONTENT = [
     },
     "x": {
      "de": "Natürlich ist ein Schiedsrichter auch Mensch und macht deshalb Fehler. Ein guter Schiedsrichter zeichnet sich dadurch aus, dass diese Fehler auf ein Minimum beschränkt sind. Erkennt ein Schiedsrichter sofort seine falsch getroffene Entscheidung, oder gibt ein Spieler einen nicht erkannten Fehler zu, so kann er diese revidieren. Hat ein Schiedsrichter jedoch eine Entscheidung aufgrund seiner Wahrnehmung getroffen, so wird er diese nicht aufgrund von Protesten zurücknehmen.",
-     "en": "A referee is human and therefore makes mistakes. A good referee keeps those mistakes to a minimum. If a referee immediately recognises a wrong decision, or if a player admits an error that went unnoticed, the decision may be revised. However, once a referee has made a decision based on his perception, it will not be withdrawn because of protests."
-    }
+     "en": "Of course, a referee is also human and therefore makes mistakes. A good referee is characterized by keeping these errors to a minimum. If a referee immediately recognizes his wrong decision, or if a player admits an unrecognized mistake, he can revise it. However, if a referee has made a decision based on his perception, he will not overturn it on protest."
+    },
+    "src_en": "manual-p21"
    },
    {
     "t": "rule",
@@ -2669,7 +2671,8 @@ window.IFA_CONTENT = [
     "x": {
      "de": "*) Altersklassen entsprechend IFCR, 4.1.3\n**) Möglichkeiten für interne Regelung von Nationalverbänden\n***) Empfehlung der IFA. Nationalverbände können abweichende Feldgrößen festlegen, falls nötig.",
      "en": "*) according to the competition rules (IFCR), clause 4.1.3\n**) to be decided by member federation\n***) proposal of IFA. Member federations can use alternate dimensions if needed."
-    }
+    },
+    "src_en": "rules-annex"
    },
    {
     "t": "note",
@@ -2680,7 +2683,8 @@ window.IFA_CONTENT = [
     "x": {
      "de": "Nationalverbände können im Rahmen der mit **) und ***) gekennzeichneten Regelungen in Bezug auf Feldgröße, Anzahl der Ballkontakte und Spieleranzahl abweichende Festlegungen treffen – verbindlich sind in jedem Fall Leinenhöhe, Ballgewicht, Luftdruck und Angabelinie.",
      "en": "Member federations can only decide about court size, ball contacts and number of players – not about height of the net, ball weight, air pressure and service line."
-    }
+    },
+    "src_en": "rules-annex"
    }
   ],
   "videos": [],
