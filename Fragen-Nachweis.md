@@ -560,14 +560,16 @@ fachlich noch nicht abgenommen; maßgeblich ist der deutsche Wortlaut.
 **Bei einem Turnier hat der Veranstalter die Bälle aufgelegt. Worauf beschränkt sich die Wahl des Losgewinners?**  
 *At a tournament the organiser has provided the balls. What is the winner of the toss left to choose?*
 
-- [x] **Darauf, wer die erste Angabe schlägt**  —  *On who serves first*
-- [ ] Auf Feldseite und Ballkontingent wie üblich  —  *On court side and choice of balls, as usual*
+- [x] **Wie üblich auf Feldseite oder Angabe – nur das Ballkontingent ist nicht mehr zu wählen**  —  *As usual on end or service – only the choice of ball allocation falls away*
+- [ ] Nur noch darauf, wer die erste Angabe schlägt; die Feldseite bekommt der Gegner  —  *Only on who serves first; the opponent gets the end without a choice*
 - [ ] Der Losgewinner wählt trotzdem das Ballkontingent  —  *The winner of the toss still chooses the set of balls*
 - [ ] Die Auslosung entfällt in diesem Fall vollständig  —  *In this case the toss is dropped entirely*
 
-*Fundstelle:* Spielregeln 1.5, Erläuterung Ballwahl
+*Fundstelle:* Spielregeln 1.5 und Erläuterung Ballwahl. Der Losgewinner wählt weiterhin Feldseite oder Angabe. Legt der Veranstalter die Bälle auf, entfällt lediglich die sonst mit der Angabe verbundene Wahl des Ballkontingents.
 
 > Die Mannschaft, welche die erste Angabe schlägt, wählt das Ballkontingent, das in diesem Satz gespielt werden soll (Bälle der eigenen Mannschaft, oder Bälle des Gegners). Aus diesem Kontingent wählt der Schiedsrichter, welcher Ball gespielt wird. Eine Festlegung der Reihenfolge innerhalb der vorgelegten Bälle gibt es nicht. Bei nationalen oder internationalen Veranstaltungen können vom Veranstalter Bälle aufgelegt sein. Dann beschränkt sich die Wahl darauf, wer die erste Angabe schlägt.
+>
+> *Korrigiert am 6. August 2026 nach Hinweis von Toby: Der Satz „Dann beschränkt sich die Wahl darauf, wer die erste Angabe schlägt“ bezieht sich auf den Inhalt der Angabe-Option — diese umfasst laut Regel 1.5 sonst zugleich das Ballkontingent. Die Auswahl des Losgewinners zwischen Feldseite und Angabe bleibt unberührt. Die ursprüngliche Antwort hatte den Satz so gelesen, als verlöre der Losgewinner die Wahl der Feldseite.*
 
 ### IFA-A-005
 

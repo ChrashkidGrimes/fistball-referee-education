@@ -3818,22 +3818,22 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Darauf, wer die erste Angabe schlägt",
-"Auf Feldseite und Ballkontingent wie üblich",
+"Wie üblich auf Feldseite oder Angabe – nur das Ballkontingent ist nicht mehr zu wählen",
+"Nur noch darauf, wer die erste Angabe schlägt; die Feldseite bekommt der Gegner",
 "Der Losgewinner wählt trotzdem das Ballkontingent",
 "Die Auslosung entfällt in diesem Fall vollständig"
 ],
 "en": [
-"On who serves first",
-"On court side and choice of balls, as usual",
+"As usual on end or service – only the choice of ball allocation falls away",
+"Only on who serves first; the opponent gets the end without a choice",
 "The winner of the toss still chooses the set of balls",
 "In this case the toss is dropped entirely"
 ]
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.5, Erläuterung Ballwahl",
-"en": "Rules of the Game 1.5, Interpretation Explanation of ball choice"
+"de": "Spielregeln 1.5 und Erläuterung Ballwahl. Der Losgewinner wählt weiterhin Feldseite oder Angabe. Legt der Veranstalter die Bälle auf, entfällt lediglich die sonst mit der Angabe verbundene Wahl des Ballkontingents.",
+"en": "Rules of the Game 1.5 and the explanation on ball choice. The winner of the toss still chooses end or service. If the organiser provides the balls, only the choice of ball allocation that normally goes with the service falls away."
 },
 "origin": "ifa",
 "tr": true
