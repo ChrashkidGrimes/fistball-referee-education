@@ -8,6 +8,8 @@ own referees.
 
 **→ [`app/`](app/) holds the application, [`app/README.md`](app/README.md) the technical documentation.**
 
+**▶ Live version: <https://chrashkidgrimes.github.io/fistball-referee-education/>** — updated automatically on every push to `main`.
+
 ---
 
 ## What this is

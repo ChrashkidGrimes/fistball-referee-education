@@ -8,6 +8,8 @@ Association, die ihre Schiedsrichter selbst ausbilden.
 
 **→ [`app/`](app/) enthält die Anwendung, [`app/README.de.md`](app/README.de.md) die technische Dokumentation.**
 
+**▶ Live-Version: <https://chrashkidgrimes.github.io/fistball-referee-education/>** – wird bei jedem Push auf `main` automatisch aktualisiert.
+
 ---
 
 ## Was das ist

@@ -1,4 +1,4 @@
-# Veröffentlicht den Ordner app/ auf GitHub Pages (kein Build-Schritt nötig).
+# Veröffentlicht den Ordner app/ ohne tests/ auf GitHub Pages (kein Build-Schritt nötig).
 name: Pages
 
 on:
@@ -24,8 +24,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - run: rsync -a --exclude tests/ app/ _site/
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: app
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
