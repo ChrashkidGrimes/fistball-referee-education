@@ -136,7 +136,7 @@ Spec: `docs/superpowers/specs/2026-10-25-pruefnachweis-design.md`.
 - [ ] **IFA-C-037 und IFA-C-038 belegen.** 30 Minuten Anwesenheit und der Ablauf 5/3
       Minuten vor Anpfiff stehen in keiner vorliegenden Quelle – weder SRO, Anlagen
       5.1/5.2, SpOF, RuVO noch WKB Halle mit Anlage 2 (Einsatzordnung Spielrichter).
-      Quelle nennen, umformulieren oder streichen.
+      Die Fragen bleiben unverändert, die Quelle wird nachgereicht.
 
 - [x] ~~**Regeltext und Erläuterung sauber trennen.**~~ Erledigt am 6. August 2026,
       dieselbe Ursache wie oben. Fünf englische Regeltexte (2.1, 2.2, 2.2.1, 10.1,
