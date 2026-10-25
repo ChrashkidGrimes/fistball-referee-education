@@ -42,7 +42,8 @@ function fromB64url(s) {
   return atob(s);
 }
 
-/* rec = { lvl, date, attempt, name, pct, q: [[id, antwortIndex], …] } */
+/* rec = { lvl, date, attempt, name, pct, q: [[id, antwortIndex], …] }
+   Der Name muss bereits ohne | und , sein – das übernimmt die Eingabe. */
 function encode(rec) {
   var plain = [VERSION, rec.lvl, rec.date, rec.attempt, rec.name, rec.pct.toFixed(1),
     rec.q.map(function (x) { return x[0] + ":" + x[1]; }).join(",")].join("|");
@@ -56,21 +57,32 @@ function certNo(code) {
   return (crc.slice(0, 4) + "-" + crc.slice(4)).toUpperCase();
 }
 
-/* null, wenn der Code nicht lesbar ist oder die Prüfsumme nicht passt */
+/* null, wenn der Code nicht lesbar ist, die Prüfsumme nicht passt oder ein
+   Feld nicht dem Format entspricht. Die Prüfsumme kann jeder berechnen –
+   deshalb wird auch der Inhalt geprüft. */
+var FIELD = {
+  lvl: /^[RN]$/,
+  date: /^\d{4}-\d\d-\d\d$/,
+  attempt: /^[1-9]\d*$/,
+  pct: /^\d{1,3}\.\d$/,
+  q: /^[A-Za-z0-9-]+:-?\d+$/
+};
 function decode(code) {
   try {
-    var m = /^([A-Za-z0-9_-]+)\.([0-9a-f]{8})$/.exec(String(code == null ? "" : code).trim());
+    var m = /^([A-Za-z0-9_-]+)\.([0-9a-fA-F]{8})$/.exec(String(code == null ? "" : code).trim());
     if (!m) return null;
     var bytes = fromB64url(m[1]);
-    if (crc32(bytes) !== m[2]) return null;
+    if (crc32(bytes) !== m[2].toLowerCase()) return null;
     var f = fromUtf8(bytes).split("|");
     if (f.length !== 7 || f[0] !== VERSION) return null;
+    var q = f[6] ? f[6].split(",") : [];
+    if (!FIELD.lvl.test(f[1]) || !FIELD.date.test(f[2]) || !FIELD.attempt.test(f[3]) ||
+        !FIELD.pct.test(f[5]) || parseFloat(f[5]) > 100 ||
+        !q.every(function (x) { return FIELD.q.test(x); })) return null;
     return {
       lvl: f[1], date: f[2], attempt: parseInt(f[3], 10), name: f[4], pct: parseFloat(f[5]),
-      q: f[6] ? f[6].split(",").map(function (x) {
-        var p = x.split(":"); return [p[0], parseInt(p[1], 10)];
-      }) : [],
-      no: certNo(m[0])
+      q: q.map(function (x) { var p = x.split(":"); return [p[0], parseInt(p[1], 10)]; }),
+      no: certNo(m[1] + "." + m[2].toLowerCase())
     };
   } catch (e) { return null; }
 }
@@ -78,7 +90,7 @@ function decode(code) {
 /* Ergebnis gegen den aktuellen Katalog nachrechnen. Fragen, die es nicht
    mehr gibt, werden aufgeführt, aber nicht gewertet. */
 function regrade(dec, questions) {
-  var byId = {};
+  var byId = Object.create(null);   // keine Treffer auf __proto__ & Co.
   questions.forEach(function (q) { byId[q.id] = q; });
   var items = dec.q.map(function (x) {
     var q = byId[x[0]] || null;

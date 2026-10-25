@@ -85,6 +85,17 @@ ok(C.decode(body+'.00000000')===null,'falsche Pruefsumme -> ungueltig');
 ok(C.decode('kein code')===null&&C.decode('')===null&&C.decode(null)===null,'Unsinn -> ungueltig');
 ok(C.decode(C.encode(Object.assign({},rec,{name:'A|B'})))===null,'Trennzeichen im Namen wird nicht still uebernommen');
 
+const fresh=p=>{const b=Buffer.from(p,'utf8'); return b.toString('base64url')+'.'+C.crc32(b.toString('latin1'));};
+ok(C.crc32('123456789')==='cbf43926','CRC32 liefert den Standard-Pruefwert');
+ok(C.decode(fresh(plain))!==null,'neu berechnete Pruefsumme ist gueltig');
+ok(C.decode(' '+body+'.'+crc.toUpperCase()+' ')!==null,'Pruefsumme in Grossbuchstaben und Leerraum werden angenommen');
+ok(C.decode(fresh(plain.replace('|N|','|X|')))===null,'unbekannte Stufe -> ungueltig, auch mit passender Pruefsumme');
+ok(C.decode(fresh(plain.replace('|2026-10-25|','||')))===null,'leeres Datum -> ungueltig');
+ok(C.decode(fresh(plain.replace('|3|','|x|')))===null,'Versuch keine Zahl -> ungueltig');
+ok(C.decode(fresh(plain.replace('|88.3|','|188.3|')))===null,'Ergebnis ueber 100 % -> ungueltig');
+ok(C.decode(fresh(plain.replace('IFA-A-004:2','IFA-A-004:2:9')))===null,'kaputter Fragen-Eintrag -> ungueltig');
+{ const e=C.decode(C.encode(Object.assign({},rec,{q:[]}))); ok(e&&e.q.length===0,'leere Fragenliste uebersteht die Codierung'); }
+
 console.log('\n== Nachrechnen gegen den Katalog ==');
 const cat=[{id:'A',c:1},{id:'B',c:0},{id:'C',c:3}];
 const r1=C.regrade({q:[['A',1],['B',2],['C',3]]},cat);
@@ -92,6 +103,8 @@ ok(r1.c===2&&r1.n===3&&r1.pct===66.7,'2 von 3 richtig = 66,7 %');
 const r2=C.regrade({q:[['A',1],['X',0]]},cat);
 ok(r2.unknown===1&&r2.n===1&&r2.c===1,'unbekannte Frage wird gezaehlt, aber nicht gewertet');
 ok(r2.items[1].q===null&&r2.items[1].id==='X','unbekannte Frage ist markiert');
+const r3=C.regrade({q:[['__proto__',0],['constructor',1]]},cat);
+ok(r3.unknown===2&&r3.n===0,'Namen wie __proto__ gelten nicht als Frage');
 {
   const w0={};
   new Function('window',fs.readFileSync(DIR+'/assets/js/data-questions.js','utf8'))(w0);
