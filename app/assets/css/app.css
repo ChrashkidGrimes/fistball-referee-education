@@ -234,14 +234,15 @@ table.data tbody tr:nth-child(even){background:#fafbfe}
 .cert .name{font-size:27px;font-weight:800;border-bottom:2px solid var(--line);display:inline-block;padding:0 34px 7px;margin-bottom:22px;min-width:320px}
 .cert .body{font-size:16px;color:var(--ink);max-width:52ch;margin:0 auto 30px}
 .cert .foot{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:34px;gap:16px}
-.cert .qr{width:200px;margin:26px auto 8px}  /* rund 5 cm im Druck – der Code hat über 100 Module je Seite */
-.cert .qr svg{display:block;width:100%;height:auto}
+.cert .qr{width:200px;margin:26px auto 8px;padding:8px;box-sizing:content-box}  /* rund 5 cm im Druck – der Code hat über 100 Module je Seite */
+.cert .qr svg{display:block;width:100%;height:auto;shape-rendering:crispEdges}
 .cert .cno{font-size:12px;color:var(--muted);margin-top:4px;word-break:break-all}
 .cert .cno a{color:inherit}
 
 /* ---------- Verify ---------- */
 .vres{padding:22px;margin-top:20px;max-width:720px;border-left:5px solid var(--ok)}
 .vres.bad{border-left-color:var(--bad)}
+.vres.warn{border-left-color:#c8901a}
 .vres h2{margin:0 0 6px;font-size:19px}
 .vdl{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:14px 0}
 .vdl dt{color:var(--muted)}
@@ -286,5 +287,5 @@ table.data tbody tr:nth-child(even){background:#fafbfe}
   .hdr,.btnrow,.no-print{display:none!important}
   body{background:#fff}
   .wrap{padding:0;max-width:none}
-  .cert{border:2px solid var(--ifa-blue);box-shadow:none}
+  .cert{border:2px solid var(--ifa-blue);box-shadow:none;break-inside:avoid;padding:30px 40px}
 }

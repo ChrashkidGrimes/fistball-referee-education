@@ -271,5 +271,37 @@ console.log('\n== Pruefseite ==');
   ok(h.d.querySelector('#app [data-go="verify"]')!==null,'Link in den Einstellungen');
 }
 
+console.log('\n== Pruefseite: praeparierte Codes ==');
+{
+  const C2=boot(null).w.IFA_CERT;
+  const mk=(o)=>C2.encode(Object.assign({lvl:'R',date:'2026-10-25',attempt:1,name:'Erika',pct:80,
+    q:Array.from({length:40},(_,i)=>['IFA-A-'+String(i+1).padStart(3,'0'),0])},o));
+  let v=boot(null,{url:'https://x/#verify='+mk({name:'<img src=x onerror=alert(1)>'})});
+  ok(v.d.querySelector('#app img[src="x"]')===null&&/<img src=x/.test(v.T()),'HTML im Namen wird als Text angezeigt');
+  ok(/✓/.test(v.d.querySelector('.vres h2').textContent),'regulaere Pruefung ohne Warnung');
+  v=boot(null,{url:'https://x/#verify='+mk({pct:10})});
+  ok(v.d.querySelector('.vres.warn')!==null&&/keiner regulären Prüfung/.test(v.T()),'Ergebnis unter der Grenze -> Warnung');
+  v=boot(null,{url:'https://x/#verify='+mk({q:[['IFA-A-001',0],['IFA-A-001',0]]})});
+  ok(v.d.querySelector('.vres.warn')!==null,'doppelte Fragen und falsche Fragenzahl -> Warnung');
+  v=boot(null,{url:'https://x/#verify='+mk({q:[['IFA-A-001',7],['IFA-A-002',-1]].concat(Array.from({length:38},(_,i)=>['IFA-C-'+String(i+1).padStart(3,'0'),0]))})});
+  ok(v.d.querySelectorAll('.rq').length===40,'Antwortindex ausserhalb des Bereichs bricht nichts');
+  v=boot(null,{url:'https://x/#verify=abc%zz'});
+  ok(/Zertifikat prüfen/.test(v.T())&&/Code ungültig/.test(v.T()),'kaputtes %-Zeichen im Link: App startet, Code ungueltig');
+  ok(v.w.location.hash==='','Pruefcode verschwindet nach dem Start aus der Adresse');
+  v.w.location.hash='#verify='+mk({});
+  v.w.dispatchEvent(new v.w.HashChangeEvent('hashchange'));
+  ok(/Prüfsumme gültig/.test(v.T()),'neu eingefuegter Pruefllink im offenen Tab wird geprueft');
+}
+{
+  const a=boot(ready('R',{name:'Erika'}),{before:w=>{delete w.qrcode;}});
+  a.click('[data-go="level:R"]'); a.click('[data-go="exam:R"]'); runExam(a,1);
+  a.click('[data-go="cert:R"]');
+  ok(a.d.querySelector('.cert .cno')!==null,'ohne QR-Bibliothek: Zertifikat mit Nummer und Link');
+  const b=boot(ready('R',{name:'Erika',exam:{best:90,pct:90,c:36,n:40,date:'01.08.2026',
+    cert:{lvl:'R',date:'2026-10-25',attempt:1,name:'Erika',pct:'kaputt',c:36,n:40,q:[]}}}));
+  b.click('[data-go="level:R"]'); b.click('[data-go="cert:R"]');
+  ok(b.d.querySelector('.cert')!==null,'beschaedigter Speicherstand: Zertifikat rendert trotzdem');
+}
+
 console.log('\n'+pass+' bestanden, '+fail+' fehlgeschlagen');
 process.exit(fail?1:0);

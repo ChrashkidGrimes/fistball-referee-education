@@ -137,6 +137,7 @@ window.IFA_I18N = {
     verifyRegraded: "Nachgerechnet",
     verifyCatalog: "Der Fragenkatalog wurde seit der Prüfung geändert. Maßgeblich ist das Ergebnis laut Zertifikat.",
     verifyUnknown: "Frage nicht mehr im Katalog",
+    verifyOdd: "Achtung: Der Code ist unverändert, entspricht aber keiner regulären Prüfung (Ergebnis unter der Bestehensgrenze, falsche Fragenzahl oder doppelte Fragen). So erzeugt die App keine Zertifikate.",
     verifyGiven: "Gegebene Antwort:",
     verifyLimits: "Die Prüfung wurde unbeaufsichtigt abgelegt. Die Prüfsumme belegt, dass der Code nicht verändert wurde – nicht, wer die Fragen beantwortet hat.",
 
@@ -286,6 +287,7 @@ window.IFA_I18N = {
     verifyRegraded: "Recalculated",
     verifyCatalog: "The question catalogue has changed since the exam. The result on the certificate prevails.",
     verifyUnknown: "Question no longer in the catalogue",
+    verifyOdd: "Caution: the code is unaltered but does not match a regular exam (score below the pass mark, wrong number of questions or duplicate questions). The app never issues such certificates.",
     verifyGiven: "Answer given:",
     verifyLimits: "The exam was taken unsupervised. The checksum proves that the code has not been altered – not who answered the questions.",
 

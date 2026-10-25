@@ -802,8 +802,13 @@ function viewCert(lvl) {
   if (!ex || !(ex.best >= LEVELS[lvl].pass)) return viewLevel(lvl);
   /* rec fehlt bei Prüfungen von vor der Einführung des Prüfcodes */
   var rec = ex.cert || null;
-  var code = rec && window.IFA_CERT ? window.IFA_CERT.encode(rec) : null;
-  var url = code ? verifyUrl(code) : "";
+  var code = null, url = "", qr = "";
+  /* Beschädigter Speicherstand darf die Seite nicht abbrechen */
+  try {
+    code = rec && window.IFA_CERT ? window.IFA_CERT.encode(rec) : null;
+    url = code ? verifyUrl(code) : "";
+    qr = code ? qrSvg(url) : "";
+  } catch (e) { code = null; url = ""; }
   var name = rec ? rec.name : (p.name || "");
   var body = t("certBody", {
     lvl: lvlName(lvl),
@@ -822,7 +827,7 @@ function viewCert(lvl) {
         (rec ? "<span>" + esc(t("certAttempt")) + ": <b>" + rec.attempt + "</b></span>" : "") +
         "<span>" + esc(t("certDate")) + ": <b>" + esc(rec ? fmtDate(rec.date) : ex.date) + "</b></span></div>" +
       (code
-        ? '<div class="qr">' + qrSvg(url) + "</div>" +
+        ? '<div class="qr">' + qr + "</div>" +
           '<div class="cno">' + esc(t("certNo")) + ": <b>" + esc(window.IFA_CERT.certNo(code)) + "</b></div>" +
           '<div class="cno">' + esc(t("certVerifyAt")) + ' <a class="vurl" href="' + esc(url) + '">' +
             esc(url.split("#")[0]) + "</a></div>"
@@ -864,7 +869,7 @@ function viewSettings() {
 
 /* ---------- View: Zertifikat prüfen -------------------------------------- */
 function viewVerify(code) {
-  var form = '<div class="card" style="padding:22px;max-width:720px">' +
+  var form = '<div class="card no-print" style="padding:22px;max-width:720px">' +
       '<p style="margin:0 0 10px;color:var(--muted)">' + esc(t("verifyLead")) + "</p>" +
       '<textarea class="inp" id="verifyInput" rows="3" style="width:100%">' + esc(code || "") + "</textarea>" +
       '<div class="btnrow"><button class="btn" data-act="verify">' + esc(t("verifyBtn")) + "</button></div>" +
@@ -877,6 +882,11 @@ function viewVerify(code) {
     } else {
       var rg = window.IFA_CERT.regrade(dec, QUESTIONS);
       var changed = rg.unknown > 0 || rg.pct !== dec.pct;
+      /* Prüfsumme stimmt, aber so kann keine echte Prüfung ausgesehen haben:
+         unter der Grenze, falsche Fragenzahl oder dieselbe Frage mehrfach */
+      var seen = Object.create(null);
+      var dup = dec.q.some(function (x) { var d = seen[x[0]]; seen[x[0]] = true; return d; });
+      var odd = dec.pct < LEVELS[dec.lvl].pass || dec.q.length !== LEVELS[dec.lvl].exam.size || dup;
       var list = rg.items.map(function (x) {
         if (!x.q) return '<div class="rq no"><div class="qq">? ' + esc(x.id) + '</div>' +
           '<div class="aa">' + esc(t("verifyUnknown")) + "</div></div>";
@@ -887,7 +897,9 @@ function viewVerify(code) {
           (x.ok ? "" : "<br>" + esc(t("correctAnswerIs")) + " <b>" + esc(aa[x.q.c]) + "</b>") +
           "</div></div>";
       }).join("");
-      out = '<div class="card vres ok"><h2>✓ ' + esc(t("verifyValid")) + "</h2>" +
+      out = '<div class="card vres ' + (odd ? "warn" : "ok") + '"><h2>' + (odd ? "⚠ " : "✓ ") +
+          esc(t("verifyValid")) + "</h2>" +
+          (odd ? '<div class="hint">' + esc(t("verifyOdd")) + "</div>" : "") +
           '<dl class="vdl">' +
             "<dt>" + esc(t("verifyName")) + "</dt><dd>" + esc(dec.name) + "</dd>" +
             "<dt>" + esc(t("certLevel")) + "</dt><dd>" + esc(lvlName(dec.lvl)) + "</dd>" +
@@ -906,7 +918,7 @@ function viewVerify(code) {
     }
   }
   return "" +
-    '<div class="crumb"><a href="#" data-go="home">← ' + esc(t("appTitle")) + "</a></div>" +
+    '<div class="crumb no-print"><a href="#" data-go="home">← ' + esc(t("appTitle")) + "</a></div>" +
     "<h1>" + esc(t("verifyTitle")) + "</h1>" + form + out;
 }
 
@@ -1032,7 +1044,21 @@ document.addEventListener("change", function (e) {
 
 /* ---------- Start -------------------------------------------------------- */
 load();
-var startHash = /^#verify=(.+)$/.exec(window.location.hash || "");
-go(startHash ? { name: "verify", code: decodeURIComponent(startHash[1]) } : { name: "home" });
+/* Prüflink aus dem QR-Code. Der Code besteht nur aus URL-sicheren Zeichen und
+   wird deshalb nicht dekodiert – ein abgeschnittenes %-Zeichen soll die App
+   nicht am Start hindern. Danach verschwindet er aus der Adresse, damit ein
+   Neuladen auf der Startseite landet. */
+function hashCode() {
+  var m = /^#verify=(.+)$/.exec(window.location.hash || "");
+  if (!m) return null;
+  try { history.replaceState(null, "", window.location.pathname + window.location.search); } catch (e) { /* egal */ }
+  return m[1];
+}
+window.addEventListener("hashchange", function () {
+  var c = hashCode();
+  if (c) go({ name: "verify", code: c });
+});
+var startCode = hashCode();
+go(startCode ? { name: "verify", code: startCode } : { name: "home" });
 
 })();
