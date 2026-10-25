@@ -71,28 +71,42 @@ Prüfungen variieren zwischen zwei Versuchen.
 Nationalprüfung zieht 60 davon, also gut ein Viertel – nach einem Versuch ist der
 Bestand nicht annähernd erschöpft.
 
-**Nicht entschärft:** Die Auswertung zeigt nach der Prüfung jede richtige Antwort mit
-Fundstelle. Und das Ergebnis liegt im `localStorage`, lässt sich also in der
-Browserkonsole setzen.
+**Weiter offen:** Das Ergebnis liegt im `localStorage` und lässt sich in der
+Browserkonsole setzen. Ein so erzeugtes Zertifikat trägt aber keinen gültigen Prüfcode,
+solange niemand den Code gezielt nachbaut.
 
 Die Prozentgrenzen 70/65 und 85/75 stammen aus einer beaufsichtigten Einzelprüfung.
 In eine Selbstbedienungs-App übernommen, übertragen sie die Form, nicht die Wirkung.
 
+**Entschieden am 25. Oktober 2026: Weg 2.** Das Zertifikat bescheinigt die bestandene
+Abschlussprüfung und trägt einen Prüfcode, über den ein Verband es nachprüfen kann.
+Spec: `docs/superpowers/specs/2026-10-25-pruefnachweis-design.md`.
+
 **Weg 1 – Ausbildung, Prüfung bleibt beim Verband**
-- [ ] Bestehenslogik im Lernmodus zurücknehmen, Kapitelquizzes ohne Grenzwert
-- [ ] Zertifikat klar als Durcharbeitungsnachweis, nicht als Prüfungsergebnis
+- [x] ~~Zertifikat als Durcharbeitungsnachweis~~ – verworfen zugunsten von Weg 2.
 
 **Weg 2 – Prüfung soll zählen**
 - [x] ~~Fragenkatalog erweitern~~ – 114 Fragen ergänzt und freigegeben, Katalog von
       121 auf 235. Kein Kapitel ist mehr ohne Fragen.
 - [x] ~~Prüfungsumfang auf eine Teilmenge des Katalogs begrenzen~~ – erledigt (40 / 60)
-- [ ] Auswertung ohne Lösungen – nur Punktzahl und schwache Kapitel
-- [ ] Wartezeit zwischen Prüfungsversuchen
-- [ ] Serverseitige Ablage der Ergebnisse, sonst bleibt es manipulierbar
+- [x] ~~Auswertung ohne Lösungen~~ – bewusst abgewählt: Die Lösungen nach der Prüfung
+      dienen dem Lernen. Die Wartezeit und der Umfang des Katalogs dämpfen den Effekt.
+- [x] ~~Wartezeit zwischen Prüfungsversuchen~~ – 24 Stunden nach einem nicht
+      bestandenen Versuch. Liegt im Browser und ist umgehbar; die Versuchsnummer steht
+      deshalb im Prüfcode. Das Zurücksetzen des Fortschritts (je Stufe oder „alle
+      Daten“) löscht den Lernstand, behält aber Versuchszähler und Sperre – sonst ließe
+      sich die Wartezeit mit dem Knopf der App umgehen.
+- [x] ~~Serverseitige Ablage der Ergebnisse~~ – ersetzt durch den Prüfcode: Name,
+      Stufe, Datum, Versuch, Ergebnis und alle Antworten, abgesichert mit CRC32, als
+      QR-Code auf dem Zertifikat. Die Prüfseite rechnet das Ergebnis nach.
+      **Grenzen:** Die Prüfung ist unbeaufsichtigt. Die Prüfsumme ist kein Geheimnis –
+      wer den Quellcode liest, kann einen gültigen Code bauen. Der Code belegt, dass das
+      Zertifikat nicht nachträglich verändert wurde, nicht wer geantwortet hat.
 
 **Weg 3 – Server mit Verbands-Login**
 - [ ] Löst Manipulation und zentrale Auswertung, kostet laufenden Betrieb.
-      War bewusst abgewählt; erneut zu bewerten, falls Weg 2 gewählt wird.
+      Weiter abgewählt. Ein Zwischenschritt wäre ein Prüfungsschlüssel, den der Verband
+      vorab ausgibt (Spec, Ansatz 2) – lässt sich ohne Umbau des Prüfcodes ergänzen.
 
 ---
 

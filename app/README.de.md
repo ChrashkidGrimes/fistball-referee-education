@@ -3,7 +3,8 @@
 *[English version: `README.md`](README.md)*
 
 Lernprogramm für die Ausbildung von Faustball-Schiedsrichtern in den Stufen **Regional und National**.
-Statische Web-App ohne Server, Build-Schritt oder Abhängigkeiten. Läuft per Doppelklick auf `index.html`,
+Statische Web-App ohne Server und Build-Schritt; einziger Fremdcode ist eine kleine
+QR-Code-Bibliothek, die im Repository liegt. Läuft per Doppelklick auf `index.html`,
 auf GitHub Pages, SharePoint oder jedem beliebigen Webspace.
 
 **Quellen:** IFA-Spielregeln 2025 / IFA Rules of the Game 2025 (gültig ab 1. April 2025),
@@ -116,6 +117,21 @@ Verbandsordnungen kommen beide Stufen auf ihre volle Fragenzahl.
 
 Eine neue Stufe anzulegen heißt: Eintrag in `LEVELS`, Kürzel in `LEVEL_ORDER`, dazu die Schlüssel
 `lvl<X>Name` und `lvl<X>desc` in `assets/js/i18n.js`.
+
+### Prüfcode
+
+`assets/js/cert-code.js` codiert den besten bestandenen Versuch als
+`1|Stufe|Datum|Versuch|Name|Ergebnis|ID:Antwort,…`, UTF-8, base64url, dazu eine CRC32-Prüfsumme.
+Das Zertifikat zeigt ihn als QR-Code auf `#verify=<Code>`; unter `file://` zeigt er auf die
+veröffentlichte Adresse (`PUBLIC_URL` in `app.js`). Bei einer Prüfung mit 60 Fragen ist der Link
+rund 1.200 Zeichen lang; der QR-Code wird etwa 5 cm breit gedruckt. Die Prüfseite decodiert, prüft
+die Prüfsumme und rechnet das Ergebnis gegen den aktuellen Katalog nach. `decode` weist außerdem
+Codes zurück, deren Felder nicht dem erwarteten Format entsprechen (Stufe R/N, ISO-Datum, numerischer
+Versuch, Ergebnis höchstens 100, Einträge `ID:Index`), auch bei passender Prüfsumme. Nach einem
+nicht bestandenen Versuch ist die Prüfung 24 Stunden gesperrt (`EXAM_LOCK_MS`). Das Zurücksetzen des
+Fortschritts, je Stufe oder „alle Daten“, löscht den Lernstand, behält aber Versuchszähler und
+Sperre; sonst ließe sich die Wartezeit mit dem Knopf der App umgehen. QR-Codes erzeugt
+`assets/js/vendor/qrcode.js` (qrcode-generator 1.4.4, MIT, Kazuhiko Arase).
 
 ### Fortschritt aus der dreistufigen Fassung
 
@@ -268,12 +284,13 @@ npm test
 | Datei | Umfang |
 |-------|--------|
 | `app.test.js` | Navigation, Kapitelinhalte, Quiz- und Prüfungsablauf, Zertifikat, Abschaltung der Verbandsordnungen, Bildzuordnung der Handzeichen, Migration des Fortschritts aus der dreistufigen Fassung (49 Prüfungen) |
+| `cert.test.js` | Prüfcode (Codierung, Prüfsumme, Prüfung der Codefelder, Nachrechnen), Name vor der Prüfung, Versuchszähler und 24 Stunden Wartezeit, Nachprüfungsbereich zählt als nicht bestanden, Zurücksetzen behält Versuchszähler und Sperre, Zertifikat mit QR-Code, Prüfseite (86 Prüfungen) |
 | `exam-thresholds.test.js` | Prüfungen je Lizenzstufe mit definierten Trefferquoten; verifiziert bestanden / Nachprüfung / nicht bestanden, einschließlich der Fälle genau auf der Grenze (16 Prüfungen) |
 | `exam-composition.test.js` | Umfang und Pool-Verteilung der Prüfungen, Gewichtung, Variation zwischen Versuchen, Verhalten bei abgeschalteten Verbandsordnungen (25 Prüfungen) |
 | `i18n.test.js` | Anzeige der deutsch-englischen Inhalte, Kennzeichnung der Foliensatz-Inhalte, sprachabhängige Diagramme (37 Prüfungen) |
 | `bilingual.test.js` | Vollständigkeit beider Sprachen in Inhalten, Fragen und Oberfläche; sucht deutsche Reste im englischen DOM von Kapiteln, Quiz und Auswertung (24 Prüfungen) |
 | `questions.test.js` | Herkunft und Fundstellen aller Fragen, Abdeckung aller 16 Kapitel, Entwurfsmechanismus, Bild- und Videofragen (73 Prüfungen) |
-| `docs.test.js` | Hält die Kennzahlen in allen vier READMEs mit den Daten in Deckung: Fragenzahl, Poolgrößen, Herkunftstabelle, Stufengrenzen, Liste der Testdateien (79 Prüfungen) |
+| `docs.test.js` | Hält die Kennzahlen in allen vier READMEs mit den Daten in Deckung: Fragenzahl, Poolgrößen, Herkunftstabelle, Stufengrenzen, Liste der Testdateien (81 Prüfungen) |
 | `manual-abgleich.test.js` | Prüft jede englische Erläuterung gegen die offiziellen Ausgaben und dass kein Regeltext eine Erläuterung verschluckt hat – inhaltlich und über das Längenverhältnis zwischen Deutsch und Englisch. Ohne die PDFs im Ordner entfällt der Volltextteil (16 Prüfungen) |
 
 ### Bilder neu erzeugen
@@ -333,8 +350,8 @@ Die beiden generierten Dateien stammen aus den PDFs bzw. den Moodle-XML-Exporten
 
 Logo und Bildmaterial: © International Fistball Association. Verwendung des Logos nur nach Absprache mit
 der IFA (marketing@fistball.sport). Regeltexte © IFA, Kopien – auch Auszüge – erfordern die Genehmigung
-der IFA. Das Zertifikat der App ist eine Lernbestätigung und ersetzt keine Lizenzerteilung durch einen
-Mitgliedsverband.
+der IFA. Das Zertifikat der App bescheinigt eine unbeaufsichtigt abgelegte Prüfung und ersetzt keine
+Lizenzerteilung durch einen Mitgliedsverband.
 
 ### Generatoren
 

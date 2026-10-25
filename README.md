@@ -14,9 +14,15 @@ own referees.
 
 ## What this is
 
-A static web app with no server, no build step and no dependencies. Opening `app/index.html` in a
+A static web app with no server and no build step; the only third-party code is a small QR-code
+library kept in the repository. Opening `app/index.html` in a
 browser is enough — locally by double-click, on GitHub Pages or on any web space. Learning progress
 lives in the browser's `localStorage`; there are no accounts and no data leaves the device.
+
+**Certificate.** Passing the final exam produces a certificate with a verification code as a QR
+code. Scanning it opens the app's *Verify certificate* page, which shows name, level, date, attempt
+and every answer, and recalculates the score. The exam is unsupervised and the checksum is not a
+secret: the code proves that the certificate has not been altered, not who answered the questions.
 
 | | |
 |---|---|
@@ -68,5 +74,5 @@ internal use requires IFA approval — see the open points.
 
 Logo and image material © International Fistball Association. Use of the logo only in agreement with
 the IFA (marketing@fistball.sport). Rule texts © IFA; copies — including extracts — require IFA
-approval. The certificate issued by the app confirms completion of the programme and does not replace
-a licence granted by a member federation.
+approval. The app's certificate attests an exam taken unsupervised and does not replace the licence award by
+a member federation.

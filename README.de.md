@@ -14,9 +14,15 @@ Association, die ihre Schiedsrichter selbst ausbilden.
 
 ## Was das ist
 
-Eine statische Web-App ohne Server, Build-Schritt oder Abhängigkeiten. `app/index.html` im Browser
+Eine statische Web-App ohne Server und Build-Schritt; einziger Fremdcode ist eine kleine
+QR-Code-Bibliothek, die im Repository liegt. `app/index.html` im Browser
 öffnen genügt – lokal per Doppelklick, auf GitHub Pages oder auf beliebigem Webspace. Der Lernfortschritt
 liegt im `localStorage` des Browsers, es gibt keine Konten und keine Datenübertragung.
+
+**Zertifikat.** Wer die Abschlussprüfung besteht, erhält ein Zertifikat mit Prüfcode als QR-Code.
+Der Scan öffnet die Seite *Zertifikat prüfen* der App: Name, Stufe, Datum, Versuch und jede
+Antwort, das Ergebnis wird nachgerechnet. Die Prüfung ist unbeaufsichtigt und die Prüfsumme kein
+Geheimnis – der Code belegt, dass das Zertifikat nicht verändert wurde, nicht wer geantwortet hat.
 
 | | |
 |---|---|
@@ -67,5 +73,5 @@ den internen Gebrauch hinaus ist die Freigabe der IFA einzuholen – siehe die o
 
 Logo und Bildmaterial © International Fistball Association. Verwendung des Logos nur nach Absprache mit
 der IFA (marketing@fistball.sport). Regeltexte © IFA, Kopien – auch Auszüge – erfordern die Genehmigung
-der IFA. Das Zertifikat der App ist eine Lernbestätigung und ersetzt keine Lizenzerteilung durch einen
-Mitgliedsverband.
+der IFA. Das Zertifikat der App bescheinigt eine unbeaufsichtigt abgelegte Prüfung und ersetzt keine
+Lizenzerteilung durch einen Mitgliedsverband.

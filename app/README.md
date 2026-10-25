@@ -3,7 +3,8 @@
 *[Deutsche Fassung: `README.de.md`](README.de.md)*
 
 Training programme for fistball referees at **regional and national level**.
-A static web app with no server, no build step and no dependencies. Runs by double-clicking
+A static web app with no server, no build step; the only third-party code is a small QR-code
+library kept in the repository. Runs by double-clicking
 `index.html`, on GitHub Pages, SharePoint or any web space.
 
 **Sources:** IFA Rules of the Game 2025 / IFA-Spielregeln 2025 (valid from 1 April 2025),
@@ -115,6 +116,20 @@ the federation regulations both levels reach their full question count.
 
 Adding a new level means: an entry in `LEVELS`, its key in `LEVEL_ORDER`, plus the keys `lvl<X>Name`
 and `lvl<X>desc` in `assets/js/i18n.js`.
+
+### Verification code
+
+`assets/js/cert-code.js` encodes the best passed attempt as
+`1|level|date|attempt|name|score|ID:answer,…`, UTF-8, base64url, plus a CRC32 checksum. The
+certificate shows it as a QR code pointing to `#verify=<code>`; under `file://` it points to the
+published address (`PUBLIC_URL` in `app.js`). For a 60-question exam the link is about 1,200
+characters; the QR code is printed about 5 cm wide. The verify page decodes it, checks the checksum
+and recalculates the score against the current catalogue. `decode` also rejects codes whose fields
+do not match the expected format (level R/N, ISO date, numeric attempt, score of at most 100,
+`ID:index` entries), even with a matching checksum. After a failed attempt the exam is locked for
+24 hours (`EXAM_LOCK_MS`). Resetting progress, per level or "all data", deletes the learning
+progress but keeps the attempt counter and the lock; otherwise the app's own button would bypass the
+wait. QR codes come from `assets/js/vendor/qrcode.js` (qrcode-generator 1.4.4, MIT, Kazuhiko Arase).
 
 ### Progress from the three-level version
 
@@ -264,12 +279,13 @@ npm test
 | File | Scope |
 |------|-------|
 | `app.test.js` | Navigation, chapter content, quiz and exam flow, certificate, switching off the federation regulations, image mapping of the hand signals, migration of progress from the three-level version (49 checks) |
+| `cert.test.js` | Verification code (encoding, checksum, validation of the code fields, recalculation), name before the exam, attempt counter and 24-hour wait, retake band counts as fail, reset keeps attempt counter and lock, certificate with QR code, verify page (86 checks) |
 | `exam-thresholds.test.js` | Exams per licence level at defined hit rates; verifies pass / retake / fail, including the cases exactly on the threshold (16 checks) |
 | `exam-composition.test.js` | Size and pool distribution of the exams, weighting, variation between attempts, behaviour with the federation regulations switched off (25 checks) |
 | `i18n.test.js` | Display of the German and English content, marking of the slide-deck content, language-dependent diagrams (37 checks) |
 | `bilingual.test.js` | Completeness of both languages in content, questions and interface; hunts for German remnants in the English DOM of chapters, quiz and result screen (24 checks) |
 | `questions.test.js` | Origin and references of all questions, coverage of all 16 chapters, draft mechanism, image and video questions (73 checks) |
-| `docs.test.js` | Keeps the figures in all four READMEs in step with the data: question count, pool sizes, origin table, level thresholds, list of test files (79 checks) |
+| `docs.test.js` | Keeps the figures in all four READMEs in step with the data: question count, pool sizes, origin table, level thresholds, list of test files (81 checks) |
 | `manual-abgleich.test.js` | Checks every English interpretation against the official editions, and that no rule text has swallowed an interpretation — by content and by the length ratio between German and English. Skips the full-text part when the PDFs are absent (16 checks) |
 
 ### Regenerating the images
@@ -327,8 +343,8 @@ The two generated files are derived from the PDFs and the Moodle XML exports in 
 
 Logo and image material: © International Fistball Association. Use of the logo only in agreement with
 the IFA (marketing@fistball.sport). Rule texts © IFA; copies — including extracts — require IFA
-approval. The certificate issued by the app confirms completion of the programme and does not replace
-a licence granted by a member federation.
+approval. The app's certificate attests an exam taken unsupervised and does not replace the licence award by
+a member federation.
 
 ### Generators
 
