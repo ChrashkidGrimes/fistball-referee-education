@@ -371,6 +371,7 @@ function viewHome() {
     '<p class="lead">' + esc(t("homeLead")) + "</p>" +
     "<h2>" + esc(t("chooseLevel")) + "</h2>" +
     '<div class="levels">' + cards + "</div>" +
+    '<p style="margin:18px 0 0"><a href="#" data-go="verify">' + esc(t("verifyTitle")) + " →</a></p>" +
     '<div class="hint" style="margin-top:34px"><b>' + esc(t("sources")) + ":</b> " +
       esc(t("sourcesText")) + "</div>";
 }
@@ -857,7 +858,56 @@ function viewSettings() {
         '<div class="btnrow"><button class="btn gho sm" data-act="resetall">' + esc(t("setResetBtn")) + "</button></div>" +
       "</span></div>" +
     "</div>" +
+    '<p style="max-width:720px"><a href="#" data-go="verify">' + esc(t("verifyTitle")) + " →</a></p>" +
     '<div class="hint" style="max-width:720px"><b>' + esc(t("sources")) + ":</b> " + esc(t("sourcesText")) + "</div>";
+}
+
+/* ---------- View: Zertifikat prüfen -------------------------------------- */
+function viewVerify(code) {
+  var form = '<div class="card" style="padding:22px;max-width:720px">' +
+      '<p style="margin:0 0 10px;color:var(--muted)">' + esc(t("verifyLead")) + "</p>" +
+      '<textarea class="inp" id="verifyInput" rows="3" style="width:100%">' + esc(code || "") + "</textarea>" +
+      '<div class="btnrow"><button class="btn" data-act="verify">' + esc(t("verifyBtn")) + "</button></div>" +
+    "</div>";
+  var out = "";
+  if (code) {
+    var dec = window.IFA_CERT ? window.IFA_CERT.decode(code) : null;
+    if (!dec || !LEVELS[dec.lvl]) {
+      out = '<div class="card vres bad"><h2>✗ ' + esc(t("verifyInvalid")) + "</h2></div>";
+    } else {
+      var rg = window.IFA_CERT.regrade(dec, QUESTIONS);
+      var changed = rg.unknown > 0 || rg.pct !== dec.pct;
+      var list = rg.items.map(function (x) {
+        if (!x.q) return '<div class="rq no"><div class="qq">? ' + esc(x.id) + '</div>' +
+          '<div class="aa">' + esc(t("verifyUnknown")) + "</div></div>";
+        var aa = answers(x.q);
+        return '<div class="rq ' + (x.ok ? "yes" : "no") + '">' +
+          '<div class="qq">' + (x.ok ? "✓ " : "✗ ") + esc(localized(x.q.q)) + "</div>" +
+          '<div class="aa">' + esc(t("verifyGiven")) + " " + esc(x.a >= 0 && aa[x.a] != null ? aa[x.a] : "–") +
+          (x.ok ? "" : "<br>" + esc(t("correctAnswerIs")) + " <b>" + esc(aa[x.q.c]) + "</b>") +
+          "</div></div>";
+      }).join("");
+      out = '<div class="card vres ok"><h2>✓ ' + esc(t("verifyValid")) + "</h2>" +
+          '<dl class="vdl">' +
+            "<dt>" + esc(t("verifyName")) + "</dt><dd>" + esc(dec.name) + "</dd>" +
+            "<dt>" + esc(t("certLevel")) + "</dt><dd>" + esc(lvlName(dec.lvl)) + "</dd>" +
+            "<dt>" + esc(t("certDate")) + "</dt><dd>" + esc(fmtDate(dec.date)) + "</dd>" +
+            "<dt>" + esc(t("certAttempt")) + "</dt><dd>" + dec.attempt + "</dd>" +
+            "<dt>" + esc(t("certNo")) + "</dt><dd>" + esc(dec.no) + "</dd>" +
+            "<dt>" + esc(t("verifyScore")) + "</dt><dd>" + fmtPct(dec.pct) + "</dd>" +
+            "<dt>" + esc(t("verifyRegraded")) + "</dt><dd>" + fmtPct(rg.pct) + " (" +
+              esc(t("scoreLine", { c: rg.c, n: rg.n })) + ")</dd>" +
+            "<dt>" + esc(t("passMark")) + "</dt><dd>" + LEVELS[dec.lvl].pass + " %</dd>" +
+          "</dl>" +
+          (changed ? '<div class="hint">' + esc(t("verifyCatalog")) + "</div>" : "") +
+          '<p style="font-size:13px;color:var(--muted);margin:12px 0 0">' + esc(t("verifyLimits")) + "</p>" +
+        "</div>" +
+        "<h2>" + esc(t("reviewAnswers")) + '</h2><div class="rlist">' + list + "</div>";
+    }
+  }
+  return "" +
+    '<div class="crumb"><a href="#" data-go="home">← ' + esc(t("appTitle")) + "</a></div>" +
+    "<h1>" + esc(t("verifyTitle")) + "</h1>" + form + out;
 }
 
 /* ---------- Render ------------------------------------------------------- */
@@ -871,6 +921,7 @@ function render() {
     case "quiz":     html = viewQuiz(); break;
     case "cert":     html = viewCert(v.lvl); break;
     case "settings": html = viewSettings(); break;
+    case "verify":   html = viewVerify(v.code); break;
     default:         html = viewHome();
   }
   el("app").innerHTML = html;
@@ -890,6 +941,7 @@ document.addEventListener("click", function (e) {
     var parts = n.getAttribute("data-go").split(":");
     if (parts[0] === "home") return go({ name: "home" });
     if (parts[0] === "settings") return go({ name: "settings" });
+    if (parts[0] === "verify") return go({ name: "verify" });
     if (parts[0] === "level") return go({ name: "level", lvl: parts[1] });
     if (parts[0] === "chapter") return go({ name: "chapter", lvl: parts[1], ch: parseInt(parts[2], 10) });
     if (parts[0] === "cert") return go({ name: "cert", lvl: parts[1] });
@@ -952,6 +1004,12 @@ document.addEventListener("click", function (e) {
       state.quiz = buildQuiz(q.lvl, q.ch, q.exam);
       window.scrollTo(0, 0); return render();
     }
+    if (act === "verify") {
+      var vi = el("verifyInput");
+      /* Auch die ganze Adresse aus dem QR-Code wird angenommen */
+      var vc = vi ? vi.value.trim().replace(/^.*#verify=/, "") : "";
+      return go({ name: "verify", code: vc });
+    }
     if (act === "print") { window.print(); return; }
     if (act === "resetall") {
       if (confirm(t("setResetConfirm"))) {
@@ -974,6 +1032,7 @@ document.addEventListener("change", function (e) {
 
 /* ---------- Start -------------------------------------------------------- */
 load();
-go({ name: "home" });
+var startHash = /^#verify=(.+)$/.exec(window.location.hash || "");
+go(startHash ? { name: "verify", code: decodeURIComponent(startHash[1]) } : { name: "home" });
 
 })();

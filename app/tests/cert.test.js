@@ -229,5 +229,47 @@ console.log('\n== Zertifikat ==');
      'per file:// zeigt der QR-Code auf die veroeffentlichte Adresse');
 }
 
+console.log('\n== Pruefseite ==');
+{
+  const a=boot(ready('N',{name:'Erika'}));
+  a.click('[data-go="level:N"]'); a.click('[data-go="exam:N"]'); runExam(a,0.9);
+  a.click('[data-go="cert:N"]');
+  const link=a.d.querySelector('.cert .vurl').getAttribute('href');
+  const code=link.split('#verify=')[1];
+
+  const v=boot(null,{url:link});
+  ok(/Zertifikat prüfen/.test(v.T()),'#verify= oeffnet die Pruefseite');
+  ok(/Prüfsumme gültig/.test(v.T()),'gueltiger Code erkannt');
+  ok(/Erika/.test(v.T())&&/Nationale Lizenz/.test(v.T()),'Name und Stufe angezeigt');
+  ok(/90 %/.test(v.T()),'Ergebnis angezeigt');
+  ok(v.d.querySelectorAll('.rq').length===60,'alle 60 Fragen aufgefuehrt');
+  ok(!/Fragenkatalog wurde/.test(v.T()),'kein Katalog-Hinweis bei unveraendertem Katalog');
+  ok(!v.store().progress,'Pruefseite schreibt keinen Fortschritt');
+
+  const m=boot(null);
+  m.click('[data-go="verify"]');
+  m.d.getElementById('verifyInput').value=link;
+  m.click('[data-act="verify"]');
+  ok(/Prüfsumme gültig/.test(m.T()),'eingefuegte Adresse wird akzeptiert');
+  m.d.getElementById('verifyInput').value=code.slice(0,-1)+(code.slice(-1)==='0'?'1':'0');
+  m.click('[data-act="verify"]');
+  ok(/Code ungültig oder verändert/.test(m.T())&&m.d.querySelectorAll('.rq').length===0,
+     'veraenderter Code -> ungueltig, keine Details');
+
+  const first=a.w.IFA_CERT.decode(code).q[0][0];
+  const k=boot(null,{url:link,before:w=>{w.IFA_QUESTIONS=w.IFA_QUESTIONS.filter(q=>q.id!==first);}});
+  ok(/Fragenkatalog wurde seit der Prüfung geändert/.test(k.T()),'geaenderter Katalog -> Hinweis');
+  ok(/nicht mehr im Katalog/.test(k.T()),'fehlende Frage markiert');
+
+  const e=boot({lang:'en',nat:true,progress:{}},{url:link});
+  ok(/Checksum valid/.test(e.T()),'Pruefseite auf Englisch');
+}
+{
+  const h=boot(null);
+  ok(h.d.querySelector('#app [data-go="verify"]')!==null,'Link auf der Startseite');
+  h.click('[data-go="settings"]');
+  ok(h.d.querySelector('#app [data-go="verify"]')!==null,'Link in den Einstellungen');
+}
+
 console.log('\n'+pass+' bestanden, '+fail+' fehlgeschlagen');
 process.exit(fail?1:0);
