@@ -170,7 +170,7 @@ function nQuestions(n) { return n + " " + t(n === 1 ? "questionOne" : "questions
 
 /* Name für Zertifikat und Prüfcode: | und , sind im Code Trennzeichen */
 function cleanName(s) {
-  return String(s == null ? "" : s).replace(/[|,]/g, "").replace(/\s+/g, " ").trim();
+  return String(s == null ? "" : s).replace(/[|,]/g, "").replace(/\s+/g, " ").trim().slice(0, 80);
 }
 
 /* ---------- Helfer ------------------------------------------------------- */
@@ -191,13 +191,13 @@ function shuffle(arr) {
 function pct(c, n) { return n ? Math.round((c / n) * 1000) / 10 : 0; }
 function fmtPct(v) { return (Math.round(v * 10) / 10).toString().replace(".", state.lang === "de" ? "," : ".") + " %"; }
 function today() {
-  var d = new Date();
+  var d = new Date(Date.now());
   return state.lang === "de"
     ? ("0" + d.getDate()).slice(-2) + "." + ("0" + (d.getMonth() + 1)).slice(-2) + "." + d.getFullYear()
     : d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
 }
 function isoToday() {
-  var d = new Date();
+  var d = new Date(Date.now());
   return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
 }
 /* ISO-Datum in der Schreibweise der aktiven Sprache */
@@ -313,9 +313,20 @@ function examLockUntil(lvl) {
   return ex && ex.lastFail ? ex.lastFail + EXAM_LOCK_MS : 0;
 }
 function examLocked(lvl) { return examLockUntil(lvl) > Date.now(); }
+/* Zurücksetzen löscht den Lernfortschritt, nicht Versuchszähler und Sperre –
+   sonst ließe sich die Wartezeit über den eigenen Knopf umgehen. */
+function resetLevel(lvl) {
+  var ex = state.progress[lvl] && state.progress[lvl].exam;
+  delete state.progress[lvl];
+  if (ex && (ex.attempts || ex.lastFail)) prog(lvl).exam = { attempts: ex.attempts, lastFail: ex.lastFail };
+}
 
 /* ---------- Routing ------------------------------------------------------ */
-function go(view) { state.view = view; window.scrollTo(0, 0); render(); }
+function go(view) {
+  /* Der Hinweis auf den fehlenden Namen gilt nur für die eine Anzeige */
+  if (view.name !== "level") state.nameMissing = null;
+  state.view = view; window.scrollTo(0, 0); render();
+}
 
 /* ---------- Rendering: Kopf ---------------------------------------------- */
 function renderHeader() {
@@ -333,7 +344,7 @@ function viewHome() {
   var cards = LEVEL_ORDER.map(function (L) {
     var cfg = LEVELS[L], st = levelStats(L), p = prog(L);
     var qn = examPlan(L).size;
-    var started = st.done > 0 || p.exam;
+    var started = st.done > 0 || (p.exam && p.exam.best != null);
     return '' +
       '<div class="card lvl" data-go="level:' + L + '">' +
         '<div class="lvl-badge">' + L + "</div>" +
@@ -401,7 +412,8 @@ function viewLevel(lvl) {
     short = '<div class="hint" style="margin:12px 0 0">' +
       esc(t("examFilled", { pools: plan.lacking.join(", ") })) + "</div>";
   }
-  var ex = p.exam;
+  /* Nach dem Zurücksetzen bleiben nur Versuchszähler und Sperre – kein Ergebnis */
+  var ex = p.exam && p.exam.best != null ? p.exam : null;
   var examBox;
   if (!st.ready) {
     examBox = '<div class="card" style="padding:22px">' +
@@ -425,8 +437,8 @@ function viewLevel(lvl) {
       (examLocked(lvl)
         ? '<div class="hint" style="margin:10px 0 0">' +
           esc(t("examLockedUntil", { when: fmtDateTime(examLockUntil(lvl)) })) + "</div>" : "") +
-      (ex && ex.attempts ? '<p style="margin:10px 0 0;font-size:14.5px"><b>' + esc(t("attempts")) + ":</b> " +
-        ex.attempts + "</p>" : "") +
+      (p.exam && p.exam.attempts ? '<p style="margin:10px 0 0;font-size:14.5px"><b>' + esc(t("attempts")) + ":</b> " +
+        p.exam.attempts + "</p>" : "") +
       '<div class="btnrow">' +
         '<button class="btn" data-go="exam:' + lvl + '"' + (examLocked(lvl) ? " disabled" : "") + ">" +
           esc(ex ? t("retryExam") : t("startExam")) + "</button>" +
@@ -769,7 +781,7 @@ function finishQuiz() {
 /* ---------- View: Zertifikat --------------------------------------------- */
 function viewCert(lvl) {
   var p = prog(lvl), ex = p.exam;
-  if (!ex) return viewLevel(lvl);
+  if (!ex || !(ex.best >= LEVELS[lvl].pass)) return viewLevel(lvl);
   var name = (p.name || "");
   return "" +
     '<div class="crumb no-print"><a href="#" data-go="level:' + lvl + '">← ' + esc(t("backToPath")) + "</a></div>" +
@@ -875,7 +887,7 @@ document.addEventListener("click", function (e) {
   n = e.target.closest("[data-reset]");
   if (n) {
     if (confirm(t("resetConfirm"))) {
-      delete state.progress[n.getAttribute("data-reset")];
+      resetLevel(n.getAttribute("data-reset"));
       save(); render();
     }
     return;
@@ -918,7 +930,10 @@ document.addEventListener("click", function (e) {
     }
     if (act === "print") { window.print(); return; }
     if (act === "resetall") {
-      if (confirm(t("setResetConfirm"))) { state.progress = {}; save(); render(); }
+      if (confirm(t("setResetConfirm"))) {
+        Object.keys(state.progress).forEach(resetLevel);
+        save(); render();
+      }
       return;
     }
   }

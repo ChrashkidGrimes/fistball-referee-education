@@ -169,5 +169,32 @@ console.log('\n== Versuche und Wartezeit ==');
   ok(ex.cert.attempt===4&&ex.cert.pct===100,'besserer bestandener Versuch ersetzt ihn');
 }
 
+console.log('\n== Nachpruefungsband und Zuruecksetzen ==');
+{
+  const a=boot(ready('R',{name:'Erika'}));
+  a.click('[data-go="level:R"]'); a.click('[data-go="exam:R"]'); runExam(a,0.675);
+  const ex=a.store().progress.R.exam;
+  ok(ex.lastFail&&!ex.cert,'67,5 % (Nachpruefung) gilt als nicht bestanden und sperrt');
+  ok(/Nachprüfung/.test(a.T())&&/Nächster Versuch möglich ab/.test(a.T())&&!a.d.querySelector('[data-act="again"]'),
+     'Nachpruefung: Hinweis auf Wartezeit, kein Sofort-Wiederholen');
+  a.click('[data-go="level:R"]'); a.click('[data-reset="R"]');
+  const g=a.store().progress.R;
+  ok(g.exam&&g.exam.attempts===1&&g.exam.lastFail===ex.lastFail,'Zuruecksetzen behaelt Versuchszaehler und Sperre');
+  ok(!g.quiz||Object.keys(g.quiz).length===0,'Zuruecksetzen loescht den Lernfortschritt');
+  a.click('[data-go="settings"]'); a.click('[data-act="resetall"]');
+  ok(a.store().progress.R.exam.attempts===1,'auch "Alle Daten zuruecksetzen" behaelt den Zaehler');
+  a.click('[data-go="home"]');
+  ok(/Starten|starten/.test(a.d.querySelector('[data-go="level:R"]').textContent),'Stufe gilt nach dem Zuruecksetzen als nicht begonnen');
+}
+{
+  const a=boot(ready('R'));
+  a.click('[data-go="level:R"]'); a.click('[data-go="exam:R"]');
+  a.click('[data-go="home"]'); a.click('[data-go="level:R"]');
+  ok(!/Bitte zuerst den Namen eintragen/.test(a.T()),'Hinweis auf fehlenden Namen verschwindet beim Verlassen');
+  a.d.getElementById('examName').value='x'.repeat(200);
+  a.click('[data-go="exam:R"]');
+  ok(a.store().progress.R.name.length===80,'Name auf 80 Zeichen begrenzt');
+}
+
 console.log('\n'+pass+' bestanden, '+fail+' fehlgeschlagen');
 process.exit(fail?1:0);
