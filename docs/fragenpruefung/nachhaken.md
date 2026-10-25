@@ -14,10 +14,10 @@ Einzelheiten zu jedem Befund: `2026-10-25-befunde.md`.
 
 Stand nach der Prüfung gegen die Ordnungen von Faustball Deutschland
 (`2026-10-25-befunde-verband.md`). Erledigt sind seitdem BS-2022-015 (Antwort nach SpOF
-4.4.1.4.2), C9-2022-021, CS-2022-027, BS-2023-034 und BS-2022-032 (Fundstellen).
+4.4.1.4.2), C9-2022-021, CS-2022-027, BS-2023-034, BS-2022-032 und AW-2022-012
+(Fundstellen; „Ärmelabzeichen am Oberarm“ steht in SRO 4.5.1).
 
 | Frage | Offener Punkt |
 |-------|---------------|
 | B3-2022-034 | Seitenwechsel im Entscheidungssatz verpasst: Weder Spielregeln noch SpOF, SRO oder WKB regeln den Fall. Die markierte Antwort (Satz auf den Stand bei 6 Gutbällen zurücksetzen) ist nicht ableitbar, „Wechsel nachholen, Stand bleibt“ wäre ebenso vertretbar. |
 | IFA-C-037, IFA-C-038 | 30 Minuten Anwesenheit bzw. Ablauf 5/3 Minuten vor Anpfiff: in keiner vorliegenden Quelle belegt, auch nicht in WKB Anlage 2. |
-| AW-2022-012 | Auf welchem Arm das Schiedsrichterabzeichen sitzt, ist nirgends geregelt; „Oberarm“ stützt nur das „Ärmelabzeichen“ in SRO Anlage 5.1, Nr. 1 d. |
