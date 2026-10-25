@@ -119,5 +119,15 @@ console.log('\n== Anzeige im Browser-DOM ==');
      (mr?' ('+mr[0].trim().slice(0,70)+')':''));
 }
 
+console.log('\n== Bewusste Abweichung vom offiziellen Englisch ==');
+{
+  /* Die englische Ausgabe 2025 verlangt in 6.3 und 6.3.2 die erste Bodenberuehrung
+     "behind the service line" – eine Fehluebersetzung des deutschen "vor der
+     Angabelinie". Die IFA korrigiert das; die App verwendet schon "in front of". */
+  const en=C.find(c=>c.id===6).blocks.map(b=>b.x&&b.x.en||'').join(' ');
+  ok(!/ground[ -]contact[^.]*behind the service line/i.test(en.replace(/one foot in front of the service line – the other behind/g,'')),
+     'Kapitel 6 englisch: erste Bodenberuehrung "in front of the service line"');
+}
+
 console.log('\n'+pass+' bestanden, '+fail+' fehlgeschlagen');
 process.exit(fail?1:0);

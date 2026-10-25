@@ -274,6 +274,13 @@ Spec: `docs/superpowers/specs/2026-10-25-pruefnachweis-design.md`.
       Voraussetzung ist eine von der IFA freigegebene Regelübersetzung – ohne die
       gäbe es nur eine inoffizielle Fassung.
 
+- [x] ~~**Englischer Regeltext 6.3 / 6.3.2: „behind the service line“.**~~ Am 25. Oktober
+      2026 von Toby bestätigt: Die englische Ausgabe 2025 übersetzt „vor der Angabelinie“
+      falsch mit „behind the service line“. Gemeint ist die Seite zur Mittellinie hin –
+      „in front of“. Die IFA korrigiert den Regeltext. Die App weicht bewusst ab und
+      verwendet in Kapitel 6 und in den Fragen „in front of the service line“;
+      `bilingual.test.js` hält das fest.
+
 ---
 
 ## D – Organisation und Rechte

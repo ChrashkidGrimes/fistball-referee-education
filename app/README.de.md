@@ -290,7 +290,7 @@ npm test
 | `exam-thresholds.test.js` | Prüfungen je Lizenzstufe mit definierten Trefferquoten; verifiziert bestanden / Nachprüfung / nicht bestanden, einschließlich der Fälle genau auf der Grenze (16 Prüfungen) |
 | `exam-composition.test.js` | Umfang und Pool-Verteilung der Prüfungen, Gewichtung, Variation zwischen Versuchen, Verhalten bei abgeschalteten Verbandsordnungen (25 Prüfungen) |
 | `i18n.test.js` | Anzeige der deutsch-englischen Inhalte, Kennzeichnung der Foliensatz-Inhalte, sprachabhängige Diagramme (37 Prüfungen) |
-| `bilingual.test.js` | Vollständigkeit beider Sprachen in Inhalten, Fragen und Oberfläche; sucht deutsche Reste im englischen DOM von Kapiteln, Quiz und Auswertung (24 Prüfungen) |
+| `bilingual.test.js` | Vollständigkeit beider Sprachen in Inhalten, Fragen und Oberfläche; sucht deutsche Reste im englischen DOM von Kapiteln, Quiz und Auswertung (25 Prüfungen) |
 | `questions.test.js` | Herkunft und Fundstellen aller Fragen, Abdeckung aller 16 Kapitel, Entwurfsmechanismus, Bild- und Videofragen (73 Prüfungen) |
 | `docs.test.js` | Hält die Kennzahlen in allen vier READMEs mit den Daten in Deckung: Fragenzahl, Poolgrößen, Herkunftstabelle, Stufengrenzen, Liste der Testdateien (81 Prüfungen) |
 | `manual-abgleich.test.js` | Prüft jede englische Erläuterung gegen die offiziellen Ausgaben und dass kein Regeltext eine Erläuterung verschluckt hat – inhaltlich und über das Längenverhältnis zwischen Deutsch und Englisch. Ohne die PDFs im Ordner entfällt der Volltextteil (16 Prüfungen) |

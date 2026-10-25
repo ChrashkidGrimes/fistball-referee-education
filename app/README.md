@@ -285,7 +285,7 @@ npm test
 | `exam-thresholds.test.js` | Exams per licence level at defined hit rates; verifies pass / retake / fail, including the cases exactly on the threshold (16 checks) |
 | `exam-composition.test.js` | Size and pool distribution of the exams, weighting, variation between attempts, behaviour with the federation regulations switched off (25 checks) |
 | `i18n.test.js` | Display of the German and English content, marking of the slide-deck content, language-dependent diagrams (37 checks) |
-| `bilingual.test.js` | Completeness of both languages in content, questions and interface; hunts for German remnants in the English DOM of chapters, quiz and result screen (24 checks) |
+| `bilingual.test.js` | Completeness of both languages in content, questions and interface; hunts for German remnants in the English DOM of chapters, quiz and result screen (25 checks) |
 | `questions.test.js` | Origin and references of all questions, coverage of all 16 chapters, draft mechanism, image and video questions (73 checks) |
 | `docs.test.js` | Keeps the figures in all four READMEs in step with the data: question count, pool sizes, origin table, level thresholds, list of test files (81 checks) |
 | `manual-abgleich.test.js` | Checks every English interpretation against the official editions, and that no rule text has swallowed an interpretation — by content and by the length ratio between German and English. Skips the full-text part when the PDFs are absent (16 checks) |
