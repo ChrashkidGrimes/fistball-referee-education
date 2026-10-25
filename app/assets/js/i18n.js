@@ -116,12 +116,15 @@ window.IFA_I18N = {
 
     /* Certificate */
     certKicker: "International Fistball Association",
-    certTitle: "Teilnahmebestätigung",
-    certBody: "hat das Lernprogramm der Schiedsrichter-Ausbildung durchgearbeitet und die Abschlussprüfung für die {lvl} mit {pct} % ({c} von {n} Fragen) bestanden.",
-    certName: "Name eintragen",
+    certTitle: "Zertifikat",
+    certBody: "hat die Abschlussprüfung für die {lvl} mit {pct} % ({c} von {n} Fragen) bestanden.",
     certDate: "Datum",
     certLevel: "Lizenzstufe",
-    certNote: "Dieses Dokument ist eine Lernbestätigung und ersetzt nicht die Lizenzerteilung durch den zuständigen Mitgliedsverband.",
+    certAttempt: "Versuch",
+    certNo: "Zertifikatsnummer",
+    certVerifyAt: "Echtheit prüfen:",
+    certNote: "Unbeaufsichtigt abgelegt. Die Echtheit lässt sich über den QR-Code prüfen. Dieses Zertifikat ersetzt nicht die Lizenzerteilung durch den zuständigen Mitgliedsverband.",
+    certNoCode: "Diese Prüfung wurde vor Einführung des Prüfcodes abgelegt. Für einen prüfbaren Nachweis die Prüfung erneut ablegen.",
     print: "Drucken / als PDF speichern",
 
     /* Settings */
@@ -249,12 +252,15 @@ window.IFA_I18N = {
     getCertificate: "View certificate",
 
     certKicker: "International Fistball Association",
-    certTitle: "Certificate of completion",
-    certBody: "has completed the referee education programme and passed the final exam for the {lvl} with {pct} % ({c} of {n} questions).",
-    certName: "Enter name",
+    certTitle: "Certificate",
+    certBody: "has passed the final exam for the {lvl} with {pct} % ({c} of {n} questions).",
     certDate: "Date",
     certLevel: "Licence level",
-    certNote: "This document confirms completion of the learning programme and does not replace the licence award by the responsible member federation.",
+    certAttempt: "Attempt",
+    certNo: "Certificate no.",
+    certVerifyAt: "Verify authenticity:",
+    certNote: "Taken unsupervised. Authenticity can be verified via the QR code. This certificate does not replace the licence award by the responsible member federation.",
+    certNoCode: "This exam was taken before verification codes were introduced. Retake the exam to obtain a verifiable certificate.",
     print: "Print / save as PDF",
 
     settings: "Settings",

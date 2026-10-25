@@ -155,7 +155,7 @@ ok(new Set(order).size===40,'keine Frage doppelt');
 
 console.log('\n== Zertifikat ==');
 click2('[data-go="cert:R"]');
-ok(/Teilnahmebestätigung/.test(txt2()),'Zertifikat rendert');
+ok(/Zertifikat/.test(d2.querySelector('.cert h1').textContent),'Zertifikat rendert');
 ok(/Regionale Lizenz/.test(txt2())&&/100\s%|100%/.test(txt2()),'Zertifikat zeigt Stufe und Ergebnis');
 
 console.log('\n== Nationale Fragen abschaltbar ==');

@@ -58,6 +58,9 @@ var LEVEL_ORDER = ["R", "N"];
 var STORE_KEY = "ifa-referee-education-v1";
 /* Wartezeit nach einer nicht bestandenen Abschlussprüfung */
 var EXAM_LOCK_MS = 24 * 3600 * 1000;
+/* Veröffentlichte Adresse – Ziel des QR-Codes, wenn die App per file://
+   läuft. Unter http(s) gilt die eigene Adresse. */
+var PUBLIC_URL = "https://chrashkidgrimes.github.io/fistball-referee-education/";
 /* Ablösung der Stufen C/B/A: C wird Regional, B und A werden National.
    Treffen beide auf N, gewinnt der weiter fortgeschrittene Stand. */
 var LEVEL_MIGRATION = { C: "R", B: "N", A: "N" };
@@ -778,28 +781,54 @@ function finishQuiz() {
   render();
 }
 
+function verifyUrl(code) {
+  var l = window.location;
+  var base = /^https?:$/.test(l.protocol) ? l.origin + l.pathname : PUBLIC_URL;
+  return base + "#verify=" + code;
+}
+/* QR-Code als SVG; leer, wenn die Bibliothek fehlt */
+function qrSvg(text) {
+  if (typeof window.qrcode !== "function") return "";
+  var qr = window.qrcode(0, "L");
+  qr.addData(text);
+  qr.make();
+  return qr.createSvgTag({ cellSize: 2, margin: 0, scalable: true });
+}
+
 /* ---------- View: Zertifikat --------------------------------------------- */
 function viewCert(lvl) {
   var p = prog(lvl), ex = p.exam;
   if (!ex || !(ex.best >= LEVELS[lvl].pass)) return viewLevel(lvl);
-  var name = (p.name || "");
+  /* rec fehlt bei Prüfungen von vor der Einführung des Prüfcodes */
+  var rec = ex.cert || null;
+  var code = rec && window.IFA_CERT ? window.IFA_CERT.encode(rec) : null;
+  var url = code ? verifyUrl(code) : "";
+  var name = rec ? rec.name : (p.name || "");
+  var body = t("certBody", {
+    lvl: lvlName(lvl),
+    pct: Math.round(rec ? rec.pct : ex.best),
+    c: rec ? rec.c : ex.c, n: rec ? rec.n : ex.n
+  });
   return "" +
     '<div class="crumb no-print"><a href="#" data-go="level:' + lvl + '">← ' + esc(t("backToPath")) + "</a></div>" +
     '<div class="cert">' +
       '<img src="assets/img/ifa-logo.png" alt="IFA">' +
       '<div class="kicker">' + esc(t("certKicker")) + "</div>" +
       "<h1>" + esc(t("certTitle")) + "</h1>" +
-      '<div class="name" id="certName">' + (name ? esc(name) : '<span style="color:#aab">' + esc(t("certName")) + "</span>") + "</div>" +
-      '<div class="body">' + esc(t("certBody", {
-        lvl: lvlName(lvl), pct: Math.round(ex.best), c: ex.c, n: ex.n
-      })) + "</div>" +
+      '<div class="name">' + esc(name) + "</div>" +
+      '<div class="body">' + esc(body) + "</div>" +
       '<div class="foot"><span>' + esc(t("certLevel")) + ": <b>" + esc(lvlName(lvl)) + "</b></span>" +
-        "<span>" + esc(t("certDate")) + ": <b>" + esc(ex.date) + "</b></span></div>" +
+        (rec ? "<span>" + esc(t("certAttempt")) + ": <b>" + rec.attempt + "</b></span>" : "") +
+        "<span>" + esc(t("certDate")) + ": <b>" + esc(rec ? fmtDate(rec.date) : ex.date) + "</b></span></div>" +
+      (code
+        ? '<div class="qr">' + qrSvg(url) + "</div>" +
+          '<div class="cno">' + esc(t("certNo")) + ": <b>" + esc(window.IFA_CERT.certNo(code)) + "</b></div>" +
+          '<div class="cno">' + esc(t("certVerifyAt")) + ' <a class="vurl" href="' + esc(url) + '">' +
+            esc(url.split("#")[0]) + "</a></div>"
+        : '<div class="hint" style="margin:18px 0 0">' + esc(t("certNoCode")) + "</div>") +
       '<p style="font-size:12px;color:var(--muted);margin:18px 0 0">' + esc(t("certNote")) + "</p>" +
     "</div>" +
     '<div class="btnrow no-print" style="justify-content:center">' +
-      '<input class="inp" id="nameInput" placeholder="' + esc(t("certName")) + '" value="' + esc(name) + '">' +
-      '<button class="btn sec" data-act="savename">OK</button>' +
       '<button class="btn" data-act="print">' + esc(t("print")) + "</button>" +
     "</div>";
 }
@@ -922,11 +951,6 @@ document.addEventListener("click", function (e) {
       if (q.exam) return startExam(q.lvl, prog(q.lvl).name);
       state.quiz = buildQuiz(q.lvl, q.ch, q.exam);
       window.scrollTo(0, 0); return render();
-    }
-    if (act === "savename") {
-      var inp = el("nameInput");
-      if (inp) { prog(state.view.lvl).name = inp.value.trim(); save(); render(); }
-      return;
     }
     if (act === "print") { window.print(); return; }
     if (act === "resetall") {

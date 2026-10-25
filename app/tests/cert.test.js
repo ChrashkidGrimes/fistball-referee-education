@@ -196,5 +196,38 @@ console.log('\n== Nachpruefungsband und Zuruecksetzen ==');
   ok(a.store().progress.R.name.length===80,'Name auf 80 Zeichen begrenzt');
 }
 
+console.log('\n== Zertifikat ==');
+{
+  const a=boot(ready('R',{name:'Erika'}));
+  a.click('[data-go="level:R"]'); a.click('[data-go="exam:R"]'); runExam(a,1);
+  a.click('[data-go="cert:R"]');
+  ok(a.d.querySelector('.cert h1').textContent==='Zertifikat','Titel Zertifikat');
+  ok(/Abschlussprüfung/.test(a.T())&&/bestanden/.test(a.T()),'Text: Abschlusspruefung bestanden');
+  ok(a.d.querySelector('.cert .name').textContent==='Erika','Name aus dem Pruefungsstart');
+  ok(!a.d.getElementById('nameInput'),'kein Namensfeld mehr auf dem Zertifikat');
+  ok(a.d.querySelector('.cert .qr svg')!==null,'QR-Code vorhanden');
+  ok(/[0-9A-F]{4}-[0-9A-F]{4}/.test(a.d.querySelector('.cert .cno').textContent),'Zertifikatsnummer angezeigt');
+  const link=a.d.querySelector('.cert .vurl').getAttribute('href');
+  ok(link.startsWith('https://x/#verify='),'Prueflink auf die eigene Adresse, ist: '+link.slice(0,30));
+  const dec=a.w.IFA_CERT.decode(link.split('#verify=')[1]);
+  ok(dec&&dec.name==='Erika'&&dec.pct===100&&dec.q.length===40,'Prueflink enthaelt den gueltigen Code');
+  ok(/Versuch/.test(a.T())&&/Unbeaufsichtigt/.test(a.T()),'Versuch und Hinweis auf unbeaufsichtigte Pruefung');
+}
+{
+  const a=boot(ready('R',{name:'Max',exam:{best:90,pct:90,c:36,n:40,date:'01.08.2026'}}));
+  a.click('[data-go="level:R"]'); a.click('[data-go="cert:R"]');
+  ok(a.d.querySelector('.cert .qr')===null,'Altbestand: kein QR-Code');
+  ok(/erneut ablegen/.test(a.T()),'Altbestand: Hinweis auf neue Pruefung');
+  ok(a.d.querySelector('.cert .name').textContent==='Max','Altbestand: Name bleibt');
+}
+{
+  const a=boot(ready('R',{name:'Erika'}),{url:'file:///tmp/app/index.html'});
+  a.click('[data-go="level:R"]'); a.click('[data-go="exam:R"]'); runExam(a,1);
+  a.click('[data-go="cert:R"]');
+  ok(a.d.querySelector('.cert .vurl').getAttribute('href')
+     .startsWith('https://chrashkidgrimes.github.io/fistball-referee-education/#verify='),
+     'per file:// zeigt der QR-Code auf die veroeffentlichte Adresse');
+}
+
 console.log('\n'+pass+' bestanden, '+fail+' fehlgeschlagen');
 process.exit(fail?1:0);
