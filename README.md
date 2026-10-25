@@ -27,7 +27,7 @@ secret: the code proves that the certificate has not been altered, not who answe
 | | |
 |---|---|
 | Chapters | 16 — rules 1 to 10, hand signals, conduct of the referee, linesmen, age groups, federation regulations, duties around the match |
-| Exam questions | 235, all bilingual, each with a reference into the rule book |
+| Exam questions | 234, all bilingual, each with a reference into the rule book |
 | Images | 21 hand-signal photos, court and run-off diagrams, six ball-in-or-out decisions; 19 of them used as image questions |
 | Final exams | Regional 40 questions from 70 %, National 60 from 85 %, each with a retake threshold |
 | Tests | 319 automated checks |

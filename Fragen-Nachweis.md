@@ -4,6 +4,11 @@
 sich jede der 75 ergänzten Fragen stützt – als Nachweis, warum eine Antwort richtig ist,
 und als Grundlage, falls eine Frage später überarbeitet werden soll.
 
+> **Überarbeitet am 25. Oktober 2026.** Bei der Prüfung des gesamten Katalogs wurden Wortlaut,
+> Fundstellen und bei einigen Fragen die richtige Antwort korrigiert. Der Wortlaut unten ist der
+> Stand vom 6. August; maßgeblich ist `app/assets/js/data-questions.js`. Jede Änderung mit
+> Begründung und Quelle steht in `docs/fragenpruefung/2026-10-25-befunde.md`.
+
 Abgeleitet aus den IFA-Spielregeln 2025, der IFA-Schulungsmappe 2025 und den Schulungsfolien-
 sätzen – 32 auf C-Niveau, 43 auf A-Niveau. Sechs davon sind Bildfragen.
 

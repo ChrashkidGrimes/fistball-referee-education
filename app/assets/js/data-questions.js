@@ -15,7 +15,7 @@ window.IFA_QUESTIONS = [
 "ch": 14,
 "scope": "ifa",
 "q": {
-"de": "Welche Bandhöhe hat das Spielfeld im Hallenfaustball in der Altersklasse Jugend weiblich U18?",
+"de": "Welche Leinenhöhe (Netz/Band) gilt im Hallenfaustball in der Altersklasse Jugend weiblich U18?",
 "en": "What is the net height for indoor fistball in the girls' U18 category?"
 },
 "a": {
@@ -45,7 +45,7 @@ window.IFA_QUESTIONS = [
 "ch": 14,
 "scope": "ifa",
 "q": {
-"de": "Welche Bandhöhe hat das Spielfeld im Hallenfaustball in der Altersklasse Jugend männlich U18?",
+"de": "Welche Leinenhöhe (Netz/Band) gilt im Hallenfaustball in der Altersklasse Jugend männlich U18?",
 "en": "What is the net height for indoor fistball in the boys' U18 category?"
 },
 "a": {
@@ -65,7 +65,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln Anhang",
-"en": "Rules of the Game Anhang"
+"en": "Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -124,7 +124,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Regelungen für Altersklassen",
+"de": "Spielregeln 1.1 (Halle) und Regelungen für Altersklassen",
 "en": "Regulations for age groups"
 },
 "origin": "fbd",
@@ -154,7 +154,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Regelungen für Altersklassen",
+"de": "Spielregeln 1.1 (Halle) und Regelungen für Altersklassen",
 "en": "Regulations for age groups"
 },
 "origin": "fbd",
@@ -214,7 +214,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Regelungen für Altersklassen",
+"de": "Spielregeln 1.1 (Halle) und Regelungen für Altersklassen",
 "en": "Regulations for age groups"
 },
 "origin": "fbd",
@@ -244,7 +244,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Regelungen für Altersklassen",
+"de": "Spielregeln 1.1 (Halle) und Regelungen für Altersklassen",
 "en": "Regulations for age groups"
 },
 "origin": "fbd",
@@ -255,7 +255,7 @@ window.IFA_QUESTIONS = [
 "ch": 14,
 "scope": "ifa",
 "q": {
-"de": "Welche Netzhöhe hat das Spielfeld im Feldfaustball in der Altersklasse Jugend männlich / weiblich U14?",
+"de": "Welche Leinenhöhe (Netz/Band) gilt im Feldfaustball in der Altersklasse U14 (männlich/weiblich)?",
 "en": "What is the net height in outdoor fistball in the U14 category?"
 },
 "a": {
@@ -290,13 +290,13 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Ja",
+"Ja, bei weißer Grundfarbe mit höchstens 20 % Farbfläche",
 "Nein",
 "Wird vom Schiedsrichter festgelegt.",
 "Nur mit Zustimmung der Mannschaften."
 ],
 "en": [
-"Yes",
+"Yes, with a white basic colour and at most 20 % coloured surface",
 "No",
 "Determined by the referee.",
 "Only with the teams' consent."
@@ -315,7 +315,7 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Abstände muss die Hell- Dunkelfärbung des Netze (Bänder/Leinen) haben?",
+"de": "In welchen Abständen muss die Hell-/Dunkelfärbung des Netzes (Bandes/der Leine) angebracht sein?",
 "en": "At what intervals must the light and dark colouring of the net be arranged?"
 },
 "a": {
@@ -364,8 +364,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.4 und der Regelungen für Altersklassen",
-"en": "Rules of the Game 1.4 und der Regulations for age groups"
+"de": "Spielregeln 1.4 und Regelungen für Altersklassen",
+"en": "Rules of the Game 1.4 and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -394,8 +394,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.4 und der Regelungen für Altersklassen",
-"en": "Rules of the Game 1.4 und der Regulations for age groups"
+"de": "Spielregeln 1.4 und Regelungen für Altersklassen",
+"en": "Rules of the Game 1.4 and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -424,7 +424,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.4",
+"de": "Spielregeln 1.4 und Regelungen für Altersklassen",
 "en": "Rules of the Game 1.4"
 },
 "origin": "fbd",
@@ -453,7 +453,10 @@ window.IFA_QUESTIONS = [
 ]
 },
 "c": 0,
-"ref": "",
+"ref": {
+"de": "Spielregeln 1.4 und Regelungen für Altersklassen",
+"en": "Rules of the Game 1.4 and Regulations for age groups"
+},
 "origin": "fbd",
 "tr": true
 },
@@ -462,7 +465,7 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Breite hat das Band- / Netz im Feldfaustball in der Altersklasse Männer (M19+)?",
+"de": "Welche Breite hat das Netz (Band) im Feldfaustball in der Altersklasse Männer (M19+)?",
 "en": "How wide is the net in outdoor fistball in the men's category (M19+)?"
 },
 "a": {
@@ -492,7 +495,7 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Breite hat das Band- / Netz im Hallenfaustball in der Altersklasse Jugend männlich U18?",
+"de": "Welche Breite hat das Netz (Band) im Hallenfaustball in der Altersklasse Jugend männlich U18?",
 "en": "How wide is the net in indoor fistball in the boys' U18 category?"
 },
 "a": {
@@ -522,8 +525,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Breite hat das Spielfeld im Feldfaustball in der Altersklasse Männer (M19)?",
-"en": "How wide is the court in outdoor fistball in the men's category (M19)?"
+"de": "Welche Breite hat das Spielfeld im Feldfaustball in der Altersklasse Männer (M19+)?",
+"en": "How wide is the court in outdoor fistball in the men's category (M19+)?"
 },
 "a": {
 "de": [
@@ -542,7 +545,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1 und Regelungen für Altersklassen",
-"en": "Rules of the Game 1.1 und Regulations for age groups"
+"en": "Rules of the Game 1.1 and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -572,7 +575,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1 und Regelungen für Altersklassen",
-"en": "Rules of the Game 1.1 und Regulations for age groups"
+"en": "Rules of the Game 1.1 and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -617,16 +620,16 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"5 cm",
+"5 - 15 cm",
 "3 - 6 cm",
 "5 - 8 mm",
-"10 - 15 cm"
+"15 - 20 cm"
 ],
 "en": [
-"5 cm",
+"5 - 15 cm",
 "3 - 6 cm",
 "5 - 8 mm",
-"10 - 15 cm"
+"15 - 20 cm"
 ]
 },
 "c": 0,
@@ -642,7 +645,7 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Netzhöhe hat das Spielfeld im Feldfaustball in der Altersklasse Männer (M19+)?",
+"de": "Welche Leinenhöhe (Netz/Band) gilt im Feldfaustball in der Altersklasse Männer (M19+)?",
 "en": "What is the net height in outdoor fistball in the men's category (M19+)?"
 },
 "a": {
@@ -662,7 +665,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.2 und Regelungen für Altersklassen",
-"en": "Rules of the Game 1.2 und Regulations for age groups"
+"en": "Rules of the Game 1.2 and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -672,7 +675,7 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Wieviel beträgt der hinterer Mindestauslauf im Feldfaustball in der Altersklasse Männer (M19+)?",
+"de": "Wie viel beträgt der hintere Mindestauslauf im Feldfaustball in der Altersklasse Männer (M19+)?",
 "en": "What is the minimum rear buffer zone in outdoor fistball in the men's category (M19+)?"
 },
 "a": {
@@ -702,7 +705,7 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Wieviel beträgt der hinterer Mindestauslauf im Hallenfaustball in der Altersklasse Jugend männlich U18?",
+"de": "Wie viel beträgt der hintere Mindestauslauf im Hallenfaustball in der Altersklasse Jugend männlich U18?",
 "en": "What is the minimum rear buffer zone in indoor fistball in the boys' U18 category?"
 },
 "a": {
@@ -732,7 +735,7 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Wieviel beträgt der seitliche Mindestauslauf im Feldfaustball in der Altersklasse Männer (M19)?",
+"de": "Wie viel beträgt der seitliche Mindestauslauf im Feldfaustball in der Altersklasse Männer (M19+)?",
 "en": "What is the minimum side buffer zone in outdoor fistball in the men's category (M19)?"
 },
 "a": {
@@ -762,7 +765,7 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Wieviel beträgt der seitliche Mindestauslauf im Hallenfaustball in der Altersklasse Jugend männlich U18?",
+"de": "Wie viel beträgt der seitliche Mindestauslauf im Hallenfaustball in der Altersklasse Jugend männlich U18?",
 "en": "What is the minimum side buffer zone in indoor fistball in the boys' U18 category?"
 },
 "a": {
@@ -792,8 +795,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Zu welchem Spielfeld gehört die Mittellinie?",
-"en": "To which court does the centre line belong?"
+"de": "Zu welchem Feld gehört die Mittellinie?",
+"en": "To which half of the court does the centre line belong?"
 },
 "a": {
 "de": [
@@ -803,7 +806,7 @@ window.IFA_QUESTIONS = [
 "Zu keiner Spielhälfte"
 ],
 "en": [
-"Belongs to both courts jointly",
+"It belongs to both halves",
 "To the attacking team's half",
 "To the defending team's half",
 "To neither half"
@@ -829,7 +832,7 @@ window.IFA_QUESTIONS = [
 "de": [
 "Nein",
 "Ja",
-"Ja - wenn alle mit bloßem Oberkörper spielen.",
+"Ja, wenn alle mit bloßem Oberkörper spielen.",
 "Nur bei starker Sonneneinstrahlung und Hitze."
 ],
 "en": [
@@ -841,8 +844,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 2.3.1",
-"en": "Rules of the Game 2.3.1"
+"de": "Spielregeln 2.3",
+"en": "Rules of the Game 2.3"
 },
 "origin": "fbd",
 "tr": true
@@ -919,7 +922,7 @@ window.IFA_QUESTIONS = [
 "de": [
 "Ja",
 "Nein",
-"In der Satzpause oder Time Out nicht.",
+"In der Satzpause oder im Time-out nicht.",
 "Nur wenn die Mannschaft kein Angaberecht hat."
 ],
 "en": [
@@ -961,8 +964,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 2.3 ff",
-"en": "Rules of the Game 2.3 ff"
+"de": "Spielregeln 2.3 ff.",
+"en": "Rules of the Game 2.3 et seq."
 },
 "origin": "fbd",
 "tr": true
@@ -1002,7 +1005,7 @@ window.IFA_QUESTIONS = [
 "ch": 3,
 "scope": "ifa",
 "q": {
-"de": "Das Ende jeder Halbzeit, bei Spielen auf Zeit, wird akustisch angezeigt. Wie lautet die richtige Ansage?",
+"de": "Bei Spielen auf Zeit wird das Ende jeder Halbzeit akustisch angezeigt. Wie lautet die richtige Ansage?",
 "en": "In time-limited matches the end of each half is signalled acoustically. What is the correct call?"
 },
 "a": {
@@ -1010,7 +1013,7 @@ window.IFA_QUESTIONS = [
 "Herunterzählen der letzten 5 Spielsekunden; akustisches Signal (Pfiff)",
 "Letzte Spielminute",
 "Mannschaften und Spielrichter, \"Achtung\"; akustisches Signal (Pfiff)",
-"Diese Regelung gibt es nicht mehr da nur noch auf Sätze gespielt wird."
+"Diese Regelung gibt es nicht mehr, da nur noch auf Sätze gespielt wird."
 ],
 "en": [
 "Counting down the last 5 seconds of play, then an acoustic signal (whistle)",
@@ -1021,8 +1024,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 3.2.2",
-"en": "Rules of the Game 3.2.2"
+"de": "Spielregeln 3.3",
+"en": "Rules of the Game 3.3"
 },
 "origin": "fbd",
 "tr": true
@@ -1030,10 +1033,10 @@ window.IFA_QUESTIONS = [
 {
 "id": "Q3-2022-027",
 "ch": 3,
-"scope": "ifa",
+"scope": "fed",
 "q": {
-"de": "Welcher Spielmodus wird in deinem Mitgliedsverband (Landesturnverband) im Frauen- / Männer-Faustball gespielt?",
-"en": "Which match format is played in your member federation in women's and men's fistball?"
+"de": "Welcher Spielmodus wird in den Frauen- und Männerklassen deines Landesverbandes gespielt?",
+"en": "Which match format is played in your regional federation in women's and men's fistball?"
 },
 "a": {
 "de": [
@@ -1182,8 +1185,8 @@ window.IFA_QUESTIONS = [
 "ch": 10,
 "scope": "ifa",
 "q": {
-"de": "Bei unsportlichem Verhalten hat der Schiedsrichter die Pflicht, je nach Schwere des Verstoßes, folgende Strafen zu verhängen:\nVerwarnung => gelbe KarteZeitstrafe => gelb/rote Karte: Feldverweis im laufenden Spiel, bis beide Mannschaften zusammen 10 Gutbälle erzielt habenFeldverweis => rote Karte: Ausschluss vom (Rest des) Spiel(s)Ist der Schiedsrichter bei der Wahl seiner Strafen an diese Reihenfolge gebunden?",
-"en": "For unsporting behaviour the referee has a duty to impose, depending on the severity of the offence:\nwarning => yellow card; time penalty => yellow and red card, exclusion during the match until both teams together have scored 10 points; sending off => red card, exclusion from the rest of the match. Is the referee bound to follow this order when choosing a penalty?"
+"de": "Bei unsportlichem Verhalten hat der Schiedsrichter das Recht, je nach Schwere des Verstoßes folgende Strafen zu verhängen:\n– Verwarnung (gelbe Karte)\n– Zeitstrafe (gelbe und rote Karte): Ausschluss im laufenden Spiel, bis beide Mannschaften zusammen 10 Gutbälle erzielt haben\n– Feldverweis (rote Karte): Ausschluss für den Rest des Spiels\nIst der Schiedsrichter bei der Wahl der Strafe an diese Reihenfolge gebunden?",
+"en": "For unsporting behaviour the referee has the right to impose the following penalties, depending on the severity of the offence:\n– warning (yellow card)\n– time penalty (yellow and red card): exclusion during the match until both teams together have scored 10 points\n– sending off (red card): exclusion for the rest of the match\nIs the referee bound to follow this order when choosing a penalty?"
 },
 "a": {
 "de": [
@@ -1242,7 +1245,7 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Wann sind die Spielberechtigung zu prüfen?",
+"de": "Wann ist die Spielberechtigung zu prüfen?",
 "en": "When does eligibility to play have to be checked?"
 },
 "a": {
@@ -1250,7 +1253,7 @@ window.IFA_QUESTIONS = [
 "An jedem Spieltag durch den Schiedsrichter / die Spielleitung",
 "Nur vor Beginn der jeweiligen Spielrunde",
 "Wenn sich die Mannschaft für weiterführende Spiele (Meisterschaften) qualifiziert hat",
-"Spielberechtigung müssen nicht kontrolliert werden, man kennt sich"
+"Die Spielberechtigung muss nicht kontrolliert werden, man kennt sich"
 ],
 "en": [
 "On every match day, by the referee or the competition management",
@@ -1272,8 +1275,8 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Wann spielt sich ein aktiver Spieler in einer Mannschaft fest?",
-"en": "When does an active player become tied to a team?"
+"de": "Nach wie vielen Einsätzen für dieselbe Mannschaft in einer Leistungsklasse spielt sich ein aktiver Spieler in dieser Mannschaft fest?",
+"en": "After how many appearances for the same team in one division does an active player become tied to that team?"
 },
 "a": {
 "de": [
@@ -1359,8 +1362,8 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Wie wird ein kampflos gewonnenes Spiel mit zwei Gewinnsätze (bis 11) gewertet?",
-"en": "How is a walkover recorded in a match to two sets won, played to 11?"
+"de": "Wie wird ein kampflos gewonnenes Spiel auf zwei Gewinnsätze (bis 11) gewertet?",
+"en": "How is a walkover scored in a match played to two sets won, each set to 11?"
 },
 "a": {
 "de": [
@@ -1389,18 +1392,18 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Bei Hallenspielen entstehen Fehler, wenn der Ball nach der Annahme oder Zuspiel bestimmte Halleneinrichtungen berührt. Um welche Halleneinrichtungen handelt es sich dabei?",
+"de": "Bei Hallenspielen entstehen Fehler, wenn der Ball nach der Annahme oder dem Zuspiel bestimmte Halleneinrichtungen berührt. Um welche Halleneinrichtung handelt es sich dabei?",
 "en": "Indoors, a fault occurs if the ball touches certain hall fittings after the reception or the set. Which fittings are these?"
 },
 "a": {
 "de": [
-"Hallendecke über der gegnerischen Spielfeldhälfte",
+"Hallendecke jenseits der Mittellinie, wenn der Ball nach Annahme oder Zuspiel hinüberfliegt",
 "Hallendecke direkt über der eigenen Spielfeldhälfte",
 "Geräte die von der Decke in der eigenen Spielhälfte hinunter ragen",
 "Pfosten oder Leine (Band / Netz) nach dem Ersatzpfosten (außerhalb des Spielfeldes)"
 ],
 "en": [
-"The ceiling above the opponent's half of the court",
+"The ceiling beyond the centre line when the ball crosses over after the reception or the set",
 "The ceiling directly above your own half of the court",
 "Fittings projecting down from the ceiling over your own half",
 "The post or net beyond the substitute post, that is outside the court"
@@ -1419,7 +1422,7 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Ist es erlaubt in der Halle das Netz (Band, Leine) an der Wand, also außerhalb des Spielfeldes, zu befestigen?",
+"de": "Ist es erlaubt, in der Halle das Netz (Band, Leine) an der Wand, also außerhalb des Spielfeldes, zu befestigen?",
 "en": "Indoors, is it allowed to fix the net to the wall, that is outside the court?"
 },
 "a": {
@@ -1433,7 +1436,7 @@ window.IFA_QUESTIONS = [
 "Yes",
 "No",
 "Only with both team captains' consent",
-"No, because the net has the standard width of 20 m."
+"No, because the net has the standard length of 20 m."
 ]
 },
 "c": 0,
@@ -1468,7 +1471,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.6.5",
+"de": "Spielregeln 1.5, Erläuterung Ballwahl",
 "en": "Rules of the Game 1.6.5"
 },
 "origin": "fbd",
@@ -1516,7 +1519,7 @@ window.IFA_QUESTIONS = [
 "de": [
 "Durch den Mannschaftsführer oder Trainer / Betreuer",
 "Nur durch den Mannschaftsführer",
-"Alle, auf den Spielformular, eingetragenen Spieler und Trainer / Betreuer (Mannschaftskader)",
+"Alle auf dem Spielformular eingetragenen Spieler und Trainer/Betreuer (Mannschaftskader)",
 "Nur durch den Trainer oder Betreuer"
 ],
 "en": [
@@ -1528,8 +1531,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 2.2",
-"en": "Rules of the Game 2.2"
+"de": "Spielregeln 3.4, Erläuterung Time out (Schulungsmappe)",
+"en": "Training Manual for Referees, 3.4, explanation: time-out"
 },
 "origin": "fbd",
 "tr": true
@@ -1539,8 +1542,8 @@ window.IFA_QUESTIONS = [
 "ch": 2,
 "scope": "ifa",
 "q": {
-"de": "Wann darf Mannschaft „A\" im Jugendbereich auswechseln bzw. sich ergänzen?",
-"en": "In youth competition, when may team A substitute or make itself up to strength?"
+"de": "Wann darf Mannschaft „A“ ohne Angaberecht auswechseln bzw. sich ergänzen?",
+"en": "In youth competition, when may team A substitute or make an addition?"
 },
 "a": {
 "de": [
@@ -1577,10 +1580,10 @@ window.IFA_QUESTIONS = [
 "Über 2 x 5 Minuten",
 "Über 2 x 2 ½ Minuten",
 "Über 2 x 7 ½ Minuten",
-"Diese Regelung gibt es nicht mehr da nur noch auf Sätze gespielt wird."
+"Diese Regelung gibt es nicht mehr, da nur noch auf Sätze gespielt wird."
 ],
 "en": [
-"Over 2 x 5 minutes",
+"2 x 5 minutes",
 "Over 2 x 2½ minutes",
 "Over 2 x 7½ minutes",
 "This rule no longer exists because matches are now only played in sets."
@@ -1599,7 +1602,7 @@ window.IFA_QUESTIONS = [
 "ch": 3,
 "scope": "ifa",
 "q": {
-"de": "Die Zeitnahme erfolgt für 4 Felder zentral. Du stellst als Schiedsrichter anhand Deiner Uhr fest, dass die Zeit abgelaufen ist, ohne dass zentral abgepfiffen wurde. Wie verhältst Du dich?",
+"de": "Die Zeitnahme erfolgt für 4 Felder zentral. Du stellst als Schiedsrichter anhand deiner Uhr fest, dass die Zeit abgelaufen ist, ohne dass zentral abgepfiffen wurde. Wie verhältst du dich?",
 "en": "Timing is handled centrally for 4 courts. As referee you see from your own watch that time is up but no central whistle has come. How do you act?"
 },
 "a": {
@@ -1618,8 +1621,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 3.2.2, Spielregeln 9.2.2",
-"en": "Rules of the Game 3.2.2, Spielregeln 9.2.2"
+"de": "Spielregeln 3.2.2; Schulungsmappe 9.2.1, Erläuterung zentrale Zeitnahme",
+"en": "Rules of the Game 3.2.2; Training Manual for Referees, 9.2.1, explanation: central timing"
 },
 "origin": "fbd",
 "tr": true
@@ -1659,7 +1662,7 @@ window.IFA_QUESTIONS = [
 "ch": 3,
 "scope": "ifa",
 "q": {
-"de": "Wie langes dauert ein, durch eine Mannschaft genommener, Time-Out?",
+"de": "Wie lange dauert ein von einer Mannschaft genommenes Time-out?",
 "en": "How long does a time-out taken by a team last?"
 },
 "a": {
@@ -1769,7 +1772,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 5.2, Spielregeln 7.1",
-"en": "Rules of the Game 5.2, Spielregeln 7.1"
+"en": "Rules of the Game 5.2, Rules of the Game 7.1"
 },
 "origin": "fbd",
 "tr": true
@@ -1844,7 +1847,7 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Der Ball muss geschlagen worden sein bevor die erste Bodenberührung mit einem Fuß vor der Angabelinie erfolgt",
+"Der Ball muss geschlagen worden sein, bevor die erste Bodenberührung mit einem Fuß vor der Angabelinie erfolgt",
 "Die erste beliebige Bodenberührung erfolgt vor dem Schlag gegen den Ball",
 "Gleichzeitiges Schlagen des Balles und Landen mit einem Bein auf der Angabelinie",
 "Die erste beliebige Bodenberührung kann überall erfolgen"
@@ -1874,10 +1877,10 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"In der Spielfeldhäfte des Gegners",
-"In der eigenen Spielfeldhäfte",
+"In der Spielfeldhälfte des Gegners",
+"In der eigenen Spielfeldhälfte",
 "Innerhalb des eigenen Auslaufes",
-"Im eigenen 3 m - Raum"
+"Im eigenen 3-m-Raum"
 ],
 "en": [
 "In the opponent's half of the court",
@@ -1899,8 +1902,8 @@ window.IFA_QUESTIONS = [
 "ch": 6,
 "scope": "ifa",
 "q": {
-"de": "Wann ist eine Angabe bzw. ein Rückschlag gültig ausgeführt und führt zum Punktgewinn des Anschlägers? Wenn der Ball,...",
-"en": "When is a service or return validly executed so that the server wins the point? When the ball …"
+"de": "Wann ist eine Angabe bzw. ein Rückschlag gültig ausgeführt und führt zum Gutball für die schlagende Mannschaft? Wenn der Ball …",
+"en": "When is a service or return validly executed so that the hitting team wins the point? When the ball …"
 },
 "a": {
 "de": [
@@ -1929,18 +1932,18 @@ window.IFA_QUESTIONS = [
 "ch": 6,
 "scope": "ifa",
 "q": {
-"de": "Wie wird eine Angabe ausgeführt, um sie ungültig zu werten?",
-"en": "How would a service have to be taken for it to be invalid?"
+"de": "In welcher Haltung kann eine Angabe nicht regelgerecht ausgeführt werden?",
+"en": "In which position can a service not be taken in accordance with the rules?"
 },
 "a": {
 "de": [
-"Im Hocken",
+"Im Knien",
 "Im Stehen",
 "Im Gehen",
 "Im Laufen"
 ],
 "en": [
-"Crouching",
+"Kneeling",
 "Standing",
 "While walking",
 "While running"
@@ -1964,10 +1967,10 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Von einem Punkt auf der Spielfläche und Ende vor der 3 m - Angabelinie",
+"Beginn auf einem Punkt im eigenen Feld, Ende mit der ersten Bodenberührung vor der 3-m-Angabelinie",
 "Außerhalb des Spielfeldes und Ende im 3-m-Raum",
 "Anlauf im Feld, Sprung, danach erste Bodenberührung außerhalb des Feldes",
-"Aus dem Gehen, Standbein rutscht auf die 3 m -Angabelinie, danach Schlagen des Balles"
+"Aus dem Gehen, Standbein rutscht auf die 3-m-Angabelinie, danach Schlagen des Balles"
 ],
 "en": [
 "From a point on the playing surface, finishing in front of the 3 m service line",
@@ -1978,7 +1981,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 6.2.2",
+"de": "Spielregeln 6.3, 6.3.2",
 "en": "Rules of the Game 6.2.2"
 },
 "origin": "fbd",
@@ -2019,7 +2022,7 @@ window.IFA_QUESTIONS = [
 "ch": 7,
 "scope": "ifa",
 "q": {
-"de": "Ein Spieler der Mannschaft \"A\" wird beim Spielen des Balles durch den Schiedsrichter/Linienrichter behindert. Wie entscheidest du?",
+"de": "Ein Spieler der Mannschaft „A“ wird beim Spielen des Balles durch den Schiedsrichter oder einen Linienrichter behindert. Wie entscheidest du?",
 "en": "A player of team A is obstructed by the referee or a linesman while playing the ball. What is your decision?"
 },
 "a": {
@@ -2038,7 +2041,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 7.8.1",
+"de": "Spielregeln 7.8.2",
 "en": "Rules of the Game 7.8.1"
 },
 "origin": "fbd",
@@ -2049,7 +2052,7 @@ window.IFA_QUESTIONS = [
 "ch": 7,
 "scope": "ifa",
 "q": {
-"de": "Ein Spieler der Mannschaft A wird beim Versuch den Ball innerhalb des Auslaufes zu spielen, durch einen nicht am Spiel beteiligten Zuschauer behindert. Wie ist zu entscheiden?",
+"de": "Ein Spieler der Mannschaft „A“ wird beim Versuch, den Ball innerhalb des Auslaufes zu spielen, durch einen nicht am Spiel beteiligten Zuschauer behindert. Wie ist zu entscheiden?",
 "en": "A player of team A is obstructed by an uninvolved spectator while trying to play the ball inside the buffer zone. How is this decided?"
 },
 "a": {
@@ -2068,7 +2071,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 7.8.1",
+"de": "Spielregeln 7.8.2",
 "en": "Rules of the Game 7.8.1"
 },
 "origin": "fbd",
@@ -2079,7 +2082,7 @@ window.IFA_QUESTIONS = [
 "ch": 7,
 "scope": "ifa",
 "q": {
-"de": "Nach erfolgter Ballannahme springt der Ball vom Boden des eigenen Feldes unter der Leine (Band / Netz) hindurch, in den Luftraum des Gegenfeldes. Wann darf der Ball gültig zurück geschlagen werden?",
+"de": "Nach erfolgter Ballannahme springt der Ball vom Boden des eigenen Feldes unter der Leine (Band / Netz) hindurch in den Luftraum des Gegenfeldes. Wann darf der Ball gültig zurückgeschlagen werden?",
 "en": "After the reception the ball bounces off your own court and passes under the net into the airspace of the opposite court. When may it validly be played back?"
 },
 "a": {
@@ -2109,7 +2112,7 @@ window.IFA_QUESTIONS = [
 "ch": 7,
 "scope": "ifa",
 "q": {
-"de": "Wann darf der Ball, der direkt unter der Leine (Band / Netz) hindurch, in den Luftraum des Gegenfeldes gespielt wird, noch gültig zurückgespielt werden?",
+"de": "Wann darf der Ball, der direkt unter der Leine (Band / Netz) hindurch in den Luftraum des Gegenfeldes gespielt wird, noch gültig zurückgespielt werden?",
 "en": "When may a ball played directly under the net into the airspace of the opposite court still validly be played back?"
 },
 "a": {
@@ -2145,7 +2148,7 @@ window.IFA_QUESTIONS = [
 "a": {
 "de": [
 "Nein, außer der Schiedsrichter kann aus gesundheitlichen Gründen das Spiel nicht bis zum Spielende leiten und ein qualifizierter Schiedsrichter vor Ort ihn vertritt",
-"Ja, wenn der Schiedsrichter sich für das nächste Spiel warmmachen muss und ein qualifizierter Schiedsrichter vor Ort ihn vertritt.",
+"Ja, wenn der Schiedsrichter sich für das nächste Spiel warmmachen muss und ein qualifizierter Schiedsrichter vor Ort ihn vertritt",
 "Ja, wenn ein qualifizierter Schiedsrichter vor Ort ihn ersetzt.",
 "Ja, denn jeder kann Schiedsrichter machen"
 ],
@@ -2169,7 +2172,7 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Bei einem Spieltag ist das erste Spiel um 10:00 Uhr angesetzt. Die anreisende Mannschaft für dieses Spiel ist aber erst um 10:25 Uhr spielbereit, da sie verzögert anreist. Wie ist zu entscheiden?",
+"de": "An einem Spieltag ist das erste Spiel um 10:00 Uhr angesetzt. Die anreisende Mannschaft für dieses Spiel ist aber erst um 10:25 Uhr spielbereit, da sie verzögert anreist. Wie ist zu entscheiden?",
 "en": "On a match day the first match is scheduled for 10:00. The visiting team is delayed and only ready to play at 10:25. How is this decided?"
 },
 "a": {
@@ -2205,14 +2208,14 @@ window.IFA_QUESTIONS = [
 "a": {
 "de": [
 "Die Mannschaft muss mit vier Spielern das Spiel beenden und im folgenden Spiel auch auf diesen Spieler verzichten",
-"Der Spieler darf im zweiten Satz wiedereingesetzt werden",
-"Der Spieler ist für das laufende und 2 folgende Spiel gesperrt und darf im laufenden Spiel nicht ergänzt werden.",
+"Der Spieler darf im zweiten Satz wieder eingesetzt werden",
+"Der Spieler ist für das laufende und die 2 folgenden Spiele gesperrt und darf im laufenden Spiel nicht ergänzt werden",
 "Der Trainer/Betreuer meldet ihn nachträglich ab und kann einen Auswechselspieler einsetzen"
 ],
 "en": [
 "The team has to finish the match with four players and must also do without that player in the next match",
 "The player may return in the second set",
-"The player is suspended for the current match and the next 2, and may not be replaced in the current match.",
+"The player is suspended for the current match and the next two matches, and may not be replaced in the current match",
 "The coach or official reports him off afterwards and may bring on a substitute"
 ]
 },
@@ -2297,7 +2300,7 @@ window.IFA_QUESTIONS = [
 "Verschuldet",
 "Unverschuldet",
 "Unwesentlich",
-"Richtig, wenn der Schiedsrichter darauf besteht"
+"Verschuldet, wenn der Schiedsrichter darauf besteht"
 ],
 "en": [
 "The team's own fault",
@@ -2324,10 +2327,10 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Er darf Spielen. Die Spielberechtigung muss innerhalb von 3 Werktagen nach dem entsprechenden Spieltag bei der Staffelleitung vorgelegt werden.",
+"Er darf spielen. Die Spielberechtigung muss innerhalb von 3 Werktagen nach dem entsprechenden Spieltag bei der Staffelleitung vorgelegt werden.",
 "Er darf nicht spielen",
 "Er darf gegen eine sofortige Strafzahlung spielen",
-"Er darf Spielen. Die Spielberechtigung muss bis zum nächsten Spieltag bei der Staffelleitung vorgelegt werden."
+"Er darf spielen. Die Spielberechtigung muss bis zum nächsten Spieltag bei der Staffelleitung vorgelegt werden."
 ],
 "en": [
 "He may play. The eligibility document has to be submitted to the division manager within 3 working days after that match day.",
@@ -2349,19 +2352,19 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Welche Bälle dürfen im Bereich Faustball Deutschland Männer (höchste Klasse im MGV) gespielt werden?",
+"de": "Welche Bälle dürfen in der höchsten Männerklasse von Faustball Deutschland gespielt werden?",
 "en": "Which balls may be used in the top men's division of Faustball Deutschland?"
 },
 "a": {
 "de": [
 "Bälle mit vorhandener Genehmigung der IFA (Signet)",
-"Bälle ohne Zulassung von Faustball Deutschland gem. aktueller Ballliste",
+"Bälle, die nicht auf der aktuellen Ballliste von Faustball Deutschland stehen",
 "Weiß-rote Bälle für Frauen",
 "Weiß-blaue Bälle für Schüler"
 ],
 "en": [
 "Balls carrying IFA approval (the signet)",
-"Balls without Faustball Deutschland approval according to the current ball list",
+"Balls not on the current Faustball Deutschland ball list",
 "White and red balls for women",
 "White and blue balls for juniors"
 ]
@@ -2379,15 +2382,15 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Welche Konsequenz ergibt sich für eine Mannschaft, die einen Spieler unberechtigt in Meisterschaftsspielen in Turnierform einsetzt hat?",
+"de": "Welche Konsequenz ergibt sich für eine Mannschaft, die einen Spieler unberechtigt in Meisterschaftsspielen in Turnierform eingesetzt hat?",
 "en": "What are the consequences for a team that has fielded an ineligible player in championship matches played as a tournament?"
 },
 "a": {
 "de": [
 "Alle Spiele werden als verloren gewertet",
 "Keine",
-"Alle Spiel müssen wiederholt werden",
-"Die gewonnenen Spiele zählen die verlorenen müssen wiederholt werden"
+"Alle Spiele müssen wiederholt werden",
+"Die gewonnenen Spiele zählen, die verlorenen müssen wiederholt werden"
 ],
 "en": [
 "All matches are recorded as lost",
@@ -2415,13 +2418,13 @@ window.IFA_QUESTIONS = [
 "a": {
 "de": [
 "01.01. – 31.12.",
-"01.05. – 31.09.",
+"01.05. – 30.09.",
 "01.04. – 28.02.",
 "01.07. – 30.06."
 ],
 "en": [
 "1 Jan – 31 Dec",
-"1 May – 31 Sep",
+"1 May – 30 Sep",
 "1 Apr – 28 Feb",
 "1 Jul – 30 Jun"
 ]
@@ -2439,7 +2442,7 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Welcher Zeitraum gilt für das Spieljahr \"Hallensaison\"?",
+"de": "Welcher Zeitraum gilt für das Spieljahr „Hallensaison“?",
 "en": "What period applies to the playing year for the indoor season?"
 },
 "a": {
@@ -2477,7 +2480,7 @@ window.IFA_QUESTIONS = [
 "90 sec",
 "5 min",
 "10 min",
-"So lange, bis beide Mannschaften wieder spielbereit sind."
+"So lange, bis beide Mannschaften wieder spielbereit sind"
 ],
 "en": [
 "90 sec",
@@ -2506,7 +2509,7 @@ window.IFA_QUESTIONS = [
 "de": [
 "3 Monate",
 "5 Monate",
-"Sofort Spielberechtigt",
+"Sofort spielberechtigt",
 "3 Wochen"
 ],
 "en": [
@@ -2529,7 +2532,7 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Wie viele Spiele darf ein Jugendspieler/in an einem Tag bestreiten?",
+"de": "Wie viele Spiele darf ein Jugendspieler bzw. eine Jugendspielerin an einem Tag bestreiten?",
 "en": "How many matches may a youth player play in one day?"
 },
 "a": {
@@ -2537,7 +2540,7 @@ window.IFA_QUESTIONS = [
 "maximal 5",
 "maximal 4",
 "es gibt keine Einschränkung",
-"es ist von der konditionellen Verfassung des Spielers/in abhängig"
+"es hängt von der körperlichen Verfassung des Spielers bzw. der Spielerin ab"
 ],
 "en": [
 "at most 5",
@@ -2556,7 +2559,7 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Wie viele Veranstaltungen darf ein Spieler/in an einem Tag spielen?",
+"de": "Bei wie vielen Veranstaltungen darf ein Spieler bzw. eine Spielerin an einem Tag spielen?",
 "en": "At how many events may a player play in one day?"
 },
 "a": {
@@ -2618,22 +2621,22 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Leinen- (Band / Netz) Höhe 1,90 m",
+"Leinenhöhe (Band/Netz) 1,90 m",
 "Leinen- (Band / Netz) Höhe 2,00 m",
-"Hinterer Auslauf 10,00 m",
+"Hinterer Auslauf 3,00 m",
 "Linienbreite: mind. 15 cm"
 ],
 "en": [
 "Net height 1.90 m",
 "Net height 2.00 m",
-"Rear buffer zone 10.00 m",
+"Rear buffer zone 3.00 m",
 "Line width: at least 15 cm"
 ]
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 7.6",
-"en": "Rules of the Game 7.6"
+"de": "Spielregeln 1.1.3, 1.2 und 1.3",
+"en": "Rules of the Game 1.1.3, 1.2 and 1.3"
 },
 "origin": "fbd",
 "tr": true
@@ -2662,8 +2665,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.4 und Anlage zu den Spielregeln",
-"en": "Rules of the Game 1.4 und Anlage zu den Spielregeln"
+"de": "Spielregeln 1.4 und Regelungen für Altersklassen",
+"en": "Rules of the Game 1.4 and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -2680,7 +2683,7 @@ window.IFA_QUESTIONS = [
 "de": [
 "Mit dem zweiten – also derzeit im Spiel befindlichen – Ball weiterspielen",
 "Austauschen, d.h., den ersten Ball ins Spiel bringen",
-"Austauchen, d.h., den ersten Ball mit Zustimmung des Gegners ins Spiel bringen",
+"Austauschen, d. h. den ersten Ball mit Zustimmung des Gegners ins Spiel bringen",
 "Mit dem Ball des Gegners sofort weiterspielen"
 ],
 "en": [
@@ -2692,7 +2695,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.6.4",
+"de": "Spielregeln 1.6.3, Erläuterung Balltausch",
 "en": "Rules of the Game 1.6.4"
 },
 "origin": "fbd",
@@ -2722,7 +2725,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.6",
+"de": "Spielregeln 1.6.4",
 "en": "Rules of the Game 1.6"
 },
 "origin": "fbd",
@@ -2763,12 +2766,12 @@ window.IFA_QUESTIONS = [
 "ch": 3,
 "scope": "ifa",
 "q": {
-"de": "Ein Spiel geht in den Entscheidungssatz. Der SR verpasst die Seiten beim 6. Gutball zu wechseln und wird auf den nicht erfolgten Seitenwechsel beim Stand von 7:5 vom Anschreiber aufmerksam gemacht. Wie hat der Schiedsrichter zu entscheiden?",
+"de": "Ein Spiel geht in den Entscheidungssatz. Der Schiedsrichter versäumt es, beim 6. Gutball die Seiten wechseln zu lassen, und wird beim Stand von 7:5 vom Anschreiber auf den nicht erfolgten Seitenwechsel aufmerksam gemacht. Wie hat der Schiedsrichter zu entscheiden?",
 "en": "A match goes to a deciding set. The referee misses the change of ends at the 6th point and is alerted by the scorer at 7:5 that it did not happen. How should the referee decide?"
 },
 "a": {
 "de": [
-"Der Schiedsrichter unterbricht das Spiel und bespricht mit den beide Mannschaftsführer die Entscheidung. Den Satz bei dem Spielstand, bei dem eine Mannschaft 6 Gutbälle erzielt hatte, mit Seitenwechsel und neuer Angabe fortsetzen.",
+"Der Schiedsrichter unterbricht das Spiel und bespricht die Entscheidung mit beiden Mannschaftsführern. Der Satz wird bei dem Spielstand, bei dem eine Mannschaft 6 Gutbälle erzielt hatte, mit Seitenwechsel und neuer Angabe fortgesetzt.",
 "Der Schiedsrichter lässt weiterspielen, bis der Satz entschieden ist.",
 "Der Schiedsrichter lässt beim nächsten Fehler die Seiten und die Angabe wechseln. Das Spiel wird mit dem aktuellen Spielstand fortgesetzt.",
 "Der Schiedsrichter bespricht mit den Trainern / Betreuern das weitere Vorgehen."
@@ -2793,7 +2796,7 @@ window.IFA_QUESTIONS = [
 "ch": 4,
 "scope": "ifa",
 "q": {
-"de": "Der Schlagmann von Mannschaft „A“ hat den Ball von seinem Zuspieler über die Leine (Band, Netz) gespielt bekommen. Er platziert seinen Schlag auf die Mittelinie. Danach springt der Ball ohne Einwirkung des Gegners an die Leine (Band / Netz). Wie ist zu entscheiden?",
+"de": "Der Schlagmann von Mannschaft „A“ hat den Ball von seinem Zuspieler über die Leine (Band/Netz) gespielt bekommen. Er platziert seinen Schlag auf die Mittellinie. Danach springt der Ball ohne Einwirkung des Gegners an die Leine (Band/Netz). Wie ist zu entscheiden?",
 "en": "The attacker of team A receives the ball from his setter above the net. He places his hit onto the centre line. The ball then bounces into the net without any opponent touching it. How is this decided?"
 },
 "a": {
@@ -2813,7 +2816,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1.2; Spielregeln 4.3",
-"en": "Rules of the Game 1.1.2; Spielregeln 4.3"
+"en": "Rules of the Game 1.1.2; Rules of the Game 4.3"
 },
 "origin": "fbd",
 "tr": true
@@ -2823,7 +2826,7 @@ window.IFA_QUESTIONS = [
 "ch": 6,
 "scope": "ifa",
 "q": {
-"de": "Was ist bei einer möglichen Sprungangabe fehlerhaft?",
+"de": "Was ist bei einer Sprungangabe ein Fehler?",
 "en": "What makes a jump service faulty?"
 },
 "a": {
@@ -2859,14 +2862,14 @@ window.IFA_QUESTIONS = [
 "a": {
 "de": [
 "Vor der Angabelinie",
-"Hinter der Angabelinie (im 3 m-Raum)",
-"Gleichzeitiges Landen vor und hinter der Angabelinie",
+"Hinter der Angabelinie (im 3-m-Raum)",
+"Gleichzeitiges Landen auf und hinter der Angabelinie",
 "Auf der Angabelinie"
 ],
 "en": [
 "In front of the service line",
 "Behind the service line (in the 3 m area)",
-"Landing in front of and behind the service line at the same time",
+"Landing on and behind the service line at the same time",
 "On the service line"
 ]
 },
@@ -2943,7 +2946,7 @@ window.IFA_QUESTIONS = [
 "ch": 7,
 "scope": "ifa",
 "q": {
-"de": "Nach der Ballannahme durch den Mittelspieler der Mannschaft „A“ fliegt der Ball über die Leine (Band / Netz). Ein Mitspieler stellt/holt den Ball noch einmal zurück, (Griff über die Leine (Band / Netz)), so dass der Schlagmann in eine optimale Position kommt und den Ball verwandelt. Wie ist zu entscheiden?",
+"de": "Nach der Ballannahme durch den Mittelspieler der Mannschaft „A“ fliegt der Ball über die Leine (Band / Netz). Ein Mitspieler greift über die Leine und holt den Ball zurück, sodass der Schlagmann in eine optimale Position kommt und den Ball verwandelt. Wie ist zu entscheiden?",
 "en": "After team A's middle player receives the ball it flies over the net. A team-mate reaches over the net and brings it back, so that the attacker gets into an ideal position and puts the ball away. How is this decided?"
 },
 "a": {
@@ -2960,7 +2963,7 @@ window.IFA_QUESTIONS = [
 "No fault. The last service is replayed"
 ]
 },
-"c": 0,
+"c": 1,
 "ref": {
 "de": "Spielregeln 7.5.1",
 "en": "Rules of the Game 7.5.1"
@@ -3038,7 +3041,7 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Es darf drei Mal gespielt werden, sofern der Schiedsrichter auf Block entschieden hat",
+"Es darf dreimal gespielt werden, sofern der Schiedsrichter auf Block entschieden hat",
 "Es darf noch zwei Mal gespielt werden. Die erste Berührung ist durch die Beteiligung am Block bereits erfolgt",
 "Es darf drei Mal gespielt werden. Der am Block beteiligte Spieler darf nicht mehr spielen",
 "Der Schiedsrichter entscheidet auf Fehler"
@@ -3063,13 +3066,13 @@ window.IFA_QUESTIONS = [
 "ch": 9,
 "scope": "ifa",
 "q": {
-"de": "Bei einem Spieltag stellt der Mannschaftsführer der Mannschaft A fest, dass die Leine (Band/Netz) nicht die erforderliche Höhe aufweist. Wann hat er die Möglichkeit einen Einspruch einzulegen?",
+"de": "An einem Spieltag stellt der Mannschaftsführer der Mannschaft „A“ fest, dass die Leine (Band/Netz) nicht die erforderliche Höhe aufweist. Wann hat er die Möglichkeit, Einspruch einzulegen?",
 "en": "On a match day the captain of team A notices that the net is not at the required height. When can he lodge an objection?"
 },
 "a": {
 "de": [
 "Vor Beginn des Spieles",
-"Beim ersten Leinen- (Band / Netz) Fehler",
+"Beim ersten Leinenfehler",
 "Wenn die Mannschaft „A“ das Spiel verloren hat",
 "Jederzeit während des Spielganges"
 ],
@@ -3082,7 +3085,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 9.2.1",
+"de": "Spielregeln 9.2.1 (Prüfung des Spielfelds); Einspruchsfrist nach Wettkampf-/Rechtsordnung",
 "en": "Rules of the Game 9.2.1"
 },
 "origin": "fbd",
@@ -3093,7 +3096,7 @@ window.IFA_QUESTIONS = [
 "ch": 9,
 "scope": "ifa",
 "q": {
-"de": "Gegen was ist es nicht möglich, erfolgreich einen Einspruch einzulegen?",
+"de": "Wogegen kann ein Einspruch keinen Erfolg haben?",
 "en": "Against what can an objection not succeed?"
 },
 "a": {
@@ -3101,13 +3104,13 @@ window.IFA_QUESTIONS = [
 "Tatsachenentscheidung des Schiedsrichters",
 "Spieleinrichtung (Spielfeld und Geräte)",
 "Wertung des Spieles",
-"Wertung eines Spielvorganges"
+"Regelwidrige Auslegung der Spielregeln durch den Schiedsrichter"
 ],
 "en": [
 "A referee's decision on a matter of fact",
 "Playing facilities (court and equipment)",
 "The result of the match",
-"The ruling on a passage of play"
+"Misapplication of the rules by the referee"
 ]
 },
 "c": 0,
@@ -3123,20 +3126,20 @@ window.IFA_QUESTIONS = [
 "ch": 9,
 "scope": "ifa",
 "q": {
-"de": "Welche Aufgaben hat ein Schiedsrichter bei einem Einsatz zu erfüllen?",
+"de": "Welche Aufgabe hat ein Schiedsrichter bei einem Einsatz zu erfüllen?",
 "en": "What duties does a referee have to fulfil on an appointment?"
 },
 "a": {
 "de": [
 "Überprüfung von Spielfeld und Spielgerät vor Spielbeginn",
 "Neuansetzung abgebrochener Spiele",
-"Feld nach zu markieren",
+"Nachmarkieren des Spielfeldes",
 "Verhandlung eines Einspruches wegen nicht ordnungsgemäßen Spielaufbaus"
 ],
 "en": [
 "Checking the court and equipment before the match",
 "Rescheduling of abandoned matches",
-"The court has to be marked afterwards",
+"Re-marking the court lines",
 "Hearing an objection about an improperly prepared court"
 ]
 },
@@ -3183,15 +3186,15 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Bei einem Spiel der 2. BL verletzt sich ein Spieler der Mannschaft „A“ am Schienbein (stark blutende Wunde). Der SR unterbricht das Spiel (SR-Auszeit), kümmert sich um den Verletzten, trägt die Verletzung in den Spielbericht ein und fordert ihn auf das Spielfeld zu verlassen. Dieser erklärt, dass er um seine fehlende Blutgerinnung weiß und will auf jeden Fall weiterspielt! Wie verhält sich der SR?",
-"en": "In a 2nd Bundesliga match a player of team A injures his shin (a heavily bleeding wound). The referee stops play, attends to the injured player, records the injury on the match report and asks him to leave the court. The player states that he knows about his clotting disorder and insists on playing on. How does the referee act?"
+"de": "Bei einem Spiel der 2. Bundesliga verletzt sich ein Spieler der Mannschaft „A“ am Schienbein (stark blutende Wunde). Der SR unterbricht das Spiel (SR-Auszeit), kümmert sich um den Verletzten, trägt die Verletzung in den Spielbericht ein und fordert ihn auf, das Spielfeld zu verlassen. Dieser erklärt, dass er um seine fehlende Blutgerinnung weiß und auf jeden Fall weiterspielen will. Wie verhält sich der SR?",
+"en": "In a 2nd Bundesliga match a player of team A injures his shin (a heavily bleeding wound). The referee stops play (referee time-out), attends to the injured player, records the injury on the match report and asks him to leave the court. The player states that he knows about his clotting disorder and insists on playing on. How does the referee act?"
 },
 "a": {
 "de": [
-"Er nimmt den Spieler vom Platz und lässt ihn erst wieder spielen wenn die Blutung gestoppt ist.",
+"Er nimmt den Spieler vom Platz und lässt ihn erst wieder spielen, wenn die Blutung gestoppt ist.",
 "Er unterbricht das Spiel so lange, bis die Verletzung versorgt ist.",
-"Er lässt trotz Verletung / Blutung weiterspielen.",
-"Er ruft einen Arzt zur Beurteilung der Verletung hinzu."
+"Er lässt trotz Verletzung / Blutung weiterspielen.",
+"Er ruft einen Arzt zur Beurteilung der Verletzung hinzu."
 ],
 "en": [
 "He takes the player off court and only lets him play again once the bleeding has stopped.",
@@ -3213,7 +3216,7 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Bis wann müssen die Ergebnisse eingetragen werden ?",
+"de": "Bis wann müssen die Ergebnisse eingetragen werden?",
 "en": "By when do the results have to be entered?"
 },
 "a": {
@@ -3243,13 +3246,13 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Welche Kontrollen kann der Schiedsrichter bei seinem Einsatz vernachlässigen?",
-"en": "Which checks may the referee skip on an appointment?"
+"de": "Welche der folgenden Aufgaben gehört nicht zu den Kontrollen des Schiedsrichters bei seinem Einsatz?",
+"en": "Which of the following tasks is not one of the referee's checks on an appointment?"
 },
 "a": {
 "de": [
 "Neuansetzung abgebrochener Spiele",
-"Überprüfung von Spielfeld und Geräte",
+"Überprüfung von Spielfeld und Geräten",
 "Überprüfung der Spielberechtigung",
 "Überwachung der Aufzeichnungen im Spielformular"
 ],
@@ -3273,8 +3276,8 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Welcher Satzmodus wird derzeit in der Feldsaison in den folgenden Bundesligen gespielt? Nenne die jeweilige Anzahl.",
-"en": "Which set format is currently played in the outdoor season in the following Bundesliga divisions? State the number in each case."
+"de": "Welche der folgenden Aussagen zum Satzmodus in der Feldsaison der Bundesligen trifft zu?",
+"en": "Which of the following statements about the set format in the outdoor season of the Bundesliga is correct?"
 },
 "a": {
 "de": [
@@ -3363,7 +3366,7 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Wo muss sich das faustball.de Abzeichnen auf dem Trikot befinden?",
+"de": "Wo muss sich das faustball.de-Abzeichen auf dem Trikot befinden?",
 "en": "Where must the faustball.de badge be placed on the shirt?"
 },
 "a": {
@@ -3376,7 +3379,7 @@ window.IFA_QUESTIONS = [
 "en": [
 "On the right or left upper arm",
 "The badge is not required.",
-"On the chest next to the club badge",
+"On the chest next to the club logo",
 "On the shorts next to the number"
 ]
 },
@@ -3461,7 +3464,7 @@ window.IFA_QUESTIONS = [
 "Gutball Mannschaft „B“",
 "Gutball Mannschaft „A“",
 "Wiederholung der letzten Angabe",
-"Es muss drei Mal gespielt werden"
+"Es muss dreimal gespielt werden"
 ],
 "en": [
 "Point for team B",
@@ -3489,9 +3492,9 @@ window.IFA_QUESTIONS = [
 "a": {
 "de": [
 "Nein, es muss ein neuer Mannschaftsführer bestimmt werden",
-"Ja, die \"rote Karte\" hat keine Auswirkung auf das Amt des Mannschaftsführers",
+"Ja, die „rote Karte“ hat keine Auswirkung auf das Amt des Mannschaftsführers",
 "Das entscheidet der Schiedsrichter situationsbedingt",
-"Nur, wenn die Mannschaft, der Trainer / Betreuer darauf besteht"
+"Nur wenn die Mannschaft oder der Trainer/Betreuer darauf besteht"
 ],
 "en": [
 "No, a new team captain has to be appointed",
@@ -3519,13 +3522,13 @@ window.IFA_QUESTIONS = [
 "a": {
 "de": [
 "Gutball für Mannschaft „B“ wegen absichtlicher Behinderung und gelbe Karte gegen den Schlagmann „A“",
-"Kein Behinderung. Weiterspielen",
-"Mündliche Verwarnung gegen den Schlagmann Mannschaft „A“, Wiederholung der letzten Angabe",
-"Weiterspielen, wenn Schlagmann nur im gegnerischen 3-m-Raum steht"
+"Keine Behinderung. Weiterspielen",
+"Mündliche Verwarnung gegen den Schlagmann der Mannschaft „A“, Wiederholung der letzten Angabe",
+"Weiterspielen, wenn der Schlagmann nur im gegnerischen 3-m-Raum steht"
 ],
 "en": [
 "Point for team B for deliberate obstruction and a yellow card for team A's attacker",
-"No interference. Play on",
+"No obstruction. Play on",
 "Verbal caution to team A's attacker, the last service is replayed",
 "Play on if the attacker is only standing in the opponent's 3 m area"
 ]
@@ -3533,7 +3536,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 4.5; Spielregeln 7.8",
-"en": "Rules of the Game 4.5; Spielregeln 7.8"
+"en": "Rules of the Game 4.5; Rules of the Game 7.8"
 },
 "origin": "fbd",
 "tr": true
@@ -3573,7 +3576,7 @@ window.IFA_QUESTIONS = [
 "ch": 10,
 "scope": "ifa",
 "q": {
-"de": "Nach Abpfiff des Spieles in der 1. BL, die Spieler befinden sich noch auf dem Platz, die letzten Unterschriften auf dem Spielbericht fehlen, äußert ein Spieler der unterlegenen Mannschaft lautstark und für alle hörbar: „Der Schiri hat uns von vorne bis hinten beschissen, so einen Blinden darf man kein Spiel mehr leiten lassen“. Wie entscheidest du als Schiedsrichter?",
+"de": "Nach dem Abpfiff eines Spiels der 1. Bundesliga – die Spieler befinden sich noch auf dem Platz, die letzten Unterschriften auf dem Spielbericht fehlen – äußert ein Spieler der unterlegenen Mannschaft lautstark und für alle hörbar: „Der Schiri hat uns von vorne bis hinten beschissen, so einen Blinden darf man kein Spiel mehr leiten lassen.“ Wie entscheidest du als Schiedsrichter?",
 "en": "After the final whistle of a 1st Bundesliga match, with the players still on court and the last signatures on the match report missing, a player of the losing team says loudly and audibly to everyone: \"The ref cheated us from start to finish, someone that blind should never referee again.\" How do you decide as referee?"
 },
 "a": {
@@ -3592,8 +3595,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "IFA-Schulungsmappe für Schiedsrichter 10.1.0.1; Nachschlagewerk von Faustball Deutschland",
-"en": "IFA Training Manual for Referees 10.1.0.1; Faustball Deutschland reference work"
+"de": "IFA-Schulungsmappe für Schiedsrichter 10.1, Feldverweis – rote Karte (Insultierung des Schiedsgerichts) und Erläuterung Karten; Nachschlagewerk von Faustball Deutschland",
+"en": "IFA Training Manual for Referees 10.1, sending off – red card (insulting the referee) and explanation on cards; Faustball Deutschland reference work"
 },
 "origin": "fbd",
 "tr": true
@@ -3603,14 +3606,14 @@ window.IFA_QUESTIONS = [
 "ch": 10,
 "scope": "ifa",
 "q": {
-"de": "Nach einer Spielunterbrechung nimmt Mannschaft „B“ zügig die Spielposition ein. Mannschaft „A“ lässt sich auch nach nochmaligem Pfiff und mündlicher Aufforderungen nicht dazu bewegen die Spielposition einzunehmen. Was ist zu unternehmen?",
+"de": "Nach einer Spielunterbrechung nimmt Mannschaft „B“ zügig die Spielposition ein. Mannschaft „A“ lässt sich auch nach nochmaligem Pfiff und mündlichen Aufforderungen nicht dazu bewegen, die Spielposition einzunehmen. Was ist zu unternehmen?",
 "en": "After a stoppage team B promptly takes up position. Team A cannot be moved to do so even after another whistle and verbal requests. What is to be done?"
 },
 "a": {
 "de": [
 "Mannschaft „A“ ist wegen Spielverzögerung zu verwarnen",
 "Mannschaft „A“ weiterhin auffordern, die Spielposition einzunehmen",
-"Nichts unternehmen. Warten, bis Mannschaft \"A\" spielbereit ist.",
+"Nichts unternehmen. Warten, bis Mannschaft „A“ spielbereit ist.",
 "Ein Strafball für Mannschaft „B“"
 ],
 "en": [
@@ -3653,7 +3656,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1, Erläuterung Schiedsrichterzone",
-"en": "Rules of the Game 1.1, Interpretation Explanation of referee zone"
+"en": "Rules of the Game 1.1, Explanation of referee zone"
 },
 "origin": "ifa",
 "tr": true
@@ -3683,7 +3686,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1.2, Erläuterung Lage und Maß der Linien",
-"en": "Rules of the Game 1.1.2, Interpretation Explanation of the position and dimensions of the lines"
+"en": "Rules of the Game 1.1.2, Explanation of the position and dimensions of the lines"
 },
 "origin": "ifa",
 "tr": true
@@ -3713,7 +3716,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1.2, Erläuterung Aus oder In",
-"en": "Rules of the Game 1.1.2, Interpretation Explanation Out or In"
+"en": "Rules of the Game 1.1.2, Explanation Out or In"
 },
 "origin": "ifa",
 "tr": true
@@ -3743,7 +3746,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1.2 und 7.2.1",
-"en": "Rules of the Game 1.1.2 und 7.2.1"
+"en": "Rules of the Game 1.1.2 and 7.2.1"
 },
 "origin": "ifa",
 "tr": true
@@ -3773,7 +3776,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.2, Erläuterung Leinenhöhe",
-"en": "Rules of the Game 1.2, Interpretation Explanation of line height"
+"en": "Rules of the Game 1.2, Explanation of line height"
 },
 "origin": "ifa",
 "tr": true
@@ -3788,13 +3791,13 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Kein Fehler – die Person befindet sich außerhalb des definierten Auslaufs",
+"Der Auswechselspieler verursacht keinen Fehler – der Ball gilt als außerhalb des Auslaufs zu Boden gefallen; Fehler der Mannschaft, die ihn zuletzt berührt hat",
 "Fehler der Mannschaft, zu der der Auswechselspieler gehört",
 "Behinderung, die letzte Angabe wird wiederholt",
 "Gutball für den Gegner wegen unsportlichen Verhaltens"
 ],
 "en": [
-"No fault – the person is outside the defined buffer zone",
+"The substitute causes no fault – the ball counts as having landed outside the buffer zone; fault by the team that touched it last",
 "Fault by the team the substitute belongs to",
 "Interference, the last service is replayed",
 "Point for the opponent for unsporting behaviour"
@@ -3803,7 +3806,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.3, Erläuterung Auslauf in der Halle",
-"en": "Rules of the Game 1.3, Interpretation Explanation of the exit in the hall"
+"en": "Rules of the Game 1.3, Explanation of the buffer zone indoors"
 },
 "origin": "ifa",
 "tr": true
@@ -3824,7 +3827,7 @@ window.IFA_QUESTIONS = [
 "Die Auslosung entfällt in diesem Fall vollständig"
 ],
 "en": [
-"As usual on end or service – only the choice of ball allocation falls away",
+"End or service, as usual – only the choice of the set of balls falls away",
 "Only on who serves first; the opponent gets the end without a choice",
 "The winner of the toss still chooses the set of balls",
 "In this case the toss is dropped entirely"
@@ -3832,7 +3835,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.5 und Erläuterung Ballwahl. Der Losgewinner wählt weiterhin Feldseite oder Angabe. Legt der Veranstalter die Bälle auf, entfällt lediglich die sonst mit der Angabe verbundene Wahl des Ballkontingents.",
+"de": "Spielregeln 1.5, Erläuterung Ballwahl",
 "en": "Rules of the Game 1.5 and the explanation on ball choice. The winner of the toss still chooses end or service. If the organiser provides the balls, only the choice of ball allocation that normally goes with the service falls away."
 },
 "origin": "ifa",
@@ -3854,7 +3857,7 @@ window.IFA_QUESTIONS = [
 "Keine Maßnahme, solange der Ball spielfähig bleibt"
 ],
 "en": [
-"An immediate caution, further penalties if repeated; bring another ball into play if necessary",
+"An immediate verbal warning, further penalties if repeated; bring another ball into play if necessary",
 "Sending the player off immediately",
 "Point for the opponent with no further measure",
 "No measure, as long as the ball remains fit for play"
@@ -3863,7 +3866,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.6, Erläuterung Regelkonformität des Balles",
-"en": "Rules of the Game 1.6, Interpretation Explanation of compliance of the ball with the rules"
+"en": "Rules of the Game 1.6, Explanation of compliance of the ball with the rules"
 },
 "origin": "ifa",
 "tr": true
@@ -3873,27 +3876,27 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Eine Mannschaft wendet gegen das Ergebnis der Ballprüfung ein. Wer trägt die Beweispflicht?",
+"de": "Eine Mannschaft erhebt Einwand gegen das Ergebnis der Ballprüfung. Wer trägt die Beweispflicht?",
 "en": "A team objects to the outcome of the ball check. Who bears the burden of proof?"
 },
 "a": {
 "de": [
 "Der Beschwerdeführer",
 "Der Schiedsrichter",
-"Die Mannschaft, die den Ball vorgelegt hat",
+"Die gegnerische Mannschaft des Beschwerdeführers",
 "Der Veranstalter"
 ],
 "en": [
 "The party making the complaint",
 "The referee",
-"The team that presented the ball",
+"The complaining team's opponent",
 "The organiser"
 ]
 },
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.6, Erläuterung Regelkonformität des Balles",
-"en": "Rules of the Game 1.6, Interpretation Explanation of compliance of the ball with the rules"
+"en": "Rules of the Game 1.6, Explanation of compliance of the ball with the rules"
 },
 "origin": "ifa",
 "tr": true
@@ -3904,7 +3907,7 @@ window.IFA_QUESTIONS = [
 "scope": "ifa",
 "q": {
 "de": "Wann bringen Ballkinder den Ball zurück ins Spiel?",
-"en": "When do ball children return the ball to play?"
+"en": "When do ball kids return the ball to play?"
 },
 "a": {
 "de": [
@@ -3923,7 +3926,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.6, Erläuterung für den Einsatz von Ballkindern",
-"en": "Rules of the Game 1.6, Interpretation Explanation of use of ball kids"
+"en": "Rules of the Game 1.6, Explanation of use of ball kids"
 },
 "origin": "ifa",
 "tr": true
@@ -3953,7 +3956,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.6.4, Erläuterung Balltausch",
-"en": "Rules of the Game 1.6.4, Interpretation Explanation ball exchange"
+"en": "Rules of the Game 1.6.4, Explanation ball exchange"
 },
 "origin": "ifa",
 "tr": true
@@ -3982,8 +3985,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 2.1.2, Erläuterung Auswechslung",
-"en": "Rules of the Game 2.1.2, Interpretation Explanation of substitution"
+"de": "Schulungsmappe 2.1.2, Erläuterung Auswechslung",
+"en": "Training Manual for Referees, 2.1.2, explanation: substitution"
 },
 "origin": "ifa",
 "tr": true
@@ -4012,8 +4015,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 2.1.2, Erläuterung Wechsel bei Timeout",
-"en": "Rules of the Game 2.1.2, Interpretation substitution during a time-out"
+"de": "Schulungsmappe 2.1.2, Erläuterung Wechsel bei Timeout",
+"en": "Training Manual for Referees, 2.1.2, explanation: substitution during a time-out"
 },
 "origin": "ifa",
 "tr": true
@@ -4102,8 +4105,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 2.1.3, Erläuterung ohne Verzögerung",
-"en": "Rules of the Game 2.1.3, Interpretation Explanation without delay"
+"de": "Schulungsmappe 2.1.3, Erläuterung ohne Verzögerung",
+"en": "Training Manual for Referees, 2.1.3, explanation: without delay"
 },
 "origin": "ifa",
 "tr": true
@@ -4192,8 +4195,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 3.1.5, Erläuterung Pausenlänge",
-"en": "Rules of the Game 3.1.5, Interpretation Explanation of pause length"
+"de": "Schulungsmappe 3.1.5, Erläuterung Pausenlänge",
+"en": "Training Manual for Referees, 3.1.5, explanation: length of the break"
 },
 "origin": "ifa",
 "tr": true
@@ -4222,8 +4225,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 3.4, Erläuterung Time out",
-"en": "Rules of the Game 3.4, Interpretation Explanation timeout"
+"de": "Schulungsmappe 3.4, Erläuterung Time out",
+"en": "Training Manual for Referees, 3.4, explanation: time-out"
 },
 "origin": "ifa",
 "tr": true
@@ -4252,8 +4255,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 3.4, Erläuterung Time out",
-"en": "Rules of the Game 3.4, Interpretation Explanation timeout"
+"de": "Schulungsmappe 3.4, Erläuterung Time out",
+"en": "Training Manual for Referees, 3.4, explanation: time-out"
 },
 "origin": "ifa",
 "tr": true
@@ -4282,8 +4285,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 3.4, Erläuterung Time out",
-"en": "Rules of the Game 3.4, Interpretation Explanation timeout"
+"de": "Schulungsmappe 3.4, Erläuterung Time out",
+"en": "Training Manual for Referees, 3.4, explanation: time-out"
 },
 "origin": "ifa",
 "tr": true
@@ -4342,8 +4345,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 4.1.1, Erläuterung Spielunterbrechung",
-"en": "Rules of the Game 4.1.1, Interpretation Explanation of game interruption"
+"de": "Schulungsmappe 4.1.1, Erläuterung Spielunterbrechung",
+"en": "Training Manual for Referees, 4.1.1, explanation: stoppage of play"
 },
 "origin": "ifa",
 "tr": true
@@ -4366,14 +4369,14 @@ window.IFA_QUESTIONS = [
 "en": [
 "Fault by the team the substitute belongs to",
 "No fault",
-"Interference, the last service is replayed",
+"Obstruction, the last service is replayed",
 "Fault by the opposing team"
 ]
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 4.4, Erläuterung Ballberührung durch Nichtspieler",
-"en": "Rules of the Game 4.4, Interpretation Explanation of touching the ball by non-players"
+"de": "Schulungsmappe 4.4, Erläuterung Ballberührung durch Nichtspieler",
+"en": "Training Manual for Referees, 4.4, explanation: ball touched by non-players"
 },
 "origin": "ifa",
 "tr": true
@@ -4394,7 +4397,7 @@ window.IFA_QUESTIONS = [
 "Kein Eingriff, das Spiel läuft weiter"
 ],
 "en": [
-"Interference – the last rally is replayed",
+"Obstruction – the last rally is replayed",
 "Fault by the team that touched the ball last",
 "Point for the team entitled to play the ball",
 "No intervention, play continues"
@@ -4402,8 +4405,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 4.4, Erläuterung Ballberührung durch Nichtspieler",
-"en": "Rules of the Game 4.4, Interpretation Explanation of touching the ball by non-players"
+"de": "Schulungsmappe 4.4, Erläuterung Ballberührung durch Nichtspieler",
+"en": "Training Manual for Referees, 4.4, explanation: ball touched by non-players"
 },
 "origin": "ifa",
 "tr": true
@@ -4432,8 +4435,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 4.2, Erläuterung Fehler während Spielgang",
-"en": "Rules of the Game 4.2, Interpretation Explanation of errors during gameplay"
+"de": "Schulungsmappe 4.2, Erläuterung Fehler während Spielgang",
+"en": "Training Manual for Referees, 4.2, explanation: faults during a rally"
 },
 "origin": "ifa",
 "tr": true
@@ -4448,13 +4451,13 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Beim unvermeidbaren Auslaufen nach Angriff oder Block sowie beim Zurückspielen eines unter der Leine geratenen Balles",
+"Beim unvermeidbaren Auslaufen nach Angriff oder Block sowie beim Zurückspielen eines Balles, der indirekt unter der Leine hindurch ins Gegenfeld geraten ist",
 "In keinem Fall",
 "Immer, solange kein Gegner behindert wird",
 "Nur vom blockenden Spieler"
 ],
 "en": [
-"When running out unavoidably after an attack or block, and when playing back a ball that has gone under the net",
+"When running out unavoidably after an attack or block, and when playing back a ball that has gone indirectly under the net into the opposite court",
 "In no case",
 "Always, as long as no opponent is obstructed",
 "Only by the blocking player"
@@ -4462,8 +4465,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 4.5, Erläuterung Betreten des Gegenfeldes",
-"en": "Rules of the Game 4.5, Interpretation Explanation entering the opposite field"
+"de": "Schulungsmappe 4.5, Erläuterung Betreten des Gegenfeldes",
+"en": "Training Manual for Referees, 4.5, explanation: entering the opposite court"
 },
 "origin": "ifa",
 "tr": true
@@ -4553,7 +4556,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 5.1 und 5.3",
-"en": "Rules of the Game 5.1 und 5.3"
+"en": "Rules of the Game 5.1 and 5.3"
 },
 "origin": "ifa",
 "tr": true
@@ -4583,7 +4586,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 6.2, Erläuterung Ball muss Abwurfhand verlassen",
-"en": "Rules of the Game 6.2, Interpretation Explanation of the ball must leave the release hand"
+"en": "Rules of the Game 6.2, explanation “The ball must leave the release hand”"
 },
 "origin": "ifa",
 "tr": true
@@ -4593,27 +4596,27 @@ window.IFA_QUESTIONS = [
 "ch": 6,
 "scope": "ifa",
 "q": {
-"de": "Ein Spieler spielt den Ball aus dem Knien über die Leine. Wie entscheidest du?",
-"en": "A player plays the ball over the net from a kneeling position. What is your decision?"
+"de": "Ein Spieler spielt den Ball zur Angabe aus dem Knien über die Leine. Wie entscheidest du?",
+"en": "A player plays the ball over the net from a kneeling position to serve. What is your decision?"
 },
 "a": {
 "de": [
 "Keine Angabe – weder Fehler noch eröffneter Spielgang",
 "Fehler der angebenden Mannschaft",
 "Gültige Angabe",
-"Die Angabe ist zu wiederholen"
+"Gutball für die angebende Mannschaft"
 ],
 "en": [
 "Not a service – neither a fault nor a rally started",
 "Fault by the serving team",
 "Valid service",
-"The service is to be replayed"
+"Point for the serving team"
 ]
 },
 "c": 0,
 "ref": {
 "de": "Spielregeln 6.3, Erläuterung Angabe im Laufen, Springen, Stehen oder Gehen",
-"en": "Rules of the Game 6.3, Interpretation service while running, jumping, standing or walking"
+"en": "Rules of the Game 6.3, explanation “Service while running, jumping, standing or walking”"
 },
 "origin": "ifa",
 "tr": true
@@ -4643,7 +4646,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 6.3, Erläuterung Angabe im Laufen, Springen, Stehen oder Gehen",
-"en": "Rules of the Game 6.3, Interpretation service while running, jumping, standing or walking"
+"en": "Rules of the Game 6.3, explanation “Service while running, jumping, standing or walking”"
 },
 "origin": "ifa",
 "tr": true
@@ -4665,7 +4668,7 @@ window.IFA_QUESTIONS = [
 ],
 "en": [
 "No fault",
-"Fault for a foot fault",
+"Fault – foot fault",
 "The service is to be replayed",
 "Fault, but only on the second consecutive service"
 ]
@@ -4673,7 +4676,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 6.3, Erläuterung Angabe im Laufen, Springen, Stehen oder Gehen",
-"en": "Rules of the Game 6.3, Interpretation service while running, jumping, standing or walking"
+"en": "Rules of the Game 6.3, explanation “Service while running, jumping, standing or walking”"
 },
 "origin": "ifa",
 "tr": true
@@ -4703,7 +4706,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 6.4.1, Erläuterung begonnene Angabe",
-"en": "Rules of the Game 6.4.1, Interpretation Explanation of started service"
+"en": "Rules of the Game 6.4.1, explanation “Started service”"
 },
 "origin": "ifa",
 "tr": true
@@ -4733,7 +4736,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 6.4.1, Erläuterung begonnene Angabe",
-"en": "Rules of the Game 6.4.1, Interpretation Explanation of started service"
+"en": "Rules of the Game 6.4.1, explanation “Started service”"
 },
 "origin": "ifa",
 "tr": true
@@ -4751,19 +4754,19 @@ window.IFA_QUESTIONS = [
 "Keine Angabe – weder Fehler noch Eröffnung des Spielganges",
 "Fehler der angebenden Mannschaft",
 "Gültig, sofern der Ball im Gegenfeld landet",
-"Die Angabe ist zu wiederholen"
+"Gutball für die angebende Mannschaft"
 ],
 "en": [
 "Not a service – neither a fault nor the start of a rally",
 "Fault by the serving team",
 "Valid, provided the ball lands in the opposite court",
-"The service is to be replayed"
+"Point for the serving team"
 ]
 },
 "c": 0,
 "ref": {
 "de": "Spielregeln 6.3.2, Erläuterung Angabe / Außerhalb des Spielfeldes",
-"en": "Rules of the Game 6.3.2, Interpretation Explanation of service / Outside the field of play"
+"en": "Rules of the Game 6.3.2, explanation “Service / outside the field of play”"
 },
 "origin": "ifa",
 "tr": true
@@ -4823,7 +4826,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 6.3.2, Erläuterung Angabe / Übertritt",
-"en": "Rules of the Game 6.3.2, Interpretation Explanation of service / leg transfer"
+"en": "Rules of the Game 6.3.2, explanation “Service / foot fault”"
 },
 "origin": "ifa",
 "tr": true
@@ -4838,22 +4841,22 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Der Ball war mit Erreichen des gegnerischen Luftraums ungültig – die weitere Berührung ist unerheblich",
+"Die weitere Berührung ist unerheblich. Der Ball war mit Erreichen des gegnerischen Luftraums nach dem Block ungültig, deshalb wird die letzte Angabe wiederholt.",
 "Fehler der Mannschaft, deren Spieler den Ball berührt hat",
-"Behinderung, die letzte Angabe wird wiederholt",
+"Fehler der Mannschaft des getroffenen Spielers",
 "Gutball für die blockende Mannschaft"
 ],
 "en": [
-"The ball became dead when it reached the opponent's airspace – any further contact is irrelevant",
+"Any further contact is irrelevant. The ball became dead when it reached the opponent's airspace after the block, so the last service is replayed.",
 "Fault by the team whose player touched the ball",
-"Interference, the last service is replayed",
+"Fault by the team of the player who was hit",
 "Point for the blocking team"
 ]
 },
 "c": 0,
 "ref": {
 "de": "Spielregeln 7.2.1, Erläuterung direkt unter dem Netz hindurchgespielt",
-"en": "Rules of the Game 7.2.1, Interpretation Explanation played right under the net"
+"en": "Rules of the Game 7.2.1, explanation “Played directly under the net”"
 },
 "origin": "ifa",
 "tr": true
@@ -4883,7 +4886,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 7.2.1, Erläuterung direkt unter dem Netz hindurchgespielt",
-"en": "Rules of the Game 7.2.1, Interpretation Explanation played right under the net"
+"en": "Rules of the Game 7.2.1, explanation “Played directly under the net”"
 },
 "origin": "ifa",
 "tr": true
@@ -4913,7 +4916,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 7.5, Erläuterung Zurückspielen unter dem Netz",
-"en": "Rules of the Game 7.5, Interpretation Explanation Playback under the net"
+"en": "Rules of the Game 7.5, explanation “Playing back under the net”"
 },
 "origin": "ifa",
 "tr": true
@@ -4943,7 +4946,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 7.5.1, Erläuterung Zurückspielen über dem Netz",
-"en": "Rules of the Game 7.5.1, Interpretation Explanation of playing back over the net"
+"en": "Rules of the Game 7.5.1, explanation “Playing back over the net”"
 },
 "origin": "ifa",
 "tr": true
@@ -4953,8 +4956,8 @@ window.IFA_QUESTIONS = [
 "ch": 7,
 "scope": "ifa",
 "q": {
-"de": "Ein angenommener Ball springt über die Leine. Der Zuspieler holt ihn durch Übergreifen über die Leine zurück – es wäre der dritte Kontakt. Zulässig?",
-"en": "A received ball bounces over the net. The setter retrieves it by reaching over the net – it would be the third contact. Is that allowed?"
+"de": "Ein angenommener Ball springt über die Leine. Der Zuspieler spielt ihn durch Übergreifen über die Leine hoch. Darf die Mannschaft den Ball danach noch ein drittes Mal spielen?",
+"en": "A received ball bounces over the net. The setter plays it up by reaching over the net. May the team still play the ball a third time?"
 },
 "a": {
 "de": [
@@ -4973,7 +4976,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 7.5.1, Erläuterung Zurückspielen über dem Netz",
-"en": "Rules of the Game 7.5.1, Interpretation Explanation of playing back over the net"
+"en": "Rules of the Game 7.5.1, explanation “Playing back over the net”"
 },
 "origin": "ifa",
 "tr": true
@@ -5003,7 +5006,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 7.5.2, Erläuterung ohne Berührung unter dem Netz",
-"en": "Rules of the Game 7.5.2, Interpretation Explanation without touching under the net"
+"en": "Rules of the Game 7.5.2, explanation “Under the net without a touch”"
 },
 "origin": "ifa",
 "tr": true
@@ -5033,7 +5036,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 7.8.1, Erläuterung unbeabsichtigt und unverschuldet",
-"en": "Rules of the Game 7.8.1, Interpretation Explanation unintentionally and through no fault of one's own"
+"en": "Rules of the Game 7.8.1, explanation “Unintentionally and through no fault of one's own”"
 },
 "origin": "ifa",
 "tr": true
@@ -5063,7 +5066,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 7.6.1, Erläuterung Block",
-"en": "Rules of the Game 7.6.1, Interpretation Explanation block"
+"en": "Rules of the Game 7.6.1, explanation “Block”"
 },
 "origin": "ifa",
 "tr": true
@@ -5093,7 +5096,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 7.6.1, Erläuterung Block",
-"en": "Rules of the Game 7.6.1, Interpretation Explanation block"
+"en": "Rules of the Game 7.6.1, explanation “Block”"
 },
 "origin": "ifa",
 "tr": true
@@ -5123,7 +5126,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 7.6.1, Erläuterung Block",
-"en": "Rules of the Game 7.6.1, Interpretation Explanation block"
+"en": "Rules of the Game 7.6.1, explanation “Block”"
 },
 "origin": "ifa",
 "tr": true
@@ -5213,7 +5216,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 9.2, Erläuterung selbstständige Entscheidungen",
-"en": "Rules of the Game 9.2, Interpretation Explanation of independent decisions"
+"en": "Rules of the Game 9.2, explanation “Independent decisions”"
 },
 "origin": "ifa",
 "tr": true
@@ -5224,7 +5227,7 @@ window.IFA_QUESTIONS = [
 "scope": "ifa",
 "q": {
 "de": "Der Linienrichter zeigt Aus, der Schiedsrichter hat den Ball als gut wahrgenommen. Was gilt?",
-"en": "The linesman signals out, the referee saw the ball as in. What applies?"
+"en": "The linesman signals out, but the referee saw the ball in. What applies?"
 },
 "a": {
 "de": [
@@ -5243,7 +5246,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 9.2, Erläuterung selbstständige Entscheidungen",
-"en": "Rules of the Game 9.2, Interpretation Explanation of independent decisions"
+"en": "Rules of the Game 9.2, explanation “Independent decisions”"
 },
 "origin": "ifa",
 "tr": true
@@ -5273,7 +5276,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 9.2.1, Erläuterung zentrale Zeitnahme",
-"en": "Rules of the Game 9.2.1, Interpretation Explanation of central timing"
+"en": "Rules of the Game 9.2.1, explanation “Central timing”"
 },
 "origin": "ifa",
 "tr": true
@@ -5446,14 +5449,14 @@ window.IFA_QUESTIONS = [
 "en": [
 "Yes – a warning and a sending off may also be given without a card",
 "No, without a card no penalty is possible",
-"Only verbal cautions are possible",
+"Only verbal warnings are possible",
 "Only after consulting the scorer"
 ]
 },
 "c": 0,
 "ref": {
 "de": "Schulungsmappe 10.1, Erläuterung Karten",
-"en": "Training Manual 10.1, Interpretation Karten"
+"en": "Training Manual 10.1, explanation on cards"
 },
 "origin": "ifa",
 "tr": true
@@ -5483,7 +5486,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Schulungsmappe 10.1, Erläuterung Karten",
-"en": "Training Manual 10.1, Interpretation Karten"
+"en": "Training Manual 10.1, explanation on cards"
 },
 "origin": "ifa",
 "tr": true
@@ -5507,7 +5510,7 @@ window.IFA_QUESTIONS = [
 "Sending off (red card) – the incident may also lead to the match being abandoned",
 "Warning (yellow card)",
 "Time penalty (yellow and red card)",
-"A caution and an entry on the match report"
+"A verbal warning and an entry on the match report"
 ]
 },
 "c": 0,
@@ -5564,7 +5567,7 @@ window.IFA_QUESTIONS = [
 "Nichts – die Verwarnung kann unmittelbar erfolgen"
 ],
 "en": [
-"At least one caution, \"please play\"",
+"At least one verbal warning (\"Please play\")",
 "A penalty point for the opponent",
 "A time penalty against the player concerned",
 "Nothing – the warning may be given straight away"
@@ -5572,8 +5575,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 10.2, Erläuterung Verwarnung gegen Mannschaft",
-"en": "Rules of the Game 10.2, Interpretation Explanation of warning against team"
+"de": "Schulungsmappe 10.2, Erläuterung Verwarnung gegen Mannschaft",
+"en": "Training Manual 10.2, explanation of warning against team"
 },
 "origin": "ifa",
 "tr": true
@@ -5602,8 +5605,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 10.1.3, Erläuterung Feldverweis Trainer/Betreuer",
-"en": "Rules of the Game 10.1.3, Interpretation Explanation of field reference trainer/manager"
+"de": "Schulungsmappe 10.1.3, Erläuterung Feldverweis Trainer/Betreuer",
+"en": "Training Manual 10.1.3, explanation on sending off a coach or manager"
 },
 "origin": "ifa",
 "tr": true
@@ -5633,7 +5636,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 10.1, Schulungsmappe Zeitstrafe",
-"en": "Rules of the Game 10.1, Schulungsmappe time penalty"
+"en": "Rules of the Game 10.1; Training Manual 10.1, time penalty"
 },
 "origin": "ifa",
 "tr": true
@@ -5797,12 +5800,12 @@ window.IFA_QUESTIONS = [
 "scope": "ifa",
 "shot": "ppt/ball-04",
 "q": {
-"de": "Auf den ersten Blick sieht der Ball aus. Deine Entscheidung?",
+"de": "Auf den ersten Blick scheint der Ball im Aus zu sein. Deine Entscheidung?",
 "en": "At first glance the ball looks out. What is your decision?"
 },
 "a": {
 "de": [
-"Gutball – die Aufkommstelle berührt noch die Außenkante der Linie",
+"Gutball – die Aufsprungstelle berührt noch die Außenkante der Linie",
 "Fehler – der Ball liegt außerhalb der Linie",
 "Fehler – der Ball überdeckt die Linie nur",
 "Wiederholung, weil nicht eindeutig erkennbar"
@@ -5909,8 +5912,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "IFA-Schulungsmappe, Handzeichen 7 – gestreckter Arm, geschlossene Faust senkrecht nach oben, unterstützt durch den Ausruf „BLOCK“.",
-"en": "IFA Training Manual, hand signal 7 – straight arm with closed fist held vertically upwards, supported by the call ‚BLOCK‘."
+"de": "IFA-Schulungsmappe, Handzeichen 7 – gestreckter Arm, geschlossene Faust senkrecht nach oben. Schulungsfolien Faustball Deutschland: unterstützt durch den Ausruf „BLOCK“.",
+"en": "IFA Training Manual, hand signal 7 – straight arm with closed fist held vertically upwards. Faustball Deutschland training slides: supported by the call \"BLOCK\"."
 },
 "origin": "ifa",
 "tr": true
@@ -5940,10 +5943,10 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "IFA-Schulungsmappe, Handzeichen 18 – beide gestreckten Arme mit geschlossener Faust vor der Brust. Nicht zu verwechseln mit dem Block, bei dem nur ein Arm nach oben geht.",
-"en": "IFA Training Manual, hand signal 18 – both arms extended with closed fists in front of the chest. Not to be confused with block, where only one arm goes up."
+"de": "Schulungsfolien Faustball Deutschland (Spielrichter-Gestik), Zeichen 18 Gleichstand – beide gestreckten Arme mit geschlossener Faust vor der Brust. Nicht zu verwechseln mit dem Block, bei dem nur ein Arm nach oben geht.",
+"en": "Faustball Deutschland training slides (officials' signals), signal 18 tie – both arms extended with closed fists in front of the chest. Not to be confused with block, where only one arm goes up."
 },
-"origin": "ifa",
+"origin": "ppt",
 "tr": true
 },
 {
@@ -6025,7 +6028,7 @@ window.IFA_QUESTIONS = [
 "Gleichstand"
 ],
 "en": [
-"After a rebound the ball touched the ceiling",
+"After a return the ball touched the ceiling",
 "Time out",
 "The ball passed underneath the tape",
 "Tie"
@@ -6034,7 +6037,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "IFA-Schulungsmappe, Handzeichen 13 – Deckenberührung nach einem Überschlag. Der zweite Arm zeigt danach waagerecht zur Mannschaft, die den Punkt erhält.",
-"en": "IFA Training Manual, hand signal 13 – contact with the ceiling after a rebound. The second arm then points horizontally to the team awarded the point."
+"en": "IFA Training Manual, hand signal 13 – contact with the ceiling after a return. The second arm then points horizontally to the team awarded the point."
 },
 "origin": "ifa",
 "tr": true
@@ -6149,7 +6152,7 @@ window.IFA_QUESTIONS = [
 "Der Ball hat den Körper berührt"
 ],
 "en": [
-"Two bounces",
+"Double bounce",
 "Foot fault",
 "Ball was just in",
 "The ball touched the body"
@@ -6311,8 +6314,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "IFA-Schulungsmappe, Handzeichen 1 bis 5 und 11 bis 14 – der zweite Arm weist stets der Mannschaft mit dem Gutpunkt zu.",
-"en": "IFA Training Manual, hand signals 1 to 5 and 11 to 14 – the second arm always points to the team awarded the point."
+"de": "IFA-Schulungsmappe, Handzeichen 1 bis 5 und 11 bis 14 – der zweite Arm zeigt in die Waagerechte, in Richtung der Mannschaft, die den Gutpunkt erzielt hat (bei Behinderung ggf. stattdessen das Zeichen für Wiederholung der Angabe).",
+"en": "IFA Training Manual, hand signals 1 to 5 and 11 to 14 – the second arm points horizontally towards the team that scored the point (for interference, the repetition-of-service signal may be shown instead)."
 },
 "origin": "ifa",
 "tr": true
@@ -6333,7 +6336,7 @@ window.IFA_QUESTIONS = [
 "Der Schiedsrichter zeigt mit gespreizten Fingern nach unten"
 ],
 "en": [
-"Touching the chest or thigh is sufficient, if necessary supported by calling ‚foot‘",
+"Touching the chest or thigh is sufficient, if necessary supported by calling \"foot\"",
 "The referee has to bend down and touch the foot",
 "There is no hand signal, the whistle alone is sufficient",
 "The referee points downwards with spread fingers"
@@ -6597,14 +6600,14 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Der Ball hat die Außenlinie überschritten",
-"Der Ball hat die Außenlinie nicht überschritten",
+"Ausball – der Ball hat außerhalb der Begrenzungslinien den Boden berührt",
+"Der Ball war knapp im Feld",
 "Der Linienrichter kann die Situation nicht beurteilen",
 "Der Linienrichter bittet um eine Spielunterbrechung"
 ],
 "en": [
-"The ball has crossed the outer line",
-"The ball has not crossed the outer line",
+"Ball out – the ball touched the ground outside the boundary lines",
+"The ball was just in",
 "The linesman cannot judge the situation",
 "The linesman requests an interruption of play"
 ]
@@ -6641,7 +6644,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "IFA-Schulungsmappe, Handzeichen 16 sowie die beste Position des Linienschiedsrichters 3.",
+"de": "IFA-Schulungsmappe, Handzeichen 16 sowie Abschnitt „Kontinuierlicher Standortwechsel“, Abbildung 3.",
 "en": "IFA Training Manual, hand signal 16 and best position of the linesman 3."
 },
 "origin": "ifa",
@@ -6671,7 +6674,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "IFA-Schulungsmappe, die beste Position des Linienschiedsrichters 3 – kann auch der Kollege die Situation nicht erkennen, übernimmt der Schiedsrichter.",
+"de": "IFA-Schulungsmappe, Abschnitt „Kontinuierlicher Standortwechsel“, Abbildung 3 – kann auch der Kollege die Situation nicht erkennen, übernimmt der Schiedsrichter.",
 "en": "IFA Training Manual, best position of the linesman 3 – if the colleague cannot see the situation either, the referee takes over."
 },
 "origin": "ifa",
@@ -6701,7 +6704,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "IFA-Schulungsmappe, die beste Position des Linienschiedsrichters 2 – der Kollege darf auf keinen Fall zuerst reagieren.",
+"de": "IFA-Schulungsmappe, Abschnitt „Kontinuierlicher Standortwechsel“, Abbildung 2 – der Kollege darf auf keinen Fall zuerst reagieren.",
 "en": "IFA Training Manual, best position of the linesman 2 – the colleague must never react first."
 },
 "origin": "ifa",
@@ -6791,10 +6794,10 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "IFA-Schulungsmappe, Auswechslung von Linienrichtern.",
-"en": "IFA Training Manual, replacement of linesmen."
+"de": "Schulungsfolien Faustball Deutschland, Linienrichter – Auswechslung von Linienrichtern.",
+"en": "Faustball Deutschland training slides, linesmen – replacement of linesmen."
 },
-"origin": "ifa",
+"origin": "ppt",
 "tr": true
 },
 {
@@ -6828,36 +6831,6 @@ window.IFA_QUESTIONS = [
 "tr": true
 },
 {
-"id": "IFA-C-036",
-"ch": 8,
-"scope": "ifa",
-"q": {
-"de": "Wie wird ein Fehler gewertet?",
-"en": "How is a fault scored?"
-},
-"a": {
-"de": [
-"Als Gutball für die gegnerische Mannschaft",
-"Als Punktabzug für die fehlerhafte Mannschaft",
-"Der Ballwechsel wird ohne Wertung wiederholt",
-"Die Angabe geht an die gegnerische Mannschaft, ohne dass ein Punkt fällt"
-],
-"en": [
-"As a point for the opposing team",
-"As a point deduction for the team at fault",
-"The rally is replayed without being scored",
-"The service passes to the opposing team without a point being scored"
-]
-},
-"c": 0,
-"ref": {
-"de": "Spielregeln 8.1.",
-"en": "Rules of the Game 8.1."
-},
-"origin": "ifa",
-"tr": true
-},
-{
 "id": "IFA-A-053",
 "ch": 8,
 "scope": "ifa",
@@ -6873,7 +6846,7 @@ window.IFA_QUESTIONS = [
 "Dass nur die Sätze, nicht die einzelnen Gutbälle festgehalten werden"
 ],
 "en": [
-"That the scorer does not invalidate the empty fields",
+"That the scorer does not cross out the empty boxes",
 "That the points are entered in Roman numerals",
 "That each team enters its own points itself",
 "That only the sets and not the individual points are recorded"
@@ -6881,10 +6854,10 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "IFA-Schulungsmappe, Kontrolle des Anschreibers zu Regel 8.2. Die Gutbälle werden mit arabischen Ziffern in zeitlicher Reihenfolge eingetragen.",
-"en": "IFA Training Manual, supervision of the scorer relating to rule 8.2. Points are entered in Arabic numerals in chronological order."
+"de": "Schulungsfolien Kapitel 8 (Wertung), Folie 3, Notiz zu 8.2.1",
+"en": "Training slides chapter 8 (Scoring), slide 3, note on 8.2.1"
 },
-"origin": "ifa",
+"origin": "ppt",
 "tr": true
 },
 {
@@ -6957,13 +6930,13 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Feld oder Ball und damit die erste Angabe",
+"Spielfeldseite oder erste Angabe („Angabe“ oder „Abwehr“) – wer die erste Angabe schlägt, wählt das Ballkontingent",
 "Nur die Spielfeldseite; die Angabe hat immer die Heimmannschaft",
 "Nur die erste Angabe; die Seiten sind vorgegeben",
 "Die Reihenfolge der Auswechslungen"
 ],
 "en": [
-"Choice of end or ball, and thereby the first service",
+"Choice of end or of the first service (\"service\" or \"defend\") – the team serving first chooses the balls",
 "Only the end; the home team always serves first",
 "Only the first service; the ends are predetermined",
 "The order of substitutions"
@@ -6971,8 +6944,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Auslosung.",
-"en": "Referee regulations, duties before the match – the toss."
+"de": "Spielregeln 1.5",
+"en": "Rules of the Game 1.5"
 },
 "origin": "ifa",
 "tr": true
@@ -6993,7 +6966,7 @@ window.IFA_QUESTIONS = [
 "Die Bälle verbleiben bei den Mannschaften auf der Auswechselbank"
 ],
 "en": [
-"Outside the run-off area – apart from the ball in play, no ball may lie in the run-off area",
+"Outside the buffer zone – apart from the ball in play, no ball may lie in the buffer zone",
 "Directly beside the post, so that the next ball is quickly at hand",
 "Spread around the run-off area behind the base lines so they are quickly at hand",
 "The balls stay with the teams on the substitutes' bench"
@@ -7001,7 +6974,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.6: die nicht gespielten Bälle bleiben unter der Kontrolle des Schiedsrichters, aber außerhalb des Auslaufs. Schiedsrichterordnung, Aufgaben während des Spiels: die Reservebälle liegen mindestens 3 bis 5 m hinter dem Pfosten. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
+"de": "Spielregeln 1.6: die nicht gespielten Bälle bleiben unter der Kontrolle des Schiedsrichters, aber außerhalb des Auslaufs. Schiedsrichterordnung, Aufgaben während des Spiels: die Reservebälle liegen 3 bis 5 m hinter dem Pfosten. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
 "en": "Rules of the Game 1.6: the balls not in use remain under the referee's control, but outside the buffer zone. Referee regulations, duties during the match: spare balls lie at least 3 to 5 m behind the post. Apart from the ball in play, no ball belongs in the run-off area - players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."
 },
 "origin": "ifa",

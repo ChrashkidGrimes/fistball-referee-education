@@ -61,7 +61,7 @@ Frage unfair.
 - [ ] Ball war knapp gut  —  *Ball was just in*
 - [ ] Wiederholung der letzten Angabe  —  *Repetition of the last service*
 
-*Fundstelle:* IFA-Schulungsmappe, Handzeichen 7 – gestreckter Arm, geschlossene Faust senkrecht nach oben, unterstützt durch den Ausruf „BLOCK“.
+*Fundstelle:* IFA-Schulungsmappe, Handzeichen 7 – gestreckter Arm, geschlossene Faust senkrecht nach oben. Schulungsfolien Faustball Deutschland: unterstützt durch den Ausruf „BLOCK“.
 
 > Der rechte oder linke gestreckte Arm wird mit geschlossener Faust senkrecht nach oben gehalten. Gleichzeitig wird die Geste mit dem Ausruf „BLOCK“ unterstützt. Das ist NICHT das Zeichen für Gleichstand.
 
@@ -79,7 +79,7 @@ Frage unfair.
 - [ ] Behinderung  —  *Obstruction*
 - [ ] Time out  —  *Time out*
 
-*Fundstelle:* IFA-Schulungsmappe, Handzeichen 18 – beide gestreckten Arme mit geschlossener Faust vor der Brust. Nicht zu verwechseln mit dem Block, bei dem nur ein Arm nach oben geht.
+*Fundstelle:* Schulungsfolien Faustball Deutschland (Spielrichter-Gestik), Zeichen 18 Gleichstand – beide gestreckten Arme mit geschlossener Faust vor der Brust. Nicht zu verwechseln mit dem Block, bei dem nur ein Arm nach oben geht.
 
 > Der rechte und der linke gestreckte Arm werden mit geschlossener Faust vor der Brust gehalten.
 
@@ -128,7 +128,7 @@ Frage unfair.
 **Beide Hände weisen mit geöffneter Handfläche nach oben. Was zeigt der Schiedsrichter an?**  
 *Both hands point upwards with open palms. What is the referee indicating?*
 
-- [x] **Der Ball hat nach einem Überschlag die Decke berührt**  —  *After a rebound the ball touched the ceiling*
+- [x] **Der Ball hat nach einem Überschlag die Decke berührt**  —  *After a return the ball touched the ceiling*
 - [ ] Time out  —  *Time out*
 - [ ] Der Ball ist unter dem Band hindurchgeflogen  —  *The ball passed underneath the tape*
 - [ ] Gleichstand  —  *Tie*
@@ -200,7 +200,7 @@ Frage unfair.
 **Der gestreckte Arm zeigt mit zwei gespreizten Fingern nach unten. Welcher Fehler wird angezeigt?**  
 *The extended arm points downwards with two fingers spread. Which fault is being indicated?*
 
-- [x] **Zweimal auf**  —  *Two bounces*
+- [x] **Zweimal auf**  —  *Double bounce*
 - [ ] Übertritt  —  *Foot fault*
 - [ ] Ball war knapp gut  —  *Ball was just in*
 - [ ] Der Ball hat den Körper berührt  —  *The ball touched the body*
@@ -291,7 +291,7 @@ Frage unfair.
 - [ ] Immer in Richtung des Anschreibertisches  —  *Always towards the scorer's table*
 - [ ] Senkrecht nach oben, um die Unterbrechung zu bestätigen  —  *Vertically upwards, to confirm the interruption*
 
-*Fundstelle:* IFA-Schulungsmappe, Handzeichen 1 bis 5 und 11 bis 14 – der zweite Arm weist stets der Mannschaft mit dem Gutpunkt zu.
+*Fundstelle:* IFA-Schulungsmappe, Handzeichen 1 bis 5 und 11 bis 14 – der zweite Arm zeigt in die Waagerechte, in Richtung der Mannschaft, die den Gutpunkt erzielt hat (bei Behinderung ggf. stattdessen das Zeichen für Wiederholung der Angabe).
 
 > Der zweite Arm zeigt in die Waagerechte in die Richtung der Mannschaft, die einen Gutpunkt erzielt hat.
 
@@ -300,7 +300,7 @@ Frage unfair.
 **Der Ball berührt den Fuß eines Spielers. Wie zeigt der Schiedsrichter das an?**  
 *The ball touches a player's foot. How does the referee indicate this?*
 
-- [x] **Die Hand auf Brust oder Oberschenkel genügt, bei Bedarf ergänzt durch den Zuruf „Fuß“**  —  *Touching the chest or thigh is sufficient, if necessary supported by calling ‚foot‘*
+- [x] **Die Hand auf Brust oder Oberschenkel genügt, bei Bedarf ergänzt durch den Zuruf „Fuß“**  —  *Touching the chest or thigh is sufficient, if necessary supported by calling "foot"*
 - [ ] Der Schiedsrichter muss sich bücken und den Fuß berühren  —  *The referee has to bend down and touch the foot*
 - [ ] Es gibt kein Handzeichen, der Pfiff allein genügt  —  *There is no hand signal, the whistle alone is sufficient*
 - [ ] Der Schiedsrichter zeigt mit gespreizten Fingern nach unten  —  *The referee points downwards with spread fingers*
@@ -432,8 +432,8 @@ Frage unfair.
 **Der Linienrichter zeigt mit der Fahne senkrecht nach oben. Was bedeutet das?**  
 *The linesman holds the flag vertically upwards. What does that mean?*
 
-- [x] **Der Ball hat die Außenlinie überschritten**  —  *The ball has crossed the outer line*
-- [ ] Der Ball hat die Außenlinie nicht überschritten  —  *The ball has not crossed the outer line*
+- [x] **Ausball – der Ball hat außerhalb der Begrenzungslinien den Boden berührt**  —  *Ball out – the ball touched the ground outside the boundary lines*
+- [ ] Der Ball war knapp im Feld  —  *The ball was just in*
 - [ ] Der Linienrichter kann die Situation nicht beurteilen  —  *The linesman cannot judge the situation*
 - [ ] Der Linienrichter bittet um eine Spielunterbrechung  —  *The linesman requests an interruption of play*
 
@@ -451,7 +451,7 @@ Frage unfair.
 - [ ] Der Ball war eindeutig im Aus  —  *The ball was clearly out*
 - [ ] Er meldet einen Wechsel der Linienrichter an  —  *He is announcing a change of linesmen*
 
-*Fundstelle:* IFA-Schulungsmappe, Handzeichen 16 sowie die beste Position des Linienschiedsrichters 3.
+*Fundstelle:* IFA-Schulungsmappe, Handzeichen 16 sowie Abschnitt „Kontinuierlicher Standortwechsel“, Abbildung 3.
 
 > Kann der Linienrichter keine Aussage machen, hält er die Fahne mit beiden Händen waagerecht in Brusthöhe.
 
@@ -465,7 +465,7 @@ Frage unfair.
 - [ ] Der Punkt geht an die abwehrende Mannschaft  —  *The point goes to the defending team*
 - [ ] Die Mannschaftsführer einigen sich  —  *The team captains reach an agreement*
 
-*Fundstelle:* IFA-Schulungsmappe, die beste Position des Linienschiedsrichters 3 – kann auch der Kollege die Situation nicht erkennen, übernimmt der Schiedsrichter.
+*Fundstelle:* IFA-Schulungsmappe, Abschnitt „Kontinuierlicher Standortwechsel“, Abbildung 3 – kann auch der Kollege die Situation nicht erkennen, übernimmt der Schiedsrichter.
 
 > Kann ein Linienrichter die Situation „Ausball“ nicht erkennen, … so ist die Fahne waagerecht vor den Körper zu halten. In diesem Falle übernimmt der Kollege die Verantwortung. Kann auch dieser die Situation nicht erkennen, übernimmt der Schiedsrichter.
 
@@ -479,7 +479,7 @@ Frage unfair.
 - [ ] Nur der Linienrichter auf der Angabeseite zeigt an, der andere bleibt untätig  —  *Only the linesman on the service side signals, the other remains inactive*
 - [ ] Der Kollege reagiert zuerst, damit der vorrangige Linienrichter ihn bestätigen kann  —  *The colleague reacts first so that the linesman in charge can confirm him*
 
-*Fundstelle:* IFA-Schulungsmappe, die beste Position des Linienschiedsrichters 2 – der Kollege darf auf keinen Fall zuerst reagieren.
+*Fundstelle:* IFA-Schulungsmappe, Abschnitt „Kontinuierlicher Standortwechsel“, Abbildung 2 – der Kollege darf auf keinen Fall zuerst reagieren.
 
 > Bei Ausbällen wird die Fahne von dem „vorrangigen Linienrichter“ senkrecht nach oben gestreckt. Der Kollege quittiert dies mit kurzer Verzögerung. Auf keinen Fall darf er zuerst reagieren.
 
@@ -521,7 +521,7 @@ Frage unfair.
 - [ ] Ja, aber nur in der Halbzeitpause  —  *Yes, but only during the half-time break*
 - [ ] Nein, ein Wechsel ist ausnahmslos ausgeschlossen  —  *No, a change is excluded without exception*
 
-*Fundstelle:* IFA-Schulungsmappe, Auswechslung von Linienrichtern.
+*Fundstelle:* Schulungsfolien Faustball Deutschland, Linienrichter – Auswechslung von Linienrichtern.
 
 > Linienrichter dürfen während eines Spieles nur aufgrund besonderer Umstände ausgewechselt werden, etwa bei Übelkeit.
 
@@ -540,33 +540,19 @@ Frage unfair.
 > Der Anschreiber hat seinen Platz in der Nähe des Schiedsrichters und bucht nach dessen Zeichen für beide Mannschaften die gewonnenen Gutbälle. (Regel 9.4)
 
 
-## Kapitel 8 — Wertung (2 Fragen)
-
-### IFA-C-036
-
-**Wie wird ein Fehler gewertet?**  
-*How is a fault scored?*
-
-- [x] **Als Gutball für die gegnerische Mannschaft**  —  *As a point for the opposing team*
-- [ ] Als Punktabzug für die fehlerhafte Mannschaft  —  *As a point deduction for the team at fault*
-- [ ] Der Ballwechsel wird ohne Wertung wiederholt  —  *The rally is replayed without being scored*
-- [ ] Die Angabe geht an die gegnerische Mannschaft, ohne dass ein Punkt fällt  —  *The service passes to the opposing team without a point being scored*
-
-*Fundstelle:* Spielregeln 8.1.
-
-> Jeder Fehler wird als Gutball für die gegnerische Mannschaft gewertet. (Regel 8.1)
+## Kapitel 8 — Wertung (1 Fragen)
 
 ### IFA-A-053
 
 **Worauf achtet der Schiedsrichter bei der Eintragung der Gutbälle im Spielbericht besonders?**  
 *What does the referee pay particular attention to when points are entered in the match report?*
 
-- [x] **Dass der Anschreiber die Leerfelder nicht entwertet**  —  *That the scorer does not invalidate the empty fields*
+- [x] **Dass der Anschreiber die Leerfelder nicht entwertet**  —  *That the scorer does not cross out the empty boxes*
 - [ ] Dass die Gutbälle mit römischen Ziffern eingetragen werden  —  *That the points are entered in Roman numerals*
 - [ ] Dass jede Mannschaft ihre eigenen Punkte selbst einträgt  —  *That each team enters its own points itself*
 - [ ] Dass nur die Sätze, nicht die einzelnen Gutbälle festgehalten werden  —  *That only the sets and not the individual points are recorded*
 
-*Fundstelle:* IFA-Schulungsmappe, Kontrolle des Anschreibers zu Regel 8.2. Die Gutbälle werden mit arabischen Ziffern in zeitlicher Reihenfolge eingetragen.
+*Fundstelle:* Schulungsfolien Kapitel 8 (Wertung), Folie 3, Notiz zu 8.2.1
 
 > Der Schiedsrichter achtet darauf, dass der Anschreiber die Aufgabenstellung beherrscht. Ein Entwerten der Leerfelder ist zu verhindern.
 
@@ -606,12 +592,12 @@ Frage unfair.
 **Worüber wird vor Spielbeginn mit den Mannschaftsführern ausgelost?**  
 *What is decided by the toss with the team captains before the match?*
 
-- [x] **Feld oder Ball und damit die erste Angabe**  —  *Choice of end or ball, and thereby the first service*
+- [x] **Spielfeldseite oder erste Angabe („Angabe“ oder „Abwehr“) – wer die erste Angabe schlägt, wählt das Ballkontingent**  —  *Choice of end or of the first service ("service" or "defend") – the team serving first chooses the balls*
 - [ ] Nur die Spielfeldseite; die Angabe hat immer die Heimmannschaft  —  *Only the end; the home team always serves first*
 - [ ] Nur die erste Angabe; die Seiten sind vorgegeben  —  *Only the first service; the ends are predetermined*
 - [ ] Die Reihenfolge der Auswechslungen  —  *The order of substitutions*
 
-*Fundstelle:* Schiedsrichterordnung, Aufgaben vor dem Spiel – Auslosung.
+*Fundstelle:* Spielregeln 1.5
 
 > Er lost mit den Mannschaftsführern Feld oder Ball und damit die erste Angabe aus.
 
@@ -620,12 +606,12 @@ Frage unfair.
 **Wo verwahrt der Schiedsrichter die nicht gespielten Bälle?**  
 *Where does the referee keep the balls that are not in play?*
 
-- [x] **Außerhalb des Auslaufs – im Auslauf darf außer dem gespielten Ball kein weiterer Ball liegen**  —  *Outside the run-off area – apart from the ball in play, no ball may lie in the run-off area*
+- [x] **Außerhalb des Auslaufs – im Auslauf darf außer dem gespielten Ball kein weiterer Ball liegen**  —  *Outside the buffer zone – apart from the ball in play, no ball may lie in the buffer zone*
 - [ ] Direkt neben dem Pfosten, damit der nächste Ball schnell greifbar ist  —  *Directly beside the post, so that the next ball is quickly at hand*
 - [ ] Verteilt im Auslauf hinter den Grundlinien, damit sie schnell greifbar sind  —  *Spread around the run-off area behind the base lines so they are quickly at hand*
 - [ ] Die Bälle verbleiben bei den Mannschaften auf der Auswechselbank  —  *The balls stay with the teams on the substitutes' bench*
 
-*Fundstelle:* Schiedsrichterordnung, Aufgaben während des Spiels – Verwahrung der Bälle. Außer dem gespielten Ball gehört kein Ball in den Auslauf: Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken. Die Reservebälle liegen mindestens 3 bis 5 m hinter dem Pfosten, außerhalb des Auslaufs.
+*Fundstelle:* Spielregeln 1.6: die nicht gespielten Bälle bleiben unter der Kontrolle des Schiedsrichters, aber außerhalb des Auslaufs. Schiedsrichterordnung, Aufgaben während des Spiels: die Reservebälle liegen 3 bis 5 m hinter dem Pfosten. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.
 
 > Der nächste Ball, der ins Spiel gebracht werden könnte, liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m hinter dem Pfosten.
 >

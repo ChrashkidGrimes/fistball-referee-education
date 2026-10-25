@@ -24,8 +24,8 @@
   },
   "c": 0,
   "ref": {
-   "de": "IFA-Schulungsmappe, Handzeichen 7 – gestreckter Arm, geschlossene Faust senkrecht nach oben, unterstützt durch den Ausruf „BLOCK“.",
-   "en": "IFA Training Manual, hand signal 7 – straight arm with closed fist held vertically upwards, supported by the call ‚BLOCK‘."
+   "de": "IFA-Schulungsmappe, Handzeichen 7 – gestreckter Arm, geschlossene Faust senkrecht nach oben. Schulungsfolien Faustball Deutschland: unterstützt durch den Ausruf „BLOCK“.",
+   "en": "IFA Training Manual, hand signal 7 – straight arm with closed fist held vertically upwards. Faustball Deutschland training slides: supported by the call \"BLOCK\"."
   },
   "origin": "ifa",
   "tr": true
@@ -55,10 +55,10 @@
   },
   "c": 0,
   "ref": {
-   "de": "IFA-Schulungsmappe, Handzeichen 18 – beide gestreckten Arme mit geschlossener Faust vor der Brust. Nicht zu verwechseln mit dem Block, bei dem nur ein Arm nach oben geht.",
-   "en": "IFA Training Manual, hand signal 18 – both arms extended with closed fists in front of the chest. Not to be confused with block, where only one arm goes up."
+   "de": "Schulungsfolien Faustball Deutschland (Spielrichter-Gestik), Zeichen 18 Gleichstand – beide gestreckten Arme mit geschlossener Faust vor der Brust. Nicht zu verwechseln mit dem Block, bei dem nur ein Arm nach oben geht.",
+   "en": "Faustball Deutschland training slides (officials' signals), signal 18 tie – both arms extended with closed fists in front of the chest. Not to be confused with block, where only one arm goes up."
   },
-  "origin": "ifa",
+  "origin": "ppt",
   "tr": true
  },
  {
@@ -140,7 +140,7 @@
     "Gleichstand"
    ],
    "en": [
-    "After a rebound the ball touched the ceiling",
+    "After a return the ball touched the ceiling",
     "Time out",
     "The ball passed underneath the tape",
     "Tie"
@@ -149,7 +149,7 @@
   "c": 0,
   "ref": {
    "de": "IFA-Schulungsmappe, Handzeichen 13 – Deckenberührung nach einem Überschlag. Der zweite Arm zeigt danach waagerecht zur Mannschaft, die den Punkt erhält.",
-   "en": "IFA Training Manual, hand signal 13 – contact with the ceiling after a rebound. The second arm then points horizontally to the team awarded the point."
+   "en": "IFA Training Manual, hand signal 13 – contact with the ceiling after a return. The second arm then points horizontally to the team awarded the point."
   },
   "origin": "ifa",
   "tr": true
@@ -264,7 +264,7 @@
     "Der Ball hat den Körper berührt"
    ],
    "en": [
-    "Two bounces",
+    "Double bounce",
     "Foot fault",
     "Ball was just in",
     "The ball touched the body"
@@ -426,8 +426,8 @@
   },
   "c": 0,
   "ref": {
-   "de": "IFA-Schulungsmappe, Handzeichen 1 bis 5 und 11 bis 14 – der zweite Arm weist stets der Mannschaft mit dem Gutpunkt zu.",
-   "en": "IFA Training Manual, hand signals 1 to 5 and 11 to 14 – the second arm always points to the team awarded the point."
+   "de": "IFA-Schulungsmappe, Handzeichen 1 bis 5 und 11 bis 14 – der zweite Arm zeigt in die Waagerechte, in Richtung der Mannschaft, die den Gutpunkt erzielt hat (bei Behinderung ggf. stattdessen das Zeichen für Wiederholung der Angabe).",
+   "en": "IFA Training Manual, hand signals 1 to 5 and 11 to 14 – the second arm points horizontally towards the team that scored the point (for interference, the repetition-of-service signal may be shown instead)."
   },
   "origin": "ifa",
   "tr": true
@@ -448,7 +448,7 @@
     "Der Schiedsrichter zeigt mit gespreizten Fingern nach unten"
    ],
    "en": [
-    "Touching the chest or thigh is sufficient, if necessary supported by calling ‚foot‘",
+    "Touching the chest or thigh is sufficient, if necessary supported by calling \"foot\"",
     "The referee has to bend down and touch the foot",
     "There is no hand signal, the whistle alone is sufficient",
     "The referee points downwards with spread fingers"
@@ -712,14 +712,14 @@
   },
   "a": {
    "de": [
-    "Der Ball hat die Außenlinie überschritten",
-    "Der Ball hat die Außenlinie nicht überschritten",
+    "Ausball – der Ball hat außerhalb der Begrenzungslinien den Boden berührt",
+    "Der Ball war knapp im Feld",
     "Der Linienrichter kann die Situation nicht beurteilen",
     "Der Linienrichter bittet um eine Spielunterbrechung"
    ],
    "en": [
-    "The ball has crossed the outer line",
-    "The ball has not crossed the outer line",
+    "Ball out – the ball touched the ground outside the boundary lines",
+    "The ball was just in",
     "The linesman cannot judge the situation",
     "The linesman requests an interruption of play"
    ]
@@ -756,7 +756,7 @@
   },
   "c": 0,
   "ref": {
-   "de": "IFA-Schulungsmappe, Handzeichen 16 sowie die beste Position des Linienschiedsrichters 3.",
+   "de": "IFA-Schulungsmappe, Handzeichen 16 sowie Abschnitt „Kontinuierlicher Standortwechsel“, Abbildung 3.",
    "en": "IFA Training Manual, hand signal 16 and best position of the linesman 3."
   },
   "origin": "ifa",
@@ -786,7 +786,7 @@
   },
   "c": 0,
   "ref": {
-   "de": "IFA-Schulungsmappe, die beste Position des Linienschiedsrichters 3 – kann auch der Kollege die Situation nicht erkennen, übernimmt der Schiedsrichter.",
+   "de": "IFA-Schulungsmappe, Abschnitt „Kontinuierlicher Standortwechsel“, Abbildung 3 – kann auch der Kollege die Situation nicht erkennen, übernimmt der Schiedsrichter.",
    "en": "IFA Training Manual, best position of the linesman 3 – if the colleague cannot see the situation either, the referee takes over."
   },
   "origin": "ifa",
@@ -816,7 +816,7 @@
   },
   "c": 0,
   "ref": {
-   "de": "IFA-Schulungsmappe, die beste Position des Linienschiedsrichters 2 – der Kollege darf auf keinen Fall zuerst reagieren.",
+   "de": "IFA-Schulungsmappe, Abschnitt „Kontinuierlicher Standortwechsel“, Abbildung 2 – der Kollege darf auf keinen Fall zuerst reagieren.",
    "en": "IFA Training Manual, best position of the linesman 2 – the colleague must never react first."
   },
   "origin": "ifa",
@@ -906,10 +906,10 @@
   },
   "c": 0,
   "ref": {
-   "de": "IFA-Schulungsmappe, Auswechslung von Linienrichtern.",
-   "en": "IFA Training Manual, replacement of linesmen."
+   "de": "Schulungsfolien Faustball Deutschland, Linienrichter – Auswechslung von Linienrichtern.",
+   "en": "Faustball Deutschland training slides, linesmen – replacement of linesmen."
   },
-  "origin": "ifa",
+  "origin": "ppt",
   "tr": true
  },
  {
@@ -943,36 +943,6 @@
   "tr": true
  },
  {
-  "id": "IFA-C-036",
-  "ch": 8,
-  "scope": "ifa",
-  "q": {
-   "de": "Wie wird ein Fehler gewertet?",
-   "en": "How is a fault scored?"
-  },
-  "a": {
-   "de": [
-    "Als Gutball für die gegnerische Mannschaft",
-    "Als Punktabzug für die fehlerhafte Mannschaft",
-    "Der Ballwechsel wird ohne Wertung wiederholt",
-    "Die Angabe geht an die gegnerische Mannschaft, ohne dass ein Punkt fällt"
-   ],
-   "en": [
-    "As a point for the opposing team",
-    "As a point deduction for the team at fault",
-    "The rally is replayed without being scored",
-    "The service passes to the opposing team without a point being scored"
-   ]
-  },
-  "c": 0,
-  "ref": {
-   "de": "Spielregeln 8.1.",
-   "en": "Rules of the Game 8.1."
-  },
-  "origin": "ifa",
-  "tr": true
- },
- {
   "id": "IFA-A-053",
   "ch": 8,
   "scope": "ifa",
@@ -988,7 +958,7 @@
     "Dass nur die Sätze, nicht die einzelnen Gutbälle festgehalten werden"
    ],
    "en": [
-    "That the scorer does not invalidate the empty fields",
+    "That the scorer does not cross out the empty boxes",
     "That the points are entered in Roman numerals",
     "That each team enters its own points itself",
     "That only the sets and not the individual points are recorded"
@@ -996,10 +966,10 @@
   },
   "c": 0,
   "ref": {
-   "de": "IFA-Schulungsmappe, Kontrolle des Anschreibers zu Regel 8.2. Die Gutbälle werden mit arabischen Ziffern in zeitlicher Reihenfolge eingetragen.",
-   "en": "IFA Training Manual, supervision of the scorer relating to rule 8.2. Points are entered in Arabic numerals in chronological order."
+   "de": "Schulungsfolien Kapitel 8 (Wertung), Folie 3, Notiz zu 8.2.1",
+   "en": "Training slides chapter 8 (Scoring), slide 3, note on 8.2.1"
   },
-  "origin": "ifa",
+  "origin": "ppt",
   "tr": true
  },
  {
@@ -1072,13 +1042,13 @@
   },
   "a": {
    "de": [
-    "Feld oder Ball und damit die erste Angabe",
+    "Spielfeldseite oder erste Angabe („Angabe“ oder „Abwehr“) – wer die erste Angabe schlägt, wählt das Ballkontingent",
     "Nur die Spielfeldseite; die Angabe hat immer die Heimmannschaft",
     "Nur die erste Angabe; die Seiten sind vorgegeben",
     "Die Reihenfolge der Auswechslungen"
    ],
    "en": [
-    "Choice of end or ball, and thereby the first service",
+    "Choice of end or of the first service (\"service\" or \"defend\") – the team serving first chooses the balls",
     "Only the end; the home team always serves first",
     "Only the first service; the ends are predetermined",
     "The order of substitutions"
@@ -1086,8 +1056,8 @@
   },
   "c": 0,
   "ref": {
-   "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Auslosung.",
-   "en": "Referee regulations, duties before the match – the toss."
+   "de": "Spielregeln 1.5",
+   "en": "Rules of the Game 1.5"
   },
   "origin": "ifa",
   "tr": true
@@ -1108,7 +1078,7 @@
     "Die Bälle verbleiben bei den Mannschaften auf der Auswechselbank"
    ],
    "en": [
-    "Outside the run-off area – apart from the ball in play, no ball may lie in the run-off area",
+    "Outside the buffer zone – apart from the ball in play, no ball may lie in the buffer zone",
     "Directly beside the post, so that the next ball is quickly at hand",
     "Spread around the run-off area behind the base lines so they are quickly at hand",
     "The balls stay with the teams on the substitutes' bench"
@@ -1116,7 +1086,7 @@
   },
   "c": 0,
   "ref": {
-   "de": "Spielregeln 1.6: die nicht gespielten Bälle bleiben unter der Kontrolle des Schiedsrichters, aber außerhalb des Auslaufs. Schiedsrichterordnung, Aufgaben während des Spiels: die Reservebälle liegen mindestens 3 bis 5 m hinter dem Pfosten. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
+   "de": "Spielregeln 1.6: die nicht gespielten Bälle bleiben unter der Kontrolle des Schiedsrichters, aber außerhalb des Auslaufs. Schiedsrichterordnung, Aufgaben während des Spiels: die Reservebälle liegen 3 bis 5 m hinter dem Pfosten. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
    "en": "Rules of the Game 1.6: the balls not in use remain under the referee's control, but outside the buffer zone. Referee regulations, duties during the match: spare balls lie at least 3 to 5 m behind the post. Apart from the ball in play, no ball belongs in the run-off area - players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."
   },
   "origin": "ifa",

@@ -27,7 +27,7 @@ Geheimnis – der Code belegt, dass das Zertifikat nicht verändert wurde, nicht
 | | |
 |---|---|
 | Kapitel | 16 – Regeln 1 bis 10, Handzeichen, Verhalten des Schiedsrichters, Linienrichter, Altersklassen, Verbandsordnungen, Aufgaben rund um das Spiel |
-| Prüfungsfragen | 235, alle zweisprachig, mit Fundstelle im Regelwerk |
+| Prüfungsfragen | 234, alle zweisprachig, mit Fundstelle im Regelwerk |
 | Bilder | 21 Handzeichen-Fotos, Spielfeld- und Auslaufdiagramme, sechs Ausball-Entscheidungen; 19 davon als Bildfrage |
 | Abschlussprüfungen | Regional 40 Fragen ab 70 %, National 60 ab 85 %, jeweils mit Nachprüfungsgrenze |
 | Tests | 319 automatisierte Prüfungen |

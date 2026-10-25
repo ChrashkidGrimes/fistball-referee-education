@@ -33,8 +33,8 @@ console.log('\n== Herkunft der Fragen ==');
   ok(Q.every(q=>HERKUNFT.includes(q.origin)),'jede Frage hat eine bekannte Herkunft');
   const z={}; Q.forEach(q=>z[q.origin]=(z[q.origin]||0)+1);
   ok(z.fbd===121,'121 Fragen aus dem Katalog von Faustball Deutschland unveraendert, ist: '+z.fbd);
-  ok(z.ifa===108,'108 Fragen aus Spielregeln und Schulungsmappe, ist: '+z.ifa);
-  ok(z.ppt===6,'6 Bildfragen aus den Foliensaetzen, ist: '+z.ppt);
+  ok(z.ifa===104,'104 Fragen aus Spielregeln und Schulungsmappe, ist: '+z.ifa);
+  ok(z.ppt===9,'9 Fragen aus den Foliensaetzen, ist: '+z.ppt);
   ok(!z.draft,'keine ungeprueften Entwuerfe mehr im Katalog');
 
   /* Die am 6.8.2026 abgenommenen Fragen schliessen die Luecke im Pool Spielleitung.
@@ -70,7 +70,7 @@ console.log('\n== Herkunft der Fragen ==');
      sie praezise sind. */
   const rules=new Set();
   w.IFA_CONTENT.forEach(c=>c.blocks.forEach(b=>{ if(b.t==='rule'&&typeof b.n==='string') rules.add(b.n); }));
-  const QUELLE=/Spielregeln|Schulungsmappe|Schiedsrichterordnung|Wettkampfbestimmungen|Spielordnung/;
+  const QUELLE=/Spielregeln|Schulungsmappe|Schulungsfolien|Schiedsrichterordnung|Wettkampfbestimmungen|Spielordnung/;
   const ohne=neu.filter(q=>!QUELLE.test(q.ref.de));
   ok(ohne.length===0,'jede Fundstelle nennt ein Quelldokument'+
      (ohne.length?' ('+ohne.map(q=>q.id).join(',')+')':''));

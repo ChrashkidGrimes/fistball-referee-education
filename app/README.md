@@ -33,8 +33,8 @@ account and without a server.
 | Rule-text blocks | 90 numbered rules, verbatim from the official editions |
 | Interpretations | 51 explanatory notes from the Training Manual |
 | Hand signals | 18 signals with 21 photos (16 from the Training Manual, 2 from the slide decks), 13 of them used as image questions |
-| Languages | German and English, complete — 226 content blocks and 235 questions in both languages |
-| Exam questions | 235 bilingual: 121 from the Faustball Deutschland catalogue, 108 derived from the rules and Training Manual, 6 image questions |
+| Languages | German and English, complete — 226 content blocks and 234 questions in both languages |
+| Exam questions | 234 bilingual: 121 from the Faustball Deutschland catalogue, 104 derived from the rules and Training Manual, 9 from the slide decks |
 
 ### Licence levels
 
@@ -58,10 +58,10 @@ chapter — new questions therefore sort themselves in automatically.
 | `feld` — court and equipment | 1 | 45 | 7 | 10 |
 | `rahmen` — team, time, age groups | 2, 3, 14 | 40 | 7 | 10 |
 | `spiel` — rally, hit, service | 4, 5, 6 | 32 | 8 | 12 |
-| `ballfuehrung` — return, pass, scoring | 7, 8 | 28 | 7 | 10 |
+| `ballfuehrung` — return, pass, scoring | 7, 8 | 27 | 7 | 10 |
 | `leitung` — match control | 9–13, 16 | 63 | 7 | 12 |
 | `verband` — federation regulations (can be switched off) | 15 | 27 | 4 | 6 |
-| | | **235** | **40** | **60** |
+| | | **234** | **40** | **60** |
 
 The quotas deliberately do **not** follow the pool sizes. Chapter 1 makes up 19 % of the catalogue but
 only 17 % of the exam — it consists largely of measurements and figures. The `leitung` pool conversely
@@ -71,7 +71,7 @@ Questions are drawn afresh for every attempt, and **order and answer options are
 no feedback during the exam; the result screen with references comes at the end. Chapter quizzes, by
 contrast, give immediate feedback including the rule reference.
 
-If a federation switches the federation regulations off, 206 questions remain. The other pools then
+If a federation switches the federation regulations off, 204 questions remain. The other pools then
 fill up so that the question count stays the same; the level page says so, because the emphasis shifts.
 
 ---
@@ -193,7 +193,7 @@ from the official English IFA editions. Everything else is a working translation
 |------|--------|---------|
 | Interpretations without an English counterpart | 2 | `tr: true`, note in the chapter |
 | Content from the training slide decks | 47 | `origin: "ppt"`, separate note in the chapter |
-| Exam questions | all 235 | `tr: true`, note in the quiz |
+| Exam questions | all 234 | `tr: true`, note in the quiz |
 
 For the questions the German wording prevails; the app says so in English mode.
 
@@ -201,9 +201,9 @@ For the questions the German wording prevails; the app says so in English mode.
 
 | `origin` | Count | Where from |
 |----------|-------|------------|
-| `fbd` | 121 | Moodle question banks of Faustball Deutschland, adopted unchanged |
-| `ifa` | 108 | derived from rule text, the interpretations in the Training Manual and the referee regulations, approved |
-| `ppt` | 6 | image questions on ball-in-or-out decisions from the slide deck “01 Spielfeld und Geräte”, approved |
+| `fbd` | 121 | Moodle question banks of Faustball Deutschland, adopted with language corrections (25 October 2026) |
+| `ifa` | 104 | derived from rule text, the interpretations in the Training Manual and the referee regulations, approved |
+| `ppt` | 9 | from the Faustball Deutschland slide decks: six image questions on ball-in-or-out decisions (“01 Spielfeld und Geräte”), signal 18, replacing line judges, scoring entries; approved |
 
 Of the 114 added questions, 19 are answered from a photo and the rest from text. `Fragen-Nachweis.md`
 and `Fragen-Nachweis-Spielleitung.md` in the parent folder record which source passage each one rests
@@ -263,7 +263,7 @@ same photos as the image series in chapter 1 — there with the decision, in the
 
 ### Federation regulations
 
-29 questions come from the German playing regulations (SpOF), referee regulations (SRO) and the
+30 questions come from the German playing regulations (SpOF), referee regulations (SRO) and the
 Faustball Deutschland competition rules. They are marked `"scope": "fed"` and can be switched off under
 **Settings → Include federation regulations**. Other member federations switch them off or replace
 chapter 15 with their own regulations.
@@ -330,7 +330,7 @@ index.html                     Skeleton
 assets/css/app.css             Design per IFA specification
 assets/js/i18n.js              Interface texts (DE, EN)
 assets/js/data-content.js      Chapters, rule texts, interpretations, videos — bilingual (generated)
-assets/js/data-questions.js    235 exam questions with answers                          (generated)
+assets/js/data-questions.js    234 exam questions with answers                          (generated)
 assets/js/data-clips.js        Video questions — template for video ID and time marks
 assets/js/app.js               Application logic
 assets/img/                    IFA logo, diagrams, hand signals, photos from the slide decks

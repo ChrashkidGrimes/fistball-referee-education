@@ -33,8 +33,8 @@ ohne Konto und ohne Server.
 | Regeltext-Blöcke | 90 nummerierte Regeln, wortgleich aus den offiziellen Ausgaben |
 | Auslegungen | 51 Erläuterungen aus der Schulungsmappe |
 | Handzeichen | 18 Zeichen mit 21 Fotos (16 aus der Schulungsmappe, 2 aus den Schulungsfolien), 13 davon als Bildfrage |
-| Sprachen | Deutsch und Englisch, vollständig – 226 Inhaltsblöcke und 235 Fragen in beiden Sprachen |
-| Prüfungsfragen | 235 zweisprachig: 121 aus dem Katalog von Faustball Deutschland, 108 aus Spielregeln und Schulungsmappe, 6 Bildfragen |
+| Sprachen | Deutsch und Englisch, vollständig – 226 Inhaltsblöcke und 234 Fragen in beiden Sprachen |
+| Prüfungsfragen | 234 zweisprachig: 121 aus dem Katalog von Faustball Deutschland, 104 aus Spielregeln und Schulungsmappe, 9 aus den Foliensätzen |
 
 ### Lizenzstufen
 
@@ -58,10 +58,10 @@ trägt, ergibt sich aus ihrem Kapitel – neue Fragen sortieren sich damit von s
 | `feld` – Spielfeld und Geräte | 1 | 45 | 7 | 10 |
 | `rahmen` – Mannschaft, Zeit, Altersklassen | 2, 3, 14 | 40 | 7 | 10 |
 | `spiel` – Spielgang, Schlag, Angabe | 4, 5, 6 | 32 | 8 | 12 |
-| `ballfuehrung` – Rückschlag, Zuspiel, Wertung | 7, 8 | 28 | 7 | 10 |
+| `ballfuehrung` – Rückschlag, Zuspiel, Wertung | 7, 8 | 27 | 7 | 10 |
 | `leitung` – Spielleitung | 9–13, 16 | 63 | 7 | 12 |
 | `verband` – Verbandsordnungen (abschaltbar) | 15 | 27 | 4 | 6 |
-| | | **235** | **40** | **60** |
+| | | **234** | **40** | **60** |
 
 Die Quoten folgen bewusst **nicht** den Poolgrößen. Kapitel 1 stellt 19 % des Katalogs, aber nur 17 %
 der Prüfung – es besteht überwiegend aus Maßen und Zahlen. Der Pool `leitung` trägt umgekehrt 20 % der
@@ -71,7 +71,7 @@ Die Fragen werden bei jedem Versuch neu gezogen, **Reihenfolge und Antwortoption
 Während der Prüfung gibt es kein Zwischenfeedback; die Auswertung mit Fundstellen erfolgt am Ende.
 Kapitelquizzes geben dagegen sofortiges Feedback inklusive Regelverweis.
 
-Schaltet ein Verband die Verbandsordnungen ab, bleiben 206 Fragen. Die übrigen Pools füllen dann auf,
+Schaltet ein Verband die Verbandsordnungen ab, bleiben 204 Fragen. Die übrigen Pools füllen dann auf,
 damit die Fragenzahl erhalten bleibt; die Stufenseite weist darauf hin, weil sich der Schwerpunkt
 dadurch verschiebt.
 
@@ -197,7 +197,7 @@ als solche gekennzeichnet:
 |-----|--------|---------------|
 | Erläuterungen ohne englische Entsprechung | 2 | `tr: true`, Hinweis im Kapitel |
 | Inhalte aus den Schulungsfoliensätzen | 47 | `origin: "ppt"`, eigener Hinweis im Kapitel |
-| Prüfungsfragen | alle 235 | `tr: true`, Hinweis im Quiz |
+| Prüfungsfragen | alle 234 | `tr: true`, Hinweis im Quiz |
 
 Für die Fragen ist der deutsche Wortlaut maßgeblich; die App sagt das im englischen Modus dazu.
 
@@ -205,9 +205,9 @@ Für die Fragen ist der deutsche Wortlaut maßgeblich; die App sagt das im engli
 
 | `origin` | Anzahl | Woher |
 |----------|--------|-------|
-| `fbd` | 121 | Moodle-Fragenkataloge von Faustball Deutschland, unverändert übernommen |
-| `ifa` | 108 | aus Regeltext, den Auslegungen der Schulungsmappe und der Schiedsrichterordnung abgeleitet, fachlich freigegeben |
-| `ppt` | 6 | Bildfragen zur Ausball-Entscheidung aus dem Foliensatz „01 Spielfeld und Geräte“, fachlich freigegeben |
+| `fbd` | 121 | Moodle-Fragenkataloge von Faustball Deutschland, übernommen und am 25. Oktober 2026 sprachlich korrigiert |
+| `ifa` | 104 | aus Regeltext, den Auslegungen der Schulungsmappe und der Schiedsrichterordnung abgeleitet, fachlich freigegeben |
+| `ppt` | 9 | aus den Foliensätzen von Faustball Deutschland: sechs Bildfragen zur Ausball-Entscheidung („01 Spielfeld und Geräte“), Zeichen 18, Auswechslung von Linienrichtern, Eintragung der Gutbälle; fachlich freigegeben |
 
 Von den 114 ergänzten Fragen prüfen 19 anhand eines Fotos, die übrigen als Text. `Fragen-Nachweis.md` und
 `Fragen-Nachweis-Spielleitung.md` im übergeordneten Ordner halten fest, auf welche Quellstelle sich
@@ -268,7 +268,7 @@ nutzen dieselben Fotos wie die Bilderserie in Kapitel 1 – dort mit Urteil, im 
 
 ### Verbandsordnungen
 
-29 Fragen stammen aus der deutschen Spielordnung (SpOF), Schiedsrichterordnung (SRO) und den
+30 Fragen stammen aus der deutschen Spielordnung (SpOF), Schiedsrichterordnung (SRO) und den
 Wettkampfbestimmungen von Faustball Deutschland. Sie sind mit `"scope": "fed"` markiert und über **Einstellungen →
 Verbandsordnungen einbeziehen** abschaltbar. Andere Mitgliedsverbände schalten sie ab oder ersetzen
 Kapitel 15 durch ihre eigenen Ordnungen.
@@ -337,7 +337,7 @@ index.html                     Grundgerüst
 assets/css/app.css             Design nach IFA-Vorgaben
 assets/js/i18n.js              Oberflächentexte (DE, EN)
 assets/js/data-content.js      Kapitel, Regeltexte, Auslegungen, Videos – zweisprachig (generiert)
-assets/js/data-questions.js    235 Prüfungsfragen mit Lösungen                        (generiert)
+assets/js/data-questions.js    234 Prüfungsfragen mit Lösungen                        (generiert)
 assets/js/data-clips.js        Videofragen – Vorlage für Video-ID und Zeitmarken
 assets/js/app.js               Anwendungslogik
 assets/img/                    IFA-Logo, Diagramme, Handzeichen, Fotos aus den Foliensätzen
