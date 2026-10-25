@@ -26,6 +26,10 @@ function app(nat){
   ['R','N'].forEach(L=>{ st.progress[L]={read:{},quiz:{},exam:null,name:'Test'};
     for(let i=1;i<=16;i++){st.progress[L].quiz[i]=100;st.progress[L].read[i]=true;} });
   mem['ifa-referee-education-v1']=JSON.stringify(st);
+  /* Jeder Blick auf die Uhr liegt 25 Stunden spaeter – die Wartezeit nach
+     einem nicht bestandenen Versuch spielt fuer diese Tests keine Rolle. */
+  let clock=Date.now(); w.__clock=()=>(clock+=25*3600e3);
+  w.eval('Date.now=function(){return window.__clock();};');
   ['i18n','data-content','data-questions','app'].forEach(f=>w.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
   return w;
 }

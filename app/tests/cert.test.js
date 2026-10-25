@@ -134,5 +134,40 @@ console.log('\n== Name vor der Pruefung ==');
   ok(a.store().progress.R.name==='Alt','Name aus der dreistufigen Fassung wird uebernommen');
 }
 
+console.log('\n== Versuche und Wartezeit ==');
+{
+  const a=boot(ready('R',{name:'Erika'}),{now:Date.UTC(2026,9,25,10,0)});
+  a.click('[data-go="level:R"]'); a.click('[data-go="exam:R"]'); runExam(a,0.5);
+  let ex=a.store().progress.R.exam;
+  ok(ex.attempts===1,'Versuch 1 gezaehlt');
+  ok(ex.lastFail===a.clock.now,'nicht bestanden -> Zeitpunkt gemerkt');
+  ok(!ex.cert,'ohne Bestehen kein gespeicherter Versuch');
+  ok(/Nächster Versuch möglich ab/.test(a.T()),'Ergebnis nennt die Wartezeit');
+  ok(!a.d.querySelector('[data-act="again"]'),'kein Sofort-Wiederholen nach Nichtbestehen');
+  a.click('[data-go="level:R"]');
+  ok(a.d.querySelector('[data-go="exam:R"]').disabled,'Start gesperrt');
+  a.click('[data-go="exam:R"]');
+  ok(a.d.querySelector('.qtxt')===null,'Klick waehrend der Sperre startet nichts');
+  a.clock.now+=23*H; a.click('[data-go="home"]'); a.click('[data-go="level:R"]');
+  ok(a.d.querySelector('[data-go="exam:R"]').disabled,'nach 23 Stunden noch gesperrt');
+  a.clock.now+=H+1; a.click('[data-go="home"]'); a.click('[data-go="level:R"]');
+  ok(!a.d.querySelector('[data-go="exam:R"]').disabled,'nach 24 Stunden frei');
+  a.click('[data-go="exam:R"]'); runExam(a,0.8);
+  ex=a.store().progress.R.exam;
+  ok(ex.attempts===2,'Versuch 2 gezaehlt');
+  ok(!ex.lastFail,'bestanden -> keine Sperre');
+  ok(ex.cert&&ex.cert.attempt===2&&ex.cert.name==='Erika'&&ex.cert.lvl==='R','bestandener Versuch gespeichert');
+  ok(ex.cert.q.length===40&&ex.cert.q.every(x=>typeof x[0]==='string'&&x[1]>=0&&x[1]<4),'40 Fragen mit Antwortindex');
+  ok(/^\d{4}-\d\d-\d\d$/.test(ex.cert.date),'Datum im ISO-Format');
+  ok(a.w.IFA_CERT.regrade(ex.cert,a.w.IFA_QUESTIONS).pct===ex.cert.pct,'gespeicherte Antworten ergeben nachgerechnet dasselbe Ergebnis');
+  const best=ex.cert.pct;
+  a.click('[data-act="again"]'); runExam(a,0.75);
+  ex=a.store().progress.R.exam;
+  ok(ex.attempts===3&&ex.cert.pct===best&&ex.cert.attempt===2,'schlechterer bestandener Versuch ersetzt den gespeicherten nicht');
+  a.click('[data-go="level:R"]'); a.click('[data-go="exam:R"]'); runExam(a,1);
+  ex=a.store().progress.R.exam;
+  ok(ex.cert.attempt===4&&ex.cert.pct===100,'besserer bestandener Versuch ersetzt ihn');
+}
+
 console.log('\n'+pass+' bestanden, '+fail+' fehlgeschlagen');
 process.exit(fail?1:0);

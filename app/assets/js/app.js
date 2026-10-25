@@ -56,6 +56,8 @@ var LEVELS = {
 };
 var LEVEL_ORDER = ["R", "N"];
 var STORE_KEY = "ifa-referee-education-v1";
+/* Wartezeit nach einer nicht bestandenen Abschlussprüfung */
+var EXAM_LOCK_MS = 24 * 3600 * 1000;
 /* Ablösung der Stufen C/B/A: C wird Regional, B und A werden National.
    Treffen beide auf N, gewinnt der weiter fortgeschrittene Stand. */
 var LEVEL_MIGRATION = { C: "R", B: "N", A: "N" };
@@ -194,6 +196,22 @@ function today() {
     ? ("0" + d.getDate()).slice(-2) + "." + ("0" + (d.getMonth() + 1)).slice(-2) + "." + d.getFullYear()
     : d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
 }
+function isoToday() {
+  var d = new Date();
+  return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
+}
+/* ISO-Datum in der Schreibweise der aktiven Sprache */
+function fmtDate(iso) {
+  var m = /^(\d{4})-(\d\d)-(\d\d)$/.exec(iso || "");
+  if (!m) return iso || "";
+  return state.lang === "de" ? m[3] + "." + m[2] + "." + m[1] : iso;
+}
+function fmtDateTime(ms) {
+  var d = new Date(ms);
+  var hm = ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+  var iso = d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
+  return fmtDate(iso) + ", " + hm;
+}
 
 /* ---------- Daten -------------------------------------------------------- */
 var CONTENT = window.IFA_CONTENT || [];
@@ -289,6 +307,12 @@ function levelStats(lvl) {
   chs.forEach(function (c) { if (chapterDone(lvl, c.id)) done++; });
   return { total: chs.length, done: done, ready: done === chs.length };
 }
+/* Zeitpunkt, ab dem die Prüfung wieder gestartet werden kann; 0 = keine Sperre */
+function examLockUntil(lvl) {
+  var ex = prog(lvl).exam;
+  return ex && ex.lastFail ? ex.lastFail + EXAM_LOCK_MS : 0;
+}
+function examLocked(lvl) { return examLockUntil(lvl) > Date.now(); }
 
 /* ---------- Routing ------------------------------------------------------ */
 function go(view) { state.view = view; window.scrollTo(0, 0); render(); }
@@ -398,8 +422,14 @@ function viewLevel(lvl) {
       '<p class="fldhint">' + esc(t("examNameHint")) + "</p>" +
       (state.nameMissing === lvl
         ? '<div class="hint" style="margin:10px 0 0">' + esc(t("examNameMissing")) + "</div>" : "") +
+      (examLocked(lvl)
+        ? '<div class="hint" style="margin:10px 0 0">' +
+          esc(t("examLockedUntil", { when: fmtDateTime(examLockUntil(lvl)) })) + "</div>" : "") +
+      (ex && ex.attempts ? '<p style="margin:10px 0 0;font-size:14.5px"><b>' + esc(t("attempts")) + ":</b> " +
+        ex.attempts + "</p>" : "") +
       '<div class="btnrow">' +
-        '<button class="btn" data-go="exam:' + lvl + '">' + esc(ex ? t("retryExam") : t("startExam")) + "</button>" +
+        '<button class="btn" data-go="exam:' + lvl + '"' + (examLocked(lvl) ? " disabled" : "") + ">" +
+          esc(ex ? t("retryExam") : t("startExam")) + "</button>" +
         (ex && ex.best >= cfg.pass
           ? '<button class="btn sec" data-go="cert:' + lvl + '">' + esc(t("getCertificate")) + "</button>" : "") +
       "</div></div>";
@@ -556,6 +586,7 @@ function buildQuiz(lvl, chId, isExam) {
    gespeichert und steht damit auf dem Zertifikat und im Prüfcode. */
 function startExam(lvl, name) {
   name = cleanName(name);
+  if (examLocked(lvl)) return go({ name: "level", lvl: lvl });
   if (!name) { state.nameMissing = lvl; return go({ name: "level", lvl: lvl }); }
   state.nameMissing = null;
   prog(lvl).name = name; save();
@@ -671,6 +702,10 @@ function viewResult() {
     text = z.exam ? t("failedText", { retake: cfg.retake }) : t("quizFailedText", { pass: passMark });
   }
 
+  if (z.exam && p < cfg.pass && examLocked(z.lvl)) {
+    text += " " + t("examLockedUntil", { when: fmtDateTime(examLockUntil(z.lvl)) });
+  }
+
   var review = z.items.map(function (x) {
     var ok = x.picked === x.correctPos;
     var aa = answers(x.q);
@@ -684,7 +719,8 @@ function viewResult() {
   }).join("");
 
   var actions = '<div class="btnrow" style="justify-content:center">' +
-    '<button class="btn sec" data-act="again">' + esc(t("again")) + "</button>" +
+    (z.exam && p < cfg.pass ? "" :
+      '<button class="btn sec" data-act="again">' + esc(t("again")) + "</button>") +
     '<button class="btn" data-go="level:' + z.lvl + '">' + esc(t("backToPath")) + "</button>" +
     (z.exam && p >= cfg.pass ? '<button class="btn sec" data-go="cert:' + z.lvl + '">' +
       esc(t("getCertificate")) + "</button>" : "") + "</div>";
@@ -704,8 +740,23 @@ function finishQuiz() {
   var p = pct(correct, z.items.length);
   var pr = prog(z.lvl);
   if (z.exam) {
-    var best = pr.exam && pr.exam.best > p ? pr.exam.best : p;
-    pr.exam = { best: best, pct: p, c: correct, n: z.items.length, date: today() };
+    var old = pr.exam || {};
+    var attempts = (old.attempts || 0) + 1;
+    var passed = p >= LEVELS[z.lvl].pass;
+    /* Bestandener Versuch mit allen Antworten – Grundlage des Prüfcodes.
+       Antwortindex in der Originalreihenfolge der Frage, nicht der Anzeige. */
+    var rec = passed ? {
+      lvl: z.lvl, date: isoToday(), attempt: attempts, name: pr.name || "", pct: p,
+      c: correct, n: z.items.length,
+      q: z.items.map(function (x) { return [x.q.id, x.picked === null ? -1 : x.order[x.picked]]; })
+    } : null;
+    pr.exam = {
+      best: old.best != null && old.best > p ? old.best : p,
+      pct: p, c: correct, n: z.items.length, date: today(),
+      attempts: attempts,
+      lastFail: passed ? null : Date.now(),
+      cert: rec && (!old.cert || rec.pct > old.cert.pct) ? rec : (old.cert || null)
+    };
   } else {
     if (pr.quiz[z.ch] == null || p > pr.quiz[z.ch]) pr.quiz[z.ch] = p;
   }
