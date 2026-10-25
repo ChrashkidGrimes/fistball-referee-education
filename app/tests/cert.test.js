@@ -111,5 +111,28 @@ ok(r3.unknown===2&&r3.n===0,'Namen wie __proto__ gelten nicht als Frage');
   ok(w0.IFA_QUESTIONS.every(q=>/^[A-Za-z0-9-]+$/.test(q.id)),'alle Frage-IDs ohne Trennzeichen des Codes');
 }
 
+console.log('\n== Name vor der Pruefung ==');
+{
+  const a=boot(ready('R'));
+  a.click('[data-go="level:R"]');
+  ok(a.d.getElementById('examName')!==null,'Namensfeld vor dem Start');
+  a.click('[data-go="exam:R"]');
+  ok(a.d.querySelector('.qtxt')===null,'ohne Namen startet keine Pruefung');
+  ok(/Bitte zuerst den Namen eintragen/.test(a.T()),'Hinweis auf fehlenden Namen');
+  a.d.getElementById('examName').value='  Erika | Muster, mann ';
+  a.click('[data-go="exam:R"]');
+  ok(a.d.querySelector('.qtxt')!==null,'mit Namen startet die Pruefung');
+  ok(a.store().progress.R.name==='Erika Muster mann','Name bereinigt gespeichert, ist: '+a.store().progress.R.name);
+}
+{
+  const a=boot(ready('R',{name:'Max'}));
+  a.click('[data-go="level:R"]');
+  ok(a.d.getElementById('examName').value==='Max','gespeicherter Name vorbelegt');
+}
+{
+  const a=boot({lang:'de',nat:true,progress:{C:{read:{},quiz:{},exam:null,name:'Alt'}}});
+  ok(a.store().progress.R.name==='Alt','Name aus der dreistufigen Fassung wird uebernommen');
+}
+
 console.log('\n'+pass+' bestanden, '+fail+' fehlgeschlagen');
 process.exit(fail?1:0);

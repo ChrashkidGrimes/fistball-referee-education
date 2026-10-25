@@ -67,7 +67,8 @@ var state = {
   draft: true,               // Entwurfsfragen einbeziehen (noch nicht fachlich freigegeben)
   progress: {},              // { R: { read:{ch:true}, quiz:{ch:pct}, exam:{best,pct,c,n,date} } }
   view: null,
-  quiz: null
+  quiz: null,
+  nameMissing: null          // Stufe, deren Prüfung ohne Namen gestartet werden sollte
 };
 
 /* ---------- Persistenz --------------------------------------------------- */
@@ -107,6 +108,7 @@ function migrate(p) {
       if (z.quiz[ch] == null || von.quiz[ch] > z.quiz[ch]) z.quiz[ch] = von.quiz[ch];
     });
     if (von.exam && (!z.exam || von.exam.pct > z.exam.pct)) z.exam = von.exam;
+    if (von.name && !z.name) z.name = von.name;
   });
   return out;
 }
@@ -163,6 +165,11 @@ function answers(q) {
 }
 /* "1 Frage" statt "1 Fragen" */
 function nQuestions(n) { return n + " " + t(n === 1 ? "questionOne" : "questions"); }
+
+/* Name für Zertifikat und Prüfcode: | und , sind im Code Trennzeichen */
+function cleanName(s) {
+  return String(s == null ? "" : s).replace(/[|,]/g, "").replace(/\s+/g, " ").trim();
+}
 
 /* ---------- Helfer ------------------------------------------------------- */
 function esc(s) {
@@ -385,6 +392,12 @@ function viewLevel(lvl) {
         esc(mix) + "</p>" + short +
       (ex ? '<p style="margin:12px 0 0;font-size:14.5px"><b>' + esc(t("bestExam")) + ":</b> " +
         fmtPct(ex.best) + " (" + esc(ex.date) + ")</p>" : "") +
+      '<label class="fld"><span>' + esc(t("examName")) + "</span>" +
+        '<input class="inp" id="examName" maxlength="80" autocomplete="name" value="' +
+        esc(p.name || "") + '"></label>' +
+      '<p class="fldhint">' + esc(t("examNameHint")) + "</p>" +
+      (state.nameMissing === lvl
+        ? '<div class="hint" style="margin:10px 0 0">' + esc(t("examNameMissing")) + "</div>" : "") +
       '<div class="btnrow">' +
         '<button class="btn" data-go="exam:' + lvl + '">' + esc(ex ? t("retryExam") : t("startExam")) + "</button>" +
         (ex && ex.best >= cfg.pass
@@ -537,6 +550,17 @@ function buildQuiz(lvl, chId, isExam) {
     };
   });
   return { lvl: lvl, ch: chId, exam: !!isExam, i: 0, items: items, checked: false, finished: false };
+}
+
+/* Start der Abschlussprüfung – nur mit Namen. Der Name wird mit der Stufe
+   gespeichert und steht damit auf dem Zertifikat und im Prüfcode. */
+function startExam(lvl, name) {
+  name = cleanName(name);
+  if (!name) { state.nameMissing = lvl; return go({ name: "level", lvl: lvl }); }
+  state.nameMissing = null;
+  prog(lvl).name = name; save();
+  state.quiz = buildQuiz(lvl, null, true);
+  go({ name: "quiz" });
 }
 
 /* Videofrage: eingebetteter YouTube-Ausschnitt.
@@ -782,8 +806,8 @@ document.addEventListener("click", function (e) {
       return go({ name: "quiz" });
     }
     if (parts[0] === "exam") {
-      state.quiz = buildQuiz(parts[1], null, true);
-      return go({ name: "quiz" });
+      var ni = el("examName");
+      return startExam(parts[1], ni ? ni.value : prog(parts[1]).name);
     }
     return;
   }
@@ -832,6 +856,7 @@ document.addEventListener("click", function (e) {
       return;
     }
     if (act === "again" && q) {
+      if (q.exam) return startExam(q.lvl, prog(q.lvl).name);
       state.quiz = buildQuiz(q.lvl, q.ch, q.exam);
       window.scrollTo(0, 0); return render();
     }

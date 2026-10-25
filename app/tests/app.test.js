@@ -130,6 +130,7 @@ ok(/Alle Module abgeschlossen/.test(txt2()),'Pruefung freigeschaltet nach allen 
 ok(/40 Fragen/.test(txt2()),'Regionalpruefung mit 40 Fragen');
 
 console.log('\n== Pruefungsdurchlauf (alles richtig) ==');
+d2.getElementById('examName').value='Test';
 click2('[data-go="exam:R"]');
 ok(d2.querySelector('.fb')===null,'kein Zwischenfeedback in der Pruefung');
 let steps=0, order=[];

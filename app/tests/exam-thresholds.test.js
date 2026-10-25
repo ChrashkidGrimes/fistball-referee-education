@@ -17,7 +17,7 @@ function run(lvl, targetCorrectRatio){
   Object.defineProperty(w,'localStorage',{value:{getItem:k=>mem[k]??null,setItem:(k,v)=>mem[k]=v,removeItem:k=>delete mem[k]}});
   w.confirm=()=>true; w.scrollTo=()=>{}; w.print=()=>{};
   const st={lang:'de',nat:true,progress:{}};
-  st.progress[lvl]={read:{},quiz:{},exam:null};
+  st.progress[lvl]={read:{},quiz:{},exam:null,name:'Test'};
   for(let i=1;i<=16;i++){ st.progress[lvl].quiz[i]=100; st.progress[lvl].read[i]=true; }
   mem['ifa-referee-education-v1']=JSON.stringify(st);
   ['i18n','data-content','data-questions','app'].forEach(f=>w.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));

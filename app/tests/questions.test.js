@@ -19,7 +19,7 @@ function app(opts){
   Object.defineProperty(w,'localStorage',{value:{getItem:k=>mem[k]??null,setItem:(k,v)=>mem[k]=v,removeItem:k=>delete mem[k]}});
   w.confirm=()=>true; w.scrollTo=()=>{}; w.print=()=>{};
   const st=Object.assign({lang:'de',nat:true,draft:true,progress:{}},opts||{});
-  ['R','N'].forEach(L=>{ st.progress[L]={read:{},quiz:{},exam:null};
+  ['R','N'].forEach(L=>{ st.progress[L]={read:{},quiz:{},exam:null,name:'Test'};
     for(let i=1;i<=16;i++){st.progress[L].quiz[i]=100;st.progress[L].read[i]=true;} });
   mem['ifa-referee-education-v1']=JSON.stringify(st);
   ['i18n','data-content','data-questions','data-clips','app'].forEach(f=>w.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
@@ -124,7 +124,7 @@ console.log('\n== Entwurfsmechanismus ==');
   const w=dom.window;
   Object.defineProperty(w,'localStorage',{value:{getItem:k=>mem[k]??null,setItem:(k,v)=>mem[k]=v,removeItem:k=>delete mem[k]}});
   w.confirm=()=>true; w.scrollTo=()=>{}; w.print=()=>{};
-  const st={lang:'de',nat:true,draft:true,progress:{N:{read:{},quiz:{},exam:null}}};
+  const st={lang:'de',nat:true,draft:true,progress:{N:{read:{},quiz:{},exam:null,name:'Test'}}};
   for(let i=1;i<=16;i++){st.progress.N.quiz[i]=100;st.progress.N.read[i]=true;}
   mem['ifa-referee-education-v1']=JSON.stringify(st);
   ['i18n','data-content','data-questions','data-clips'].forEach(f=>w.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
@@ -263,7 +263,7 @@ console.log('\n== Videofragen ==');
   const w2=dom.window; const mem={};
   Object.defineProperty(w2,'localStorage',{value:{getItem:k=>mem[k]??null,setItem:(k,v)=>mem[k]=v,removeItem:k=>delete mem[k]}});
   w2.confirm=()=>true; w2.scrollTo=()=>{}; w2.print=()=>{};
-  const st={lang:'de',nat:true,draft:true,progress:{N:{read:{},quiz:{},exam:null}}};
+  const st={lang:'de',nat:true,draft:true,progress:{N:{read:{},quiz:{},exam:null,name:'Test'}}};
   for(let i=1;i<=16;i++){st.progress.N.quiz[i]=100;st.progress.N.read[i]=true;}
   mem['ifa-referee-education-v1']=JSON.stringify(st);
   ['i18n','data-content','data-questions','data-clips'].forEach(f=>w2.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));

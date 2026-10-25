@@ -235,6 +235,9 @@ table.data tbody tr:nth-child(even){background:#fafbfe}
 .cert .body{font-size:16px;color:var(--ink);max-width:52ch;margin:0 auto 30px}
 .cert .foot{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:34px;gap:16px}
 .inp{font:inherit;font-size:15px;padding:9px 12px;border:1px solid var(--line);border-radius:7px;min-width:240px}
+.fld{display:flex;flex-direction:column;gap:6px;margin:16px 0 0;font-size:14.5px;font-weight:600}
+.fld .inp{max-width:420px}
+.fldhint{margin:6px 0 0;font-size:13px;color:var(--muted)}
 
 /* ---------- Misc ---------- */
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}

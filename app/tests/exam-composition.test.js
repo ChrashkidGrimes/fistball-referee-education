@@ -23,7 +23,7 @@ function app(nat){
   Object.defineProperty(w,'localStorage',{value:{getItem:k=>mem[k]??null,setItem:(k,v)=>mem[k]=v,removeItem:k=>delete mem[k]}});
   w.confirm=()=>true; w.scrollTo=()=>{}; w.print=()=>{};
   const st={lang:'de',nat:nat,progress:{}};
-  ['R','N'].forEach(L=>{ st.progress[L]={read:{},quiz:{},exam:null};
+  ['R','N'].forEach(L=>{ st.progress[L]={read:{},quiz:{},exam:null,name:'Test'};
     for(let i=1;i<=16;i++){st.progress[L].quiz[i]=100;st.progress[L].read[i]=true;} });
   mem['ifa-referee-education-v1']=JSON.stringify(st);
   ['i18n','data-content','data-questions','app'].forEach(f=>w.eval(fs.readFileSync(DIR+'/assets/js/'+f+'.js','utf8')));
