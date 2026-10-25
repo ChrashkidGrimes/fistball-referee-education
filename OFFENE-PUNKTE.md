@@ -128,13 +128,15 @@ Spec: `docs/superpowers/specs/2026-10-25-pruefnachweis-design.md`.
       Verletzungsgefahr. Die Kennzeichnung `origin: "draft"` ist entfallen, die
       Fragen tragen `ifa`. Herkunftsnachweis: `Fragen-Nachweis-Spielleitung.md`.
 
-- [ ] **Reichweite der Kapitel-16-Fragen klären.** Kapitel 16 beruht auf der
-      deutschen Schiedsrichterordnung. Die beiden Fragen mit konkreten Zeitangaben –
-      30 Minuten Anwesenheit (IFA-C-037) und der Ablauf 5/3 Minuten vor Anpfiff
-      (IFA-C-038) – sind vorsorglich als `national` markiert, weil diese Zahlen
-      international nicht gelten müssen. Die übrigen vier gelten als allgemeine
-      Schiedsrichterpraxis. Kennt die IFA eigene Fristen, gehören alle sechs
-      auf `national`.
+- [x] ~~**Reichweite der Kapitel-16-Fragen klären.**~~ Am 25. Oktober 2026 gegen SRO
+      (SpOF Anlage 5) mit Anlagen 5.1/5.2, RuVO und WKB samt Anlage 2 geprüft:
+      Auslosung (IFA-C-039), Reservebälle (IFA-A-054) und Kreuz im Spielformular
+      (IFA-A-055) stehen auch in IFA-Quellen und bleiben `ifa`. Die Übergabe des
+      Spielformulars (IFA-A-056) steht nur in SRO Anlage 5.1 und ist jetzt `fed`.
+- [ ] **IFA-C-037 und IFA-C-038 belegen.** 30 Minuten Anwesenheit und der Ablauf 5/3
+      Minuten vor Anpfiff stehen in keiner vorliegenden Quelle – weder SRO, Anlagen
+      5.1/5.2, SpOF, RuVO noch WKB Halle mit Anlage 2 (Einsatzordnung Spielrichter).
+      Quelle nennen, umformulieren oder streichen.
 
 - [x] ~~**Regeltext und Erläuterung sauber trennen.**~~ Erledigt am 6. August 2026,
       dieselbe Ursache wie oben. Fünf englische Regeltexte (2.1, 2.2, 2.2.1, 10.1,

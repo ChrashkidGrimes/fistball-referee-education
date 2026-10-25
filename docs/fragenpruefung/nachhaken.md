@@ -12,11 +12,12 @@ Einzelheiten zu jedem Befund: `2026-10-25-befunde.md`.
 
 ## Weiter offen
 
-Nicht markiert, aber ohne Wortlaut für eine Korrektur – braucht eine Entscheidung:
+Stand nach der Prüfung gegen die Ordnungen von Faustball Deutschland
+(`2026-10-25-befunde-verband.md`). Erledigt sind seitdem BS-2022-015 (Antwort nach SpOF
+4.4.1.4.2), C9-2022-021, CS-2022-027, BS-2023-034 und BS-2022-032 (Fundstellen).
 
 | Frage | Offener Punkt |
 |-------|---------------|
-| B3-2022-034 | Seitenwechsel im Entscheidungssatz verpasst: Die Regeln 2025 regeln den Fall nicht. Die markierte Antwort (Satz auf den Stand bei 6 Gutbällen zurücksetzen) ist aus 3.1.4 nicht ableitbar, Antwort 3 („Wechsel nachholen, Stand bleibt“) wäre ebenso vertretbar. Sprachlich ist die Frage korrigiert. |
-| BS-2022-015 | Mannschaft reist verspätet an: Die Antworten überschneiden sich („Spiel findet statt“ / „SR entscheidet“). Eindeutig nur über SpOF 6.2.4.4.1, die nicht vorliegt. |
-| C9-2022-021 | Fundstelle „Spielregeln 9“ trägt die Aussage nicht; Fundstelle aus der Schiedsrichterordnung fehlt. |
-| CS-2022-027, BS-2023-034, BS-2022-032 | Keine Fundstelle; gehören zu SpOF bzw. Wettkampfbestimmungen. |
+| B3-2022-034 | Seitenwechsel im Entscheidungssatz verpasst: Weder Spielregeln noch SpOF, SRO oder WKB regeln den Fall. Die markierte Antwort (Satz auf den Stand bei 6 Gutbällen zurücksetzen) ist nicht ableitbar, „Wechsel nachholen, Stand bleibt“ wäre ebenso vertretbar. |
+| IFA-C-037, IFA-C-038 | 30 Minuten Anwesenheit bzw. Ablauf 5/3 Minuten vor Anpfiff: in keiner vorliegenden Quelle belegt, auch nicht in WKB Anlage 2. |
+| AW-2022-012 | Auf welchem Arm das Schiedsrichterabzeichen sitzt, ist nirgends geregelt; „Oberarm“ stützt nur das „Ärmelabzeichen“ in SRO Anlage 5.1, Nr. 1 d. |
