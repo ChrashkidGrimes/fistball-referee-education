@@ -569,7 +569,7 @@ Frage unfair.
 - [ ] 60 Minuten vor Spielbeginn  —  *60 minutes before the start of the match*
 - [ ] Unmittelbar vor der Auslosung  —  *Immediately before the toss*
 
-*Fundstelle:* Schiedsrichterordnung, Aufgaben vor dem Spiel. Rechtzeitig genug, um Spielformular, Zeitvergleich und Geräteprüfung vor dem planmäßigen Anpfiff zu erledigen.
+*Fundstelle:* SRO Anlage 5.1, Nr. 1
 
 > Der Schiedsrichter sollte 30 Minuten vor Spielbeginn am Spielort anwesend sein.
 
@@ -583,7 +583,7 @@ Frage unfair.
 - [ ] 10 Minuten vorher endet das Einspielen, 5 Minuten vorher wird ausgelost  —  *10 minutes before, the warm-up ends; 5 minutes before, the toss takes place*
 - [ ] Auslosung und Ende des Einspielens fallen zusammen  —  *The toss and the end of the warm-up coincide*
 
-*Fundstelle:* Schiedsrichterordnung, Aufgaben vor dem Spiel – Auslosung.
+*Fundstelle:* SRO Anlage 5.1, Nr. 1 e
 
 > Etwa 5 Minuten vor Spielbeginn fordert ein anhaltender Pfiff die Mannschaften auf, das Einspielen einzustellen, sodass 3 Minuten vor Spielbeginn ausgelost werden kann.
 
@@ -608,10 +608,10 @@ Frage unfair.
 
 - [x] **Außerhalb des Auslaufs – im Auslauf darf außer dem gespielten Ball kein weiterer Ball liegen**  —  *Outside the buffer zone – apart from the ball in play, no ball may lie in the buffer zone*
 - [ ] Direkt neben dem Pfosten, damit der nächste Ball schnell greifbar ist  —  *Directly beside the post, so that the next ball is quickly at hand*
-- [ ] Verteilt im Auslauf hinter den Grundlinien, damit sie schnell greifbar sind  —  *Spread around the run-off area behind the base lines so they are quickly at hand*
+- [ ] Verteilt im Auslauf hinter den Grundlinien, damit sie schnell greifbar sind  —  *Spread around the buffer zone behind the base lines so they are quickly at hand*
 - [ ] Die Bälle verbleiben bei den Mannschaften auf der Auswechselbank  —  *The balls stay with the teams on the substitutes' bench*
 
-*Fundstelle:* Spielregeln 1.6: die nicht gespielten Bälle bleiben unter der Kontrolle des Schiedsrichters, aber außerhalb des Auslaufs. Schiedsrichterordnung, Aufgaben während des Spiels: die Reservebälle liegen 3 bis 5 m hinter dem Pfosten. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.
+*Fundstelle:* Spielregeln 1.6; SRO Anlage 5.1, Nr. 2 a. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.
 
 > Der nächste Ball, der ins Spiel gebracht werden könnte, liegt direkt neben dem Pfosten, alle weiteren 3 bis 5 m hinter dem Pfosten.
 >
@@ -627,11 +627,11 @@ Frage unfair.
 - [ ] Durch die Rückennummer in Klammern  —  *By the shirt number in brackets*
 - [ ] Es wird nichts markiert, der Eintrag der Namen genügt  —  *Nothing is marked, entering the names is sufficient*
 
-*Fundstelle:* Schiedsrichterordnung, Aufgaben vor dem Spiel – Formulareintragungen. Ergänzungen und Auswechslungen werden nachgetragen.
+*Fundstelle:* Spielregeln 2.1, Erläuterung Spielbericht; SRO Anlage 5.1, Nr. 1 c, 1 h und 3 b
 
 > Die zu Beginn tatsächlich eingesetzten Spieler werden mit einem Kreuz markiert. Ergänzungen und Auswechslungen werden nachgetragen, nicht anwesende Spieler gestrichen.
 
-### IFA-A-056
+### IFA-A-056  ·  Verbandsordnung
 
 **Was hat der Schiedsrichter nach dem Spiel mit dem Spielformular zu tun?**  
 *What must the referee do with the match form after the match?*
@@ -641,6 +641,6 @@ Frage unfair.
 - [ ] Er behält es und reicht es innerhalb einer Woche nach  —  *He keeps it and submits it within a week*
 - [ ] Er übergibt es dem Anschreiber, der es unterschreibt  —  *He hands it to the scorer, who signs it*
 
-*Fundstelle:* Schiedsrichterordnung, Aufgaben nach dem Spiel – Formularprüfung.
+*Fundstelle:* SRO Anlage 5.1, Nr. 3 b–d; Spielregeln 9.2.5
 
 > Er prüft die Vollständigkeit des Spielformulars, schließt mit seiner Unterschrift ab und übergibt es der Spielleitung.

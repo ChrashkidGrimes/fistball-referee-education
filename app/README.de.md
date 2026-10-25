@@ -268,7 +268,7 @@ nutzen dieselben Fotos wie die Bilderserie in Kapitel 1 – dort mit Urteil, im 
 
 ### Verbandsordnungen
 
-30 Fragen stammen aus der deutschen Spielordnung (SpOF), Schiedsrichterordnung (SRO) und den
+32 Fragen stammen aus der deutschen Spielordnung (SpOF), Schiedsrichterordnung (SRO) und den
 Wettkampfbestimmungen von Faustball Deutschland. Sie sind mit `"scope": "fed"` markiert und über **Einstellungen →
 Verbandsordnungen einbeziehen** abschaltbar. Andere Mitgliedsverbände schalten sie ab oder ersetzen
 Kapitel 15 durch ihre eigenen Ordnungen.

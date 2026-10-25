@@ -64,7 +64,7 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln Anhang",
+"de": "Regelungen für Altersklassen",
 "en": "Annex – Regulations for age groups"
 },
 "origin": "fbd",
@@ -125,7 +125,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1 (Halle) und Regelungen für Altersklassen",
-"en": "Regulations for age groups"
+"en": "Rules of the Game 1.1 (indoors) and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -155,7 +155,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1 (Halle) und Regelungen für Altersklassen",
-"en": "Regulations for age groups"
+"en": "Rules of the Game 1.1 (indoors) and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -215,7 +215,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1 (Halle) und Regelungen für Altersklassen",
-"en": "Regulations for age groups"
+"en": "Rules of the Game 1.1 (indoors) and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -245,7 +245,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.1 (Halle) und Regelungen für Altersklassen",
-"en": "Regulations for age groups"
+"en": "Rules of the Game 1.1 (indoors) and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -345,8 +345,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Angaben zum Ballgewicht in der Altersklasse Frauen (F19+) sind richtig?",
-"en": "Which figures for ball weight in the women's category (F19+) are correct?"
+"de": "Welche Angaben zum Ballgewicht in der Altersklasse Frauen sind richtig?",
+"en": "Which figures for ball weight in the women's category are correct?"
 },
 "a": {
 "de": [
@@ -375,8 +375,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Angaben zum Ballgewicht in der Altersklasse Männer (M19+) sind richtig?",
-"en": "Which figures for ball weight in the men's category (M19+) are correct?"
+"de": "Welche Angaben zum Ballgewicht in der Altersklasse Männer sind richtig?",
+"en": "Which figures for ball weight in the men's category are correct?"
 },
 "a": {
 "de": [
@@ -405,8 +405,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Angaben zum Ballumfang sind richtig?",
-"en": "Which figures for the ball's circumference are correct?"
+"de": "Welche Angaben zum Ballumfang sind in der Altersklasse Männer richtig?",
+"en": "Which figures for the ball's circumference are correct in the men's category?"
 },
 "a": {
 "de": [
@@ -425,7 +425,7 @@ window.IFA_QUESTIONS = [
 "c": 0,
 "ref": {
 "de": "Spielregeln 1.4 und Regelungen für Altersklassen",
-"en": "Rules of the Game 1.4"
+"en": "Rules of the Game 1.4 and Annex – Regulations for age groups"
 },
 "origin": "fbd",
 "tr": true
@@ -435,8 +435,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Angaben zum Luftdruck des Balles sind richtig?",
-"en": "Which figures for the ball's air pressure are correct?"
+"de": "Welche Angaben zum Luftdruck des Balles sind in der Altersklasse Männer richtig?",
+"en": "Which figures for the ball's air pressure are correct in the men's category?"
 },
 "a": {
 "de": [
@@ -465,8 +465,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Breite hat das Netz (Band) im Feldfaustball in der Altersklasse Männer (M19+)?",
-"en": "How wide is the net in outdoor fistball in the men's category (M19+)?"
+"de": "Welche Breite hat das Netz (Band) im Feldfaustball in der Altersklasse Männer?",
+"en": "How wide is the net in outdoor fistball in the men's category?"
 },
 "a": {
 "de": [
@@ -525,8 +525,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Breite hat das Spielfeld im Feldfaustball in der Altersklasse Männer (M19+)?",
-"en": "How wide is the court in outdoor fistball in the men's category (M19+)?"
+"de": "Welche Breite hat das Spielfeld im Feldfaustball in der Altersklasse Männer?",
+"en": "How wide is the court in outdoor fistball in the men's category?"
 },
 "a": {
 "de": [
@@ -555,8 +555,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Länge hat das Spielfeld im Feldfaustball in der Altersklasse Männer (M19+)?",
-"en": "How long is the court in outdoor fistball in the men's category (M19+)?"
+"de": "Welche Länge hat das Spielfeld im Feldfaustball in der Altersklasse Männer?",
+"en": "How long is the court in outdoor fistball in the men's category?"
 },
 "a": {
 "de": [
@@ -585,8 +585,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Linienbreite ist im Feldfaustball in der Altersklasse Männer (M19+) zulässig?",
-"en": "What line width is permitted in outdoor fistball in the men's category (M19+)?"
+"de": "Welche Linienbreite ist im Feldfaustball in der Altersklasse Männer zulässig?",
+"en": "What line width is permitted in outdoor fistball in the men's category?"
 },
 "a": {
 "de": [
@@ -645,8 +645,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Welche Leinenhöhe (Netz/Band) gilt im Feldfaustball in der Altersklasse Männer (M19+)?",
-"en": "What is the net height in outdoor fistball in the men's category (M19+)?"
+"de": "Welche Leinenhöhe (Netz/Band) gilt im Feldfaustball in der Altersklasse Männer?",
+"en": "What is the net height in outdoor fistball in the men's category?"
 },
 "a": {
 "de": [
@@ -675,8 +675,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Wie viel beträgt der hintere Mindestauslauf im Feldfaustball in der Altersklasse Männer (M19+)?",
-"en": "What is the minimum rear buffer zone in outdoor fistball in the men's category (M19+)?"
+"de": "Wie viel beträgt der hintere Mindestauslauf im Feldfaustball in der Altersklasse Männer?",
+"en": "What is the minimum rear buffer zone in outdoor fistball in the men's category?"
 },
 "a": {
 "de": [
@@ -735,8 +735,8 @@ window.IFA_QUESTIONS = [
 "ch": 1,
 "scope": "ifa",
 "q": {
-"de": "Wie viel beträgt der seitliche Mindestauslauf im Feldfaustball in der Altersklasse Männer (M19+)?",
-"en": "What is the minimum side buffer zone in outdoor fistball in the men's category (M19)?"
+"de": "Wie viel beträgt der seitliche Mindestauslauf im Feldfaustball in der Altersklasse Männer?",
+"en": "What is the minimum side buffer zone in outdoor fistball in the men's category?"
 },
 "a": {
 "de": [
@@ -1035,8 +1035,8 @@ window.IFA_QUESTIONS = [
 "ch": 3,
 "scope": "fed",
 "q": {
-"de": "Welcher Spielmodus wird in den Frauen- und Männerklassen deines Landesverbandes gespielt?",
-"en": "Which match format is played in your regional federation in women's and men's fistball?"
+"de": "Welcher Spielmodus wird in den Frauen- und Männerklassen von Faustball Deutschland gespielt?",
+"en": "Which match format is played in women's and men's fistball in Faustball Deutschland?"
 },
 "a": {
 "de": [
@@ -1054,8 +1054,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 3.1.2; SpOF 4.4.2.4",
-"en": "Rules of the Game 3.1.2; SpOF 4.4.2.4"
+"de": "Spielregeln 3.1.2; SpOF Anlage 2",
+"en": "Rules of the Game 3.1.2; SpOF Anlage 2"
 },
 "origin": "fbd",
 "tr": true
@@ -1264,8 +1264,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "SpOF 4.3.3.4.1",
-"en": "SpOF 4.3.3.4.1"
+"de": "SpOF 4.3.3.4.1; SpOF 4.3.3.4.2",
+"en": "SpOF 4.3.3.4.1; SpOF 4.3.3.4.2"
 },
 "origin": "fbd",
 "tr": true
@@ -1275,27 +1275,27 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Nach wie vielen Einsätzen für dieselbe Mannschaft in einer Leistungsklasse spielt sich ein aktiver Spieler in dieser Mannschaft fest?",
-"en": "After how many appearances for the same team in one division does an active player become tied to that team?"
+"de": "Nach wie vielen Einsätzen für dieselbe Mannschaft ist ein Spieler auf Bundesebene in dieser Altersklasse festgespielt?",
+"en": "At federal level, after how many appearances for the same team is a player tied to that team in that age group?"
 },
 "a": {
 "de": [
-"Nach drei Einsätzen (Spielen) in einer Leistungsklasse",
-"Nach einem Einsatz (Spiel) in einer Leistungsklasse",
-"Nach zwei Einsätzen (Spielen) in einer Leistungsklasse",
-"Nach vier Einsätzen (Spielen) in einer Leistungsklasse"
+"Nach drei Einsätzen (Spielen)",
+"Nach einem Einsatz (Spiel)",
+"Nach zwei Einsätzen (Spielen)",
+"Nach vier Einsätzen (Spielen)"
 ],
 "en": [
-"After three appearances in one division",
-"After one appearance in one division",
-"After two appearances in one division",
-"After four appearances in one division"
+"After three appearances",
+"After one appearance",
+"After two appearances",
+"After four appearances"
 ]
 },
 "c": 0,
 "ref": {
-"de": "SpOF 4.3.4.1.2",
-"en": "SpOF 4.3.4.1.2"
+"de": "SpOF 4.3.4; SpOF 4.3.4.1",
+"en": "SpOF 4.3.4; SpOF 4.3.4.1"
 },
 "origin": "fbd",
 "tr": true
@@ -1323,7 +1323,10 @@ window.IFA_QUESTIONS = [
 ]
 },
 "c": 0,
-"ref": "",
+"ref": {
+"de": "SRO Anlage 5.1, Nr. 1 h; SRO Anlage 5.1, Nr. 3 b",
+"en": "SRO Anlage 5.1, Nr. 1 h; SRO Anlage 5.1, Nr. 3 b"
+},
 "origin": "fbd",
 "tr": true
 },
@@ -1351,8 +1354,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "SRO-Anlage 5-1",
-"en": "SRO annex 5-1"
+"de": "SRO Anlage 5.1, Nr. 2 h, i; Spielregeln 10.1",
+"en": "SRO Anlage 5.1, Nr. 2 h, i; Rules of the Game 10.1"
 },
 "origin": "fbd",
 "tr": true
@@ -1367,13 +1370,13 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"22:00",
+"22:0",
 "22:11",
 "22:15",
 "22:21"
 ],
 "en": [
-"22:00",
+"22:0",
 "22:11",
 "22:15",
 "22:21"
@@ -2172,27 +2175,27 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "An einem Spieltag ist das erste Spiel um 10:00 Uhr angesetzt. Die anreisende Mannschaft für dieses Spiel ist aber erst um 10:25 Uhr spielbereit, da sie verzögert anreist. Wie ist zu entscheiden?",
-"en": "On a match day the first match is scheduled for 10:00. The visiting team is delayed and only ready to play at 10:25. How is this decided?"
+"de": "An einem Spieltag einer Spielrunde ist das erste Spiel um 10:00 Uhr angesetzt. Die anreisende Mannschaft ist erst um 10:25 Uhr spielbereit, weil sie zu spät losgefahren ist; den Ausrichter hat sie nicht benachrichtigt. Wie ist zu entscheiden?",
+"en": "On a match day of a league round the first match is scheduled for 10:00. The visiting team is only ready to play at 10:25 because it set off too late; it did not notify the organiser. How is this decided?"
 },
 "a": {
 "de": [
-"Der SR weist die Heimmannschaft auf die sportliche Fairness hin und versucht das Spiel durchzuführen",
-"Das Spiel findet auf jeden Fall statt",
-"Das Spiel findet statt, auch wenn die Heimmannschaft es nicht möchte",
-"Ausschließlich der Schiedsrichter entscheidet"
+"Die verspätete Mannschaft hat das Spiel verloren; sie nimmt an den weiteren Spielen des Spieltages teil.",
+"Das Spiel wird mit 25 Minuten Verspätung angepfiffen und normal gewertet.",
+"Das Spiel wird an einem anderen Tag neu angesetzt.",
+"Die Heimmannschaft entscheidet, ob das Spiel noch ausgetragen wird."
 ],
 "en": [
-"The referee reminds the home team of fair play and tries to get the match played",
-"The match takes place in any case",
-"The match takes place even if the home team does not want it to",
-"The referee decides alone"
+"The late team has lost the match; it takes part in the remaining matches of the match day.",
+"The match starts 25 minutes late and is scored normally.",
+"The match is rescheduled for another day.",
+"The home team decides whether the match is still played."
 ]
 },
 "c": 0,
 "ref": {
-"de": "SpOF 6.2.4.4.1",
-"en": "SpOF 6.2.4.4.1"
+"de": "SpOF 4.4.1.4.2; RuVO 2.4.4.1",
+"en": "SpOF 4.4.1.4.2; RuVO 2.4.4.1"
 },
 "origin": "fbd",
 "tr": true
@@ -2221,8 +2224,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "SpOF Anlage 4 (RuVO) 2.3.7",
-"en": "SpOF annex 4 (RuVO) 2.3.7"
+"de": "RuVO 2.3.7",
+"en": "RuVO 2.3.7"
 },
 "origin": "fbd",
 "tr": true
@@ -2251,8 +2254,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "SpOF 6.2.4.3",
-"en": "SpOF 6.2.4.3"
+"de": "SpOF 4.3.3.4.4; RuVO 2.3.3",
+"en": "SpOF 4.3.3.4.4; RuVO 2.3.3"
 },
 "origin": "fbd",
 "tr": true
@@ -2270,19 +2273,19 @@ window.IFA_QUESTIONS = [
 "Er ist gar nicht festgespielt",
 "Er ist in der 1. Mannschaft festgespielt",
 "Er ist in der 2. Mannschaft festgespielt",
-"Bereits mit dem ersten Spieleinsatz"
+"Er ist in beiden Mannschaften festgespielt"
 ],
 "en": [
 "He is not tied to any team",
 "He is tied to the 1st team",
 "He is tied to the 2nd team",
-"From the very first appearance"
+"He is tied to both teams"
 ]
 },
 "c": 0,
 "ref": {
-"de": "SpOF 4.3.3.5.1; SpOF 4.3.4.1.2",
-"en": "SpOF 4.3.3.5.1; SpOF 4.3.4.1.2"
+"de": "SpOF 4.3.3.5.1; SpOF 4.3.4.1",
+"en": "SpOF 4.3.3.5.1; SpOF 4.3.4.1"
 },
 "origin": "fbd",
 "tr": true
@@ -2292,8 +2295,8 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Eine Verspätung (Stau, Glatteis, etc.) infolge Nutzung privater Verkehrsmittel gilt als …?",
-"en": "A delay caused by using private transport (traffic jam, black ice) counts as …?"
+"de": "Eine Verspätung (z. B. Stau, Glatteis) infolge Nutzung privater Verkehrsmittel gilt in der Regel als …?",
+"en": "As a rule, a delay caused by using private transport (e.g. traffic jam, black ice) counts as …?"
 },
 "a": {
 "de": [
@@ -2306,13 +2309,13 @@ window.IFA_QUESTIONS = [
 "The team's own fault",
 "Not the team's fault",
 "Immaterial",
-"Correct, if the referee insists"
+"The team's own fault, if the referee insists"
 ]
 },
 "c": 0,
 "ref": {
-"de": "SpOF 6.2.4.4.1",
-"en": "SpOF 6.2.4.4.1"
+"de": "RuVO 2.4.4.1",
+"en": "RuVO 2.4.4.1"
 },
 "origin": "fbd",
 "tr": true
@@ -2322,8 +2325,8 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Was passiert, wenn bei einem Meisterschaftsspiel in der Spielrunde die Spielberechtigung eines Spielers fehlt?",
-"en": "What happens if a player's eligibility document is missing at a championship match during the season?"
+"de": "Was passiert, wenn an einem Spieltag einer Spielrunde der Nachweis der Spielberechtigung eines Spielers vor Ort nicht gelingt?",
+"en": "What happens if a player's eligibility cannot be verified on site on a match day of a league round?"
 },
 "a": {
 "de": [
@@ -2341,8 +2344,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "SpOF 4.3.3.4.3",
-"en": "SpOF 4.3.3.4.3"
+"de": "SpOF 4.3.3.4.1; SpOF 4.3.3.4.3",
+"en": "SpOF 4.3.3.4.1; SpOF 4.3.3.4.3"
 },
 "origin": "fbd",
 "tr": true
@@ -2357,13 +2360,13 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Bälle mit vorhandener Genehmigung der IFA (Signet)",
+"Bälle, die auf der aktuellen Ballliste von Faustball Deutschland stehen",
 "Bälle, die nicht auf der aktuellen Ballliste von Faustball Deutschland stehen",
 "Weiß-rote Bälle für Frauen",
 "Weiß-blaue Bälle für Schüler"
 ],
 "en": [
-"Balls carrying IFA approval (the signet)",
+"Balls on the current Faustball Deutschland ball list",
 "Balls not on the current Faustball Deutschland ball list",
 "White and red balls for women",
 "White and blue balls for juniors"
@@ -2371,8 +2374,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Wettkampfbestimmungen von Faustball Deutschland; aktuelle Ballliste von Faustball Deutschland",
-"en": "Faustball Deutschland competition regulations; current Faustball Deutschland ball list"
+"de": "WKB 1./2. Bundesliga, Nr. 1",
+"en": "WKB 1./2. Bundesliga, Nr. 1"
 },
 "origin": "fbd",
 "tr": true
@@ -2387,13 +2390,13 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Alle Spiele werden als verloren gewertet",
+"Alle Spiele, in denen der Spieler eingesetzt wurde, werden als verloren gewertet",
 "Keine",
 "Alle Spiele müssen wiederholt werden",
 "Die gewonnenen Spiele zählen, die verlorenen müssen wiederholt werden"
 ],
 "en": [
-"All matches are recorded as lost",
+"All matches in which the player took part are recorded as lost",
 "None",
 "All matches have to be replayed",
 "The matches won count, the ones lost have to be replayed"
@@ -2401,8 +2404,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "SpOF 4.3.3.6; SpOF 4.3.3.3.1",
-"en": "SpOF 4.3.3.6; SpOF 4.3.3.3.1"
+"de": "SpOF 4.3.3.6; SpOF 4.6.1.3",
+"en": "SpOF 4.3.3.6; SpOF 4.6.1.3"
 },
 "origin": "fbd",
 "tr": true
@@ -2491,8 +2494,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Wettkampfbestimmungen von Faustball Deutschland",
-"en": "Faustball Deutschland competition regulations"
+"de": "Spielregeln 3.1.5; WKB 1./2. Bundesliga, Nr. 6",
+"en": "Rules of the Game 3.1.5; WKB 1./2. Bundesliga, Nr. 6"
 },
 "origin": "fbd",
 "tr": true
@@ -2532,8 +2535,8 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Wie viele Spiele darf ein Jugendspieler bzw. eine Jugendspielerin an einem Tag bestreiten?",
-"en": "How many matches may a youth player play in one day?"
+"de": "Wie viele Spiele darf ein Jugendspieler bzw. eine Jugendspielerin unterhalb der Bundesebene an einem Tag höchstens bestreiten, wenn er bzw. sie in zwei verschiedenen Jugend-Leistungs- und Altersklassen spielt?",
+"en": "Below federal level, how many matches may a youth player play in one day at most when playing in two different youth divisions or age groups?"
 },
 "a": {
 "de": [
@@ -2550,7 +2553,10 @@ window.IFA_QUESTIONS = [
 ]
 },
 "c": 0,
-"ref": "",
+"ref": {
+"de": "SpOF 4.3.3.5.1",
+"en": "SpOF 4.3.3.5.1"
+},
 "origin": "fbd",
 "tr": true
 },
@@ -2559,8 +2565,8 @@ window.IFA_QUESTIONS = [
 "ch": 15,
 "scope": "fed",
 "q": {
-"de": "Bei wie vielen Veranstaltungen darf ein Spieler bzw. eine Spielerin an einem Tag spielen?",
-"en": "At how many events may a player play in one day?"
+"de": "Bei wie vielen Veranstaltungen darf ein Spieler bzw. eine Spielerin an einem Tag grundsätzlich spielen?",
+"en": "As a rule, at how many events may a player play in one day?"
 },
 "a": {
 "de": [
@@ -2577,7 +2583,10 @@ window.IFA_QUESTIONS = [
 ]
 },
 "c": 0,
-"ref": "",
+"ref": {
+"de": "SpOF 4.3.3.5.1",
+"en": "SpOF 4.3.3.5.1"
+},
 "origin": "fbd",
 "tr": true
 },
@@ -2591,13 +2600,13 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"33:00",
+"33:0",
 "33:22",
 "33:11",
 "33:15"
 ],
 "en": [
-"33:00",
+"33:0",
 "33:22",
 "33:11",
 "33:15"
@@ -3064,7 +3073,7 @@ window.IFA_QUESTIONS = [
 {
 "id": "B9-2022-017",
 "ch": 9,
-"scope": "ifa",
+"scope": "fed",
 "q": {
 "de": "An einem Spieltag stellt der Mannschaftsführer der Mannschaft „A“ fest, dass die Leine (Band/Netz) nicht die erforderliche Höhe aufweist. Wann hat er die Möglichkeit, Einspruch einzulegen?",
 "en": "On a match day the captain of team A notices that the net is not at the required height. When can he lodge an objection?"
@@ -3085,8 +3094,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 9.2.1 (Prüfung des Spielfelds); Einspruchsfrist nach Wettkampf-/Rechtsordnung",
-"en": "Rules of the Game 9.2.1"
+"de": "Spielregeln 9.2.1; RuVO 3.2.1 b; RuVO 3.2.4",
+"en": "Rules of the Game 9.2.1; RuVO 3.2.1 b; RuVO 3.2.4"
 },
 "origin": "fbd",
 "tr": true
@@ -3145,8 +3154,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 9.2.1; SRO-Anlage 5-1",
-"en": "Rules of the Game 9.2.1; SRO annex 5-1"
+"de": "Spielregeln 9.2.1; SRO Anlage 5.1, Nr. 1 a",
+"en": "Rules of the Game 9.2.1; SRO Anlage 5.1, Nr. 1 a"
 },
 "origin": "fbd",
 "tr": true
@@ -3205,8 +3214,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "SRO-Anlage 5-1",
-"en": "SRO annex 5-1"
+"de": "SRO Anlage 5.1, Nr. 2 k, l",
+"en": "SRO Anlage 5.1, Nr. 2 k, l"
 },
 "origin": "fbd",
 "tr": true
@@ -3221,13 +3230,13 @@ window.IFA_QUESTIONS = [
 },
 "a": {
 "de": [
-"Dreißig Minuten nach Ende des letzten Spieles",
+"Spätestens 30 Minuten nach Abpfiff des jeweiligen Spiels",
 "Bis 24 Uhr des jeweiligen Spieltags",
 "Am nächsten Wochentag",
 "3 Tage nach dem Spieltag"
 ],
 "en": [
-"Thirty minutes after the end of the last match",
+"No later than 30 minutes after the end of each match",
 "By midnight on the match day",
 "On the next weekday",
 "3 days after the match day"
@@ -3235,8 +3244,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Wettkampfbestimmungen von Faustball Deutschland",
-"en": "Faustball Deutschland competition regulations"
+"de": "WKB 1./2. Bundesliga, Nr. 4",
+"en": "WKB 1./2. Bundesliga, Nr. 4"
 },
 "origin": "fbd",
 "tr": true
@@ -3253,20 +3262,20 @@ window.IFA_QUESTIONS = [
 "de": [
 "Neuansetzung abgebrochener Spiele",
 "Überprüfung von Spielfeld und Geräten",
-"Überprüfung der Spielberechtigung",
+"Kontrolle der einheitlichen Spielkleidung der Mannschaften",
 "Überwachung der Aufzeichnungen im Spielformular"
 ],
 "en": [
 "Rescheduling of abandoned matches",
 "Checking the court and the equipment",
-"Checking eligibility to play",
+"Checking that each team's kit is uniform",
 "Monitoring the entries on the match report"
 ]
 },
 "c": 0,
 "ref": {
-"de": "SRO-Anlage 5-1",
-"en": "SRO annex 5-1"
+"de": "SRO Anlage 5.1; SpOF 4.4.3.6",
+"en": "SRO Anlage 5.1; SpOF 4.4.3.6"
 },
 "origin": "fbd",
 "tr": true
@@ -3295,8 +3304,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Wettkampfbestimmungen von Faustball Deutschland; Spielordnung Faustball von Faustball Deutschland",
-"en": "Faustball Deutschland competition regulations; Faustball Deutschland playing regulations"
+"de": "WKB 1./2. Bundesliga, Nr. 5",
+"en": "WKB 1./2. Bundesliga, Nr. 5"
 },
 "origin": "fbd",
 "tr": true
@@ -3325,8 +3334,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "SRO-Anlage 5-1",
-"en": "SRO annex 5-1"
+"de": "SRO 2.3.1; SRO 6.6.1",
+"en": "SRO 2.3.1; SRO 6.6.1"
 },
 "origin": "fbd",
 "tr": true
@@ -3355,8 +3364,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Wettkampfbestimmungen von Faustball Deutschland",
-"en": "Faustball Deutschland competition regulations"
+"de": "WKB 1./2. Bundesliga, Nr. 1",
+"en": "WKB 1./2. Bundesliga, Nr. 1"
 },
 "origin": "fbd",
 "tr": true
@@ -3385,8 +3394,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Wettkampfbestimmungen von Faustball Deutschland",
-"en": "Faustball Deutschland competition regulations"
+"de": "SRO Anlage 5.1, Nr. 1 d",
+"en": "SRO Anlage 5.1, Nr. 1 d"
 },
 "origin": "fbd",
 "tr": true
@@ -6884,8 +6893,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Schiedsrichterordnung, Aufgaben vor dem Spiel. Rechtzeitig genug, um Spielformular, Zeitvergleich und Geräteprüfung vor dem planmäßigen Anpfiff zu erledigen.",
-"en": "Referee regulations, duties before the match. Early enough to complete match form, time check and equipment inspection before the scheduled start."
+"de": "SRO Anlage 5.1, Nr. 1",
+"en": "SRO Anlage 5.1, Nr. 1"
 },
 "origin": "ifa",
 "tr": true
@@ -6914,8 +6923,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Auslosung.",
-"en": "Referee regulations, duties before the match – the toss."
+"de": "SRO Anlage 5.1, Nr. 1 e",
+"en": "SRO Anlage 5.1, Nr. 1 e"
 },
 "origin": "ifa",
 "tr": true
@@ -6968,14 +6977,14 @@ window.IFA_QUESTIONS = [
 "en": [
 "Outside the buffer zone – apart from the ball in play, no ball may lie in the buffer zone",
 "Directly beside the post, so that the next ball is quickly at hand",
-"Spread around the run-off area behind the base lines so they are quickly at hand",
+"Spread around the buffer zone behind the base lines so they are quickly at hand",
 "The balls stay with the teams on the substitutes' bench"
 ]
 },
 "c": 0,
 "ref": {
-"de": "Spielregeln 1.6: die nicht gespielten Bälle bleiben unter der Kontrolle des Schiedsrichters, aber außerhalb des Auslaufs. Schiedsrichterordnung, Aufgaben während des Spiels: die Reservebälle liegen 3 bis 5 m hinter dem Pfosten. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
-"en": "Rules of the Game 1.6: the balls not in use remain under the referee's control, but outside the buffer zone. Referee regulations, duties during the match: spare balls lie at least 3 to 5 m behind the post. Apart from the ball in play, no ball belongs in the run-off area - players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."
+"de": "Spielregeln 1.6; SRO Anlage 5.1, Nr. 2 a. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
+"en": "Rules of the Game 1.6; SRO Anlage 5.1, Nr. 2 a. Apart from the ball in play, no ball belongs in the buffer zone – players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."
 },
 "origin": "ifa",
 "tr": true
@@ -7004,8 +7013,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Formulareintragungen. Ergänzungen und Auswechslungen werden nachgetragen.",
-"en": "Referee regulations, duties before the match – entries on the form. Additions and substitutions are entered subsequently."
+"de": "Spielregeln 2.1, Erläuterung Spielbericht; SRO Anlage 5.1, Nr. 1 c, 1 h und 3 b",
+"en": "Rules of the Game 2.1, explanation match report; SRO Anlage 5.1, Nr. 1 c, 1 h und 3 b"
 },
 "origin": "ifa",
 "tr": true
@@ -7013,7 +7022,7 @@ window.IFA_QUESTIONS = [
 {
 "id": "IFA-A-056",
 "ch": 16,
-"scope": "ifa",
+"scope": "fed",
 "q": {
 "de": "Was hat der Schiedsrichter nach dem Spiel mit dem Spielformular zu tun?",
 "en": "What must the referee do with the match form after the match?"
@@ -7034,8 +7043,8 @@ window.IFA_QUESTIONS = [
 },
 "c": 0,
 "ref": {
-"de": "Schiedsrichterordnung, Aufgaben nach dem Spiel – Formularprüfung.",
-"en": "Referee regulations, duties after the match – checking the form."
+"de": "SRO Anlage 5.1, Nr. 3 b–d; Spielregeln 9.2.5",
+"en": "SRO Anlage 5.1, Nr. 3 b–d; Rules of the Game 9.2.5"
 },
 "origin": "ifa",
 "tr": true

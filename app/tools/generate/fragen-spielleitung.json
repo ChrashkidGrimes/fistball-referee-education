@@ -996,8 +996,8 @@
   },
   "c": 0,
   "ref": {
-   "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel. Rechtzeitig genug, um Spielformular, Zeitvergleich und Geräteprüfung vor dem planmäßigen Anpfiff zu erledigen.",
-   "en": "Referee regulations, duties before the match. Early enough to complete match form, time check and equipment inspection before the scheduled start."
+   "de": "SRO Anlage 5.1, Nr. 1",
+   "en": "SRO Anlage 5.1, Nr. 1"
   },
   "origin": "ifa",
   "tr": true
@@ -1026,8 +1026,8 @@
   },
   "c": 0,
   "ref": {
-   "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Auslosung.",
-   "en": "Referee regulations, duties before the match – the toss."
+   "de": "SRO Anlage 5.1, Nr. 1 e",
+   "en": "SRO Anlage 5.1, Nr. 1 e"
   },
   "origin": "ifa",
   "tr": true
@@ -1080,14 +1080,14 @@
    "en": [
     "Outside the buffer zone – apart from the ball in play, no ball may lie in the buffer zone",
     "Directly beside the post, so that the next ball is quickly at hand",
-    "Spread around the run-off area behind the base lines so they are quickly at hand",
+    "Spread around the buffer zone behind the base lines so they are quickly at hand",
     "The balls stay with the teams on the substitutes' bench"
    ]
   },
   "c": 0,
   "ref": {
-   "de": "Spielregeln 1.6: die nicht gespielten Bälle bleiben unter der Kontrolle des Schiedsrichters, aber außerhalb des Auslaufs. Schiedsrichterordnung, Aufgaben während des Spiels: die Reservebälle liegen 3 bis 5 m hinter dem Pfosten. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
-   "en": "Rules of the Game 1.6: the balls not in use remain under the referee's control, but outside the buffer zone. Referee regulations, duties during the match: spare balls lie at least 3 to 5 m behind the post. Apart from the ball in play, no ball belongs in the run-off area - players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."
+   "de": "Spielregeln 1.6; SRO Anlage 5.1, Nr. 2 a. Außer dem gespielten Ball gehört kein Ball in den Auslauf – Spieler verfolgen den Ball dort mit dem Blick nach oben und können auf einem liegenden Ball umknicken.",
+   "en": "Rules of the Game 1.6; SRO Anlage 5.1, Nr. 2 a. Apart from the ball in play, no ball belongs in the buffer zone – players there follow the ball with their eyes upwards and can turn an ankle on a ball lying on the ground."
   },
   "origin": "ifa",
   "tr": true
@@ -1116,8 +1116,8 @@
   },
   "c": 0,
   "ref": {
-   "de": "Schiedsrichterordnung, Aufgaben vor dem Spiel – Formulareintragungen. Ergänzungen und Auswechslungen werden nachgetragen.",
-   "en": "Referee regulations, duties before the match – entries on the form. Additions and substitutions are entered subsequently."
+   "de": "Spielregeln 2.1, Erläuterung Spielbericht; SRO Anlage 5.1, Nr. 1 c, 1 h und 3 b",
+   "en": "Rules of the Game 2.1, explanation match report; SRO Anlage 5.1, Nr. 1 c, 1 h und 3 b"
   },
   "origin": "ifa",
   "tr": true
@@ -1125,7 +1125,7 @@
  {
   "id": "IFA-A-056",
   "ch": 16,
-  "scope": "ifa",
+  "scope": "fed",
   "q": {
    "de": "Was hat der Schiedsrichter nach dem Spiel mit dem Spielformular zu tun?",
    "en": "What must the referee do with the match form after the match?"
@@ -1146,8 +1146,8 @@
   },
   "c": 0,
   "ref": {
-   "de": "Schiedsrichterordnung, Aufgaben nach dem Spiel – Formularprüfung.",
-   "en": "Referee regulations, duties after the match – checking the form."
+   "de": "SRO Anlage 5.1, Nr. 3 b–d; Spielregeln 9.2.5",
+   "en": "SRO Anlage 5.1, Nr. 3 b–d; Rules of the Game 9.2.5"
   },
   "origin": "ifa",
   "tr": true

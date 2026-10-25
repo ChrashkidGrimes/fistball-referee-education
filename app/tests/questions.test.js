@@ -49,7 +49,8 @@ console.log('\n== Herkunft der Fragen ==');
      Schiedsrichterordnung – 30 Minuten Anwesenheit und der Ablauf 5/3 Minuten
      vor Anpfiff. Diese Zahlen gelten international nicht zwingend. */
   const nat=neu.filter(q=>q.scope!=='ifa');
-  ok(nat.length===2&&nat.every(q=>q.ch===16),'nur die zwei Kapitel-16-Fristen sind national markiert');
+  /* Seit 25.10.2026 zusaetzlich IFA-A-056: die Uebergabe des Spielformulars steht nur in der SRO. */
+  ok(nat.length===3&&nat.every(q=>q.ch===16),'nur die drei Kapitel-16-Fragen aus der SRO sind national markiert');
   ok(neu.every(q=>ansOf(q,'de').length===4&&ansOf(q,'en').length===4),'je vier Antworten in beiden Sprachen');
   ok(neu.every(q=>q.c>=0&&q.c<4),'gueltiger Loesungsindex');
   ok(neu.every(q=>q.ref&&q.ref.de&&q.ref.de.length>8&&q.ref.en),'jede nennt eine Fundstelle in beiden Sprachen');
@@ -70,7 +71,7 @@ console.log('\n== Herkunft der Fragen ==');
      sie praezise sind. */
   const rules=new Set();
   w.IFA_CONTENT.forEach(c=>c.blocks.forEach(b=>{ if(b.t==='rule'&&typeof b.n==='string') rules.add(b.n); }));
-  const QUELLE=/Spielregeln|Schulungsmappe|Schulungsfolien|Schiedsrichterordnung|Wettkampfbestimmungen|Spielordnung/;
+  const QUELLE=/Spielregeln|Schulungsmappe|Schulungsfolien|Schiedsrichterordnung|SRO|Wettkampfbestimmungen|Spielordnung/;
   const ohne=neu.filter(q=>!QUELLE.test(q.ref.de));
   ok(ohne.length===0,'jede Fundstelle nennt ein Quelldokument'+
      (ohne.length?' ('+ohne.map(q=>q.id).join(',')+')':''));

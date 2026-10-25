@@ -263,7 +263,7 @@ same photos as the image series in chapter 1 — there with the decision, in the
 
 ### Federation regulations
 
-30 questions come from the German playing regulations (SpOF), referee regulations (SRO) and the
+32 questions come from the German playing regulations (SpOF), referee regulations (SRO) and the
 Faustball Deutschland competition rules. They are marked `"scope": "fed"` and can be switched off under
 **Settings → Include federation regulations**. Other member federations switch them off or replace
 chapter 15 with their own regulations.
