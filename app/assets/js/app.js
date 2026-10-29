@@ -436,6 +436,7 @@ function viewLevel(lvl) {
         '<input class="inp" id="examName" maxlength="80" autocomplete="name" value="' +
         esc(p.name || "") + '"></label>' +
       '<p class="fldhint">' + esc(t("examNameHint")) + "</p>" +
+      '<p class="fldhint">' + esc(t("examStartHint")) + "</p>" +
       (state.nameMissing === lvl
         ? '<div class="hint" style="margin:10px 0 0">' + esc(t("examNameMissing")) + "</div>" : "") +
       (examLocked(lvl)
@@ -462,7 +463,7 @@ function viewLevel(lvl) {
       '<div class="card stat"><div class="v">' + cfg.pass + " % / " + cfg.retake + ' %</div><div class="l">' +
         esc(t("passMark")) + " · " + esc(t("retakeMark")) + "</div></div>" +
       '<div class="card stat"><div class="v">' + (ex ? fmtPct(ex.best) : "–") + '</div><div class="l">' +
-        esc(t("bestExam")) + (ex ? "" : " (" + esc(t("noAttempt")) + ")") + "</div></div>" +
+        esc(t("bestExam")) + (ex ? "" : " (" + esc(t(p.exam && p.exam.attempts ? "noResult" : "noAttempt")) + ")") + "</div></div>" +
     "</div>" +
     "<h2>" + esc(t("learnPath")) + "</h2>" +
     '<p class="lead">' + esc(t("learnPathLead")) + "</p>" +
@@ -605,7 +606,14 @@ function startExam(lvl, name) {
   if (examLocked(lvl)) return go({ name: "level", lvl: lvl });
   if (!name) { state.nameMissing = lvl; return go({ name: "level", lvl: lvl }); }
   state.nameMissing = null;
-  prog(lvl).name = name; save();
+  var pr = prog(lvl), ex = pr.exam || (pr.exam = {});
+  pr.name = name;
+  /* Der Versuch zählt ab dem Start und sperrt sofort. Wer abbricht oder den
+     Browser schließt, hat damit einen nicht bestandenen Versuch; erst das
+     Bestehen hebt die Sperre wieder auf (finishQuiz). */
+  ex.attempts = (ex.attempts || 0) + 1;
+  ex.lastFail = Date.now();
+  save();
   state.quiz = buildQuiz(lvl, null, true);
   go({ name: "quiz" });
 }
@@ -757,7 +765,7 @@ function finishQuiz() {
   var pr = prog(z.lvl);
   if (z.exam) {
     var old = pr.exam || {};
-    var attempts = (old.attempts || 0) + 1;
+    var attempts = old.attempts || 1;   // beim Start bereits gezählt
     var passed = p >= LEVELS[z.lvl].pass;
     /* Bestandener Versuch mit allen Antworten – Grundlage des Prüfcodes.
        Antwortindex in der Originalreihenfolge der Frage, nicht der Anzeige. */

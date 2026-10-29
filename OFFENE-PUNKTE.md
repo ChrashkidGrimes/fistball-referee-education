@@ -92,8 +92,9 @@ Spec: `docs/superpowers/specs/2026-10-25-pruefnachweis-design.md`.
 - [x] ~~Auswertung ohne Lösungen~~ – bewusst abgewählt: Die Lösungen nach der Prüfung
       dienen dem Lernen. Die Wartezeit und der Umfang des Katalogs dämpfen den Effekt.
 - [x] ~~Wartezeit zwischen Prüfungsversuchen~~ – 24 Stunden nach einem nicht
-      bestandenen Versuch. Liegt im Browser und ist umgehbar; die Versuchsnummer steht
-      deshalb im Prüfcode. Das Zurücksetzen des Fortschritts (je Stufe oder „alle
+      bestandenen Versuch. Der Versuch zählt schon beim Start, ein Abbruch oder
+      geschlossener Browser gilt als nicht bestanden. Liegt im Browser und ist umgehbar;
+      die Versuchsnummer steht deshalb im Prüfcode. Das Zurücksetzen des Fortschritts (je Stufe oder „alle
       Daten“) löscht den Lernstand, behält aber Versuchszähler und Sperre – sonst ließe
       sich die Wartezeit mit dem Knopf der App umgehen.
 - [x] ~~Serverseitige Ablage der Ergebnisse~~ – ersetzt durch den Prüfcode: Name,

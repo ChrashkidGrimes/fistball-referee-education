@@ -169,6 +169,32 @@ console.log('\n== Versuche und Wartezeit ==');
   ok(ex.cert.attempt===4&&ex.cert.pct===100,'besserer bestandener Versuch ersetzt ihn');
 }
 
+console.log('\n== Abbruch zaehlt als Versuch ==');
+{
+  const t0=Date.UTC(2026,9,25,10,0);
+  const a=boot(ready('R',{name:'Erika'}),{now:t0});
+  a.click('[data-go="level:R"]');
+  ok(/Mit dem Start zählt der Versuch/.test(a.T()),'Hinweis vor dem Start');
+  a.click('[data-go="exam:R"]');
+  let ex=a.store().progress.R.exam;
+  ok(ex.attempts===1&&ex.lastFail===t0,'Start zaehlt den Versuch und sperrt sofort');
+  ok(ex.best==null,'Start allein ergibt kein Ergebnis');
+  /* Browser geschlossen: neuer Start mit dem gespeicherten Stand */
+  const b=boot(a.store(),{now:t0+H});
+  b.click('[data-go="level:R"]');
+  ok(b.d.querySelector('[data-go="exam:R"]').disabled,'nach Schliessen des Browsers gesperrt');
+  ok(/Versuche:\s*1/.test(b.T())&&/kein Versuch abgeschlossen/.test(b.T())&&!/Bestes Prüfungsergebnis:/.test(b.T()),'Versuch angezeigt, kein Ergebnis');
+  /* Abbruch ueber den Knopf */
+  const c=boot(ready('R',{name:'Erika'}),{now:t0});
+  c.click('[data-go="level:R"]'); c.click('[data-go="exam:R"]'); c.click('[data-act="abort"]');
+  ex=c.store().progress.R.exam;
+  ok(ex.attempts===1&&ex.lastFail===t0&&c.d.querySelector('[data-go="exam:R"]').disabled,'Abbruch: Versuch gezaehlt, gesperrt');
+  c.clock.now+=24*H+1; c.click('[data-go="home"]'); c.click('[data-go="level:R"]');
+  c.click('[data-go="exam:R"]'); runExam(c,0.8);
+  ex=c.store().progress.R.exam;
+  ok(ex.attempts===2&&!ex.lastFail&&ex.cert.attempt===2,'danach bestanden: Versuch 2, Sperre aufgehoben');
+}
+
 console.log('\n== Nachpruefungsband und Zuruecksetzen ==');
 {
   const a=boot(ready('R',{name:'Erika'}));

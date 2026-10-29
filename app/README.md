@@ -128,8 +128,9 @@ and recalculates the score against the current catalogue. `decode` also rejects 
 do not match the expected format (level R/N, ISO date, numeric attempt, score of at most 100,
 `ID:index` entries), even with a matching checksum. A code with a valid checksum that cannot
 come from a real exam (score below the pass mark, wrong number of questions, duplicate questions)
-is shown with a warning. After a failed attempt the exam is locked for
-24 hours (`EXAM_LOCK_MS`). Resetting progress, per level or "all data", deletes the learning
+is shown with a warning. An attempt counts as soon as the exam starts and locks it for
+24 hours (`EXAM_LOCK_MS`); passing lifts the lock. Cancelling, closing the browser or a restart
+therefore count as a failed attempt. Resetting progress, per level or "all data", deletes the learning
 progress but keeps the attempt counter and the lock; otherwise the app's own button would bypass the
 wait. QR codes come from `assets/js/vendor/qrcode.js` (qrcode-generator 1.4.4, MIT, Kazuhiko Arase).
 
@@ -281,7 +282,7 @@ npm test
 | File | Scope |
 |------|-------|
 | `app.test.js` | Navigation, chapter content, quiz and exam flow, certificate, switching off the federation regulations, image mapping of the hand signals, migration of progress from the three-level version (49 checks) |
-| `cert.test.js` | Verification code (encoding, checksum, validation of the code fields, recalculation), name before the exam, attempt counter and 24-hour wait, retake band counts as fail, reset keeps attempt counter and lock, certificate with QR code, verify page (96 checks) |
+| `cert.test.js` | Verification code (encoding, checksum, validation of the code fields, recalculation), name before the exam, attempt counter and 24-hour wait, retake band counts as fail, cancelled exam counts as an attempt, reset keeps attempt counter and lock, certificate with QR code, verify page (103 checks) |
 | `exam-thresholds.test.js` | Exams per licence level at defined hit rates; verifies pass / retake / fail, including the cases exactly on the threshold (16 checks) |
 | `exam-composition.test.js` | Size and pool distribution of the exams, weighting, variation between attempts, behaviour with the federation regulations switched off (25 checks) |
 | `i18n.test.js` | Display of the German and English content, marking of the slide-deck content, language-dependent diagrams (37 checks) |

@@ -30,7 +30,9 @@ ist kein Geheimnis.
   Startknopf gesperrt, angezeigt wird Datum und Uhrzeit der Freigabe. Nach einem
   bestandenen Versuch gibt es keine Sperre. Die Sperre liegt im `localStorage` und ist
   damit umgehbar; die Versuchsnummer im Prüfcode macht viele Versuche trotzdem sichtbar.
-- **Versuchszähler** je Stufe, erhöht beim Abschluss jeder Prüfung.
+- **Versuchszähler** je Stufe, erhöht beim Start jeder Prüfung. Der Start setzt auch
+  die Sperre, erst das Bestehen hebt sie auf – Abbrechen oder Schließen des Browsers
+  zählt damit als nicht bestandener Versuch (Nachtrag 30. Oktober 2026).
 - **Gespeicherter Versuch.** Für den besten bestandenen Versuch werden Frage-IDs,
   gewählte Antworten (Index in der Originalreihenfolge der Frage, nicht der gemischten
   Anzeige), Ergebnis, Datum, Versuchsnummer und Name abgelegt. Ein späterer bestandener
