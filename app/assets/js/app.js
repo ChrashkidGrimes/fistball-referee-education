@@ -57,7 +57,7 @@ var LEVELS = {
 var LEVEL_ORDER = ["R", "N"];
 var STORE_KEY = "ifa-referee-education-v1";
 /* Wartezeit nach einer nicht bestandenen Abschlussprüfung */
-var EXAM_LOCK_MS = 24 * 3600 * 1000;
+var EXAM_LOCK_MS = 2 * 3600 * 1000;
 /* Veröffentlichte Adresse – Ziel des QR-Codes, wenn die App per file://
    läuft. Unter http(s) gilt die eigene Adresse. */
 var PUBLIC_URL = "https://chrashkidgrimes.github.io/fistball-referee-education/";

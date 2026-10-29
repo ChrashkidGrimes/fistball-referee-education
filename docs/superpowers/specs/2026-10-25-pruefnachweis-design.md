@@ -26,7 +26,7 @@ ist kein Geheimnis.
 - **Auswertung unverändert mit Lösungen.** Nach der Prüfung werden wie bisher jede
   Antwort, die richtige Lösung und die Fundstelle angezeigt – das dient dem Lernen.
   (Der Punkt „Auswertung ohne Lösungen“ aus Weg 2 ist damit bewusst abgewählt.)
-- **Wartezeit 24 Stunden** nach einem nicht bestandenen Versuch. Bis dahin ist der
+- **Wartezeit 2 Stunden** (bis 30. Oktober 2026: 24 Stunden) nach einem nicht bestandenen Versuch. Bis dahin ist der
   Startknopf gesperrt, angezeigt wird Datum und Uhrzeit der Freigabe. Nach einem
   bestandenen Versuch gibt es keine Sperre. Die Sperre liegt im `localStorage` und ist
   damit umgehbar; die Versuchsnummer im Prüfcode macht viele Versuche trotzdem sichtbar.
@@ -106,7 +106,7 @@ jsdom-Tests:
 - Geänderte Prozentzahl, geänderter Name, vertauschte Antwort → Prüfsumme ungültig.
 - Nachrechnen ergibt das gespeicherte Ergebnis; unbekannte ID wird markiert.
 - Ohne Namen startet keine Prüfung.
-- Nach nicht bestandenem Versuch ist der Start 24 Stunden gesperrt, danach frei;
+- Nach nicht bestandenem Versuch ist der Start 2 Stunden gesperrt, danach frei;
   nach bestandenem Versuch keine Sperre.
 - Versuchszähler steigt; nur ein besserer bestandener Versuch ersetzt den gespeicherten.
 - Zertifikat zeigt QR-Code und Nummer; alter Fortschritt ohne Versuch zeigt den

@@ -130,7 +130,7 @@ Codes zurück, deren Felder nicht dem erwarteten Format entsprechen (Stufe R/N, 
 Versuch, Ergebnis höchstens 100, Einträge `ID:Index`), auch bei passender Prüfsumme. Ein Code mit gültiger Prüfsumme, der aus
 keiner echten Prüfung stammen kann (Ergebnis unter der Grenze, falsche Fragenzahl, doppelte
 Fragen), erscheint mit Warnung. Ein Versuch zählt ab dem Start der Prüfung und sperrt sie für
-24 Stunden (`EXAM_LOCK_MS`); erst das Bestehen hebt die Sperre auf. Abbruch, Schließen des Browsers
+2 Stunden (`EXAM_LOCK_MS`); erst das Bestehen hebt die Sperre auf. Abbruch, Schließen des Browsers
 oder ein Neustart zählen damit als nicht bestandener Versuch. Das Zurücksetzen des
 Fortschritts, je Stufe oder „alle Daten“, löscht den Lernstand, behält aber Versuchszähler und
 Sperre; sonst ließe sich die Wartezeit mit dem Knopf der App umgehen. QR-Codes erzeugt
@@ -287,7 +287,7 @@ npm test
 | Datei | Umfang |
 |-------|--------|
 | `app.test.js` | Navigation, Kapitelinhalte, Quiz- und Prüfungsablauf, Zertifikat, Abschaltung der Verbandsordnungen, Bildzuordnung der Handzeichen, Migration des Fortschritts aus der dreistufigen Fassung (49 Prüfungen) |
-| `cert.test.js` | Prüfcode (Codierung, Prüfsumme, Prüfung der Codefelder, Nachrechnen), Name vor der Prüfung, Versuchszähler und 24 Stunden Wartezeit, Nachprüfungsbereich zählt als nicht bestanden, abgebrochene Prüfung zählt als Versuch, Zurücksetzen behält Versuchszähler und Sperre, Zertifikat mit QR-Code, Prüfseite (103 Prüfungen) |
+| `cert.test.js` | Prüfcode (Codierung, Prüfsumme, Prüfung der Codefelder, Nachrechnen), Name vor der Prüfung, Versuchszähler und 2 Stunden Wartezeit, Nachprüfungsbereich zählt als nicht bestanden, abgebrochene Prüfung zählt als Versuch, Zurücksetzen behält Versuchszähler und Sperre, Zertifikat mit QR-Code, Prüfseite (103 Prüfungen) |
 | `exam-thresholds.test.js` | Prüfungen je Lizenzstufe mit definierten Trefferquoten; verifiziert bestanden / Nachprüfung / nicht bestanden, einschließlich der Fälle genau auf der Grenze (16 Prüfungen) |
 | `exam-composition.test.js` | Umfang und Pool-Verteilung der Prüfungen, Gewichtung, Variation zwischen Versuchen, Verhalten bei abgeschalteten Verbandsordnungen (25 Prüfungen) |
 | `i18n.test.js` | Anzeige der deutsch-englischen Inhalte, Kennzeichnung der Foliensatz-Inhalte, sprachabhängige Diagramme (37 Prüfungen) |
